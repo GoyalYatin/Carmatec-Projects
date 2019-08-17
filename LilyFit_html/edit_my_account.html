@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="LILYFIT" />
+<meta name="description" content="LILYFIT" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>LILYFIT</title>
+<meta name="viewport" content="width=device-width" />
+ 
+
+<link rel="shortcut icon" href="common/images/favicon.ico" />
+
+<link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/animation.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/style_menumouseover.css" type="text/css" />
+<link href="assets/styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles/jquery-ui.css">
+
+<link rel="stylesheet" href="assets/styles/jquery.selectbox.css" />
+<!-- for raty css -->
+<link rel="stylesheet" type="text/css" href="assets/styles/raty.css"/>
+<!-- for raty css -->
+
+<link rel="stylesheet" media="only screen and (max-width: 1200px)" href="assets/styles/styles_1200.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="assets/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 600px)" href="assets/styles/styles_600.css" />
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)" href="assets/styles/styles_600.css" />
+
+
+</head>
+
+<body >
+
+	<div class="main-wrapper">
+    <div class="width_show"></div>
+    
+    	  
+        <div class="slider-outer-wrap">
+	        <div class="slider-wrapper">
+            <div class="header_wrapper header_wrapper_inside">
+        	<div class="main-wrapper-fixed headerdiv">
+            	 <div class="header-left floatleft showonlyonmob"> 
+                     <a href="index.html">
+                     	<img title="LILYFIT" id="logo" alt="Logo LILYFIT" src="assets/images/lilyfit_logo.png"> 
+                     </a> 
+                 </div> 
+                 <div class="login_signup">	 
+            	<div class="login_button">
+ 		              <span class="login_span"> 
+                      <a  href="login.html" class="login_button_anchor loginsignupclass changelogintext"> 
+                       Log In
+                      </a>
+                      </span>
+                 </div> 
+                 <div class="signup_button" style="display:none;">
+ 		              <span class="signup_span"> 
+                      <a href="signup.html" class="login_button_anchor loginsignupclass"> 
+                      Sign Up
+                      </a></span>
+                 </div>
+                 
+                 <!--<div class="signup_button">
+ 		              <span class="signup_span"> <a href="login.html" class="signup_button_anchor"> <img src="assets/images/login.jpg" alt="login"/></a></span>
+                 </div> -->
+                 
+                   </div>
+				  <div class="floatleftt"> 
+						<ul class="myaccount_menu_top_header">
+              <li class="first_li_welcome">
+                <p>Welcome ! David Brown</p>
+              </li>
+              <li><a href="javascript:void(0)">My account</a>
+
+                <ul>
+                  <li>
+                    <a href="view_my_account.html">My Account</a>
+                  </li>
+                  <li>
+                    <a href="edit_my_account.html">Edit My Account</a>
+                  </li>
+                  <li>
+                    <a href="my_history.html">My History</a>
+                  </li>
+                  <li>
+                    <a href="payment_setting_and_info.html">Payment Settings &amp; Info</a>
+                  </li>
+                  <li>
+                    <a href="login.html">Logout</a>
+                  </li>
+                </ul>
+              </li> 
+            </ul>
+						
+                        <div class="menu_top header-left">
+                        	<div class="menutoggle"> MENU </div>
+                            <ul class="menu_ulist">
+                               <li class="menuu1 navi-menu paddinganchor"><a href="aboutus.html"> <span> About </span> </a>                                                               
+                               </li>
+                               <li class="menuu2 navi-menu paddinganchor classesmenu"><a href="javascript:void(0)"> <span>Videos </span> </a>                                
+                               
+                               <div class="header-submenu-wrap">
+                                  <div class="header-submenu-wrapinside">
+                                     <div class="demo">
+                                        <div id="capslide_img_cont1" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_03.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PILATES</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="pilates.html"> Pilates1</a></li>
+                                                    <li> <a href="pilates.html"> Pilates2</a></li>
+                                                    <li> <a href="pilates.html"> Pilates3</a></li>
+                                                    <li> <a href="pilates.html"> Pilates4</a></li>
+                                                    <li> <a href="pilates.html"> Pilates5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demo">
+                                        <div id="capslide_img_cont2" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_05.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>YOGA</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont3" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_07.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                               <h3>BODY TONING  <br/> & DANCE</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont4" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_09.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRENATAL</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont5" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_11.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     
+                                      </div>
+                               </div>
+                               </li>
+                               <li class="menuu3 navi-menu paddinganchor"><a href="instructors.html"> <span> Instructors </span> </a>  </li>
+                               <li class="menuu4 navi-menu paddinganchor"><a href="blog.html"> <span> Blog </span> </a>  </li>
+                               
+                               <li class="navi-menu logomenu "> <a href="index.html"><img alt="Logo" src="assets/images/lilyfit_logo.png" /></a>   </li>
+                               <li class="menuu5 navi-menu paddinganchor">  <a href="webinars.html"><span>Webinars</span> </a>  </li>
+                               <li class="menuu6 navi-menu paddinganchor"> <a href="retreats.html"><span> Retreats  </span> </a></li>
+                              <li class="menuu7 navi-menu paddinganchor "><a href="nutritions.html"> <span> Nutrition </span> </a>  </li>
+                                <li class="shopmenu navi-menu paddinganchor menulast">  <a href="login.html"><span> Log In </span></a> </li>         <div class="class_dropdown_mobile_slider">
+                  <img src="assets/images/close_popup.png" alt="close"/>
+                  <h3>PILATES</h3>
+                  <ul>
+                                        <li> <a href="pilates.html"> Pilates1</a></li>
+                                        <li> <a href="pilates.html"> Pilates2</a></li>
+                                        <li> <a href="pilates.html"> Pilates3</a></li>
+                                        <li> <a href="pilates.html"> Pilates4</a></li>
+                                        <li> <a href="pilates.html"> Pilates5</a></li>
+                                    </ul>
+                  <h3>YOGA</h3>
+                  <ul>
+                                        <li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                        <li> <a href="#"> Yoga2</a></li>
+                                        <li> <a href="#"> Yoga3</a></li>
+                                        <li> <a href="#"> Yoga4</a></li>
+                    <li> <a href="#"> Yoga5</a></li>
+                                    </ul>
+                  <h3>BODY TONING  <br/> & DANCE</h3>
+                                    <ul>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                    </ul>
+                  <h3>PRENATAL</h3>
+                  <ul>
+                                        <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                    <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                  </ul>
+                  <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                    <ul>
+                                        <li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                        <li> <a href="#"> Yoga2</a></li>
+                                        <li> <a href="#"> Yoga3</a></li>
+                                        <li> <a href="#"> Yoga4</a></li>
+                                        <li> <a href="#"> Yoga5</a></li>
+                                    </ul>
+                 </div>                 
+                            </ul>
+                         </div>   
+                 </div>  
+                 
+            </div>	 
+            	         
+        </div>
+        	
+        	</div>
+        	
+        	</div>
+		
+		<div class="mainContent_wrapper">
+        	<div class="main-wrapper-fixed ">
+            	
+                <div class="breadcrumb_navigation">
+                	<ul class="breadcrums-wrapper-list">
+                    <li class="breadcrums-first">
+                        <a href="index.html">Home</a>
+                    </li>
+                     <li>
+                        <span>My Account</span>
+                    </li>
+
+            		</ul>
+                </div>
+                
+                <div class="page_title_bold">
+                	<h3>My Account </h3>
+                   
+                </div>
+                <div class="myaccount_outer edit_myaccount">
+					<form id="myaccount" name="myaccount" method="post" action="">
+						<div class="myaccount_first_section ">
+							<div class="myaccount_first_section_left_outer">
+								<div class="myaccount_first_section_left">
+									<div class="myaccount_first_section_left_left">
+										<img src="assets/images/myaccount/my_account_profilepic.jpg" id='imagepreview1'>
+										<input type="file" name="file" id="file" accept="image/*"/>
+										<input type="button" id="upload" class="myaccount_button myaccount_button_upload" value="Upload"/>
+									</div>
+									<div class="myaccount_first_section_left_right">
+										<div class="myaccount_form_input">
+											<label>Name</label>
+											<input type="text" id="profile_name" class="myaccount_textbox" name="profile_name"/>
+										</div>
+										
+										
+										<div class="myaccount_form_input">
+											<label>My Location</label>
+											<p class="subtext_myaccount">
+												<select name="product" class="myaccount_textbox myaccount_dropdown" id="osoptions">
+                                                	<option value="">Los Angeles,CA</option>
+                                                </select>
+											</p>
+										</div>
+										<div class="myaccount_form_input myaccount_form_input_last">
+											<label>My Birthday</label>
+											<input type="button" id="datepicker" class="myaccount_textbox" name="mydob"/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="myaccount_first_section_right">
+								<h2>WELCOMES TO LILYFIT</h2>
+								<p>For just $18 per month you will get unlimited access to our classes. 
+								To begin your 15 day free trial, please enter your payment details below. 
+								Your card will be charged 15 days from now and monthly thereafter. 
+								If you cancel your account before the trial period is over, you pay nothing. 
+								You can cancel online at any time.</p>
+								<a class='inline' href="change_password.html">Change Password</a>
+							</div>
+						</div>
+						<div class="myaccount_second_section">
+							<div class="myaccount_form_input">
+								<label>Show my age on profile</label>
+								<p><input type="checkbox" class="myaccount_checkbox"/></p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Languages</label>
+								<p  class="dropdown_myaccount_new">
+									<select name="language" class="myaccount_textbox myaccount_dropdown" >
+                                       	<option>English</option>
+                                       	<option>Arabic</option>
+                                    </select>
+								</p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Gender</label>
+								<p  class="dropdown_myaccount_new">
+									<select name="Gender" class="myaccount_textbox myaccount_dropdown" >
+                                       	<option>Male</option>
+										<option>Female</option>
+                                    </select>
+								</p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Age</label>
+								<p  class="dropdown_myaccount_new">
+									<select name="age" class="myaccount_textbox myaccount_dropdown" >
+                                       	<option>18-24</option>
+										<option>25-34</option>
+										<option>35-44</option>
+										<option>45-54</option>
+										<option>55 & Up</option>
+                                    </select>
+								</p>
+							</div>
+							<div id="exercise_i_enjoy" class="myaccount_form_input">
+								<label>Exercise I Enjoy</label>
+								<p  class="dropdown_myaccount_new">
+									<select class="myaccount_textbox myaccount_dropdown" id="exercise">
+                                       	<option value="-1">Add an exercise</option>
+										<option value="0">Others</option>
+										<option value="1">Walking</option>
+										<option value="2">Running</option>
+										<option value="3">Swimming</option>
+										<option value="4">Weight Lifting</option>
+										<option value="5">Yoga</option>
+										<option value="6">Pilates</option>
+										<option value="7">Dance</option>
+										<option value="8">Cycling</option>
+										<option value="9">Mountaining</option>
+										<option value="10">Boxing</option>
+                                    </select>
+								</p>
+							</div>
+							<div class="myaccount_form_input myaccount_form_input_last ">
+								<label>About Me<span> (1000 chars. max)</span></label>
+								<p><textarea class="myaccount_textbox myaccount_text_area"></textarea></p>
+							</div>
+							<h2 class="internal_heading_myaccount">
+								MY FITNESS EXPERIENCE
+							</h2>
+							<div class="myaccount_form_input">
+								<label>My Fitness History<span> (1000 chars. max)</span></label>
+								<p><textarea class="myaccount_textbox myaccount_text_area"></textarea></p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>What is your fitness level</label>
+								<p  class="dropdown_myaccount_new">
+									<select class="myaccount_textbox myaccount_dropdown">
+                                       	<option>Low</option>
+										<option>Medium</option>
+										<option>High</option>
+                                    </select>
+								</p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>How frequently do you exercise</label>
+								<p  class="dropdown_myaccount_new">
+									<select class="myaccount_textbox myaccount_dropdown">
+                                       	<option>None</option>
+										<option>2-3 times per week</option>
+										<option>3-5 times per week</option>
+                                    </select>
+								</p>
+								
+							</div>
+							<div class="myaccount_form_input">
+								<label>Are you</label>
+								<p  class="dropdown_myaccount_new">
+									<select class="myaccount_textbox myaccount_dropdown">
+                                       	<option>Student</option>
+										<option>Teacher</option>
+										<option>Studio Owner</option>
+                                    </select>
+								</p>
+								
+							</div>
+							<div class="myaccount_form_input">
+								<label>Your fitness interest</label>
+								<p  class="dropdown_myaccount_new">
+									<select class="myaccount_textbox myaccount_dropdown">
+                                       	<option>Yoga</option>
+										<option>Pilates</option>
+										<option>Body Toning</option>
+										<option>Dance</option>
+                                    </select>
+								</p>
+							</div>
+							<h2 class="internal_heading_myaccount">
+								MY WEB CONNECTIONS<span> (Only fill out this information if you want it to appear on your public profile)</span>
+							</h2>
+							<div class="myaccount_form_input">
+								<label>My Facebook Page</label>
+								<p><input type="text" id="mylocation" class="myaccount_textbox" name="myfacebook"/></p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>My Twitter Name</label>
+								<p><input type="text" id="mylocation" class="myaccount_textbox" name="myfacebook"/></p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>My Website</label>
+								<p><input type="text" id="mylocation" class="myaccount_textbox" name="myfacebook"/></p>
+							</div>
+							<div class="myaccount_form_input myaccount_form_input_last">
+								<label>My Email</label>
+								<p><input type="text" id="mylocation" class="myaccount_textbox" name="myfacebook"/></p>
+							</div>
+							<!--<h2 class="internal_heading_myaccount">
+								PRIVACY SETTINGS
+							</h2>
+							<div class="myaccount_form_input">
+								<label>Classes To Show On My Profile</label>
+								<p class="myaccount_select_cover">
+									<select class="myaccount_textbox myaccount_dropdown">
+										<option>My Favourite Classes</option>
+									</select>
+								</p>
+							</div>
+							<div class="myaccount_form_input myaccount_form_input_last">
+								<label>Who Can See My Profile</label>
+								<p><input type="checkbox" class="myaccount_checkbox"/>Allow non LILYFIT members see my profile</p>
+							</div>-->
+							<input type="submit" class="myaccount_button" value="Save"/>
+							<input type="button" class="myaccount_button" value="Skip"/>
+						</div>
+					</form>
+                </div>
+				
+                <div class="retreats_pilates_menu">
+                
+                	<ul class="pilates_innaerpage">
+                    
+                    	<li class="pilates_innermenu">  <a href="pilates.html" class="pilates_inner1 common_inner_pilates"></a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner2 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner3 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu ">  <a href="javascript:void(0)" class="pilates_inner4 common_inner_pilates">&nbsp; </a></li>
+                    
+                    </ul>
+                </div>
+								
+                
+
+  				 </div>
+            
+            </div>	
+       <!--mainContent ends here-->
+        
+       <div class="footer_wrapper">
+        	<div class="main-wrapper-fixed footer_wrap">
+             
+             <div class="footerright">
+             	<div>
+					<span class="otherlinks_footer">
+						<a href="gift_coupon.html">Gift Coupon</a>
+						<a href="faq.html">FAQ</a>
+						<a href="testimonial.html">Testimonial</a>
+						<a href="forum.html" class="footer_prob">Forum</a>
+						<div class="footer_prob_div" style="height: 10px;"></div>
+						<a href="privacy_policy.html">Privacy Policy</a>
+						<a  href="terms_condition.html">Terms & Conditions</a>
+						<a  href="contact.html" class="last_otherlinks_footer">Contact Us</a>
+					</span>
+                  <div class="footer_social_links">
+                  <div class="footer_social_links">
+					  <span class="faceb footersoci"><a title="facebook" href="#"> f</a></span>
+					  <span class="twittr footersoci"><a href="#" title="twitter"> t</a></span>
+					  <span class="googleplus footersoci"><a href="#" title="googleplus"> g</a></span>
+				  </div>
+				  </div>
+                </div>
+             </div>
+             
+             <div class="footerleft">
+             	<div class="copyrights">&copy; Copyright 2013, LILYFIT , All Rights Reserved. </div>
+                <div class="poweredby"> <a target="_blank" href="http://colorcuboid.com/">Powered by <img src="assets/images/colorcuboid_logo.png" alt="Slider image">&nbsp;ColorCuboid Designs</a> </div>
+             </div>
+            
+            </div>
+        </div><!--footer ends here-->
+    
+	
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+
+<script type="text/javascript" src='assets/scripts/jquery.capSlide.js'></script>	
+<script type="text/javascript" src='assets/scripts/menucaption_call.js'></script>	
+<script src="assets/scripts/jquery-ui.js"></script>
+<script type="text/javascript" src='assets/scripts/jquery.validate.js'></script>
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.raty.js"></script>
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+ <script type="text/javascript" src='assets/scripts/script.js'></script>  
+ 
+ <script src="assets/scripts/jquery.selectbox-0.2.js"></script>
+ <script>
+$(function() {
+$( "#datepicker" ).datepicker({
+maxDate: "0D", 
+changeMonth: true,
+changeYear: true ,
+yearRange: "1958:+nn"
+});
+});
+$("#upload").click(function(){
+ $("#file").click();
+});
+</script>
+
+<script>
+  
+	$(document).ready(function(){
+	var height=0;
+	var height_inner=0;
+	for(var i=0;i<4;i++){
+		var newheight=$( ".retreats_box:eq("+i+")" ).height();
+		var newheight_inner=$( ".retreats_box_inner:eq("+i+")" ).height();
+		
+		if(newheight >= height){
+			$( ".retreats_box" ).css("height",""+ newheight +"");
+			$( ".retreats_box_inner" ).css("height",""+ newheight_inner +"");
+			height=newheight;
+		}
+	}
+	
+	$(".myaccount_dropdown").selectbox();
+
+	var n=1;
+	for(var i=0;i<4;i++){
+	n=(i+1)*500;
+	if(i%2==0){		
+ 	$(".retreats_box:eq("+ i +")").css("animation","fx_caption_left "+ n +"ms 1 cubic-bezier(.17,.89,.26,1)");
+ 	}
+	
+	 if(i%2==1){
+	 $(".retreats_box:eq("+ i +")").css("animation","fx_caption_right "+ n +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	 }
+ 	}
+ 	});
+	
+ $(window).scroll(function(){
+	 var n=1;
+	 for(var i=0;i<4;i++){
+	n=(i+1)*500;
+	$('.retreat_details_left').css("animation","fx_caption_left "+ n +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$('.retreat_details_right').css("animation","fx_caption_right "+ n +"ms 1 cubic-bezier(.17,.89,.26,1)")
+	 }
+ });
+ /*********************** for upload image preview *********************/
+ function readURL(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#imagepreview1').prop('src', e.target.result).show();
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#file").change(function () {
+    readURL(this);
+    $('#imagepreview1').show();
+});
+
+$("#file").click(function () {
+    
+    $('#imagepreview1').attr('src','');
+});
+
+
+$('#imagepreview1').click(function(){
+
+    $('#file').replaceWith($('#file').clone(true));
+    $('#imagepreview1').hide();
+
+});
+
+
+/****************** on click add new drop down **************/
+      $(document).ready( function(){ 
+      var select_two = " <p  class='dropdown_myaccount_new' style='clear: both;margin-left: 30%;'><select class='myaccount_textbox myaccount_dropdown' id='exercise'>";
+          select_two += "<option value='-1'>Add an exercise</option>";
+          select_two += "<option value='0'>Others</option>";
+		  select_two += "<option value='1'>Walking</option>";
+          select_two += "<option value='2'>Running</option>";
+          select_two += "<option value='3'>Swimming</option>";
+          select_two += "<option value='4'>Weight Lifting</option>";
+          select_two += "<option value='5'>Yoga</option>";
+          select_two += "<option value='6'>Pilates</option>";
+          select_two += "<option value='7'>Dance</option>";
+          select_two += "<option value='8'>Cycling</option>";
+          select_two += "<option value='9'>Mountaining</option>";
+          select_two += "<option value='10'>Boxing</option>";
+          
+          select_two += "</select></p>";
+		  var select3 = "<input type='text' name='other_exercise' class='myaccount_textbox' id='other_exercise'/>";
+      var select1 = "<p  class='dropdown_myaccount_new dropdown_myaccount_new_frequency' ><select name='frequency' id='frequency' class='myaccount_textbox myaccount_dropdown select_box_newly_added'>";
+          select1 += "<option value='-1'>Frequency?</option>";
+          select1 += "<option value='1'>1 week</option>";
+          select1 += "</select></p>";
+      var select4 = "<p class='deleterow'><img src='assets/images/cancel-on.png'/></p>";
+	  
+	
+      $(document).on('change','#exercise', function(){
+		var f = document.getElementById("frequency");
+	    if((f!=null && $(this).parent().prev().prev().find('.sbSelector').text()!="Frequency?" )||(f==null)){
+			$('#exercise').siblings().find('.sbOptions li a:eq(0)').css('display','none');
+			if($("#exercise option[value='0']").attr('selected')=='selected')
+				$('#exercise').parent().append(select3);
+			$('#exercise').addClass('exercise_old');
+			$('#exercise').removeAttr('id');
+			$('#frequency').removeAttr('name');
+			$('#frequency').siblings().find('.sbOptions li a:eq(0)').css('display','none');
+			$('#frequency').removeAttr('id');
+			$('#exercise_i_enjoy').append(select1);
+			$('#exercise_i_enjoy').append(select4);
+			$('#exercise_i_enjoy').append(select_two);
+			$(".myaccount_dropdown").selectbox();
+		}
+		else{
+			$(this).next().find('a.sbSelector').text("Add an exercise");
+			alert('first select frequency');
+		}
+      });
+	  $('body').on('change','p.dropdown_myaccount_new',function(){
+			 if ($(this).find('.sbSelector').text() != $(this).find('.sbOptions li:eq(0)').text()){
+				$(this).find('label.error').css('display','none');				
+				$(this).find('label.error').remove();				
+			 }	
+			 else{
+				$(this).find('label.error').css('display','block');
+			 }
+		 });
+	   $(document).on('change','.exercise_old', function(){
+			$('.exercise_old').siblings().find('.sbOptions li a:eq(0)').css('display','none');
+			if($(this).find("option[value='0']").attr('selected')=='selected' && (!($(this).parent().find('input#other_exercise')).length)){
+				$(this).parent().append(select3);
+			}
+			else if(($(this).parent().find('input#other_exercise')).length && $(this).find("option[value='0']").attr('selected')=='selected')
+			{
+				
+			}
+			else
+			{
+				$(this).parent().find('#other_exercise').remove();
+				//$(this).parent().siblings().find('#other_exercise').remove();
+			}
+			
+	   });
+	   $(document).on('click','.myaccount_form_input p.deleterow', function(){
+			$(this).prev().prev().remove();
+			$(this).prev().remove();
+			$(this).remove();
+			
+	   });
+ });
+ 
+ 
+</script>
+<script type="text/javascript">
+$(document).ready( function(){ 
+	$(".cb-enable").click(function(){
+		var parent = $(this).parents('.switch');
+		$('.cb-disable',parent).removeClass('selected');
+		$(this).addClass('selected');
+		$('.checkbox',parent).attr('checked', true);
+	});
+	$(".cb-disable").click(function(){
+		var parent = $(this).parents('.switch');
+		$('.cb-enable',parent).removeClass('selected');
+		$(this).addClass('selected');
+		$('.checkbox',parent).attr('checked', false);
+	});
+});
+</script>
+<script type="text/javascript">
+$("#myaccount").validate({
+	ignore:[],
+	rules:{
+		mylocation:{
+			required:true,
+		},
+		profile_name:{
+			required:true,
+		},
+		mydob:{
+			required:true,
+		},
+		frequency:{
+			required:true,
+			min:true,
+		}
+	},
+	messages:{
+		mylocation:{
+			required:"your location req.",
+		},
+		profile_name:{
+			required:"your name req.",
+		},
+		mydob:{
+			required:"date of birth req.",
+		},
+		frequency:{
+			required:"frequency req.",
+			min:"frequency req.",
+		},
+	}
+});
+$(document).on('click','#datepicker',function(){
+		if($('#ui-datepicker-div').css('display')=='block'){
+			$(document).on('click',function(event){
+				if (event.target.id != "datepicker"){
+					$('#ui-datepicker-div').css('display','none');
+				}
+				else
+					$('#ui-datepicker-div').css('display','block');
+			});
+		}		
+});
+
+$(document).ready(function(){
+	$(".myaccount_first_section_right").css('opacity','1').css("animation","fx_caption_right "+ 1900 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$(".myaccount_first_section_left_outer").css('opacity','1').css("animation","fx_caption_left "+ 2500 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$(".myaccount_second_section").css('opacity','1').css("animation","fx_caption_right "+ 3500 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+});
+</script>
+<style>
+.myaccount_first_section_right,.myaccount_first_section_left_outer,.myaccount_second_section{
+	opacity:0;
+}
+</style>
+	</body>
+</html>
+

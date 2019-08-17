@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* CSS Document */
+@media (max-width: 480px) {
+	body{
+		background:#fff;
+	}
+	.login.wrapper-fixed{
+	  display:block;	
+	}
+	.login-left-part{
+		display:none;
+	}
+	.login-left-part-mobile{
+		display:block;
+	}
+	.login-right-part{
+		float:none;
+		display:block;
+		margin:0 auto;
+		padding-left:0;
+		clear:both;
+	}
+	.manage-vps .description {
+		margin-bottom: 28.5%;
+	}
+	.login-right-part {
+		padding-top: 15%;
+	}
+	.manage_payments_inner h1 {
+        font-size: 2em;
+    }
+	.manage_payments_inner h4{
+		font-size: 1em;
+	}
+	.vps_craeteBtn {
+		font-size: 0.688em;
+		padding: 4px;
+	}
+	.header_highlights span ,.usage_details_header span{
+		font-size: 0.75em;
+	}
+	#addcreditcard .form-group .form-elements {
+		width: 100%;
+		float:left;
+		clear:both;
+	}
+	.form-group .expiry{
+		margin-bottom: 2%;
+		width:100%;
+	}
+	#addcreditcard .form-group .form-elements.credit-month {
+		width: 49%;
+		float:left;
+		clear:none;
+	}
+	#addcreditcard .form-group .form-elements.credit-year {
+		width: 48%;
+		float:left;
+		clear:none;
+	}
+	.form-group .addccbutton {
+		width: 100%;
+	}
+	.payment-heading{
+		text-indent: 3%;
+	}
+	.payment-type {
+        padding-bottom: 3%;
+	}
+	.payment-para p {
+		width: 90%;
+	}
+	.rowcouponcode {
+		clear: both;
+		width: 93%;
+	}
+	.coupon-button {
+		margin-top: 2%;
+		margin-left:0;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: right;
+		width: 93%;
+	}
+	/************ Usage ***************/
+	.usage_details_header{
+		margin-left: 1%;
+		width: 96%;
+	}
+}
+@media (max-width: 460px) {	
+	.updatebillingbutton ,.createvpsbutton{
+		font-size: 0.813em;
+	}
+	.switch-img {
+        right: -36px;
+		top: 115px;
+		width: 35%;
+    }	
+	.manage-vps .description {
+        margin-bottom: 29.5%;
+    }
+}
+@media (max-width: 450px) {
+	.profile-picture {
+		width: 19%;
+	}
+	.description p {
+       font-size: 0.75em;
+    }
+	.home-main-content {  
+       padding-top: 25%;
+    }
+	.vps_bkp_main_wrap {
+       margin: 15% 3% 0;
+    }
+	/*************** manage vps ***********/
+	.mm-page .content-area .vps-box-right {
+		margin-left: 70px;
+		margin-right:0px;
+		margin-top:50px;
+	}
+}
+@media (max-width: 440px) {
+	.form-group.button{
+		padding-left:7px;
+	}
+}
+@media (max-width: 420px) {
+	.manage-vps .description {
+        margin-bottom: 24.5%;
+    }
+	.switch-img {
+        right: -32px;
+	}
+	.vps_bkp_main_wrap {
+        margin: 18% 3% 0;
+    }
+	.vps_craeteBtn {
+		font-size: 0.625em;
+		padding: 2px;
+	}
+}
+@media (max-width: 400px) {
+	.home-main-content {
+		padding-top: 30%;
+	}
+	.switch-img {
+        right: -34px;
+	    width: 37%;
+    }
+	.h3 {
+       font-size: 1.1em;
+    }
+	/*************** SSH key ***************/
+	 .SSH_keys .create_snap_shot {
+		height: auto;
+		margin-left: 5%;
+		margin-right: 0%;
+		width: 80%;
+		margin-bottom:3%;
+	} 
+	.SSH_keys .vps_bkp_snapshots_Box  {
+		height: auto;
+		margin-left: 5%;
+		margin-right: 0%;
+		width: 80%;
+		margin-bottom:3%;
+	}
+	.SSH_keys{
+		margin-top:100px !important;
+	}
+}
+@media (max-width: 380px) {
+	.manage-vps .description {
+        margin-bottom: 27.5%;
+    }
+	.header_welcometext .h5{
+		font-size:0.813em;
+	}
+	.mm-list a {
+		font-size: 1em;
+	}
+	.vps_bkp_main_wrap {
+		margin: 22% 3% 0;
+	}
+	/******* api access ********/
+	.api-key-row.color-green-bg img {
+		width: 32px;
+	}
+	.api-key-row.color-green-bg .paragraph-bigger{
+		margin-top:0;
+	}
+	.marginzero.api-key-row .col-md-10 .bt-label-wrap {
+		width: 30%;
+	}
+	.marginzero.api-key-row .col-md-10 .bt-value-wrap{
+		width:100%;
+	}
+	/*************** manage vps ***********/
+	.mm-page .content-area .vps-box-right {
+		margin-left: 30px;
+		margin-right:0px;
+		margin-top:50px;
+	}
+	/************ Usage ***************/
+	.header_highlights span, .usage_details_header span {
+		font-size: 0.688em;
+	}
+}
+@media (max-width: 360px) {
+	.description p {
+		font-size: 0.688em;
+	}
+	.home-main-content {
+        padding-top: 35%;
+    }
+	.switch-img {
+		right: -28px;
+		width: 34%;
+	}
+	.profile-picture {
+		width: 24%;
+	}
+	.header_highlights span, .usage_details_header span {
+		font-size: 0.688em;
+	}
+}
+@media (max-width: 350px) {
+	/************ Usage ***************/
+	.header_highlights span, .usage_details_header span {
+		border-right: 1px solid #CCCCCC;
+		font-size: 0.6em;
+		padding-left: 2px;
+	}
+	.header_highlights span.ud_05, .usage_details_header span.ud_05{
+		border-right:none;
+	}
+	.header_highlights span, .usage_details_header span.ud_01{
+		padding-left:0;
+	}
+	.amt_highlight{
+		
+		font-size: 0.8em !important;
+	}
+	.usage_details_header {
+		margin-left: 0;
+		width: 97%;
+	}
+	/********** vps backup ***************/
+	.vps_bkp_snapshots_Box{
+		margin-left: 5%;
+		width: 80%;
+		margin-top:10px;
+	}
+	.create_snap_shot {
+		float: left;
+		margin-left: 5%;
+		width: 80%;
+		margin-top:10px;
+	}
+	.vps_bkp_snapshots_BoxContainer{
+		margin-top:0;
+	}
+}
+@media (max-width: 340px) {
+	.h3 {
+		font-size: 1em;
+	}
+	.manage-vps .description {
+		margin-bottom: 30.5%;
+	}
+	.switch-img {
+        right: -26px;
+	}
+	.manage_payments_inner h1 {
+		font-size: 1.5em;
+	}
+	.amt_highlight {
+		font-size: 0.75em !important;
+	}
+	.manage_payments_inner h4 {
+		font-size: 0.818em;
+	}
+	.vps_craeteBtn {
+		font-size: 0.563em;
+		padding: 1px;
+	}
+}
+@media (max-width: 330px) {	
+	.home-main-content {
+		padding-top: 40%;
+	}
+	.switch-img {
+		width: 35%;        
+	}
+	.manage-vps {
+		margin-left: 3%;
+	}
+}
+@media (max-width: 321px) {
+	.login-button{
+		padding: 7px 14px;
+	}
+}
+@media (max-width: 320px) {	
+	.manage-vps .description {
+		margin-bottom: 33.5%;
+	}
+	.logo {
+		width: 50%;
+	}
+	.headerarea {
+		width: 50%;
+	}
+	.headercontent{
+		padding-top: 28px;
+	}
+	.profile-picture {
+		width: 35%;
+	}
+	.login-right-part {
+		padding-top: 25%;
+	}
+	.switch-img {
+        width: 37%;
+	    right: -26px;
+    }
+	.mm-page .content-area .vps-box-right {
+		margin-left: 10px;
+		margin-right:0px;
+		margin-top:50px;
+	}
+}

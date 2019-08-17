@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+.pricingboxx1
+{
+box-shadow:none;	
+}
+
+.pricingboxx .pricingboxx_head
+{
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.pricingboxx, .noactiveprice .pricingboxx2, .noactiveprice .pricingboxx2 .pricingboxx_head
+{
+-webkit-border-radius: 5px 5px 0 0 !important;
+	-moz-border-radius: 5px 5px 0 0 !important;
+	border-radius: 5px 5px 0 0 !important;
+}
+.pricingboxx1 .pricingboxx_head
+{
+box-shadow:none;
+}
+.top-right-links
+
+{
+	margin-right:12px;
+}
+.banner-text-wrapper {
+    left: 7%;
+}
+.banner-feature-wrapper {
+    left: 13%;
+}
+
+	.cpanelinner
+{
+	width:80%;
+}
+
+.pricingboxx
+{
+	width:100%;
+	float:left;
+	margin-bottom:20px;
+	clear:both;
+}
+.pricingboxx_head
+{
+	border-radius:5px 5px 0 0;
+}
+
+.common_priceboxrow
+{
+	font-size:1em;
+}
+
+
+.pricee {
+    font-size: 3em;
+}
+.dollarr
+{
+	font-size:2em;
+}
+
+
+.monthh
+{
+	font-size:1.063em;
+}
+
+
+
+@media (max-width: 462px) {
+	
+	.cpanelinner
+{
+	width:80%;
+}
+
+.our-recognition {
+	padding: 17px 19px;
+}
+
+}
+
+@media (max-width: 450px) {
+
+.cpanelinner
+{
+	width:85%;
+}
+
+.banner-text-wrapper {
+    left: 2%;
+}
+.banner-feature-wrapper {
+    left: 11%;
+}
+}
+
+@media (max-width: 435px) {
+.cpanelinner
+{
+	width:95%;
+}
+.our-recognition {
+    padding: 17px 10px;
+}
+.jcarousel-skin-tango .jcarousel-prev-vertical {
+	right: 27px;
+}
+.jcarousel-skin-tango .jcarousel-next-vertical {
+	right: -8px;
+}
+}
+
+@media (max-width: 427px) {
+.cpanelinner
+{
+	width:95%;
+}
+.banner-text-wrapper h2 {
+    font-size: 1.9em;
+}
+.banner-text-wrapper h3 {
+    font-size: 1.1em;
+}
+}
+
+@media (max-width: 413px) {
+.testi_ourvoice h2 {
+	
+	font-size:2.3em;
+}
+.cpanelinner
+{
+	width:95%;
+}
+.recognition-content-wrap {
+    width: 68%;
+}
+.banner-feature-wrapper {
+    left: 8%;
+}
+}
+
+@media (max-width: 392px) {
+
+.cpanelinner
+{
+	width:100%;
+}
+.banner-text-wrapper h2 {
+    font-size: 1.7em;
+}
+.banner-feature-li {
+    margin-right: 15px;
+    width: 130px;
+}
+.banner-feature-li.third .heading-three {
+    bottom: 1px;
+    right: 40px;
+}
+/*.banner-text-wrapper {
+    left: 0;
+    top: 20px;
+}
+.banner-feature-ulist {
+    float: left;
+}
+.banner-feature-wrapper {
+    left: 5%;
+    top: 32px;
+}
+.banner-text-wrapper h2 {
+    font-size: 1.7em;
+}
+.banner-text-wrapper h3 {
+    font-size: 1em;
+}
+.banner-feature-li {
+    clear: both;
+    display: block;
+    float: none;
+    margin-right: 0;
+    text-align: center;
+}*/
+}

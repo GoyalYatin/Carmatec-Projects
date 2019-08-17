@@ -1,0 +1,21 @@
+@font-face
+{
+font-family:myriad;
+src: url(../fonts/2756820820.ttf);
+}
+@font-face
+{
+font-family:arialmt;
+src: url(../fonts/arial-mt-1361523988.ttf);
+}
+
+@font-face {
+	 font-family:myriadlight;
+	 src: url('../fonts/MyriadWebPro/myriad-web-pro-webfont.eot');
+	 src: url('../fonts/MyriadWebPro/myriad-web-pro-webfont?#iefix') format('embedded-opentype'),
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.woff') format('woff'), 
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.ttf') format('truetype'), 
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.svg#myriad-web-pro-webfont') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}

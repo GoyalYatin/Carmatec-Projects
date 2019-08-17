@@ -1,0 +1,216 @@
+@CHARSET "UTF-8";
+.sbHolder{
+	/*background-color: #F4F3F3;
+	border: solid 1px #BCBCBC;*/
+	background:#f6f6f6;
+	border:1px solid #C4C5C6;
+	width:100%;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+	color:#9b9b9b;
+	font-size:12px;
+	
+	height: 34px;
+	position: relative;
+	width: 100%;
+	/*margin-top: 27px;*/
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 36px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 3px;
+	padding-top:0 !important;
+	font-size:14px;
+	margin-left:0 !important;
+	width: 80% !important;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #8e8e8e;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	/*background: url(../img/select-icons.png) 0 -116px no-repeat;*/
+	 background: url("../images/drop-down-icon_myaccount.png") no-repeat scroll 100% center rgba(0, 0, 0, 0);
+    display: block;
+    height: 34px;
+    outline: medium none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+	padding:0 !important;
+}
+
+.sbToggle:hover{
+	background:url(../images/drop-down-icon_myaccount.png) no-repeat scroll 100% center rgba(0, 0, 0, 0);
+}
+.sbToggleOpen{
+	background: url(../images/drop-down-icon_myaccount.png) no-repeat scroll 100% center rgba(0, 0, 0, 0);
+}
+.sbToggleOpen:hover{
+	background: url(../images/drop-down-icon_myaccount.png) no-repeat scroll 100% center rgba(0, 0, 0, 0);
+}
+
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #F4F3F3;
+	border: solid 1px #BCBCBC;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	z-index: 1;
+	max-height:250px !important;
+	overflow-y: auto;
+}
+.sbOptions li{
+	padding: 0;
+	background:none;
+}
+.sbOptions a{
+	border-bottom: dotted 1px #515151;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 4%;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #79797A;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #27ace2 !important;
+}
+.sbOptions li.last a,.sbOptions li a{
+	border-bottom: none;
+	margin: 0 !important;
+    width:96%;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}
+.nutrition_select_cover .sbHolder{
+	/*background-color: #F4F3F3;
+	border: solid 1px #BCBCBC;*/
+	background:#fff;
+	border:1px solid #AFDAEB;
+	width:100%;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+	text-indent:20px;
+	color:#9b9b9b;
+	font-size:12px;
+	height: 40px;
+	position: relative;
+	width: 420px;
+	/*margin-top: 27px;*/
+}
+.nutrition_select_cover .sbOptions{
+	background-color: #fff;
+	border: 1px solid #AFDAEB;
+}
+.nutrition_select_cover .sbSelector{
+	display: block;
+	height: 36px;
+	left: 0;
+	line-height: 40px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0px;
+	padding-top:0 !important;
+	font-size:14px;
+	margin-left:0 !important;
+	width: 80% !important;
+}
+.signup_credit_card.nutrition_select_cover .sbHolder{
+	width: 100%;
+}
+.signup_select_cover.nutrition_select_cover .sbHolder{
+	width:100%;
+}
+.signup_credit_card.nutrition_select_cover .sbSelector{
+	color:#bbb !important;
+}
+.signup_select_cover.nutrition_select_cover .sbSelector{
+	width:90% !important;
+	color:#bbb !important;
+}
+.signup_select_cover.nutrition_select_cover .sbOptions li.last a, .sbOptions li a{
+	color:#bbb !important;
+}
+.nutrition_select_cover .sbToggle{
+	/*background: url(../img/select-icons.png) 0 -116px no-repeat;*/
+	 background: url("../images/myaccount_drop_down_white.png") no-repeat scroll 0% center rgba(0, 0, 0, 0);
+    display: block;
+    height: 34px;
+    outline: medium none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+	padding:0 !important;
+}
+
+.nutrition_select_cover .sbToggle:hover{
+	background:url(../images/myaccount_drop_down_white.png) no-repeat scroll 0% center rgba(0, 0, 0, 0);
+}
+.nutrition_select_cover .sbToggleOpen{
+	background: url(../images/myaccount_drop_down_white.png) no-repeat scroll 0% center rgba(0, 0, 0, 0);
+}
+.nutrition_select_cover .sbToggleOpen:hover{
+	background: url(../images/myaccount_drop_down_white.png) no-repeat scroll 0% center rgba(0, 0, 0, 0);
+}
+.nutrition_select_cover .sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.statement_for_year_input .sbSelector,.statement_for_year_input .sbOptions li a{
+	background-color:transparent !important;
+	padding:0px !important;
+}
+.statement_for_year_input .sbToggle{
+	background: url("../images/drop-down-icon_myaccount.png") no-repeat scroll 0% center rgba(0, 0, 0, 0) !important;
+	background-color:#fff !important;
+    display: block;
+    height: 34px;
+    outline: medium none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+	padding:0 !important;
+}

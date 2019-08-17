@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta name="author" content="Yatin Goyal">
+<meta name="description" content="">
+<meta charset="UTF-8">          
+<title>Carmatec IT Sol Pvt Ltd</title>
+<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+<link rel="stylesheet" type="text/css" href="assets/styles/font.css"/>
+<link rel="stylesheet" type="text/css" href="assets/styles/validate.css"/>
+<script src="assets/scripts/jquery.js"></script>
+<script src="assets/scripts/jquery.validate.js"></script>
+<script src="assets/scripts/scripts.js"></script>
+<script>
+
+$(document).ready(function() {
+	
+	$("#getintouch").validate({
+		errorPlacement: function(error, element) { },
+		rules: {
+			firstname: {
+				required: true,
+				minlength: 2
+			},
+			lastname: {
+				required: true,
+				minlength: 2
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required:true,
+				minlength: 6
+			}, 
+		}
+				
+	});
+
+	
+});
+
+</script>
+</head>
+<body>
+<div id="container">
+	<!----------------------------------Header----------------------->
+	<div class="header_wrapper_outer">
+		<div class="header_inner wrapper_fixed">
+			<div class="logo">
+				<img src="assets/images/logo.png"/>
+			</div>
+			<div class="contact">
+				<p class="contact1">
+					Qoutes provided in <span style="background-color:#343434;color:#f5f3e7;"> X Hrs </span>&nbsp; or much less<br/>
+					Contact no. <span style="font-size:25pt;color:#388fc9"><b> 1800 778 3556 </b></span><br/>
+					<span style="opacity:0.5;font-size:15pt;">Call us now to begin the conversation</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!----------------------------------whole content----------------------->
+	<div class="content_outer">
+		<div class="banner_wrapper">
+			<img src="assets/images/fog.png" style="margin-left:-150px;margin-top:150px;"/>
+			<div class="banner_inner wrapper_fixed">
+				<div class="banner_heading">Banner Heading</div>
+				<div class="banner_content">
+				Banner content Banner content Banner content Banner content Banner content Banner content Banner content
+				</div>
+			</div>
+		</div>
+			<div class="content_with_blackbg"></div>
+			<div class="heading_outer wrapper_fixed">
+				<div class="heading1">Heading</div>
+				<div class="heading1_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </div>
+				<div class="heading2">Heading</div>
+				<div class="heading2_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </div>
+				<div class="getintouch">
+				</div>
+				<div class="getintouch_heading">Get In Touch!
+				</div>
+				<div class="form_elements">
+				<form action="" method="POST" id="getintouch">
+					<div style="width:100%;">
+						<div style="float:left;"><input id="firstname" class="input" type="textfield" name="firstname" placeholder="Firstname.." title="First Name" size="18"/></div>
+						<div style="float:left;margin-left:3px;"><input id="lastname" class="input" type="textfield" name="lastname" placeholder="Lastname..." title="Last Name" size="18"/></div>
+					</div>
+					
+					
+					<div><input id="email" class="input" type="textfield" name="email" placeholder="Email.." title="Email" size="42"/></div>
+					<div><input id="phone" class="input" type="textfield" name="phone" placeholder="Phone number.." title="Phone number" size="42"/></div>
+					<div><textarea id="help" class="help" rows="3" cols="41"  name="help" placeholder="How can we help?.." title="Help"></textarea></div>
+					<div><input id="submit" class="submit" type="submit" value="Send" title="Submit"/></div>
+				</form>
+				</div>
+			</div>
+
+	</div>
+	<!------------------------------------------Footer------------------------------>
+	<div id="footer">
+		<div class="wrapper_fixed">
+		<center>
+			<br/>Copyright 2010 CName  &nbsp;&nbsp; | &nbsp;&nbsp; <a href=""> About Us </a>&nbsp;&nbsp;  | &nbsp;&nbsp; <a href=""> Contact Us </a> &nbsp;&nbsp;|   &nbsp;&nbsp;<a href="">Privacy Policy</a> &nbsp;&nbsp; |  &nbsp;&nbsp; <a href="">Terms of Use  </a>
+		</center>
+		</div>
+	</div>
+</div>
+</body>

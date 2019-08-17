@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.main-wrapper-fixed {
+	padding: 0 2%;
+	width: 96%;
+}
+@media (max-width: 1024px) {
+	/*************** header ********************/
+	.quicklinks{
+		right:0;
+	}
+	.header-outer-wrap{
+		height:180px;
+	}
+	.header-inner-wrap{
+		height:150px;
+		background-size:contain;
+	}
+	.menu{
+		width:100%;
+	}
+	
+.menu_ulist li {
+    display: inline;
+    float: left;
+    height: auto;
+    list-style: none outside none;
+    padding: 43px 2.8%;
+    position: relative;
+    width: auto;
+}
+	/*************** footer ********************/
+	
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="LILYFIT" />
+<meta name="description" content="LILYFIT" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>LILYFIT</title>
+<meta name="viewport" content="width=device-width" />
+ 
+
+<link rel="shortcut icon" href="common/images/favicon.ico" />
+
+<link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/animation.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/style_menumouseover.css" type="text/css" />
+<link href="assets/styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles/jquery-ui.css">
+<link rel="stylesheet" href="assets/styles/colorbox.css" />
+<link rel="stylesheet" href="assets/styles/jquery.selectbox.css" />
+<!-- for raty css -->
+<link rel="stylesheet" type="text/css" href="assets/styles/raty.css"/>
+<!-- for raty css -->
+
+<link rel="stylesheet" media="only screen and (max-width: 1200px)" href="assets/styles/styles_1200.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="assets/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 600px)" href="assets/styles/styles_600.css" />
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)" href="assets/styles/styles_600.css" />
+
+
+</head>
+
+<body >
+
+	<div class="main-wrapper">
+    <div class="width_show"></div>
+    
+    	  
+        <div class="slider-outer-wrap">
+	        <div class="slider-wrapper">
+            <div class="header_wrapper header_wrapper_inside">
+        	<div class="main-wrapper-fixed headerdiv">
+            	 <div class="header-left floatleft showonlyonmob"> 
+                     <a href="index.html">
+                     	<img title="LILYFIT" id="logo" alt="Logo LILYFIT" src="assets/images/lilyfit_logo.png"> 
+                     </a> 
+                 </div> 
+                 <div class="login_signup">	 
+            	<div class="login_button">
+ 		              <span class="login_span"> 
+                      <a  href="login.html" class="login_button_anchor loginsignupclass changelogintext"> 
+                       Log In
+                      </a>
+                      </span>
+                 </div> 
+                 <div class="signup_button" style="display:none;">
+ 		              <span class="signup_span"> 
+                      <a href="signup.html" class="login_button_anchor loginsignupclass"> 
+                      Sign Up
+                      </a></span>
+                 </div>
+                 
+                 <!--<div class="signup_button">
+ 		              <span class="signup_span"> <a href="login.html" class="signup_button_anchor"> <img src="assets/images/login.jpg" alt="login"/></a></span>
+                 </div> -->
+                 
+                   </div>
+				  <div class="floatleftt"> 
+						<ul class="myaccount_menu_top_header">
+              <li class="first_li_welcome">
+                <p>Welcome ! David Brown</p>
+              </li>
+              <li><a href="javascript:void(0)">My account</a>
+
+                <ul>
+                  <li>
+                    <a href="view_my_account.html">My Account</a>
+                  </li>
+                  <li>
+                    <a href="edit_my_account.html">Edit My Account</a>
+                  </li>
+                  <li>
+                    <a href="my_history.html">My History</a>
+                  </li>
+                  <li>
+                    <a href="payment_setting_and_info.html">Payment Settings &amp; Info</a>
+                  </li>
+                  <li>
+                    <a href="login.html">Logout</a>
+                  </li>
+                </ul>
+              </li> 
+            </ul>
+							</li>	
+						</ul>
+						
+                        <div class="menu_top header-left">
+                        	<div class="menutoggle"> MENU </div>
+                            <ul class="menu_ulist">
+                               <li class="menuu1 navi-menu paddinganchor"><a href="aboutus.html"> <span> About </span> </a>                                                               
+                               </li>
+                               <li class="menuu2 navi-menu paddinganchor classesmenu"><a href="javascript:void(0)"> <span>Videos </span> </a>                                
+                               
+                               <div class="header-submenu-wrap">
+                                  <div class="header-submenu-wrapinside">
+                                     <div class="demo">
+                                        <div id="capslide_img_cont1" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_03.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PILATES</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="pilates.html"> Pilates1</a></li>
+                                                    <li> <a href="pilates.html"> Pilates2</a></li>
+                                                    <li> <a href="pilates.html"> Pilates3</a></li>
+                                                    <li> <a href="pilates.html"> Pilates4</a></li>
+                                                    <li> <a href="pilates.html"> Pilates5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demo">
+                                        <div id="capslide_img_cont2" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_05.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>YOGA</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont3" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_07.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                               <h3>BODY TONING  <br/> & DANCE</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont4" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_09.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRENATAL</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont5" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_11.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     
+                                      </div>
+                               </div>
+                               </li>
+                               <li class="menuu3 navi-menu paddinganchor"><a href="instructors.html"> <span> Instructors </span> </a>  </li>
+                               <li class="menuu4 navi-menu paddinganchor"><a href="blog.html"> <span> Blog </span> </a>  </li>
+                               
+                               <li class="navi-menu logomenu "> <a href="index.html"><img alt="Logo" src="assets/images/lilyfit_logo.png" /></a>   </li>
+                               <li class="menuu5 navi-menu paddinganchor">  <a href="webinars.html"><span>Webinars</span> </a>  </li>
+                               <li class="menuu6 navi-menu paddinganchor"> <a href="retreats.html"><span> Retreats  </span> </a></li>
+                              <li class="menuu7 navi-menu paddinganchor "><a href="nutritions.html"> <span> Nutrition </span> </a>  </li>
+                                <li class="shopmenu navi-menu paddinganchor menulast">  <a href="login.html"><span> Log In </span></a> </li>      <div class="class_dropdown_mobile_slider">
+                  <img src="assets/images/close_popup.png" alt="close"/>
+                  <h3>PILATES</h3>
+                  <ul>
+                                        <li> <a href="pilates.html"> Pilates1</a></li>
+                                        <li> <a href="pilates.html"> Pilates2</a></li>
+                                        <li> <a href="pilates.html"> Pilates3</a></li>
+                                        <li> <a href="pilates.html"> Pilates4</a></li>
+                                        <li> <a href="pilates.html"> Pilates5</a></li>
+                                    </ul>
+                  <h3>YOGA</h3>
+                  <ul>
+                                        <li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                        <li> <a href="#"> Yoga2</a></li>
+                                        <li> <a href="#"> Yoga3</a></li>
+                                        <li> <a href="#"> Yoga4</a></li>
+                    <li> <a href="#"> Yoga5</a></li>
+                                    </ul>
+                  <h3>BODY TONING  <br/> & DANCE</h3>
+                                    <ul>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                    </ul>
+                  <h3>PRENATAL</h3>
+                  <ul>
+                                        <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                    <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                  </ul>
+                  <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                    <ul>
+                                        <li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                        <li> <a href="#"> Yoga2</a></li>
+                                        <li> <a href="#"> Yoga3</a></li>
+                                        <li> <a href="#"> Yoga4</a></li>
+                                        <li> <a href="#"> Yoga5</a></li>
+                                    </ul>
+                 </div>                    
+                            </ul>
+                         </div>   
+                 </div>  
+                 
+            </div>	 
+            	         
+        </div>
+        	
+        	</div>
+        	
+        	</div>
+		
+		<div class="mainContent_wrapper">
+        	<div class="main-wrapper-fixed ">
+            	
+                <div class="breadcrumb_navigation">
+                	<ul class="breadcrums-wrapper-list">
+                    <li class="breadcrums-first">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="view_my_account.html">My Account</a>
+                    </li>
+                   
+                     <li>
+                        <span>Payment Settings &amp; Info</span>
+                    </li>
+
+            		</ul>
+                </div>
+                
+                 <div class="page_title">
+                	<h3>Payment Settings &amp; Info</h3>
+                    
+                </div>
+				<div class="payment_setting_and_info_links">
+					<a href="payment_setting_and_info1.html" class="payment_setting_and_info_active_link">Change My Credit Card</a>
+					<a href="payment_setting_and_info2.html">Statement of Payment Made ( Receipt )</a>
+					<a href="payment_setting_and_info3.html">Redeem a Gift Coupon</a>
+					<a href="payment_setting_and_info4.html">Cancel or Pause my Subscription</a>
+			   </div>
+                <div class="my_credit_card_information">
+					<h3 class="heading_payment_setting_and_info_page">My Credit Card Information</h3>
+					<p>Use this form to update the credit card used for your LILYFIT subscription payments. If your credit card number has not changed, you do not need to re-type ( last four digits will be displayed afterX’s ).</p>
+					<h2>Change Subscription Credit Card</h2>
+					<form id="myaccount_payment" name="myaccount_payment" method="post" action="">
+						<div class="myaccount_second_section">
+							
+							<div class="myaccount_form_input">
+								<label>Credit Card Type</label>
+								<p  class="dropdown_myaccount_new">
+									<select class="myaccount_textbox myaccount_dropdown" id="cardtype" name="cardtype">
+                                       	<option value="1">Visa</option>
+										<option value="2">Mastercard</option>
+										<option value="3">American Express</option>
+										<option value="4">Discover</option>
+                                    </select>
+								</p>
+								
+							</div>
+							<div class="myaccount_form_input">
+								<label>Name on Card</label>
+								<p><input type="text" id="name" class="myaccount_textbox" name="name"/></p>
+							</div>
+							<h3>Billing postal code needs to match the address to which your credit card statement is mailed.</h3>
+							<div class="myaccount_form_input">
+								<label>Billing Postal Code</label>
+								<p><input type="text" id="code" class="myaccount_textbox" name="code"/></p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Billing Phone Number</label>
+								<p><input type="text" id="phone" class="myaccount_textbox" name="phone"/></p>
+							</div>
+							<h3>Please type numbers only, no spaces or dashes.</h3>
+							<div class="myaccount_form_input">
+								<label>Card Number</label>
+								<p><input type="text" id="cardnumber" class="myaccount_textbox" name="cardnumber"/></p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>CVV Code</label>
+								<p><input type="text" id="cvvcode" class="myaccount_textbox" name="cvvcode"/><a href="#CVV_popup" class="cvvcode_a inline">?</a></p>
+								<div class="CVV_pop_up_outer">
+											<div id='CVV_popup'>
+												<h4>What is CVV Code?</h4>
+												<img src="assets/images/cvvcode.png"/>
+											</div>
+								</div>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Expiration Month</label>
+								<p class="dropdown_myaccount_new">
+									<select class="myaccount_textbox myaccount_dropdown" id="expiration" name="expiration">
+										<option value="01">01 - January</option>
+										<option value="02">02 - February</option>
+										<option value="03">03 - March</option>
+										<option value="04">04 - April</option>
+										<option value="05">05 - May</option>
+										<option value="06">06 - June</option>
+										<option value="07">07 - July</option>
+										<option value="08">08 - August</option>
+										<option value="09">09 - September</option>
+										<option value="10">10 - October</option>
+										<option value="11">11 - November</option>
+										<option value="12">12 - December</option>
+									</select>
+								</p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Expiration Year</label>
+								<p class="dropdown_myaccount_new">
+									<select class="myaccount_textbox myaccount_dropdown" id="expirationyear" name="expirationyear">
+										<option value="14">2014</option>
+										<option value="15">2015</option>
+										<option value="16">2016</option>
+										<option value="17">2017</option>
+										<option value="18">2018</option>
+										<option value="19">2019</option>
+										<option value="20">2020</option>
+										<option value="21">2021</option>
+										<option value="22">2022</option>
+										<option value="23">2023</option>
+										<option value="24">2024</option>
+										<option value="25">2025</option>
+									</select>
+								</p>
+							</div>
+							<div class="myaccount_form_input myaccount_form_input_last">
+								<label>Currency</label>
+													<p><span class="signup_dollar ">$&nbsp;
+													<a href="javascript:void(0)" class="signup_card_code" id="signup_change">Change</a></span>
+													<span class="signup_show_change">
+														<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(36)" value="36" name="currency_id">
+														<span class="signup_show_change_left">Australia Dollar (AUD $18)</span>
+														<input class="signup_show_change_right" id="currency_id" type="radio" onchange="setCurrency(124)" value="124" name="currency_id">
+														<span class="signup_show_change_right">Canada Dollar (CAD $18)</span>
+														<br/>
+														<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(978)" value="978" name="currency_id">
+														<span class="signup_show_change_left">Euro (EUR €14)</span>
+														<input class="signup_show_change_right" id="currency_id" type="radio" onchange="setCurrency(392)" value="392" name="currency_id">
+														<span class="signup_show_change_right">Japan Yen (JPY ¥1800)</span>
+														<br/>
+														<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(826)" value="826" name="currency_id">
+														<span class="signup_show_change_left">UK Pound (GBP £12)</span>
+														<input class="signup_show_change_right" id="currency_id" type="radio" checked="checked" onchange="setCurrency(840)" value="840" name="currency_id">
+														<span class="signup_show_change_right">US Dollar (USD $18)</span>
+														
+													</span>
+													</p>
+							</div>
+							
+							<input type="submit" class="myaccount_button" value="Save Changes"/>
+							<input type="button" class="myaccount_button" value="Cancel"/>
+							
+						</div>
+					</form>
+                </div>
+				
+                <div class="retreats_pilates_menu">
+                
+                	<ul class="pilates_innaerpage">
+                    
+                    	<li class="pilates_innermenu">  <a href="pilates.html" class="pilates_inner1 common_inner_pilates"></a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner2 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner3 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu ">  <a href="javascript:void(0)" class="pilates_inner4 common_inner_pilates">&nbsp; </a></li>
+                    
+                    </ul>
+                </div>
+                
+                
+
+  				 </div>
+            
+            </div>	
+       <!--mainContent ends here-->
+        
+        <div class="footer_wrapper">
+        	<div class="main-wrapper-fixed footer_wrap">
+             
+             <div class="footerright">
+             	<div>
+					<span class="otherlinks_footer">
+						<a href="gift_coupon.html">Gift Coupon</a>
+						<a href="faq.html">FAQ</a>
+						<a href="testimonial.html">Testimonial</a>
+						<a href="forum.html" class="footer_prob">Forum</a>
+						<div class="footer_prob_div" style="height: 10px;"></div>
+						<a href="privacy_policy.html">Privacy Policy</a>
+						<a  href="terms_condition.html">Terms & Conditions</a>
+						<a  href="contact.html" class="last_otherlinks_footer">Contact Us</a>
+					</span>
+                  <div class="footer_social_links">
+                  <div class="footer_social_links">
+					  <span class="faceb footersoci"><a title="facebook" href="#"> f</a></span>
+					  <span class="twittr footersoci"><a href="#" title="twitter"> t</a></span>
+					  <span class="googleplus footersoci"><a href="#" title="googleplus"> g</a></span>
+				  </div>
+				  </div>
+                </div>
+             </div>
+             
+             <div class="footerleft">
+             	<div class="copyrights">&copy; Copyright 2013, LILYFIT , All Rights Reserved. </div>
+                <div class="poweredby"> <a target="_blank" href="http://colorcuboid.com/">Powered by <img src="assets/images/colorcuboid_logo.png" alt="Slider image">&nbsp;ColorCuboid Designs</a> </div>
+             </div>
+            
+            </div>
+        </div><!--footer ends here-->
+        
+         <div class="full_cover" style="display:none;"></div>        
+    </div>	<!--bodyWrapper ends here-->
+    
+	
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+
+<script type="text/javascript" src='assets/scripts/jquery.capSlide.js'></script>	
+<script type="text/javascript" src='assets/scripts/menucaption_call.js'></script>	
+<script src="assets/scripts/jquery-ui.js"></script>
+<script type="text/javascript" src='assets/scripts/jquery.validate.js'></script>
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.raty.js"></script>
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+ <script type="text/javascript" src='assets/scripts/script.js'></script>  
+ <script src="assets/scripts/jquery.selectbox-0.2.js"></script>
+<script src="assets/scripts/jquery.colorbox.js"></script>
+<script>
+			$(document).ready(function(){
+				
+				if ($(window).width() >= 600)	
+	$(".inline").colorbox({inline:true, width:"70%"});
+	else if ($(window).width() < 600)	
+	$(".inline").colorbox({inline:true, width:"100%"});
+	$(".myaccount_dropdown").selectbox();
+	
+			});
+		</script>
+ <script>
+$('body').on('click', '#signup_change', function(){
+		$('.signup_dollar').css("display","none");
+		$('.signup_show_change').css("display","block");
+		$('.signup_hidden').css("margin-bottom","30px");
+	});
+
+</script>
+
+<script>
+ 
+ $("#myaccount_payment").validate({
+		
+		ignore: [],
+    	rules:{
+			
+     	
+		name:
+			    {
+				required: true,
+				
+				},  
+		code:
+			    {
+				required: true,
+				
+				}, 
+			cvvcode:{
+				 required: true,	
+				number: true
+			},
+	  	cardnumber: 
+			  {             
+			  required: true,	
+				number: true		 	  
+			  },	      
+		phone: 
+			  {             
+			  required: true,	
+				number: true		 	  
+			  },
+
+	
+	 
+	},
+
+    messages: {
+		
+		 name:
+			    {
+				required: "name req."
+				
+				},		 	
+		code:
+			    {
+				required: "billing postal code req."
+				
+				},
+		cvvcode:{
+				required: "CVV code req."
+				
+				},
+		cardnumber: 
+			  {             
+			  required:"Please phone number",	
+				number:"Please enter only numbers",			 	  
+			  },			
+		phone: 
+			  {             
+			  required:"phone number req.",	
+				number:"Please enter only numbers",		 	  
+			  },
+	
+	     
+    }
+  });	
+  $(document).ready(function(){
+	$(".payment_setting_and_info_links").css('opacity','1').css("animation","fx_caption_right "+ 1900 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$(".heading_payment_setting_and_info_page").css('opacity','1').css("animation","fx_caption_left "+ 2500 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$(".my_credit_card_information").css('opacity','1').css("animation","fx_caption_right "+ 3000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	
+}); 
+
+
+ 
+ 
+ 
+</script>
+<style>
+.payment_setting_and_info_links,.heading_payment_setting_and_info_page,.my_credit_card_information{
+	opacity:0;
+}
+</style>
+	</body>
+</html>
+

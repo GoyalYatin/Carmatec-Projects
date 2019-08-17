@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="LILYFIT" />
+<meta name="description" content="LILYFIT" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>LILYFIT</title>
+<meta name="viewport" content="width=device-width" />
+ 
+
+<link rel="shortcut icon" href="common/images/favicon.ico" />
+
+<link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/animation.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/style_menumouseover.css" type="text/css" />
+<link href="assets/styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link href="assets/styles/responsive-slider.css" rel="stylesheet">
+
+<link rel="stylesheet" media="only screen and (max-width: 1200px)" href="assets/styles/styles_1200.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="assets/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 600px)" href="assets/styles/styles_600.css" />
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)" href="assets/styles/styles_600.css" />
+
+
+</head>
+
+<body >
+
+	<div class="main-wrapper">
+    <div class="width_show"></div>
+	
+	<div class="slider-outer-wrap">
+	        <div class="slider-wrapper">
+            <div class="header_wrapper header_wrapper_inside">
+        	<div class="main-wrapper-fixed headerdiv">
+            	 <div class="header-left floatleft showonlyonmob"> 
+                     <a href="index.html">
+                     	<img title="LILYFIT" id="logo" alt="Logo LILYFIT" src="assets/images/lilyfit_logo.png"> 
+                     </a> 
+                 </div> 
+                 <div class="login_signup">	 
+            	<div class="login_button">
+ 		              <span class="login_span"> 
+                      <a  href="login.html" class="login_button_anchor loginsignupclass changelogintext"> 
+                       Log In
+                      </a>
+                      </span>
+                 </div> 
+                 <div class="signup_button" style="display:none;">
+ 		              <span class="signup_span"> 
+                      <a href="signup.html" class="login_button_anchor loginsignupclass"> 
+                      Sign Up
+                      </a></span>
+                 </div>
+                 
+                 <!--<div class="signup_button">
+ 		              <span class="signup_span"> <a href="login.html" class="signup_button_anchor"> <img src="assets/images/login.jpg" alt="login"/></a></span>
+                 </div> -->
+                 
+                   </div>
+                 <div class="floatleftt"> 
+					<ul class="myaccount_menu_top_header">
+              <li class="first_li_welcome">
+                <p>Welcome ! David Brown</p>
+              </li>
+              <li><a href="javascript:void(0)">My account</a>
+
+                <ul>
+                  <li>
+                    <a href="view_my_account.html">My Account</a>
+                  </li>
+                  <li>
+                    <a href="edit_my_account.html">Edit My Account</a>
+                  </li>
+                  <li>
+                    <a href="my_history.html">My History</a>
+                  </li>
+                  <li>
+                    <a href="payment_setting_and_info.html">Payment Settings &amp; Info</a>
+                  </li>
+                  <li>
+                    <a href="login.html">Logout</a>
+                  </li>
+                </ul>
+              </li> 
+            </ul>
+                  
+                        <div class="menu_top header-left">
+                        	<div class="menutoggle"> MENU </div>
+                            <ul class="menu_ulist">
+                               <li class="menuu1 navi-menu paddinganchor"><a href="aboutus.html"> <span> About </span> </a>                                                               
+                               </li>
+                               <li class="menuu2 navi-menu paddinganchor classesmenu"><a href="javascript:void(0)"> <span>Videos </span> </a>                                
+                               
+                               <div class="header-submenu-wrap">
+                                  <div class="header-submenu-wrapinside">
+                                     <div class="demo">
+                                        <div id="capslide_img_cont1" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_03.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PILATES</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="pilates.html"> Pilates1</a></li>
+                                                    <li> <a href="pilates.html"> Pilates2</a></li>
+                                                    <li> <a href="pilates.html"> Pilates3</a></li>
+                                                    <li> <a href="pilates.html"> Pilates4</a></li>
+                                                    <li> <a href="pilates.html"> Pilates5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demo">
+                                        <div id="capslide_img_cont2" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_05.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>YOGA</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont3" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_07.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                               <h3>BODY TONING  <br/> & DANCE</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont4" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_09.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRENATAL</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont5" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_11.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     
+                                      </div>
+                               </div>
+                               </li>
+                               <li class="menuu3 navi-menu paddinganchor"><a href="instructors.html"> <span> Instructors </span> </a>  </li>
+                               <li class="menuu4 navi-menu paddinganchor activeclasss" ><a href="blog.html"> <span> Blog </span> </a>  </li>
+                               
+                               <li class="navi-menu logomenu "> <a href="index.html"><img alt="Logo" src="assets/images/lilyfit_logo.png" /></a>   </li>
+                               <li class="menuu5 navi-menu paddinganchor">  <a href="webinars.html"><span>Webinars</span> </a>  </li>
+                               <li class="menuu6 navi-menu paddinganchor "> <a href="retreats.html"><span> Retreats  </span> </a></li>
+                               <li class="menuu7 navi-menu paddinganchor"><a href="nutritions.html"> <span> Nutrition </span> </a>  </li>
+                                <li class="shopmenu navi-menu paddinganchor menulast">  <a href="login.html"><span> Log In </span></a> </li>       <div class="class_dropdown_mobile_slider">
+                  <img src="assets/images/close_popup.png" alt="close"/>
+                  <h3>PILATES</h3>
+                  <ul>
+                                        <li> <a href="pilates.html"> Pilates1</a></li>
+                                        <li> <a href="pilates.html"> Pilates2</a></li>
+                                        <li> <a href="pilates.html"> Pilates3</a></li>
+                                        <li> <a href="pilates.html"> Pilates4</a></li>
+                                        <li> <a href="pilates.html"> Pilates5</a></li>
+                                    </ul>
+                  <h3>YOGA</h3>
+                  <ul>
+                                        <li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                        <li> <a href="#"> Yoga2</a></li>
+                                        <li> <a href="#"> Yoga3</a></li>
+                                        <li> <a href="#"> Yoga4</a></li>
+                    <li> <a href="#"> Yoga5</a></li>
+                                    </ul>
+                  <h3>BODY TONING  <br/> & DANCE</h3>
+                                    <ul>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                    </ul>
+                  <h3>PRENATAL</h3>
+                  <ul>
+                                        <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                    <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                  </ul>
+                  <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                    <ul>
+                                        <li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                        <li> <a href="#"> Yoga2</a></li>
+                                        <li> <a href="#"> Yoga3</a></li>
+                                        <li> <a href="#"> Yoga4</a></li>
+                                        <li> <a href="#"> Yoga5</a></li>
+                                    </ul>
+                 </div>                   
+                            </ul>
+                         </div>   
+                 </div>  
+                 
+            </div>	 
+            	      
+        </div>
+        	
+        	</div>
+        	
+        	</div>
+		
+		<div class="mainContent_wrapper">
+        	<div class="main-wrapper-fixed ">
+            	
+                <div class="breadcrumb_navigation">
+                	<ul class="breadcrums-wrapper-list">
+                    <li class="breadcrums-first">
+                        <a href="index.html">Home</a>
+                    </li>
+                    
+                     <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    
+                     <li>
+                        <span>How To Do A Correct Chaturanga</span>
+                    </li>
+
+            		</ul>
+                </div>
+                
+                <div class="page_title">
+                	<h3>How To Do A Correct Chaturanga</h3>
+                    
+                </div>
+                <div class="retreat_details_slider blog_detail_slider">
+					<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+						<div class="slides" data-group="slides">
+							<ul>
+								<li>
+								  <div class="slide-body" data-group="slide">
+									<img src="assets/images/blog_detail_banner.jpg"/>
+									<div class="caption header" data-animate="slideAppearRightToLeft" data-delay="300" data-length="300">
+									  <h2>PASSAGE OF LOREM IPSUM</h2>
+									  <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="400" data-length="300">There are many variations of passages <br/>of lorem ipsum available.</div>
+									</div>
+								 
+								  </div>
+								</li>
+								<li>
+								  <div class="slide-body" data-group="slide">
+									<img src="assets/images/blog_detail_banner.jpg"/>
+									<div class="caption header" data-animate="slideAppearRightToLeft" data-delay="300" data-length="300">
+									  <h2>PASSAGE OF LOREM IPSUM2</h2>
+									  <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="400" data-length="300">PASSAGE OF LOREM IPSUM <br/>of lorem ipsum available.</div>
+									</div>
+								  
+								  </div>
+								</li>
+								<li>
+								  <div class="slide-body" data-group="slide">
+									<img src="assets/images/blog_detail_banner.jpg"/>
+									<div class="caption header" data-animate="slideAppearRightToLeft" data-delay="300" data-length="300">
+									  <h2>LOREM IPSUM</h2>
+									  <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="400" data-length="300">There are many variations of passages <br/>of lorem ipsum available.</div>
+									</div>
+									
+								  </div>
+								</li>
+							</ul>
+						</div>
+						<a class="slider-control left" href="#" data-jump="prev"></a>
+						<a class="slider-control right" href="#" data-jump="next"></a>
+					<!--<div class="pages">
+					  <a class="page" href="#" data-jump-to="1">1</a>
+					  <a class="page" href="#" data-jump-to="2">2</a>
+					  <a class="page" href="#" data-jump-to="3">3</a>
+					</div>-->
+					</div>
+		
+				</div>
+                <div class="blog_details">
+					<p class="faq_detail_main">
+							Andrew Cox, one of the industry's leading personal trainers and Mareile Paley will return
+							to Kamalaya for this super popular retreat. Lorem Ipsum has been the industry's 
+							standard dummy text ever since the 1500s, when an unknown printer took a galley 
+							of type and scrambled it to make a type specimen book.
+					</p>
+					<h2 class="faq_detail_heading">
+						   Passage of Lorem Lipsum
+					</h2>
+					<p>
+					Predefined chunks as necessary, making this the first true generator on the Internet. 
+					It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, 
+					to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
+					injected humour, or non-characteristic words etc.
+						</p>
+					<ul class="who_we_are_list privacy_policy_list">
+					<li> Find a role model and imitate the behaviour.</li><br/>
+					<li>Write a yoga journal.</li><br/>
+					<li>Practice always at the same time.</li><br/>
+					<li>Plan to go to a workshop every 6 month.</li><br/>
+					<li>Make your own list of triggers</li><br/>
+					 
+					</ul>
+					<p>
+					Chunks as necessary, making this the first true generator on the Internet.
+					It uses a dictionary of over 200 Latin words, combined with a handful of model 
+					sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum 
+					is therefore always free from repetition, injected humour.
+						</p>
+					<p class="blog_detail_lower_text ">Pilates, Lifestyle, Yoga</p>
+					<div class="blog_detail_articles">
+						<div class="blog_detail_articles_left">
+							<a href="">
+								<div class="blog_detail_articles_left_main">
+									Previous Article<br/><span>Support board for our flyout and slider</span>
+								</div>
+							</a>
+						</div>
+						<div class="blog_detail_articles_right">
+							<a href="">
+								<div class="blog_detail_articles_right_main">
+									Next Article<br/><span>Sticky topic before posting support</span>
+								</div>
+							</a>
+						</div>
+					</div>
+                </div>
+                <div class="comment_toggle">
+                  <img src="assets/images/leave_comments.jpg">
+                 </div>
+				
+                <div class="comments_outer">
+                  <div class="workshop_comment">
+                  	
+					
+					<div class="workshop_comment_inner">
+                    
+                    	<div class="enter_comment">
+                        <div class="inner_comform">
+                        		<form method="post" >
+						<textarea name="comment" rows="5" class="enter_comment_field" ></textarea>
+						<input type="button" name="submit" value="Comment" class="workshop_reply enter_comment_button">
+						</form>
+                        </div>
+						
+						</div>
+                        
+                        <div class="comments_box_full_title">
+                        
+                         <h3 class="who_we_are_title overview_retreats details_workshop_title wcheading">COMMENTS</h3>
+                          
+                        </div>
+                        
+                        
+						</div>
+                        
+                        <div class="comment_border">
+                          <div class="comments_inner_profilebody">
+                          	<div class="comment_profile">
+                        	
+                                              		                        
+							<div class="comment_profile_pic"><img src="assets/images/Workshop-detail_15.jpg"/></div>
+							<div class="comment_profile_name"><h4>Lisa Smith</h4><p>2 days ago</p></div>
+						</div>
+	                        <div class="comments_body">
+							<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							<input type="submit" name="submit" value="Reply" class="workshop_reply">
+						</div>
+                        	
+                          </div>
+                        </div>
+                        
+                        <div class="comment_border comments_reply">
+                          <div class="comments_inner_profilebody">
+                          	<div class="comment_profile">
+                        	
+                                              		                        
+							<div class="comment_profile_pic"><img src="assets/images/Workshop-detail_15.jpg"/></div>
+							<div class="comment_profile_name"><h4>Lisa Smith</h4><p>2 days ago</p></div>
+						</div>
+	                        <div class="comments_body">
+							<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							<input type="submit" name="submit" value="Reply" class="workshop_reply">
+						</div>
+                        	
+                          </div>
+                        </div>
+                        
+                        <div class="comment_border">
+                          <div class="comments_inner_profilebody">
+                          	<div class="comment_profile">
+                        	
+                                              		                        
+							<div class="comment_profile_pic"><img src="assets/images/Workshop-detail_15.jpg"/></div>
+							<div class="comment_profile_name"><h4>Lisa Smith</h4><p>2 days ago</p></div>
+						</div>
+	                        <div class="comments_body">
+							<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							<input type="submit" name="submit" value="Reply" class="workshop_reply">
+						</div>
+                        	
+                          </div>
+                        </div>
+                        
+						
+						
+					</div>
+                </div>
+                <div class="retreats_pilates_menu">
+                
+                	<ul class="pilates_innaerpage">
+                    
+                    	<li class="pilates_innermenu">  <a href="pilates.html" class="pilates_inner1 common_inner_pilates"></a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner2 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner3 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu ">  <a href="javascript:void(0)" class="pilates_inner4 common_inner_pilates">&nbsp; </a></li>
+                    
+                    </ul>
+                </div>
+				
+  				 </div>
+            
+            </div>	
+       <!--mainContent ends here-->
+        
+        <div class="footer_wrapper">
+        	<div class="main-wrapper-fixed footer_wrap">
+             
+             <div class="footerright">
+             	<div>
+					<span class="otherlinks_footer">
+						<a href="gift_coupon.html">Gift Coupon</a>
+						<a href="faq.html">FAQ</a>
+						<a href="testimonial.html">Testimonial</a>
+						<a href="forum.html" class="footer_prob">Forum</a>
+						<div class="footer_prob_div" style="height: 10px;"></div>
+						<a href="privacy_policy.html">Privacy Policy</a>
+						<a  href="terms_condition.html">Terms & Conditions</a>
+						<a  href="contact.html" class="last_otherlinks_footer">Contact Us</a>
+					</span>
+                  <div class="footer_social_links">
+                  <div class="footer_social_links">
+					  <span class="faceb footersoci"><a title="facebook" href="#"> f</a></span>
+					  <span class="twittr footersoci"><a href="#" title="twitter"> t</a></span>
+					  <span class="googleplus footersoci"><a href="#" title="googleplus"> g</a></span>
+				  </div>
+				  </div>
+                </div>
+             </div>
+             
+             <div class="footerleft">
+             	<div class="copyrights">&copy; Copyright 2013, LILYFIT , All Rights Reserved. </div>
+                <div class="poweredby"> <a target="_blank" href="http://colorcuboid.com/">Powered by <img src="assets/images/colorcuboid_logo.png" alt="Slider image">&nbsp;ColorCuboid Designs</a> </div>
+             </div>
+            
+            </div>
+        </div><!--footer ends here-->
+        
+        
+    </div>	<!--bodyWrapper ends here-->
+    	
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+	
+<script type="text/javascript" src='assets/scripts/jquery.capSlide.js'></script>	
+<script type="text/javascript" src='assets/scripts/menucaption_call.js'></script>	
+ <script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+ <script type="text/javascript" src='assets/scripts/script.js'></script>  
+ <script src="assets/scripts/responsive-slider.js"></script>
+<script type="text/javascript">
+		
+	
+ $(document).ready(function() {
+	
+	var height_right=$( ".retreat_details_right" ).height();
+	var height_left=$( ".retreat_details_left" ).height();
+	
+	
+	if(height_right>height_left)
+	{
+		$( ".retreat_details_right" ).css("height",""+ height_right +"");
+		$( ".retreat_details_left" ).css("height",""+ height_right +"");
+	}
+	else
+	{
+		$( ".retreat_details_right" ).css("height",""+ height_left +"");
+		$( ".retreat_details_left" ).css("height",""+ height_left +"");
+	}
+	if($('.slide-body').length==1){
+		$('.slider-control').css("visibility","hidden");
+	}
+	else{
+		$('.retreat_details_slider').mouseenter(function(){
+		
+		$('.slider-control').css("visibility","visible");
+		
+	});
+	$('.retreat_details_slider').mouseleave(function(){
+		
+		$('.slider-control').css("visibility","hidden");
+
+	});
+	}
+	
+	
+	
+	
+});	
+
+</script>
+
+<script type="text/javascript">
+	$(document).on("click",".workshop_reply",function(){
+				
+		$('.enter_comment_field').focus();
+	})
+    $(function(){ 
+       // var pageID = <?php echo $pageID;  ?>; 
+	   
+
+        $('.like-btn').click(function(){
+            $('.dislike-btn').removeClass('dislike-h');    
+            $(this).addClass('like-h');
+            $.ajax({
+                type:"POST",
+                url:"ajax.php",
+                data:'act=like&pageID='+pageID,
+                success: function(){
+                }
+            });
+        });
+        $('.dislike-btn').click(function(){
+            $('.like-btn').removeClass('like-h');
+            $(this).addClass('dislike-h');
+           $.ajax({
+                type:"POST",
+                url:"ajax.php",
+                data:'act=dislike&pageID='+pageID,
+                success: function(){
+                }
+            });
+        });
+        $('.share-btn').click(function(){
+            $('.share-cnt').toggle();
+        });
+    });
+	
+	$( ".comment_toggle" ).click(function() {
+ 		 $(this).next().slideToggle( "slow");
+});
+/* ***********************animation  ********************/
+$(document).ready(function(){
+	$(".blog_detail_slider").css('opacity','1').css("animation","fx_caption_right "+ 1900 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$(".blog_details").css('opacity','1').css("animation","fx_caption_left "+ 2500 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$(".blog_detail_lower_text").css('opacity','1').css("animation","fx_caption_right "+ 3500 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$(".blog_detail_articles").css('opacity','1').css("animation","fx_caption_left "+ 3800 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	$(".comment_toggle").css('opacity','1').css("animation","fx_caption_right "+ 4200 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+});
+</script>
+
+<style>
+.blog_detail_slider,.blog_details,.blog_detail_lower_text ,.blog_detail_articles,.comment_toggle{
+	opacity:0;
+}
+</style>
+
+</body>

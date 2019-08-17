@@ -1,0 +1,70 @@
+$.validator.setDefaults({
+	submitHandler: function() { alert("submitted!"); }
+});
+
+$(document).ready(function(){
+	var valueName=$('#name').val();
+	var valueEmail=$('#email').val();
+	var valueMobile=$('#mobile').val();
+	var valueMsg=$('#message').val();
+	if(valueName.length>0)
+		{
+			$('#name').addClass('darkInputText');
+		}
+	if(valueEmail.length>0)
+		{
+			$('#email').addClass('darkInputText');
+		}
+	if(valueMobile.length>0)
+		{
+			$('#mobile').addClass('darkInputText');
+		}
+	if(valueMsg.length>0)
+		{
+			$('#message').addClass('darkInputText');
+		}
+	$('#name').keyup(function(){
+		if(valueName.length>=0)
+		{
+			$('#name').addClass('darkInputText');
+		}
+		else
+		{
+			$('#name').removeClass('darkInputText');
+		}
+		valueName=$('#name').val();
+	});
+	$('#email').keyup(function(){
+		if(valueEmail.length>=0)
+		{
+			$('#email').addClass('darkInputText');
+		}
+		else
+		{
+			$('#email').removeClass('darkInputText');
+		}
+		valueEmail=$('#email').val();
+	});
+	$('#mobile').keyup(function(){
+		if(valueMobile.length>=0)
+		{
+			$('#mobile').addClass('darkInputText');
+		}
+		else
+		{
+			$('#mobile').removeClass('darkInputText');
+		}
+		valueMobile=$('#mobile').val();
+	});
+	$('#message').keyup(function(){
+		if(valueMobile.length>=0)
+		{
+			$('#message').addClass('darkInputText');
+		}
+		else
+		{
+			$('#message').removeClass('darkInputText');
+		}
+		valueMsg=$('#message').val();
+	});
+});

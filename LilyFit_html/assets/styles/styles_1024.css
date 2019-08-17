@@ -1,0 +1,1744 @@
+@charset "utf-8";
+/* CSS Document */
+.main-wrapper-fixed {
+	padding: 0 2%;
+	width: 96%;
+}
+body
+{
+	background-color:#fff !important;
+	background-image:none !important;
+}
+@media (max-width: 1024px) {
+	.fadewrapperinner{
+		background:none;
+	}
+	/********** header ************/
+	.navi-menu{
+		padding-top:5px;
+		padding-bottom:5px;
+		border-bottom:solid 1px #fff;
+		border-top:solid 1px #fff;
+		margin-top:50px !important;
+	}
+	.navi-menu a{
+		line-height:35px;
+		font-size:18px;	
+	}
+	.logomenu {
+		border: medium none;
+		margin-right: 6px;
+		margin-top: 0 !important;
+	}
+	.ic_text .mCustomScrollBox > .mCSB_scrollTools{
+		margin-top:-20px;
+		margin-right:3px !important;
+	}
+	/************ retreats and retreat detail************/
+	.retreats_image img{
+		width:65%;
+	}	
+	.retreats_image{
+		width:100%;
+	}
+	.retreats_content_right{
+		width:100%;
+	}
+	.retreats_box_inner{
+		padding:20px 17px 20px 17px;
+	}
+	.retreat_details_down_listmain{
+		width: 40%;
+	}
+	.retreat_details_booknow{
+		width: 60%;
+	}
+	.responsive-slider .slides ul li .slide-body .caption.header h2{
+		font-size:24px;
+	}
+	.responsive-slider .slides ul li .slide-body .caption.sub{
+		font-size:18px;
+	}
+	/************** forum and forum view **********/
+	.forum_entry_column5{
+		width:20%;
+	}
+	.forum_entry_column2{
+		width:47%;
+	}
+	.forum_view_content{
+		width:91%;
+	}
+	.forum_title h3 {
+		width: 96%;
+	}
+	/************** workshop and workshop detail ****************/
+	#workshop_detail_video{
+		height:600px !important;
+	}
+	.workshop_page .carousel ul li{
+		height: auto !important;
+		padding-bottom: 20px;
+		margin-right: 80px;
+		width: 240px;
+	}
+	.workshop_page .cost_left,.workshop_page .cost_right{
+		width:100%;
+	}
+	.workshop_page .cost_right{
+		width:100%;
+		float:left;
+	}
+	.workshop_page .text_workshops h3{
+		font-size:21px;
+	}
+	.workshop_page .text_workshops h4{
+		font-size:19px;
+	}
+	.workshop_page #my-carousel-1,.workshop_page #my-carousel-2,.workshop_page #my-carousel-3,.workshop_page #my-carousel-4 {
+		width: 885px;
+	}
+	.workshop_details{
+		width:98%;
+		margin-left:1%;
+	 }
+	.workshop_detail_lower{
+		margin-left:1%;
+		width:98%;
+	 } 
+	
+	/********************** nutrition and nutrition detail ***********/
+	#nutrition_video{
+		height:165px !important;
+	}
+	.nutrition_page .carousel ul li{
+		width: 263px;
+		margin-right:65px;
+	}
+	.nutrition_detail_slider .carousel ul li{
+		margin-right: 120px;
+		width: 375px;
+	}	
+	.nutritionslidere #nutrition_carosel {
+		width: 920px;
+	}
+	.nutrition_detail_slider #nutrition_carosel {
+		width: 874px;
+	}
+	/******************** Testimonial ********************************/
+	.testimonial_content_right{
+		margin-left:0;
+	}
+	.testimonial_maincontent #my-carousel-1{
+		min-height:1116px;
+	}
+	.testimonial_maincontent .retreats_image img{
+		margin-left:15%;
+	}
+	.testimonial_instructorrslider .carousel ul li{
+		width:400px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 894px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 95px !important;
+	}
+	/*************** instructors and instructor details *************/
+	.instructors_page .pilates_instructorrslider .carousel ul .slide{
+		padding: 20px 10px 20px 35px !important;
+	}
+	.instructors_page .pilates_instructorrslider .slide{
+		margin-right:65px !important;
+	}
+	.instructors_page .pilates_instructorrslider .carousel ul li {
+		width: 223px;
+	}
+	.instructor_detail_page .pilates_instructorrslider .slide{
+		margin-right:62px !important;
+	}
+	.instructor_detail_page .pilates_instructorrslider .carousel ul li {
+		width: 210px;
+	}
+	.instructors_page .pilates_instructorrslider .instructorcarosl {
+		width: 935px;
+	}
+	.instructor_detail_page #my-carousel-1 {
+		width: 510px;
+	}
+	.instructor_details_slides .play_small_icon_session{
+		top:24%;
+	}
+	/****************** blog and blog detail **************/
+	.blog_page .slide img{
+		width:98%;
+	}
+	.blog_page .carousel ul li {
+		height: 430px !important;
+		margin-right: 90px !important;
+		width: 239px;
+	}	
+	.blog_page #my-carousel-1 {
+		min-height: 930px;
+		width: 903px;
+	}
+	.blog_page .workshop_insideli {
+		padding-bottom: 41px;
+	}
+	/************************ private and corporate session *****************/
+	.private_and_corporate_session_slider .inst_slide .slide {
+		margin-right: 200px !important;
+	}
+	.private_and_corporate_slider_content_first{
+		margin-left:45px;
+	}
+	/********************* pilates menu **************/
+	.pilates_menu{
+	position:relative;
+	}
+	.pilates_li{	
+		border-bottom: 1px solid #DCDCDC;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.fadewrapper{
+	width:100%;
+	display:block;
+	position:static;
+	margin:0;
+	}
+	.pilates_menu_inner{
+	float:left;
+	width:100%;
+	}
+	.fadewrapperinner{
+	width:96%;
+	padding:0 2%;
+	}
+	.pilates_menu {
+	margin-top: 14px;
+	padding: 0 2%;
+	width: 96%;
+	}
+	.pilates_anchor{
+	background: url("../images/pilates.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+	}
+	.yoga_anchor{
+	background: url("../images/yoga.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+	}
+	.body_anchor{
+	background:url("../images/boday_toning.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+	}
+	.prenatal_anchor{
+	background: url("../images/prenatal.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+	}
+	/*************************** payment setting and info********************/
+	.payment_setting_and_info_links a {
+		background: url("../images/brown-button.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+		clear: both;
+		color: #FFFFFF;
+		float: left;
+		margin-right: 20px;
+		margin-top: 10px;
+		padding: 10px;
+		text-decoration: none;
+		width: 252px;
+		line-height:1;
+	}
+	/*********** View My Account ***************/
+	.myaccount_first_section_left_outer{
+		width:96% !important;
+		padding:0 0 24px;
+	}
+	.myaccount_first_section_left_outer img{
+		width:29%;
+	}
+	.myaccount_first_section_right{
+		width:94% !important;
+	}
+	.myaccount_first_section_left_left{
+		width:29%;
+	}
+	.page_title_bold a{
+		width: 100%;
+	}
+	.statement_for_year_input label {
+		width: 24%;
+	}
+	.edit_myaccount .myaccount_first_section_left{
+		padding: 11px 4.2% 0px;
+	}
+	.myaccount_first_section_right{
+		margin-top:20px;
+	}
+	/****************** about page ****************/
+	.about_page_slider .carousel ul li {
+		margin-right: 100px !important;
+		width: 187px;
+	}
+	.retreat_details_slider {
+		padding-bottom: 21px;
+	}
+	.meet_our_team_slider .aboutcarosl {
+		margin-left: 14px;
+		width: 882px;
+	}
+	/********** login signup ******************/
+	.loginpage_background {
+		background: url("../images/lilyfit01.jpg") no-repeat scroll 70% top rgba(0, 0, 0, 0);
+	}
+	/******* index page *************/
+	.pilates_menu{
+		top:370px;
+	}
+}
+
+@media (max-width: 975px) {
+	/********** header ************/
+	.navi-menu a{	
+		font-size:17px;		
+	}
+	.signup_button{
+		display:block !important;
+	}
+	.login_signup a{
+		padding-left: 15px;
+		width: 65px !important;
+	}
+	/************ retreats and retreat detail************/
+	.retreat_details_right{
+		margin-left: 2%;
+	}
+	/************** workshop and workshop detail ****************/
+	#workshop_detail_video{
+		height:550px !important;
+	}	
+	.workshop_details {
+		padding-bottom: 20px;
+	}
+	/********************** nutrition and nutrition detail ***********/
+	#nutrition_video{
+		width: 266px !important;
+	}
+	.nutritionright{
+		width:282px !important;
+	}
+	.nutritionleft{
+		width:66%;
+	}
+	.nutrition_page .carousel ul li{
+		width: 248px;
+		margin-right:65px;
+	}
+	.nutrition_detail_slider .carousel ul li{
+		margin-right: 120px;
+		width: 375px;
+	}
+	.nutrition_page .readmoree a{
+		font-size:12px;
+	}
+	.nutrition_page p{
+		font-size:14px;
+	}
+	.nutritionslidere #nutrition_carosel {
+		width: 876px;
+	}
+	/*************** instructors and instructor details *************/
+	.instructors_page .pilates_instructorrslider .carousel ul li {
+		width: 203px;
+	}
+	.instructors_page .pilates_instructorrslider .instructorcarosl {
+		width: 874px;
+	}
+	/******************** about **************/
+	.about_continue_button {
+		bottom: -140px;
+		font-size: 16px;
+	}
+}
+@media (max-width: 950px){
+/**************** about page ***************/
+	.who_we_are_right{
+		margin-left: 10%;
+		width: 70%;
+	}
+	.who_we_are_left {
+		float: left;
+		width: 96%;
+	}
+	.nutritionleft {
+		width: 66%;
+	}
+	.nutritionright {
+		margin-left:0;
+	}
+/****************** blog and blog detail **************/
+	.blog_page .slide img{
+		width:98%;
+	}
+	.blog_page .carousel ul li {
+		height: 420px !important;
+		margin-right: 75px !important;
+		width: 229px;
+	}
+	.blog_page #my-carousel-1 {
+		min-height: 890px;
+		width: 840px;
+	}
+	/************** workshop and workshop detail ****************/
+	.workshop_page .carousel ul li{
+		height: auto !important;
+		padding-bottom: 20px;
+		margin-right: 110px;
+		width: 346px;
+	}
+	.workshop_page #my-carousel-1,.workshop_page #my-carousel-2,.workshop_page #my-carousel-3,.workshop_page #my-carousel-4 {
+		width: 806px;
+	}
+	/************************ private and corporate session *****************/
+	.private_and_corporate_session_slider .inst_slide .slide {
+		margin-right: 130px !important;
+	}
+	.private_and_corporate_slider_content_first{
+		margin-left:55px;
+	}
+	/*************** forum and forum view ***************/
+	.forum_title h3 {
+		width: 97%;
+	}
+	/*************** testimonial **************/
+	.testimonial_instructorrslider .carousel ul li{
+		width:365px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 825px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 95px !important;
+	}
+	/********** instructor detail ************/
+	.instructor_detail_page .instructorcarosl{
+		margin-left:0;
+	}
+}
+@media (max-width: 925px){
+	/********** header ************/
+	.navi-menu a	{	
+		font-size:16px;		
+	}
+	/********************** nutrition and nutrition detail ***********/
+	.nutritionleft{
+		width:64%;
+	}
+	.nutrition_page .carousel ul li{
+		width: 350px;
+		margin-right:100px;
+	}
+	.price_for_plan{
+		font-size:24px
+	}
+	.plan_heading{
+		font-size:22px;
+	}
+	.nutrition_detail_slider .carousel ul li{
+		margin-right: 120px;
+		width: 325px;
+	}
+	.nutritionslidere #nutrition_carosel {
+		width: 802px;
+	}
+	.nutrition_detail_slider #nutrition_carosel {
+		width: 775px;
+	}
+	/****************** about page ****************/
+	.about_page_slider .carousel ul li {
+		margin-right: 100px !important;
+		width: 154px;
+	}
+	.about_continue_button {
+		bottom: -130px;
+		font-size: 16px;
+	}
+	.meet_our_team_slider .aboutcarosl {
+		margin-left: 14px;
+		width: 782px;
+	}
+	/********* contact *********/
+	.contact_page_content_right{
+		width:100%;
+		margin-left:20px;
+	}
+	.contact_page_content_left{
+		width:100%;
+	}
+	/*.contact_shadow .login_box_outer,.contact_shadow .login_box_inner{
+		min-height:700px;
+	} with map*/
+	/******* index page *************/
+	.pilates_menu{
+		top:325px;
+	}
+}
+
+
+
+@media (max-width: 900px) {
+	/********** header ************/
+	.navi-menu {
+		padding-left: .8% !important;
+		padding-right: 1% !important;
+	}
+	.nutrition_payment_page h2{
+		line-height:1;
+	}
+	/***************** page title and breadcrum ************/
+	.page_title h3{
+		font-size:28px;
+	}
+	.page_title_bold h3{
+		font-size:27px;
+	}
+	.breadcrums-wrapper-list li a{
+		font-size:13px;
+	}
+	.breadcrums-wrapper-list li span{
+		font-size:13px;
+	}
+	
+	/*********** privacy policy ************/
+	.privacy_policy h4{
+		font-size: 17px;
+	}
+	.privacy_policy p{
+		font-size:14px;
+	}
+	.privacy_policy ul li{
+		font-size:14px;
+	}
+	/*********** faq and faq detail***********************/
+	.faq_questions a{
+		font-size:14px;
+	}
+	.faq_heading_nonactive{
+		font-size: 17px;
+	}
+	.faq_detail_main_heading{
+		font-size:26px;
+	}
+	.faq_detail_text{
+		font-size:14px;
+	}
+	.faq_detail_heading{
+		font-size:15px;
+	}
+	/************ retreats and retreat detail************/
+	.decriptionss{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.retrat_date{
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+	.retreats_title{
+		font-size: 21px;
+	}
+	.retreats_title_sub{
+		font-size:18px;
+	}
+	.overview_retreats{
+		font-size:22px;
+	}
+	.who_we_are_title{
+		font-size:22px;
+	}
+	.retreats_title_sub{
+		font-size:16px;
+	}
+	.retreat_details_left{
+		font-size:14px;
+	}
+	.who_we_are_list li{
+		font-size:14px;
+	}
+	.retreat_details_right{
+		margin-left: 1%;
+	}
+	/************** forum and forum view **********/
+	.comment_profile_name{
+		font-size:13px;
+		width:100%;
+	}
+	.comment_profile_name h4{
+		font-size:14px;
+	}
+	.comments_body{
+		font-size:13px;	
+	}
+	.forum_view_upper_content img{
+		width: 9%;
+	}
+	.forum_view_like{
+		width:20%;
+	}
+	/************** workshop and workshop detail ****************/
+	#workshop_detail_video{
+		height:500px !important;
+	}
+	.worshop_inner_content{
+		font-size:14px;
+	}
+	.worshop_inner_content li{
+		font-size:14px;
+	}
+	.worshop_inner_content h3{
+		font-size:15px;
+	}
+	/********************** nutrition and nutrition detail ***********/
+	.nutrition_about{
+		font-size:24px;
+	}
+	.nutrition_page p, .nutrition_page ul li{
+		font-size:15px;
+	}
+	.nutrition_details_right{
+		width:55%;
+		padding-left:0%;
+		padding-top:4%;
+		margin-left:1%;
+	}
+	.nutrition_details_left{
+		width:42%;
+	}
+	.nutrion_title_big{
+		font-size:26px;
+	}
+	.nutrion_title_small{
+		font-size:17px;
+	}
+	/****************** blog and blog detail **************/
+	.blog_details{
+		font-size:14px;
+	}
+	/****************** private and corporate session *************/
+	.private_and_corporate_session_right p{
+		font-size: 14px;
+	}
+	.private_and_corporate_session_right ul li{
+		font-size: 14px;
+	}
+	/************** about ****************/
+	.about_continue_button{
+		font-size:18px;
+	}
+	/*************** instructors and instructor details *************/
+	.instructors_page .pilates_instructorrslider .carousel ul li {
+		width: 180px;
+	}
+	.instructors_page .pilates_instructorrslider .instructorcarosl {
+		width: 806px;
+	}
+	/***************** footer ***************/
+	.footerleft{
+		float: left;
+		margin-bottom: 10px;
+		margin-top: 12px;
+		padding-left: 10px;
+		width: 100%;
+		text-align:center;
+	}
+	.footerright{
+		float: left;
+		width: 100%;
+	}
+	.otherlinks_footer{
+		text-align: center;
+		width: 100%;
+		margin-left:0;
+	}
+	.footer_social_links{
+		float: right;
+		text-align: center;
+		width: 75%;
+	}
+	/*************** testimonial **************/
+	.testimonial_instructorrslider .carousel ul li{
+		width:365px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 792px;
+		min-height: 1094px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 65px !important;
+	}
+}
+
+@media (max-width: 870px) {
+	/***************** instructor_session **********************************/
+	.instructor_left_inner{
+		margin-left: 15%;
+		width: 70%;
+	}
+	.instructor_left{
+		width:100%;
+		text-align:left;
+	}
+	.instructor_left_image{
+		width:70% !important;
+		text-align:center;
+	}
+	.instructor_right{
+		width:90%;
+	}
+	.instructor_right .pilates_instructorrslider li.slide{
+		width:200px !important;
+	}
+	.instructor_sessions ul li{
+		font-size:14px;
+	}
+	.instructor_left_text1 h2{
+		font-size:25px;
+	}
+	.instructor_left_text1 .retreats_title_sub{
+		font-size:16px;
+	}
+	.instructor_right_lower .overview_retreats{
+		font-size:24px;
+	}
+	.instructor_sessions .instructor_right_lower p{
+		font-size:14px;
+	}
+	.instructor_right_lower h3{
+		font-size:16px;
+	}
+	/************** instructor and instructor detail **********/
+	.instructor_detail_page .pilates_instructorrslider .slide{
+		margin-right:62px !important;
+	}
+	.instructor_detail_page .pilates_instructorrslider .carousel ul li {
+		width: 210px;
+	}
+	.instructor_detail_page .instructor_right{
+		 width: 96%;
+	}
+	.instructor_detail_page .pilates_instructorrslider .carousel ul li {
+		width: 191px;
+	}
+	.instructor_detail_page #my-carousel-1 {
+		width: 753px;
+	}
+	.instructor_details_slides .play_small_icon_session {
+		top: 18%;
+	}
+	/********************** nutrition and nutrition detail ***********/
+	.nutritionleft{
+		width:62%;
+	}
+	/********** header ************/
+	.login_button{
+		top: 117px;
+	}
+	.login_signup a{
+		padding-left: 10px;
+	}
+	.loginsignupclass{
+		font-size: 12px;
+		line-height: 31px;
+		background-size:100% 80%;
+	}
+	.navi-menu a	{	
+		font-size:15px;		
+	}
+	/******************** Testimonial ********************************/
+	.testimonial_instructorrslider .carousel ul li{
+		width:353px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 765px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 65px !important;
+	}
+	/****************** blog and blog detail **************/
+	.blog_page .slide img{
+		width:98%;
+	}
+	.blog_page .carousel ul li {
+		height: 415px !important;
+		margin-right: 60px !important;
+		width: 220px;
+	}
+	.blog_page #my-carousel-1 {
+		min-height: 890px;
+		width: 787px;
+	}
+	/************************ private and corporate session *****************/
+	.private_and_corporate_session_slider .inst_slide .slide {
+		margin-right: 80px !important;
+	}
+	.private_and_corporate_slider_content_first{
+		margin-left:55px;
+	}
+	/************* about **************/
+	.about_continue_button {
+		bottom: -115px;
+		font-size: 16px;
+	}
+	.retreat_details_slider {
+		padding-bottom: 20px;
+	}
+	/*************** workshop *************/
+	.workshop_page .carousel ul li{
+		margin-right: 80px;
+		width: 340px;
+	}
+	.workshop_page #my-carousel-1, .workshop_page #my-carousel-2, .workshop_page #my-carousel-3, .workshop_page #my-carousel-4 {
+		width: 762px;
+	}
+	.myaccount_first_section_left_outer{
+		padding:0 0 20px;
+	}
+}
+
+
+@media (max-width: 840px) {
+	.navi-menu {
+		padding-left: 0.8% !important;
+		padding-right: 0.8% !important;
+	}
+	/************ retreats and retreat detail************/
+	.responsive-slider .slides ul li .slide-body .caption.sub{
+		top: 120% !important;
+		font-size:16px;
+	}
+	.responsive-slider .slides ul li .slide-body .caption.header h2{
+		font-size:21px;
+	}
+	/*************** instructors and instructor details *************/
+	.instructors_page .pilates_instructorrslider .carousel ul .slide{
+		padding: 20px 10px 20px 15px !important;
+	}
+	.instructors_page .pilates_instructorrslider .carousel ul li {
+		width: 180px;
+	}
+	.instructors_page .pilates_instructorrslider .instructorcarosl {
+		width: 745px;
+	}
+	.instructor_detail_page .instructorcarosl{
+		width:auto;
+	}
+	/************** workshop and workshop detail ****************/
+	.workshop_page .carousel ul li{
+		height: auto !important;
+		padding-bottom: 20px;
+		margin-right: 100px;
+		width: 305px;
+	}
+	.workshop_page #my-carousel-1,.workshop_page #my-carousel-2,.workshop_page #my-carousel-3,.workshop_page #my-carousel-4 {
+		width: 713px;
+	}
+	.workshop_details {
+		padding-bottom: 18px;
+	}
+	/***************** pilates ********************/
+	.rating_div{
+		width:100% !important;
+	}
+	.mCustomScrollBox > .mCSB_scrollTools{
+		margin-right:10px;
+	}
+	/************* payment setting and info ************/	
+	.paymentsettingbuttonblue,.paymentsettingbuttonbrown {
+		clear: both;
+		float: left;
+		margin: 0;
+	}
+	.width_100{
+		width:100% !important;
+	}
+	
+}
+
+@media (max-width: 820px) {
+	/********** header ************/
+	.navi-menu a{	
+		font-size:14px;		
+	}
+	/************ retreats and retreat detail************/
+	.overview_retreats{
+		font-size:20px;
+	}
+	.retreats_title_sub{
+		font-size:15px;
+	}
+	.retreat_details_left{
+		font-size:13px;
+		width: 94%;
+	}
+	.who_we_are_title{
+		font-size:20px;
+	}
+	.who_we_are_list li{
+		font-size:13px;
+	}
+	.retreat_details_right{
+		margin-left: 0;
+		margin-top: 2%;
+		width: 94%;
+	}
+	/************** forum and forum view **********/
+	.forum_entry_column2 p{
+		font-size:12px;
+	}
+	.forum_entry_column2 h3{
+		font-size:13px;
+	}
+	.forum_box{
+		padding-right: 7px;
+		padding-left:7px;
+	}
+	.forum_box p{
+		font-size:12px;
+	}
+	.forum_title h3 {
+		width: 95%;
+	}
+	.forum_view_content{
+		width:89%;
+	}
+	.forum_entry_column6{
+		width:14.5%;
+	}
+	/********************** nutrition and nutrition detail ***********/
+	.nutritionleft{
+		width:59%;
+	}
+	.nutrition_page .carousel ul li{
+		width: 295px;
+		margin-right:100px;
+	}
+	.nutrition_detail_slider .carousel ul li{
+		margin-right: 110px;
+		width: 285px;
+	}
+	.nutritionslidere #nutrition_carosel {
+		width: 691px;
+	}
+	.nutrition_page .nutritionleft,.nutrition_page .nutritionleft{
+		width:100% !important;
+		float:left;
+	}
+	.nutrition_page .nutritionright {
+		width: 100% !important;
+	}
+	/*************** footer ********************/
+	.pilates_innaerpage{
+		width:100%;
+	}
+	/****************** blog and blog detail **************/
+	.blog_details{
+		font-size:13px;
+	}
+	.meet_our_team_slider .carousel ul li
+	{
+	width:120px;
+	}
+	.text_slide_about h3
+	{
+	font-size:15px;
+	}
+	.text_slide_about p
+	{
+	font-size:11px;
+	}
+	.blog_page .slide img{
+		width:98%;
+	}
+	.blog_page .carousel ul li {
+		height: 470px !important;
+		margin-right: 100px !important;
+		width: 295px;
+	}
+	.blog_page #my-carousel-1 {
+		min-height: 981px;
+		width: 697px;
+	}
+	/******************** Testimonial ********************************/
+	.testimonial_maincontent #my-carousel-1{
+		min-height: 1030px;
+	}
+	.testimonial_instructorrslider .carousel ul li{
+		width:328px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 721px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 65px !important;
+	}
+	/****************** instructor and instructor detail ***************/
+	.instructor_detail_page .pilates_instructorrslider .slide {
+		margin-right: 55px !important;
+	}
+	.instructor_detail_page .pilates_instructorrslider .carousel ul li {
+		width: 170px;
+	}
+	.instructor_detail_page #my-carousel-1 {
+		width: 675px;
+	}
+	/************** my account ********************/
+	.myaccount_form_input .signup_show_change span.signup_show_change_right{
+		width: 87%;
+	}
+	.signup_show_change_left {
+		float: left;
+	}
+	.myaccount_form_input .signup_show_change span.signup_show_change_left {
+		width: 92%;
+	}
+	.myaccount_form_input .signup_show_change input.signup_show_change_right{
+		width: 5%;
+	}
+	.gift_coupon .myaccount_form_input .signup_show_change input.signup_show_change_right{
+		width: auto;
+	}
+	
+	.myaccount_form_input .signup_show_change span.signup_show_change_right {
+		float: left;
+		line-height: 1.5;
+		width: 87%;
+	}
+	.gift_coupon .myaccount_form_input .signup_show_change span.signup_show_change_right {
+		width:92%;
+	}
+	.gift_coupon .myaccount_form_input p label{
+		width:92%;
+		margin-right:0;
+	}
+	/****************** about page ****************/
+	.about_page_slider .carousel ul li {
+		margin-right: 80px !important;
+		width: 216px;
+	}
+	.meet_our_team_slider .aboutcarosl {
+		margin-left: 70px;
+		width: 596px;
+	}
+	.who_we_are_right #work_shop_detailvideo1{
+		display:block;
+	}
+	/************************ private and corporate session *****************/
+	.private_and_corporate_session_slider .inst_slide .slide {
+		margin-right: 80px !important;
+	}
+	.private_and_corporate_slider_content_first{
+		margin-left:15px;
+	}
+	/******************* contact page ***************/
+	.contact_form_left,.contact_form_right{
+		width:98%;
+		float:left;
+		margin-right:0%;
+	}
+	.mobile_hidden{
+		display:none;
+	}
+	.mobile_hidden_view{
+		display:block;
+	}
+	.who_we_are_right #work_shop_detailvideo{
+		display:block;
+	}
+	/******* index page *************/
+	.pilates_menu{
+		top:275px;
+	}
+}
+@media (max-width: 775px) {
+	/********** header ************/
+	.navi-menu a{	
+		font-size:13px;		
+	}
+	.myaccount_menu_top_header p{
+		font-size:13px;
+	}
+	.myaccount_menu_top_header a	{
+		font-size:13px;
+	}	
+	ul li{
+		font-size:14px;
+	}
+	/******************** Testimonial ********************************/
+	.testimonial_maincontent #my-carousel-1{
+		min-height: 1030px;
+	}
+	.testimonial_instructorrslider .carousel ul li{
+		width:312px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 679px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 60px !important;
+	}
+	/*************** instructors and instructor details *************/
+	.instructors_page .pilates_instructorrslider .carousel ul li {
+		width: 165px;
+	}
+	.instructors_page .pilates_instructorrslider .instructorcarosl {
+		width: 703px;
+	}
+	
+	/*************** nutrition paymment pages **************/
+	.nutrition_payment_page h2{
+		font-size:20px;
+	}
+	.nutrition_payment_page_tab_lower h3{
+		font-size:18px;
+	}
+	.nutrition_payment_page_tab_lower label{
+		font-size:14px;
+	}
+	/************* about ****************/
+	.about_continue_button {
+		bottom: -100px;
+		font-size: 15px;
+	}
+	/*********** footer ***********/
+	.retreats_pilates_menu{
+		width:600px;
+	}
+	/*********** nutrition payment ************/
+	.sample_table_column_main{
+		width:100%;
+	}
+	/******* index page *************/
+	.pilates_menu{
+		top:250px;
+	}
+	/********* workshop *********/
+	.workshop_page .carousel ul li{
+		margin-right:70px;
+	}
+	.workshop_page #my-carousel-1, .workshop_page #my-carousel-2, .workshop_page #my-carousel-3, .workshop_page #my-carousel-4 {
+		width: 683px;
+	}
+}
+
+@media (max-width: 750px) {
+	/***************** page title and breadcrum ************/
+	.page_title h3{
+		font-size:25px;
+	}
+	.page_title_bold h3{
+		font-size:24px;
+	}
+	.breadcrums-wrapper-list li a{
+		font-size:12px;
+	}
+	.breadcrums-wrapper-list li span{
+		font-size:12px;
+	}
+	/****************** about **************/
+	.who_we_are_left p{
+		font-size:13px;
+	}
+	/*********** privacy policy ************/
+	.privacy_policy h4{
+		font-size: 16px;
+	}
+	.privacy_policy p{
+		font-size:13px;
+	}
+	.privacy_policy ul li{
+		font-size:13px;
+	}
+	/*********** faq ***********************/
+	.faq_questions a{
+		font-size:13px;
+	}
+	.faq_heading_nonactive{
+		font-size: 16px;
+	}
+	.faq_detail_main_heading{
+		font-size:24px;
+	}
+	.faq_detail_text{
+		font-size:13px;
+	}
+	.faq_detail_heading{
+		font-size:14px;
+	}
+	/************ retreats and retreat detail************/
+	.retreats_image img{
+		width:75%;
+	}	
+	.decriptionss{
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.retrat_date{
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.retreats_title{
+		font-size: 20px;
+	}
+	.retreats_title_sub{
+		font-size:17px;
+	}
+	.retreat_details_down_listmain{
+		font-size:13px;
+	}
+	/******************* login  **** signup ***** forget password ****** signup_payment **********/
+	.heading_login{
+		font-size:25px;
+	}
+	.login_box_inner{
+		width:440px;
+		min-height: 282px;
+	}
+	.login_box_outer{
+		min-height: 524px;
+	}
+	.common_textbox{
+		padding:9px 10px
+	}
+	.login_div p{
+		margin-bottom: 10px;
+	}
+	.submit_button{
+		font-size: 13px;
+		height: 33px;
+	}
+	#new_forum_post a,.edit_forum_post a{
+		font-size:13px;
+		padding: 11px 13px 7px;
+		height: 33px;
+	}
+	#forget_form p{
+		font-size:13px;
+	}
+	.heading_signup{
+		font-size:25px;
+	}
+	.heading_sugnup_sub{
+		font-size:18px;
+	}
+	.text_signup_heading{
+		font-size:13px;
+	}
+	.signup_box_outer{
+		padding-bottom:42px;
+	}
+	
+	/************* forum and forum view *************/
+	.forum_view_upper_content img{
+		width:11%;
+	}
+	.forum_view_content{
+		width:88%;
+	}
+	/************** workshop and workshop detail ****************/
+	.work_detail_heading .floatright{
+		width:100%;
+		float:left;
+		margin-bottom:8px;
+	}
+	.work_detail_heading .floatleft{
+		width:100%;
+		float:left;
+	}
+	.work_detail_heading .floatright .workshpdislike{
+		width:25%;
+		float:right;
+	}
+	#workshop_detail_video{
+		height:400px !important;
+	}
+	.workshop_page .carousel ul li{
+		height: auto !important;
+		padding-bottom: 20px;
+		margin-right: 80px;
+		width: 286px;
+	}
+	.workshop_page #my-carousel-1,.workshop_page #my-carousel-2,.workshop_page #my-carousel-3,.workshop_page #my-carousel-4 {
+		width: 655px;
+	}
+	/********************** nutrition and nutrition detail ***********/
+	.nutrition_about{
+		font-size:22px;
+	}
+	.nutrition_page p, .nutrition_page ul li{
+		font-size:13px;
+	}
+	.nutrition_details_right{
+		width:55%;
+		padding-left:0%;
+		padding-top:4%;
+		margin-left:1%;
+	}
+	.nutrition_details_left{
+		width:42%;
+	}
+	.nutrion_title_big{
+		font-size:24px;
+	}
+	.nutrion_title_small{
+		font-size:15px;
+	}
+	.nutritionleft{
+		width:55%;
+	}
+	.price_for_plan {
+		font-size: 22px;
+	}
+	.plan_heading {
+		font-size: 20px;
+	}
+	#nutrition_carosel{
+		min-height: 500px !important;
+	}
+	.nutrition_detail_slider .carousel ul li{
+		margin-right: 110px;
+		width: 285px;
+	}
+	.nutrition_page .carousel ul li {
+		margin-right: 100px;
+		width: 295px;
+	}
+	/****************** private and corporate session *************/
+	.private_and_corporate_session_right p{
+		font-size: 13px;
+	}
+	.private_and_corporate_session_right ul li{
+		font-size: 13px;
+	}
+	.private_and_corporate_session_right .session_anchor{
+		width: 65%;
+		float:left;
+	}
+	.private_and_corporate_session_slider h2{
+		line-height:1;
+	}
+	.private_and_corporate_session_slider .inst_slide .slide {
+		margin-right: 50px !important;
+	}
+	.private_and_corporate_slider_content_first{
+		margin-left:0px;
+	}
+	/**************** blog and blog detail ***************/
+	.blog_page .carousel ul li {
+		height: 435px !important;
+		margin-right: 100px !important;
+		width: 248px;
+	}
+	.blog_page #my-carousel-1 {
+		min-height: 920px;
+		width: 599px;
+	}
+	/************** about ****************/
+	.about_continue_button{
+		font-size:15px;
+	}
+	/****************** instructor and instructor detail ***********/
+	.instructor_detail_page .pilates_instructorrslider .slide {
+		margin-right: 34px !important;
+	}
+	.instructor_detail_page #my-carousel-1 {
+		width: 634px;
+	}
+	/***************** footer ***************/
+	.poweredby{
+		font-size:11px;
+	}
+	.copyrights{
+		font-size:11px;
+	}
+}
+
+@media (max-width: 730px) {
+	/********** header ************/
+	.navi-menu {
+		padding-left: .7% !important;
+		padding-right: .7% !important;
+	}
+	.logomenu img{
+		width:90%;
+	}
+	.logomenu{
+		padding-left:0% !important;
+		padding-right: .7% !important;
+	}
+	/********************** nutrition and nutrition detail ***********/
+	.nutrition_page .carousel ul li{
+		width: 295px;
+		margin-right:55px;
+	}
+	.nutrition_detail_slider .carousel ul li{
+		margin-right: 90px;
+		width: 260px;
+	}	
+	.nutritionslidere #nutrition_carosel {
+		width: 645px;
+	}
+	.nutritionslidere #nutrition_carosel {
+		width: 616px;
+	}
+	/******************** Testimonial ********************************/
+	.testimonial_maincontent #my-carousel-1{
+		min-height: 1030px;
+	}
+	.testimonial_instructorrslider .carousel ul li{
+		width:289px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 635px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 60px !important;
+	}
+	/*************** instructors and instructor details *************/
+	.instructors_page .pilates_instructorrslider .carousel ul li {
+		width: 210px;
+	}
+	.instructors_page .pilates_instructorrslider li.slide img{
+		WIDTH:AUTO;
+	}
+	.instructors_page .pilates_instructorrslider .carousel ul .slide {
+		padding: 20px 10px 20px 35px !important;
+	}
+	.instructors_page .pilates_instructorrslider .slide{
+		margin-left: 30px;
+		margin-right: 65px !important;
+	}
+	.instructors_page .pilates_instructorrslider .instructorcarosl{
+		width: 661px;
+	}
+	/************** about ***************/
+	.about_page_slider .carousel ul li {
+		margin-right: 70px !important;
+		width: 160px;
+	}
+	.meet_our_team_slider .aboutcarosl {
+		margin-left: 89px;
+		width: 470px;
+	}
+	/******* index page *************/
+	.pilates_menu{
+		top:230px;
+	}
+	/* workshop */
+	.workshop_page .carousel ul li{
+		margin-right:60px;
+	}
+	.workshop_page #my-carousel-1, .workshop_page #my-carousel-2, .workshop_page #my-carousel-3, .workshop_page #my-carousel-4 {
+		width: 634px;
+	}
+	.myaccount_first_section_left_outer{
+		padding:0 0 17px;
+	}
+}
+
+@media (max-width: 700px) {
+	/********** header ************/
+	.navi-menu a{
+		font-size:12px;
+	}
+	/******************* login  **** signup ***** forget password ****** signup_payment **********/
+	.login_box_inner{
+		min-height: 282px;
+	}
+	.login_box_outer{
+		min-height: 534px;
+	}
+	#change_my_password_form .myaccount_button{
+		margin:0;
+		float:left;
+		margin-bottom:40px;
+	}
+	.change_my_password .myaccount_form_input label{
+		width:100%;
+	}
+	#change_my_password_form .myaccount_form_input input{
+		width:100%;
+	}
+	#change_my_password_form label.error{
+		width:95% !important;
+	}
+	/************ retreats and retreat detail************/
+	.responsive-slider .slides ul li .slide-body .caption.sub{
+		font-size:14px;
+	}
+	.responsive-slider .slides ul li .slide-body .caption.header h2{
+		font-size:18px;
+	}
+	/****************** instructor and instructor detail ***********/
+	.instructor_detail_page .pilates_instructorrslider .slide {
+		margin-right: 18px !important;
+	}
+	.instructor_detail_page #my-carousel-1 {
+		width: 602px;
+	}
+	/***************** private and corporate session ***************/
+	.private_and_corporate_session_slider .inst_slide .slide {
+		margin-right: 100px !important;
+		margin-left:150px !important;
+	}
+	/*************** testimonial ***************/
+	.testimonial_maincontent #my-carousel-1 {
+		min-height: 1030px;
+	}
+	/**************** about *****************/
+	.retreat_details_slider {
+		padding-bottom: 18px;
+	}
+	/************ workshop detail ************/
+	.workshop_details {
+		padding-bottom: 16px;
+	}
+}
+
+
+
+
+@media (max-width: 680px) {
+	/********** header ************/
+	.navi-menu {
+		padding-left: .6% !important;
+		padding-right: .6% !important;
+	}
+	.logomenu img{
+		padding-left:0% !important;
+		margin-left:0%;
+	}
+	.logomenu{
+		padding-left:0% !important;
+		padding-right: .5% !important;
+		width:20%;
+	}
+	.logomenu a{
+		padding-left:0% !important;
+		margin-left:0%;
+	}
+	/**************** signup and signup payment ************/
+	.signup_box_outer{
+		padding-bottom:44px;
+	}
+	/************* forum and forum view *************/
+	.forum_view_upper_content img{
+		width:12%;
+	}
+	.forum_view_like{
+		width:30%;
+	}
+	.forum_view_upper_content p{
+		width:50%;
+	}
+	.forum_title h3 {
+		width: 97%;
+	}
+	/********************** nutrition and nutrition detail ***********/
+	.nutritionleft{
+		width:51%;
+	}
+	.nutritionright{
+		margin-right:0px;
+	}
+	.nutrition_page .carousel ul li{
+		width: 270px;
+		margin-right:55px;
+	}
+	.nutrition_detail_slider .carousel ul li{
+		margin-right: 66px;
+		width: 260px;
+	}
+	.nutritionslidere #nutrition_carosel {
+		width: 598px;
+	}
+	/******************** Testimonial ********************************/
+	.testimonial_maincontent #my-carousel-1{
+		min-height: 1030px;
+	}
+	.testimonial_instructorrslider .carousel ul li{
+		width:273px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 590px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 50px !important;
+	}
+	/*************** instructors and instructor details *************/
+	.instructors_page .pilates_instructorrslider .carousel ul .slide{
+		padding: 20px 0px 20px 15px !important;
+	}
+	.instructors_page .pilates_instructorrslider .instructorcarosl {
+		width: 602px;
+	}
+	/********** workshop and workshop detail *************/
+	.workshop_page .carousel ul li{
+		height: auto !important;
+		padding-bottom: 20px;
+		margin-right: 80px;
+		width: 248px;
+	}
+	.workshop_page #my-carousel-1,.workshop_page #my-carousel-2,.workshop_page #my-carousel-3,.workshop_page #my-carousel-4 {
+		width: 579px;
+	}
+	/********************* nutrition payment ************/
+	.nutrition_payment_button{
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	.nutrition_payment_textbox,#new_forum_post textarea {
+		width: 92%;
+	}
+	/********************** about page ***************/
+	.about_continue_button {
+		bottom: -90px;
+		font-size: 14px;
+		width:100px;
+	}
+	/**************** footer *****************/
+	.footerleft{
+		padding-left:0;
+	}
+	.footer_prob_div{
+		display:block;
+	}
+	.otherlinks_footer a.footer_prob{
+		border:0;
+	}
+	.footer_social_links{
+		width:77%;
+	}
+	/******* index page *************/
+	.pilates_menu{
+		top:215px;
+	}
+}
+
+
+@media (max-width: 650px) {
+
+	/****************** instructor and instructor detail ***********/
+	.instructor_detail_page .pilates_instructorrslider .slide {
+		margin-right: 2px !important;
+	}	
+	.instructor_detail_page .pilates_instructorrslider .carousel ul li {
+		width: 162px;
+	}
+	.instructor_detail_page #my-carousel-1 {
+		width: 546px;
+	}
+	/************** about ***************/
+	.about_page_slider .carousel ul li {
+		margin-right: 70px !important;
+		width: 145px;
+	}
+	.meet_our_team_slider .aboutcarosl {
+		margin-left: 89px;
+		width: 440px;
+	}
+}
+
+@media (max-width: 630px) {
+	/********** header ************/
+	.navi-menu {
+		padding-left: .4% !important;
+		padding-right: .4% !important;
+	}
+	/******************* login  **** signup ***** forget password ****** signup_payment **********/
+	.login_box_inner{
+		min-height: 282px;
+	}
+	.login_box_outer{
+		min-height: 544px;
+	}
+	.signup_box_outer{
+		padding-bottom:48px;
+	}
+	/******************** Testimonial ********************************/
+	.testimonial_maincontent #my-carousel-1{
+		min-height: 1030px;
+	}
+	.testimonial_instructorrslider .carousel ul li{
+		width:260px;
+	}
+	.testimonial_maincontent #my-carousel-1 {
+		margin-left: 14px;
+		width: 555px;
+	}
+	.testimonial_maincontent .inst_slide .slide{
+		padding-right: 35px !important;
+	}
+	/*************** instructors and instructor details *************/
+	.instructors_page .pilates_instructorrslider .carousel ul li {
+		width: 190px;
+	}
+	.instructors_page .pilates_instructorrslider .instructorcarosl {
+		width: 561px;
+	}
+	/********************** nutrition and nutrition detail ***********/
+	.nutrition_page .carousel ul li{
+		width: 260px;
+		margin-right:55px;
+	}
+	.nutrition_detail_slider .carousel ul li{
+		margin-right: 50px;
+		width: 258px;
+	}
+	/**************** blog and blog detail ***************/
+	.blog_page .carousel ul li {
+		height: 435px !important;
+		margin-right: 75px !important;
+		width: 248px;
+	}
+	/************************ nutrition payment pages **************/
+	.nutrition_payment_button_tab1 img{
+		width:100%;
+	}
+	.nutrition_payment_button_tab2 img{
+		width:100%;
+	}
+	.nutrition_payment_button_tab3 img{
+		width:100%;
+	}
+	.nutrition_payment_button_tab3 {
+		left: 64%;
+		width: 36%;
+	}
+	.nutrition_payment_button_tab2 {
+		left: 32%;
+		width: 36%;
+	}
+	.nutrition_payment_button_tab1 {
+		width: 36%;
+	}
+	/******* index page *************/
+	.pilates_menu{
+		top:200px;
+	}
+	/***** workshop ***********/
+	.workshop_page .carousel ul li{
+		margin-right:50px;
+	}
+	.workshop_page #my-carousel-1, .workshop_page #my-carousel-2, .workshop_page #my-carousel-3, .workshop_page #my-carousel-4 {
+		width: 548px;
+	}
+}
+
+
+
+
+

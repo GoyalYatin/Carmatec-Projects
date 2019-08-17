@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.Sitemap_InnerBox li {
+	padding-bottom:7px;
+}
+.Sitemap_InnerBox li.sublinks_sitemap li {
+	padding-bottom: 8px;
+}
+.glacierFest .footer_copyrights {
+	padding-bottom: 20px;
+	padding-top:10px;
+}
+.Sitemap_rightfold {
+	bottom:-70px;
+}

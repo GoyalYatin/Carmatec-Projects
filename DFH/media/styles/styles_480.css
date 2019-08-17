@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+.featureright h3 {
+   
+    font-size: 20px;
+    
+}
+
+.featureright p
+{
+	font-size:12px;
+}
+
+.featureinner
+{
+	height:auto;
+}
+
+
+
+/*** Footer section **/
+.footer_ListWrap,.footer_ListWrap.footer_practice,.footer_ListWrap.footer_ResearchQuality,.footer_ListWrap ul,.footer_ListWrap ul li,.footer_ListWrap h3,.footer_ListWrap h3 a,.footer_ListWrap.footer_research,.callNumber,.emailLink,.socialLinks_footer ,.footerWrap_bottomLeft,.footerWrap_bottomRight
+{
+	width:99%;
+	text-align:center;
+	/*padding:0 2%;*/
+	
+}
+.socialLinks_footer ul, .socialLinks_footer ul li {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+.footerWrap_bottomLeft
+{
+	margin-bottom:10px;
+}
+
+.footer_help
+{
+margin-top:10px;
+}
+
+.footer_help h3,.footer_help .callNumber,.footer_help .emailLink_footer,.footer_help .socialLinks_footer
+{
+/*padding-left:4% !important;*/
+}
+.socialLinks_footer ul
+{
+width:100%;
+}
+
+
+.footerBottomLinks
+{
+padding-left:10px;
+}
+.copyrightText
+{
+padding-left:2%;
+padding-top:10px;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    right: 25px;
+}
+
+@media (max-width: 435px) {
+	
+	.smalluplaod
+	{
+		 width: 63%;
+	}
+	
+	
+	.register_containerDiv
+{
+	width:100%;
+}
+.newPatient
+{
+	border:none;
+}
+
+}
+
+@media (max-width: 410px) {
+	.smalluplaod
+	{
+		 width: 54%;
+	}
+	 
+	 .icc_dawnload {
+    clear: both;
+    width: 60%;
+}
+.icc-location
+{
+	font-size:12px !important;
+}
+
+.location
+{
+	width:45%;
+	padding-left:10px;
+}
+
+.date {
+    font-size: 12px;
+    width: 50%;
+}
+
+.accordian_leftTechResource span.leftFloated{
+	margin-left:0;
+}
+
+.catlog_content
+{
+	border:none;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    right: 30px;
+}
+}
+
+@media (max-width: 370px) {
+.Medical_MembersAvatar,.Medical_MembersDetails
+{
+	width:100%;
+	border:none;
+}
+.Medical_MembersAvatar a
+{
+	float:none;
+	text-align:center;
+	display:block;
+	widows:100%;
+}
+.Medical_MembersDetails h3,.Medical_MembersDetails p
+{
+	text-align:left;
+}
+.Medical_MembersDetails h3
+{
+	padding-left:1px !important;
+}
+.Medical_MembersDetails
+{
+	margin-left:1px !important;
+}
+
+.Medical_MembersDetails
+{
+	margin-bottom:10px;
+}
+
+.needHelp_Leftwrapper {
+   
+    text-align: center;
+    width: 100%;
+}
+
+.needHelp_Rightwrapper
+{
+	width:100%;
+	margin-left:0px;
+}
+
+p.view_apply
+{
+	float:left !important;
+}
+
+
+.accordian_leftTechResource span.leftFloated{
+	margin-top:10px !important;
+}
+.TR_profileImgWrap{
+	padding-left:0;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    right: 35px;
+}
+
+}
+
+@media (max-width: 340px) {
+.slide a {
+    
+    margin-top: 0;
+   
+  
+}
+
+.imagewidthh {
+    width: 54px !important;
+}
+
+.headingslide {
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.comaprismGraph_wrapper table td,.comaprismGraph_wrapper table th
+{
+	padding:1px;
+	
+}
+.comaprismGraph_wrapper table td,.comaprismGraph_wrapper table th
+{
+	font-size:9px;
+}
+
+.eventDetail_share
+{
+	width:50%;
+}
+
+
+}
+@media (max-width: 340px) {
+	.benefits_Sublist .questionTypePara
+	{
+		background:none;
+		padding-left:0px;
+	}
+	
+}
+
+

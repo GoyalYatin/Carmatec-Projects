@@ -1,0 +1,1443 @@
+<html>
+<head>
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+	-moz-font-feature-settings: inherit;
+    -moz-font-language-override: inherit;
+    border: 0 none;
+    color: #747474;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    background: none repeat scroll 0 0 #F5F5F5;
+    line-height: normal;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.move-wrapper {
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.move-wrapper-fixed {
+    height: auto;
+    margin: auto;
+    width: 970px;
+}
+
+.main-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px #CDCDCD;
+    float: left;
+    height: auto;
+    margin-top: 13px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+
+.main-content-header {
+    background: linear-gradient(to bottom, #F8F8F8 0%, #E9E9E7 50%, #E9E9E7 50%, #DDDCD9) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 6px 6px 0 0;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+.main-content-inside {
+    float: left;
+    height: auto;
+    padding-top: 7px;
+    width: 100%;
+}
+
+.breadcrumbs-ulist {
+    float: left;
+    height: auto;
+     padding: 10px 21px !important;
+    width: auto;
+}
+
+.breadcrumbs-ulist li {
+    color: #0C7D4A !important;
+}
+.breadcrumbs-ulist li a {
+    color: #747474 !important;
+}
+.breadcrumbs-ulist li {
+    display: inline;
+    float: left;
+    font-size: 13px;
+    height: auto;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.breadcrumbs-ulist li {
+    color: #0C7D4A !important;
+}
+
+.breadcrumbs-ulist li a:hover {
+    text-decoration: underline;
+}
+
+.inner-full-width {
+    float: left;
+    height: auto;
+    margin: 0 1%;
+    width: 98%;
+}
+
+.top-menu {
+    float: left;
+    height: auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.top-menu-ulist {
+    float: left;
+    height: auto;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+.top-menu-ulist li {
+    border-right: 1px solid #CCCCCC;
+    color: #2E2E2E;
+    float: left;
+    height: auto;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.top-menu-ulist li a {
+    padding: 18px 17px;
+}
+.top-menu-ulist li a {
+    float: left;
+    height: auto;
+    padding: 18px 15px;
+    width: auto;
+}
+.top-menu-ulist li a {
+    padding: 8px 15px !important;
+}
+.inside-left-selected, .inside-left-ulist li:hover a {
+    background: none repeat scroll 0 0 #279061;
+    color: #FFFFFF;
+}
+.inside-left-selected, .inside-left-ulist li:hover a {
+    background: none repeat scroll 0 0 #279061;
+    color: #FFFFFF;
+}
+
+.top-menu-ulist li:hover a {
+    background: none repeat scroll 0 0 #279061;
+    color: #FFFFFF;
+}
+
+.table-main {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    float: left;
+    height: auto;
+    margin-bottom: 14px;
+}
+.table-main {
+    margin-bottom: 5px !important;
+}
+
+
+.table-main tr:nth-child(2n+1) {
+    background-color: #F9FCFD;
+}
+.table-main tr:nth-child(2n+1) {
+    background-color: #F9FCFD;
+}
+.table-main tr th {
+    background: none repeat scroll 0 0 #E8F3EE;
+    border-top: medium none;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+}
+.table-main td, .table-main th{
+	padding: 6px !important;
+}
+.table-main td:first-child, .table-main th:first-child {
+    border-left: medium none;
+}
+.table-main td, .table-main th {
+    border-left: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    color: #333333;
+    font-size: 12px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.common-button, .common-button-right {
+    background: none repeat scroll 0 0 #585858;
+    border: 0 none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: auto;
+    margin: 10px 10px 10px 16px;
+    outline: 0 none;
+    padding: 14px 21px;
+	text-align: center;
+    width: 72px;
+}
+.common-button-right{
+	float: right;
+}
+.common-button:hover, .common-button-right:hover {
+    background: none repeat scroll 0 0 #000000;
+}
+.common-input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #E9E9E9;
+    border-color: #BFBFBF #FFFFFF #FFFFFF;
+    border-image: none;
+    border-right: 1px solid #FFFFFF;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    float: left;
+    height: auto;
+    outline: medium none;
+    padding: 6px;
+    width:100%;
+	margin-top:10px;
+}
+
+.common-selectbox, .form-row-value select {
+    background: none repeat scroll 0 0 #E9E9E9;
+    border: medium none;
+    float: left;
+    height: auto;
+    outline: medium none;
+    padding: 3px;
+    width: 100%;
+	margin-top:10px;
+}
+.clickicon {
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+img, a img {
+    border: 0 none;
+}
+.fixed-width{
+	width:100px;
+	padding: 7px 0;
+}
+input.fixed-width:hover{
+	background:none repeat scroll 0 0 #279061
+}
+.ez-checkbox, .ez-radio {
+    float: left;
+}
+.ez-selected {
+    background-position: 0 -19px;
+}
+.ez-radio {
+    background: url("radio-black-31f81bab7fb010dc8abbbb68cd8c8291.png") no-repeat scroll 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    padding: 0;
+	margin-left:20px;
+}
+.ez-hide {
+    opacity: 0;
+}
+.contnts td{
+	border:0;
+}
+
+</style>
+</head>
+<body>
+	<div class='move-wrapper'>
+		<div class='move-wrapper-fixed'>
+			<div class="main-content">
+				<div class="main-content-header">
+					<ul class="breadcrumbs-ulist">
+						<li>
+							<a href="/dashboard">DASHBOARD</a>
+							<span class="breadcrumbs-sep">
+								&gt;
+							</span>
+						</li>
+						<li>
+							<a href="/packages/packages_dashboard">SUB AREAS</a>
+							<span class="breadcrumbs-sep">
+								&gt;
+							</span>
+						</li>
+						<li>ADD SUB AREA TO GROUP</li>
+					</ul>
+				</div>
+				<div class="main-content-inside">
+					<div class="inner-full-width">
+						<div class="top-menu">
+							<ul class="top-menu-ulist">
+								<li><a class="inside-left-selected" href="javascript:void(0)" id="sydney">Sydney</a></li>
+								<li><a href="javascript:void(0)" id="melbourne">Melbourne</a></li>
+								<li><a href="javascript:void(0)" id="brisbane">Brisbane</a></li>
+								<li><a href="javascript:void(0)" id="adelaide">Adelaide</a></li>
+								<li><a href="javascript:void(0)" id="perth">Perth</a></li>
+							</ul>
+						</div>
+						<div class="sydney_region">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main">
+								<tbody>
+									<tr>
+										<th style="width:16%"></th>
+										<th style="width:16%">Sub Area Name</th>
+										<th style="width:16%">Market(s)</th>
+										<th style="width:16%">Last Modified</th>
+										<th style="width:16%">SA3 or Post Code</th>
+										<th style="width:16%">Notes</th>
+									</tr>
+									<tr>
+										<td style="font-weight: normal;">
+											<a class="common-button" href="#">Filter</a>
+											<a class="common-button" href="#">Clear</a>
+										</td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;">
+											<select name="context" id="context" class="common-selectbox"><option value="">Select Comp</option>
+												<option value="82">1</option>
+												<option value="40">2</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main paneltabb">
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="minus.png" class="clickicon" alt="Plus">
+											Add My Packages 
+										</th>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's Packages 
+										</th>
+									</tr>
+									<tr class="contnts" style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's posted Packages
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Packages Shared With Me
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr class="savcancel">
+									<td colspan="5" align="right">
+										<a class="common-button-right fixed-width" href="">Cancel</a>
+										<input type="submit" value="Submit" name="commit" class="common-button-right fixed-width">
+									</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="melbourne_region" style="display:none;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main">
+								<tbody>
+									<tr>
+										<th style="width:16%"></th>
+										<th style="width:16%">Sub Area Name</th>
+										<th style="width:16%">Market(s)</th>
+										<th style="width:16%">Last Modified</th>
+										<th style="width:16%">SA3 or Post Code</th>
+										<th style="width:16%">Notes</th>
+									</tr>
+									<tr>
+										<td style="font-weight: normal;">
+											<a class="common-button" href="#">Filter</a>
+											<a class="common-button" href="#">Clear</a>
+										</td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;">
+											<select name="context" id="context" class="common-selectbox"><option value="">Select Comp</option>
+												<option value="82">1</option>
+												<option value="40">2</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main paneltabb">
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add My Packages 
+										</th>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's Packages 
+										</th>
+									</tr>
+									<tr class="contnts" style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's posted Packages
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Packages Shared With Me
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr class="savcancel">
+									<td colspan="5" align="right">
+										<a class="common-button-right fixed-width" href="">Cancel</a>
+										<input type="submit" value="Submit" name="commit" class="common-button-right fixed-width">
+									</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="brisbane_region" style="display:none;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main">
+								<tbody>
+									<tr>
+										<th style="width:16%"></th>
+										<th style="width:16%">Sub Area Name</th>
+										<th style="width:16%">Market(s)</th>
+										<th style="width:16%">Last Modified</th>
+										<th style="width:16%">SA3 or Post Code</th>
+										<th style="width:16%">Notes</th>
+									</tr>
+									<tr>
+										<td style="font-weight: normal;">
+											<a class="common-button" href="#">Filter</a>
+											<a class="common-button" href="#">Clear</a>
+										</td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;">
+											<select name="context" id="context" class="common-selectbox"><option value="">Select Comp</option>
+												<option value="82">1</option>
+												<option value="40">2</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main paneltabb">
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add My Packages 
+										</th>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's Packages 
+										</th>
+									</tr>
+									<tr class="contnts" style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's posted Packages
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Packages Shared With Me
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr class="savcancel">
+									<td colspan="5" align="right">
+										<a class="common-button-right fixed-width" href="">Cancel</a>
+										<input type="submit" value="Submit" name="commit" class="common-button-right fixed-width">
+									</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="adelaide_region" style="display:none;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main">
+								<tbody>
+									<tr>
+										<th style="width:16%"></th>
+										<th style="width:16%">Sub Area Name</th>
+										<th style="width:16%">Market(s)</th>
+										<th style="width:16%">Last Modified</th>
+										<th style="width:16%">SA3 or Post Code</th>
+										<th style="width:16%">Notes</th>
+									</tr>
+									<tr>
+										<td style="font-weight: normal;">
+											<a class="common-button" href="#">Filter</a>
+											<a class="common-button" href="#">Clear</a>
+										</td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;">
+											<select name="context" id="context" class="common-selectbox"><option value="">Select Comp</option>
+												<option value="82">1</option>
+												<option value="40">2</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main paneltabb">
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add My Packages 
+										</th>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's Packages 
+										</th>
+									</tr>
+									<tr class="contnts" style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's posted Packages
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Packages Shared With Me
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr class="savcancel">
+									<td colspan="5" align="right">
+										<a class="common-button-right fixed-width" href="">Cancel</a>
+										<input type="submit" value="Submit" name="commit" class="common-button-right fixed-width">
+									</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="perth_region" style="display:none;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main">
+								<tbody>
+									<tr>
+										<th style="width:16%"></th>
+										<th style="width:16%">Sub Area Name</th>
+										<th style="width:16%">Market(s)</th>
+										<th style="width:16%">Last Modified</th>
+										<th style="width:16%">SA3 or Post Code</th>
+										<th style="width:16%">Notes</th>
+									</tr>
+									<tr>
+										<td style="font-weight: normal;">
+											<a class="common-button" href="#">Filter</a>
+											<a class="common-button" href="#">Clear</a>
+										</td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;"><input type="text" size="30" name="" id="" class="common-input"></td>
+										<td style="font-weight: normal;">
+											<select name="context" id="context" class="common-selectbox"><option value="">Select Comp</option>
+												<option value="82">1</option>
+												<option value="40">2</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-main paneltabb">
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add My Packages 
+										</th>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									<tr class="contnts">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's Packages 
+										</th>
+									</tr>
+									<tr class="contnts" style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Add Company's posted Packages
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="add-subpackages-tbody">
+									<tr class="headd">
+										<th colspan="5">
+											<img src="plus.png" class="clickicon" alt="Plus">
+											Packages Shared With Me
+										</th>
+									</tr>
+									<tr class="contnts"  style="display: none;">
+										<td>
+											<div class="ez-radio ez-selected">
+												<input type="radio" value="1" name="contact[opt_in_out]" id="contact_opt_in_out_1" class="custom-radio ez-hide" checked="checked">
+												Sub Area Name
+											</div>
+										</td>
+										<td>
+											Market(s)
+										</td>
+										<td>
+											Last Modified
+										</td>
+										<td>
+											SA3 or Post Code
+										</td>
+										<td>
+											Notes
+										</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr class="savcancel">
+									<td colspan="5" align="right">
+										<a class="common-button-right fixed-width" href="">Cancel</a>
+										<input type="submit" value="Submit" name="commit" class="common-button-right fixed-width">
+									</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src='jquery-1.9.1.min.js'></script>
+<script>
+$(document).on('click','.headd',function(){
+	$(this).siblings().toggle();
+	if($(this).find('img').attr('src')=='plus.png')
+		$(this).find('img').attr('src','minus.png');
+	else if($(this).find('img').attr('src')=='minus.png')
+		$(this).find('img').attr('src','plus.png');
+});
+$(document).on('click','#sydney',function(){
+	$('.top-menu-ulist li a').removeClass('inside-left-selected');
+	$(this).addClass('inside-left-selected');
+	$('.sydney_region').css('display','block');
+	$('.melbourne_region').css('display','none');
+	$('.brisbane_region').css('display','none');
+	$('.adelaide_region').css('display','none');
+	$('.perth_region').css('display','none');
+});
+$(document).on('click','#melbourne',function(){
+	$('.top-menu-ulist li a').removeClass('inside-left-selected');
+	$(this).addClass('inside-left-selected');
+	$('.sydney_region').css('display','none');
+	$('.melbourne_region').css('display','block');
+	$('.brisbane_region').css('display','none');
+	$('.adelaide_region').css('display','none');
+	$('.perth_region').css('display','none');
+});
+$(document).on('click','#brisbane',function(){
+	$('.top-menu-ulist li a').removeClass('inside-left-selected');
+	$(this).addClass('inside-left-selected');
+	$('.sydney_region').css('display','none');
+	$('.melbourne_region').css('display','none');
+	$('.brisbane_region').css('display','block');
+	$('.adelaide_region').css('display','none');
+	$('.perth_region').css('display','none');
+});
+$(document).on('click','#adelaide',function(){	
+	$('.top-menu-ulist li a').removeClass('inside-left-selected');
+	$(this).addClass('inside-left-selected');
+	$('.sydney_region').css('display','none');
+	$('.melbourne_region').css('display','none');
+	$('.brisbane_region').css('display','none');
+	$('.adelaide_region').css('display','block');
+	$('.perth_region').css('display','none');
+});
+$(document).on('click','#perth',function(){
+	$('.top-menu-ulist li a').removeClass('inside-left-selected');
+	$(this).addClass('inside-left-selected');
+	$('.sydney_region').css('display','none');
+	$('.melbourne_region').css('display','none');
+	$('.brisbane_region').css('display','none');
+	$('.adelaide_region').css('display','none');
+	$('.perth_region').css('display','block');
+});
+</script>
+</body>
+</html>

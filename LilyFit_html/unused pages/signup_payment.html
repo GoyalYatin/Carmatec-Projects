@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="LilyFit" />
+<meta name="description" content="LilyFit" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>LilyFit</title>
+<meta name="viewport" content="width=device-width" />
+ 
+
+<link rel="shortcut icon" href="common/images/favicon.ico" />
+
+<link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/animation.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/style_menumouseover.css" type="text/css" />
+
+
+
+<!-- for raty css -->
+<link rel="stylesheet" type="text/css" href="assets/styles/raty.css"/>
+<!-- for raty css -->
+
+<link rel="stylesheet" media="only screen and (max-width: 1200px)" href="assets/styles/styles_1200.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="assets/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 600px)" href="assets/styles/styles_480.css" />
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)" href="assets/styles/styles_480.css" />
+
+
+</head>
+
+<body >
+
+	<div class="main-wrapper">
+    <div class="width_show"></div>
+    
+    	  
+        <div class="slider-outer-wrap signuppaymentpage_background">
+	        <div class="slider-wrapper">
+            <div class="header_wrapper header_wrapper_transparentbg">
+        		<div class="main-wrapper-fixed headerdiv">
+            	 <div class="header-left floatleft showonlyonmob"> 
+                     <a href="index.html">
+                     	<img title="LilyFit" id="logo" alt="Logo LilyFit" src="assets/images/lilyfit_logo.png"> 
+                     </a> 
+                 </div> 
+                 <div class="login_signup">	 
+            	<div class="login_button">
+ 		              <span class="login_span"> 
+                      <a  href="login.html" class="login_button_anchor loginsignupclass changelogintext"> 
+                       
+                      </a>
+                      </span>
+                 </div> 
+                 <div class="signup_button" style="display:none;">
+ 		              <span class="signup_span"> 
+                      <a href="signup.html" class="login_button_anchor loginsignupclass"> 
+                      Sign Up
+                      </a></span>
+                 </div>
+                 
+                 <!--<div class="signup_button">
+ 		              <span class="signup_span"> <a href="login.html" class="signup_button_anchor"> <img src="assets/images/login.jpg" alt="login"/></a></span>
+                 </div> -->
+                 
+                   </div>
+                 <div class="floatleftt"> 
+                 
+                  
+                        <div class="menu_top header-left">
+                        	<div class="menutoggle"> MENU </div>
+                            <ul class="menu_ulist">
+                               <li class="menuu1 navi-menu paddinganchor"><a href="aboutus.html"> <span> About </span> </a>                                                               
+                               </li>
+                               <li class="menuu2 navi-menu paddinganchor classesmenu"><a href="javascript:void(0)"> <span> Classes </span> </a>                                
+                               
+                               <div class="header-submenu-wrap">
+                                  <div class="header-submenu-wrapinside">
+                                     <div class="demo">
+                                        <div id="capslide_img_cont1" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_03.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PILATES</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Pilates1</a></li>
+                                                    <li> <a href="#"> Pilates2</a></li>
+                                                    <li> <a href="#"> Pilates3</a></li>
+                                                    <li> <a href="#"> Pilates4</a></li>
+                                                    <li> <a href="#"> Pilates5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demo">
+                                        <div id="capslide_img_cont2" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_05.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>YOGA</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Yoga1</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont3" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_07.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                               <h3>BODY TONING  <br/> & DANCE</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont4" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_09.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRENATAL</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont5" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_11.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Yoga1</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     
+                                      </div>
+                               </div>
+                               </li>
+                               <li class="menuu3 navi-menu paddinganchor"><a href="instructors.html"> <span> Instructors </span> </a>  </li>
+                               <li class="menuu4 navi-menu paddinganchor"><a href="retreats.html"> <span> Blog </span> </a>  </li>
+                               
+                               <li class="navi-menu logomenu "> <a href="index.html"><img alt="Logo" src="assets/images/lilyfit_logo.png" /></a>   </li>
+                               <li class="menuu5 navi-menu paddinganchor">  <a href="workshops.html"><span>Workshops</span> </a>  </li>
+                               <li class="menuu6 navi-menu paddinganchor"> <a href="retreats.html"><span> Retreats  </span> </a></li>
+                             <li class="menuu7 navi-menu paddinganchor "><a href="nutritions.html"> <span> Nutrition </span> </a>  </li>
+                                <li class="shopmenu navi-menu paddinganchor menulast">  <a href="javascript:void(0)"><span> Shop </span></a> </li>                       
+                            </ul>
+                         </div>   
+                 </div>  
+                 
+                 
+                 
+            </div>	 
+            	    
+                 
+                   
+       		 </div>
+        	
+        	</div>
+             	<div class="signup_div">
+                    <div class="main-wrapper-fixed">
+						<div class="signup_shadow signup">
+							<div class="signup_box_outer"> 
+								<div class="signup_box_inner signup_payment_inner"> 
+                     				<div class="signup_inner_relative">
+										<h3 class="heading_signup"> Sign Up to Lily Fit</h3>
+										<span class="signup_pager">step</span>
+										<a class="signup_step1 signup_payment1" href="signup.html">1</a>
+										<span class="signup_step2 signup_payment2">2</span>
+                                		<p class="text_signup_heading"> For just $18 a month , you can take as many classes as you like.</p>
+										<h3 class="heading_sugnup_sub"> Try our 15 day free trial</h3>
+										<h2 class="signup_credit_card_validation">Credit Card Verification</h2>
+                                		<form name="signup_form" id="signup_form" method="post">
+											<p class="signup_credit_card style_select">
+												<select id="how_heard" name="how_heard" class="common_textbox select_how_heard sign_payment_select">
+													<option value="-1">CREDIT CARD TYPE</option>
+													<option value="1">Visa</option>
+													<option value="2">Mastercard</option>
+													<option value="3">American Express</option>
+													<option value="4">Discover</option>
+												</select>
+											</p>
+											<p class="signup_paypal_button">
+												<span>&nbsp;or &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="signup_paypal">USE PAYPAL</a></span>
+											</p>
+											<p> 
+												<input type="text" id="name" placeholder="NAME ON CARD" class="common_textbox " name="name"/>
+											</p>
+											<p class="text_signup_heading form_inside_text1"> Billing postal code needs to match the address to which your
+												credit card statement is mailed.</p>
+											<p> 
+												<input type="text" id="code" placeholder="BILLING POSTAL CODE" class="common_textbox " name="code"/>
+											</p>
+											<p> 
+												<input type="password" id="phone" placeholder="BILLING PHONE NUMBER" class="common_textbox " name="phone"/>
+											</p>
+											<p class="text_signup_heading form_inside_text"> Please type numbers only, no spaces or dashes.</p>
+											<p> 
+												<input type="password" id="cardnumber" placeholder="CARD NUMBER" class="common_textbox " name="cardnumber"/>
+											</p>
+											<p class="style_select">
+												<select id="expiration" name="expiration" class="common_textbox select_how_heard">
+													<option value="-1">EXPIRATION MONTH</option>
+													<option value="01">01 - January</option>
+													<option value="02">02 - February</option>
+													<option value="03">03 - March</option>
+													<option value="04">04 - April</option>
+													<option value="05">05 - May</option>
+													<option value="06">06 - June</option>
+													<option value="07">07 - July</option>
+													<option value="08">08 - August</option>
+													<option value="09">09 - September</option>
+													<option value="10">10 - October</option>
+													<option value="11">11 - November</option>
+													<option value="12">12 - December</option>
+												</select>
+											</p>
+											<p class="style_select">
+												<select id="expirationyear" name="expirationyear" class="common_textbox select_how_heard">
+													<option value="-1">EXPIRATION YEAR</option>
+													<option value="14">2014</option>
+													<option value="15">2015</option>
+													<option value="16">2016</option>
+													<option value="17">2017</option>
+													<option value="18">2018</option>
+													<option value="19">2019</option>
+													<option value="20">2020</option>
+													<option value="21">2021</option>
+													<option value="22">2022</option>
+													<option value="23">2023</option>
+													<option value="24">2024</option>
+													<option value="25">2025</option>
+													<option value="26">2026</option>
+												</select>
+											</p>
+											<p class="signup_credit_card">
+												<input type="password" id="cardcode" placeholder="CARD CODE" class="common_textbox " name="cardcode"/>
+											</p>
+											<p class="signup_paypal_button">
+												<a href="#" class="signup_card_code">What is a Card Code?</a></span>
+											</p>
+											<p class="signup_hidden">
+												CURRENCY &nbsp;&nbsp;<span class="signup_dollar">$&nbsp;
+												<a href="javascript:void(0)" class="signup_card_code" id="signup_change">Change</a></span>
+												<span class="signup_show_change">
+													<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(36)" value="36" name="currency_id">
+													<span class="signup_show_change_left">Australia Dollar (AUD $18)</span>
+													<input class="signup_show_change_right" id="currency_id" type="radio" onchange="setCurrency(124)" value="124" name="currency_id">
+													<span class="signup_show_change_right">Canada Dollar (CAD $18)</span>
+													<br/>
+													<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(978)" value="978" name="currency_id">
+													<span class="signup_show_change_left">Euro (EUR €14)</span>
+													<input class="signup_show_change_right" id="currency_id" type="radio" onchange="setCurrency(392)" value="392" name="currency_id">
+													<span class="signup_show_change_right">Japan Yen (JPY ¥1800)</span>
+													<br/>
+													<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(826)" value="826" name="currency_id">
+													<span class="signup_show_change_left">UK Pound (GBP £12)</span>
+													<input class="signup_show_change_right" id="currency_id" type="radio" checked="checked" onchange="setCurrency(840)" value="840" name="currency_id">
+													<span class="signup_show_change_right">US Dollar (USD $18)</span>
+													
+												</span>
+											</p>
+											<p class="button_submit">
+												<input type="submit"  name="submit" value="SIGNUP" class="submit_button" />
+											</p>
+                                        </form>
+									</div>
+                                </div>
+							</div>
+						</div>
+                    </div>                 
+                </div>  
+        	</div>
+		
+	
+       <!--mainContent ends here-->
+        
+        <div class="footer_wrapper">
+        	<div class="main-wrapper-fixed footer_wrap">
+             
+             <div class="footerright">
+             	<div>
+					<span class="otherlinks_footer">
+						<a title="faq" href="faq.html">FAQ</a>
+						<a title="faq" href="testimonial.html">Testimonial</a>
+						<a title="faq" href="privacy_policy.html">Privacy Policy</a>
+						<a title="faq" href="#" class="last_otherlinks_footer">Terms & conditions</a>
+					</span>
+                  <div class="footer_social_links">
+                  <span class="faceb footersoci"><a title="facebook" href="#"> f</a></span>
+                  <span class="twittr footersoci"><a href="#" title="twitter"> t</a></span>
+                  <span class="googleplus footersoci"><a href="#" title="googleplus"> g</a></span>
+                  <span class="socilmed footersoci"><a href="#" title="forum"> s</a></span>
+                  <span class="calll footersoci"><a href="#" title="call"> ca</a></span>
+				  </div>
+                </div>
+             </div>
+             
+             <div class="footerleft">
+             	<div class="copyrights">&copy; Copyright 2013, Lilyfit , All Rights Reserved. </div>
+                <div class="poweredby"> <a target="_blank" href="http://colorcuboid.com/">Powered by <img src="assets/images/colorcuboid_logo.png" alt="Slider image">&nbsp;ColorCuboid Designs</a> </div>
+             </div>
+            
+            </div>
+        </div><!--footer ends here-->
+        
+         <div class="full_cover" style="display:none;"></div>        
+    </div>	<!--bodyWrapper ends here-->
+    
+	
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+<script type="text/javascript" src='assets/scripts/script.js'></script>	
+<script type="text/javascript" src='assets/scripts/jquery.capSlide.js'></script>	
+<script type="text/javascript" src='assets/scripts/menucaption_call.js'></script>	
+
+<script type="text/javascript" src='assets/scripts/jquery.validate.js'></script>
+
+
+
+<script type="text/javascript">
+
+      $('body').on('click', '#signup_change', function(){
+		$('.signup_dollar').css("display","none");
+		$('.signup_show_change').css("display","block");
+		$('.signup_hidden').css("margin-bottom","30px");
+	});
+	
+	$(document).ready(function(){
+	
+	var leftoffset = $('.menuu2').offset().left;
+	
+	$('.signup_shadow').css("position","absolute");
+	$('.signup_shadow').css("left",leftoffset);
+	
+	
+	$(".signup_shadow").css("animation","fx_caption_right "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)")
+	
+	var headrheight = $('.slider-outer-wrap').outerHeight();
+	var header_wrapper = $('.header_wrapper').outerHeight();
+	var totoal_screenheight = headrheight - header_wrapper;
+	totoal_screenheight = totoal_screenheight / 2 ;
+	
+	var signup_shadow = $('.signup_box_inner').outerHeight()/2;
+	padding_height = totoal_screenheight - signup_shadow - 40 ;
+	
+	$('.signup_box_inner').css("position","relative");
+	$('.signup_box_inner').css("top",padding_height);
+	
+	
+ 	});
+	
+
+	 $("#signup_form").validate({
+		
+		
+    	rules:{
+		
+		how_heard:
+			{
+			required: true,
+			min: true
+			},	
+		name:
+			    {
+				required: true,
+				
+				},  
+		code:
+			    {
+				required: true,
+				
+				}, 
+	  		      
+		phone: 
+			  {             
+			  required: true,	
+				number: true		 	  
+			  },
+		cardnumber: 
+			  {             
+			  required: true,	
+				number: true		 	  
+			  },
+		cardcode: 
+			  {             
+			  required: true,	
+				number: true		 	  
+			  },
+		expiration:
+			  {
+			   required: true,
+				min: true
+			  },
+		expirationyear: 
+			  {             
+			  required: true,
+				min: true
+			  },
+		
+		
+	
+	 
+	},
+
+    messages: {
+		 name:
+			    {
+				required: "firstname req."
+				
+				},		 	
+		code:
+			    {
+				required: "lastname req."
+				
+				},
+		how_heard:
+			{
+				min:"Please Choose any one option",
+			},
+		expiration:
+			{
+				min:"Please Choose any one option",
+			},
+		expirationyear:
+			{
+				min:"Please Choose any one option",
+			},
+					
+		phone: 
+			  {             
+			  required:"Please phone number",	
+				number:"Please enter only numbers",		 	  
+			  },
+		cardnumber: 
+			  {             
+			  required:"Please phone number",	
+				number:"Please enter only numbers",			 	  
+			  },
+		cardcode: 
+			  {             
+			  required:"Please phone number",	
+				number:"Please enter only numbers",		 	  
+			  },
+		
+		
+		
+	     
+    }
+	
+	
+	
+	
+  });
+
+
+</script>
+
+
+	</body>
+</html>
+

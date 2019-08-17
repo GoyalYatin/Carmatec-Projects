@@ -1,0 +1,86 @@
+
+
+
+        		<div class="popup_main_container">
+                            <div class="popup_close_bar">
+                           		<span class="close_class_popup">&nbsp;</span>
+                            </div>
+                            <div class="innercontent_popup">
+                            <div class="iframediv">
+                                      
+              <div id="work_shop_detailvideo" class="work_shop_detailvideo">
+						<!--		
+                          <video  id="popup_video" class="video-js vjs-default-skin" controls preload="none" 
+							  poster="assets/images/pilates_pop+image.jpg"
+							  data-setup="{}" >
+						  
+								<source src="assets/videos/big_buck_bunny.webm" type='video/webm' />                  
+						  </video>-->
+                     </div>        
+                             </div>
+                             
+                             
+                             
+                             
+							
+							 
+                            </div>
+							
+                            </div>
+                       		 
+
+ 
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+       
+ <script type="text/javascript" src="jwplayer/jwplayer.js"></script> 
+<script src="assets/scripts/video.js"></script>
+<script type="text/javascript">
+    videojs.options.flash.swf = "assets/scripts/video-js.swf";
+	var xyz=(600/1200)*($('.work_shop_detailvideo').width());
+
+    jwplayer("work_shop_detailvideo").setup({
+        file: "assets/videos/small.mp4",
+        image: "assets/images/pilates_pop+image.jpg",
+		height: xyz,
+		width: "97%"
+    });
+	$(window).load(function(){
+		if($('.work_shop_detailvideo').empty()){
+			$('.work_shop_detailvideo').width('96%').height(xyz);
+			$('#work_shop_detailvideo').append("<a href='http://get.adobe.com/flashplayer/' target='_blank'><img class='flashplayer_image' src='assets/images/flashplayer.png' width='50%'/></a>");
+		}
+	});
+	
+
+	
+  </script>
+
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	window_height = $(window).height();
+	window_height = window_height -240; 
+	$('.popup_main_container').css("height",window_height);
+	$('.popup_main_container').css("top","100px");
+	
+	
+	var popcontentheight = window_height - 40;
+	$('.innercontent_popup').css("height",popcontentheight);
+	
+	$('.innercontent_popup').mCustomScrollbar({
+	scrollButtons:{
+		enable:true
+	},
+	advanced:{
+        updateOnContentResize: true,
+		updateOnBrowserResize: true
+    }
+});
+$( ".comment_toggle" ).click(function() {
+ 		 $('.comments_outer').slideToggle( "slow");
+});
+})
+</script>

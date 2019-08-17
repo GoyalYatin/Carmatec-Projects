@@ -1,0 +1,64 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Fusion Tables styling</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+var map, layer;
+
+function initialize() {
+
+  var australia = new google.maps.LatLng(-38.54904100,145.45625700);
+
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: australia,
+    zoom: 6
+  });
+
+  layer = new google.maps.FusionTablesLayer({
+    query: {
+      select: 'POA_CODE_2',
+      from: '1tB9PcMbl3bARE7Ake8IcTBgqvYk3028KGIVrV20S'
+    },
+    styles: [{
+      polygonOptions: {
+        fillColor: 'red',
+        fillOpacity: 1
+      },
+	  where: 'POA_CODE_2>3114',
+		  polygonOptions: {
+			fillColor: 'yellow',
+			fillOpacity: 1
+		  },
+	  where: 'POA_CODE_2>3400',
+		  polygonOptions: {
+			fillColor: 'green',
+			fillOpacity: 1
+		  }
+
+    }]
+  });
+  layer.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
+

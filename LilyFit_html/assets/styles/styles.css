@@ -1,0 +1,5217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+*/
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn,  img, ins, kbd, q, s, samp,
+small, strike,  sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/********* rails admin override **/
+
+p,div,h1,h2,h3,h4,h5,h6
+{
+	padding:0px;
+	padding:0px;
+	margin:0px;
+	vertical-align: baseline;
+}
+p
+{
+margin-bottom:10px;
+line-height:1.3;
+text-align:justify;
+}
+strong
+{
+font-weight:bold;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+}
+em
+{
+font-style:italic;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+	line-height:1;
+}
+/********* rails admin override **/
+ul li
+{
+    background:url(../images/tick.png) no-repeat left top;
+    padding-left:26px;
+    font-size:15px;
+	color:#666;
+}
+.who_we_are ul li
+{
+	line-height:15px;
+	/*margin-bottom:15px;*/
+}
+
+.who_we_are_list li,.blog_details ul li {
+    background: url("../images/tick.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    padding-bottom: 17px;
+    padding-left: 26px;
+}
+.who_we_are_left_hidden{
+	clear: both;
+    float: left;
+    margin-top: 21px;
+    width: 100% !important;
+}
+.who_we_are_left_hidden p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 100%;
+}
+.who_we_are_left_hidden ul li {
+    line-height: 15px;
+}
+.who_we_are_left_hidden li {
+    background: url("../images/tick.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    padding-bottom: 17px;
+    padding-left: 26px;
+	color: #666666;
+    font-size: 15px;
+}
+.menu_ulist li
+{
+background:none;
+}
+
+.activeclasss a
+{
+	color:#333333 !important;
+}
+
+.header-submenu-wrap {
+	 background:none repeat scroll 0 0 #fff;
+    clear: both;
+    display: none;
+    float: left;
+    box-shadow: 0 4px 10px #DCDCDC;
+    padding-top: 7px;
+    position: absolute;
+    top: 45px;
+    width:935px;
+    z-index: 1020;
+	padding:13px;
+	padding-right:8px;
+	left:0px
+	
+}
+.ic_text{
+	overflow: hidden;
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+}
+.mouse_over_drop_ul{
+	margin-bottom:10px !important;
+}
+.ic_text .mouse_over_drop_ul li a{
+	line-height:1.5;
+}
+.ic_text .mouse_over_drop_ul li a:hover{
+	color:#2596C4;
+}
+.ic_container img{
+	width:180px;
+	height:240px;
+}
+.header-submenu-wrapinside
+{
+	position:relative;
+	left:0px;
+}
+.pilats_ul li,.breadcrums-wrapper-list li,.pilates_innaerpage li , .slides ul li,.retreat_details_left_listmain li,.retreat_details_down_listmain li,.mouse_over_drop_ul li,.filter_ul li
+{
+background:none !important;
+padding-left:0px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*-------Layout styles starts here---------*/
+body {
+	background:#fff;
+	/*background-image: url("../images/bg.jpg");
+    background-position: center center;*/
+	background-repeat:no-repeat;
+	font:normal 15px 'MyriadWebPro', arial;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.header_wrapper_inside
+{
+	/*background-color:#DCDFD8;*/
+	
+	background:url("../images/nav_02.jpg") repeat-x scroll left top;
+	height:131px;
+}
+.header_wrapper_inside ul li
+{
+	border:none;
+}
+.bodyWrapper {
+	background-color: #FFFFFF;
+	width:1200px;
+	margin: 0 auto;
+	height:auto;
+	overflow:hidden;
+}
+
+a
+{
+	color:#2596c4;
+	outline:none;
+}
+a:hover
+{
+	/*transition:all 0.3s ease 0s;*/
+}
+@font-face{
+	font-family: 'Rupee Foradian';
+	src: url('../fonts/rupee/Rupee_Foradian.eot');
+	src: local('Rupee Foradian'), url('../fonts/rupee/Rupee_Foradian.ttf') format('truetype'),
+	url('../fonts/rupee/Rupee_Foradian.woff') format('woff'),
+	url('../fonts/rupee/Rupee_Foradian.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.rupeeSymbol {
+	font-family: "Rupee Foradian";
+	font-size: 12px;
+	font-style: normal;
+}
+
+@font-face {
+	 font-family: 'MyriadWebPro';
+	 src: url('../fonts/MyriadWebPro/myriad-web-pro-webfont.eot');
+	 src: url('../fonts/MyriadWebPro/myriad-web-pro-webfont?#iefix') format('embedded-opentype'),
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.woff') format('woff'), 
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.ttf') format('truetype'), 
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.svg#myriad-web-pro-webfont') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}
+
+@font-face {
+	 font-family: 'MYRIADPRO-BOLD';
+	 src: url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD.eot');
+	 src: url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD?#iefix') format('embedded-opentype'),
+	  url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD.woff') format('woff'), 
+	  url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD.ttf') format('truetype'), 
+	  url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD.svg#MYRIADPRO-BOLD') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}
+
+@font-face {
+	 font-family: 'MyriadPro-Light';
+	 src: url('../fonts/MyriadPro-Light/MyriadPro-Light.eot');
+	 src: url('../fonts/MyriadPro-Light/MyriadPro-Light?#iefix') format('embedded-opentype'),
+	  url('../fonts/MyriadPro-Light/MyriadPro-Light.woff') format('woff'), 
+	  url('../fonts/MyriadPro-Light/MyriadPro-Light.ttf') format('truetype'), 
+	  url('../fonts/MyriadPro-Light/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}
+
+/* added for lilyfit **/
+
+.width_show {
+	display: block !important;
+	background: none repeat scroll 0 0 #9FF;
+	color: #000;
+	opacity: 0.8;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 1211;
+}
+
+.main-wrapper {
+	float: left;
+	font-size: 15px;
+	height: auto;
+	line-height: 16px;
+	width: 100%;
+}
+.main-wrapper-fixed {
+	height: auto;
+	margin: auto;
+	width: 1200px;
+}
+.floatleft {
+	float: left;
+	color: #666666;
+}
+.floatright {
+	float: right;
+}
+
+
+.showonlyonmob
+{
+	display:none;
+}
+
+
+
+.header_wrapper
+{
+	/*background:url("../images/bg_box.png") repeat scroll left top #F4F4F4;*/
+	float:left;
+	clear:both;
+	width:100%;
+	
+}
+
+.mainContent_wrapper
+{
+	background:none repeat scroll 0 0 #fff;
+	float:left;
+	clear:both;
+	width:100%;
+	overflow:hidden;
+}
+.mainContent_wrapper
+{
+	padding-top:31px;
+	padding-bottom:10px;
+}
+
+
+.footer_wrapper
+{
+	background:none repeat scroll 0 0 #fff;
+	float:left;
+	clear:both;
+	width:100%;
+	border-top:solid 1px #F0F0F0;
+	
+}
+
+
+.header-left {
+	width: 100%;	
+	margin:0 auto;
+}
+.header-right {
+	float: right;
+	height: auto;	
+	width: auto;
+	z-index: 1000;
+}
+
+.menu_ulist {
+	float: left;
+	display: block;
+	width: 100%;
+	text-align:center;
+}
+
+.pilates_menu_inner
+{
+	float:right;
+	width:90%;
+}
+.menu_ulist {
+	display: block;
+	float: left;
+	margin-top: 12px;
+	width: 100%;
+	/*margin-bottom:12px;*/
+}
+
+
+.navi-menu {	
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    float: left;
+    margin-top:50px;
+    padding: 14px 27px;
+    text-align: center;
+    position:relative;
+}
+
+.menuu1
+{
+	padding-left: 0;
+    padding-right: 30px;
+}
+
+.menuu2
+{
+	 padding-left: 26px;
+    padding-right: 30px;
+}
+
+
+.menuu3
+{
+	padding-left:26px;
+	padding-right: 30px;
+}
+
+.menuu4
+{
+	padding-left: 32px;
+    padding-right: 20px;
+}
+
+.menuu5
+{
+	padding-left:15px;
+    padding-right: 23px;
+}
+
+.menuu6
+{
+
+	padding-right: 20px;
+}
+
+.menuu7
+{
+	
+	padding-right: 26px;
+}
+
+.shopmenu
+{
+	padding-left:10px;
+	
+}
+
+
+
+.menulast
+{
+	padding-right:0px;
+}
+
+.logomenu 
+{	
+	border: medium none;
+    margin-top: 0;
+    padding-left: 21px;
+    padding-right: 41px;
+    padding-top: 0;
+	
+}
+
+.header_wrapper_inside .logomenu
+{
+background:none repeat scroll 0 0 #FFFFFF !important;
+}
+.menutoggle {
+	display: none;
+}
+
+
+.navi-menu a {
+	font-size: 20px;
+	font-family: 'MyriadWebPro';
+	color: #fff;
+	padding: 0;
+	float: left;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.navi-menu a:hover {
+	 color: #000;
+}
+.login_signup a:hover{
+	 color: #000 !important;
+}
+.navi-menu.activemenu a span
+{
+	border-bottom: 4px solid #27ACE2;
+    color: #27ACE2;
+	
+}
+
+.floatleftt
+{
+	float:left;
+	width:100%;
+}
+
+/* slideshow **/
+
+.home_banner
+{
+width:100%;
+float:left;
+}
+.footer_wrap
+{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.poweredby a
+{
+	color:#5E5E5E;
+	text-decoration:none;
+}
+
+.footerleft
+{
+	float:left;
+	margin-top:12px;
+	margin-bottom:10px;
+	
+}
+.poweredby
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:12px;
+	font-family:arial;
+}
+.footerright
+{
+	float:right;
+	
+}
+.footer_prob_div{
+	display:none;
+}
+.faceb
+{
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position: -2px -47px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+}
+.twittr
+{
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position:-39px -47px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+	
+}
+.googleplus
+{
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position:-79px -47px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+}
+.footersoci a
+{
+	  cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    position: relative;
+    top: 15px;
+    width: 34px;
+}
+
+.copyrights
+{
+	font-size:12px;
+	font-family:arial;
+	color:#5e5e5e;
+	
+}
+.poweredby a:hover
+{
+	color:#2596c4 !important;
+}
+
+.poweredby img
+{
+	position:relative;
+	top:5px;
+}
+.otherlinks_footer{
+float:left;
+}
+.footer_social_links{
+float:right;
+}
+.responisve-container
+{
+    position: relative;
+    z-index: -1;
+}
+.pilates_menu
+{
+
+    left: 0;
+    margin: 0 auto;
+    padding: 20px;
+     position:fixed;
+    right: 0;
+    bottom: 95px;
+    width: 1024px;
+    z-index: 1000;
+}
+
+.fadewrapper
+{	
+	bottom:137px;
+    display: none	;   
+    left: 0;
+    position: absolute;
+}
+
+.fadewrapperinner
+{
+	margin-bottom:24px;
+	 background: url("../images/bg_box.png") repeat scroll left top transparent;
+	  width: 83%;
+	   padding: 17px;
+	   background-size:cover;
+    
+    
+}
+
+.pilats_ul
+{
+	float:right;
+	width:100%;
+	
+}
+.filter_image img
+{
+	text-align:center;
+	width:100%;
+}
+
+.pilates_li {
+	display:inline;
+	float:left;
+	margin-right:10%;
+}
+
+.common_home_bottom_anchor{
+	display:inline-block;
+	width:120px;
+	height:120px;
+	text-decoration:none;
+}
+.pilates_anchor{
+	background:url(../images/pilates01.png) no-repeat left top;
+}
+.pilates_anchor:hover{
+	background:url(../images/pilates.png) no-repeat left top;
+}
+.yoga_anchor{
+	background:url(../images/yoga01.png) no-repeat left top;
+}
+.yoga_anchor:hover{
+	background:url(../images/yoga.png) no-repeat left top;
+}
+.body_anchor{
+	background:url(../images/boday_toning01.png) no-repeat left top;
+}
+.body_anchor:hover{
+	background:url(../images/boday_toning.png) no-repeat left top;
+}
+.prenatal_anchor{
+	background:url(../images/prenatal01.png) no-repeat left top;
+}
+.prenatal_anchor:hover{
+	background:url(../images/prenatal.png) no-repeat left top;
+}
+.pilates_common{
+	font-size:0px;
+}
+.fadewrapper h2{
+	font-size: 27px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+	line-height:29px;
+}
+.fadewrapper p{
+	padding-bottom:10px;
+	font-size:15px;
+}
+.pilates_button{
+	background:#1172b5;
+	padding:5px;
+	color:#fff;
+	font-size:18px;
+	text-decoration:none;
+	margin-right:10px;
+}
+
+.arrow_down
+{
+	position:relative;
+	bottom:23px;
+	display:none;
+	left:49px
+	
+}
+.login_signup
+{
+	display:none;
+	 position: fixed;
+    right: 0px;
+	z-index:999;
+	
+}
+
+
+.login_button
+{
+	float: right;
+    position: fixed;
+    right: 0px;
+    top: 112px;
+}
+.loginsignupclass
+{
+	  background: url("../images/login_arrow.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    height: 36px;
+    line-height: 39px;
+    text-align: center;
+    text-decoration: none;
+    
+    width: 40px;
+}
+.popup_blue_span{
+	display:block;
+	color:#2596C4;
+	font-size:18px;
+	margin-top:5px;
+}
+.bottom_anchor_list{
+	margin-top:10px;
+}
+.breadcrums-wrapper-list {
+    float: left;
+    width: auto;
+}
+
+.breadcrums-wrapper-list li a {
+    background: url("../images/breadcrumb_arrow.png") no-repeat scroll right 30% rgba(0, 0, 0, 0);
+    color: #ADADAD;
+    float: left;
+    padding: 5px 21px 5px 10px;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:14px;
+}
+.breadcrums-wrapper-list li a:hover{
+	color:#2596C4;
+}
+.breadcrums-wrapper-list li{
+	display:inline;
+}
+
+.breadcrums-wrapper-list li span {
+    color: #333333;
+    float: left;
+    padding: 5px 21px 5px 10px;
+	text-transform:uppercase;
+	font-size:14px;
+}
+.breadcrums-first a
+{
+	padding-left:0px !important;
+}
+
+.breadcrumb_navigation
+{
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:16px;
+}
+.page_title,.page_title_bold
+{
+	width:100%;
+	float:left;
+	border-bottom:solid 1px #ddd;
+	line-height:1;
+}
+
+.page_title h3,.page_title_bold h3{
+    float: left;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 29px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.filter_div
+{
+	width:200px;
+	float:left;
+	clear:both;
+	
+}
+.pilates_page_details{
+	float: left;
+    text-align: left;
+    width:62%;
+	color:#666;
+}
+.pilates_page_details h3{
+	font-size:26px;
+	margin-top:20px;
+	padding-bottom:10px;
+	font-weight:normal;
+}
+.who_we_are_left li{
+    color:#666;
+}
+.filter_ul li a {
+   background: url("../images/pilates_arrow.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #DDDDDD;
+    color: #666666;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 142px;
+	padding-bottom:8px;
+}
+
+.filter_ul li {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+	width:100%;
+	line-height:19px;
+}
+.level_filter
+{
+	width: 450px !important;
+	padding-left:19px;
+}
+.filter_ul
+{
+	width:100%;
+	float:left;
+}
+/*  carosel slider ***/
+
+.carosel_div_class li
+{
+	background:none;
+	list-style-type:none;
+}
+#carousel {
+width:1200px;
+border:0px solid #222;
+height:300px;
+position:relative;
+clear:both;
+overflow:hidden;
+background:#FFF;
+margin:0 auto;
+}
+#carousel img {
+visibility:hidden; /* hide images until carousel can handle them */
+ /* otherwise it's not as obvious items can be clicked */
+
+ cursor: pointer;
+   
+	
+}
+
+#carousel img.carousel-center {
+	cursor:text;
+}
+
+#carousel #default_raty img, #carousel .leave_commentss img,ul#carousel div.pilates_details img,.pilates__mobile_page #default_raty img
+{
+	visibility:visible;
+}
+	.pilates__mobile_page{
+		width:100%;
+		float:left;
+	}
+	.pilates__mobile_page .popup_main_container .innercontent_popup {
+		padding: 0;
+		width: 100%;
+	}
+	.pilates__mobile_page .popup_main_container {
+		padding-bottom: 20px;
+		left:0;
+		top:0;
+		position:relative ;
+		width: 100%;
+		z-index: 0;
+		background:none;
+		float:left;
+	}
+.split-left {
+width:450px;
+float:left;
+}
+.split-right {
+width:400px;
+float:left;
+margin-left:10px;
+}
+#callback-output {
+height:250px;
+overflow:scroll;
+}
+textarea#newoptions {
+width:430px;
+}
+.carosel_navigation a
+{
+font-size:0px;
+}
+.carosel_navigation
+{
+bottom: 117px;
+position: absolute;
+
+width:100%
+}
+.carosel_left
+{
+left: -24px;
+position: absolute;
+z-index: 100;
+visibility:hidden;
+}
+.carosel_right
+{
+float: right;
+position: relative;
+right: -24px;
+z-index: 100;
+visibility:hidden;
+}
+.carosel_main_div
+{
+float: left;
+margin: 0 auto;
+width: 100%;
+}
+.navigation_paretrelative
+{
+position:relative;
+
+}
+.carousel-center
+{
+background:url('../images/preview_arrow.png') center center no-repeat; 
+}
+	  
+	  
+/*** slider carosel ***/
+
+.filterliactive
+{
+	background:url('../images/pilates_arrow_blue.png') right center no-repeat !important; 
+	border-bottom:2px solid #30b0e3 !important;
+}
+
+.filter_div_inner
+{
+	display:none;
+}
+.filter_div_inner {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #e7e6e6;
+	border-bottom:solid 5px #30B0E3;
+    padding:13px 0 13px 18px;
+    position: absolute;
+    top: 100%;
+    width:450px;
+    z-index: 1000;
+	max-height:300px;
+	min-width:11.8%;
+}
+
+.filter_ul_inner
+{
+	width:auto !important;
+}
+.filter_div_innerinstructors
+{
+	width:350px !important;
+	padding:0px !important;
+}
+.filter_div_innerinstructors li a:hover
+{
+	color:#28a5d6;
+}
+.filter_ul_insideinstructors
+{
+	  float: left;
+    padding-left: 11px;
+    width: 43% !important;;
+}
+.duration_filter
+{
+	width:142px !important;
+	padding:0px !important;
+}
+.duration_filter li a:hover
+{
+	color:#28a5d6;
+}
+
+.filter_heading
+{
+	 background: none repeat scroll 0 0 #51504F;
+    color: #FFFFFF;
+    font-size: 18px;
+    min-height: 41px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;;
+	
+}
+
+.filter_description
+{
+	font-size:13px;
+	color:#626161;
+	ext-align:justify;
+}
+.input {
+    background-color: #E6E6E0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1) inset;
+    color: #000000;
+    font-size: 10pt;
+    margin-bottom: 5px;
+    padding: 4px 4px 4px 15px;
+}
+
+#features {
+    color: #5C5959;
+}
+.filterinsid {
+    cursor: pointer;
+    float: left;
+    padding-right: 3%;
+    width: 46%;
+}
+
+.pilates_details
+{
+	display:none;
+	position:absolute;
+}
+
+.full_cover {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.popup_main_container .iframediv .video-js{
+	height:360px;
+	width:100% !important;
+}
+.popup_main_container {
+   background:#FFFFFF;
+    left: 20%;
+    position: fixed;
+    top: 50%;
+    width: 60%;
+    z-index: 99999;
+	padding-bottom:65px;
+}
+.class_dropdown_mobile_slider{
+	position:absolute;
+	left:-600px;
+	display:none;
+	top: 236px;
+    width: 100%;
+	z-index:99999;
+	background:none repeat scroll 0 0 #1172B5;
+}
+.menu_ulist .class_dropdown_mobile_slider  img{
+	color: #FF0000;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+	border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+}
+
+.menu_ulist .class_dropdown_mobile_slider  h3{
+	color:#fff;
+	float:left;
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.menu_ulist .class_dropdown_mobile_slider  li a{
+	background: none repeat scroll 0 0 #1172B5;
+    display: inline-block;
+    float: none;
+    margin: auto;
+    opacity: 1 !important;
+    padding: 5px 0;
+    width: 100%;
+	z-index:999 !important;
+	color:white;
+	text-decoration:none;
+}
+.close_class_popup
+{
+background: url("../images/close_popup.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 41px;
+    position: relative;
+    width: 100%; 	
+}
+
+.innercontent_popup
+{
+	float:left;
+	padding:0 20px 37px 30px;
+	width:95%;
+	/*overflow:scroll;
+	overflow-x:hidden;*/
+}
+
+.iframediv
+{
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:16px;
+}
+
+.title_divv
+{
+	float:left;
+	clear:both;
+	width:100%;
+}
+
+.title_divv h2
+{
+	/*background: url("../images/facebooklike.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+	height:61px;
+	width:734px;*/
+	text-transform:uppercase;
+	color:#000;
+	font-weight:bold;
+	font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.description_divv
+{
+	text-align:justify;
+	font-size:14px;
+}
+
+.durationn
+{
+	float:left;
+	clear:both;
+	width:100%;
+	font-size:13px;
+	margin-top:10px;
+}
+.leftspann
+{
+	float:left;
+	width:17%;
+	display:block;
+	color:#666;
+	text-transform: capitalize;
+	
+	
+}
+
+.rightspann
+{
+	float:left;
+	width:40%;
+	display:block;
+	color:#333333;
+	text-transform: capitalize;
+	
+}
+
+.popup_main_container .like-btn,.popup_main_container .dislike-btn{
+	height: 26px !important;
+	margin-top: 5px !important;
+}
+.videos_all
+{
+	display:none;
+	float:left;
+	clear:both;
+}
+.videos_all_inner
+{
+margin-top:10px;
+float:left;
+margin-right:18px;
+/*width:100%;	*/
+}
+
+.filter_ul_inside
+{
+	width:auto;
+	
+}
+.filter_ul_inside li a
+{
+	width:91%;
+	padding-left:11px;
+	background:none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border:none;
+}
+
+.level_filter .filterinsid
+{
+	padding-right: 2.5%;
+    width: 30.5% !important;
+}
+
+
+/*** like dislike **/
+
+.tab-tr{
+	/*width: 100%; height: 55px; 
+	border-bottom: #e6e6e6 1px solid; border-top: #e6e6e6 1px solid;*/	
+}
+.like-btn, .dislike-btn{
+	width: auto; height: 30px; padding:0 6px 0 29px; 
+	float: left; margin-left: 10px; margin-top: 0px;
+	cursor: pointer; color: #333333; font-size: 13px; line-height: 33px;
+	border:#c6c6c6 1px solid;
+	-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; /* border radius */
+}
+
+
+.like-btn{background: url(../images/like-ico.png) 5px 50% no-repeat #f0f0f0; }
+.like-btn:hover, .like-h{
+	background: url(../images/like-ico-h1.png) 5px 50% no-repeat; color: #366bb7;
+	background-color: #f0f0f0;	border: #c6c6c6 1px solid; 
+}
+.dislike-btn{background: url(../images/dislike-ico.png) 50% 50% no-repeat #f0f0f0;margin-left:-1px !important; }
+.dislike-btn:hover, .dislike-h{
+	background: url(../images/dislike-ico-h.png) 50% 50% no-repeat;
+	background-color: #f0f0f0;	border: #c6c6c6 1px solid; 
+}
+
+
+
+
+
+
+/*** like dislike **/
+
+#carousel #default_raty2 img ,#carousel #default_raty3 img  ,#carousel #default_raty4 img  	,#carousel #default_raty5 img  ,#carousel #default_raty6 img  
+{
+	visibility:visible;
+}
+
+.filter_retreats
+{
+	float:right;
+	display:block;
+}
+.filter_text
+{
+	 bottom: 13px;
+    font-size: 15px;
+    margin-right: 9px;
+    position: relative;
+}
+
+.retreats_inner
+{
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:100%;
+}
+
+.retreats_box
+{
+	 background: url("../images/Retreats_box_shadow.jpg") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 2%;
+    padding-bottom: 2.7%;
+    width: 48%;
+	background-size:contain;
+	/*margin-top:400px;*/
+	
+}
+.retreats_box_inner
+{
+	float: left;
+    padding:20px 16px 20px 30px;
+    width: auto;
+	border:1px solid #E8E8E8;
+}
+.retreats_title
+{
+	font-size:23px;
+	color:#333;
+	font-weight:bold;
+	width:auto;
+	line-height:35px;
+}
+.retreats_title_sub
+{
+	color:#666;
+	font-size:20px;
+	font-weight:bold;
+	width:auto;
+	font-family:'MyriadPro-Light';
+}
+.retreat_page .retreats_title_sub
+{
+	color:#999;
+	font-size:18px;
+	
+}
+.retreats_contents_down
+{
+	float:left;
+	margin-top:20px;
+}
+.retreats_image
+{
+	float:left;width:49%;
+	
+}
+.retreats_content_right
+{
+	float:left;
+	width:50%;;
+	
+}
+.decriptionss
+{
+	 color: #666666;
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom: 13px;;
+}
+
+.retrat_date
+{
+	color:#0099CC;
+	font-weight:bold;
+	font-size:18px;
+	margin-bottom:23px;
+}
+
+.readmoree a
+{
+	 background: none repeat scroll 0 0 #0099CC;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 5px 6px 4px 7px !important;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.payment_button a{
+	font-size: 18px;
+    font-weight: bolder;
+    padding: 7px 30px !important;
+	float:right;
+}
+
+.retreats_even
+{
+	margin-right:0px;
+	float:right;
+}
+
+/*.retreats_box
+{
+transition:	0.9s cubic-bezier(0.17, 0.89, 0.26, 1) 0s normal none 1 fx_caption_right;
+}*/
+
+.pilates_innaerpage
+{
+	float:left;
+	width:100%;
+}
+
+.pilates_innaerpage a
+{
+	text-decoration:none;
+	margin:0 auto;
+}
+.retreats_pilates_menu
+{
+	margin:0 auto;
+	width:770px;
+}
+
+.pilates_innermenu
+{	
+	display: inline;
+    float: left;
+  /*  margin-right: 9%;*/
+  width:25%;
+	
+}
+
+
+.common_inner_pilates
+{
+	display:list-item;
+	width:133px;
+	height:133px;
+	
+}
+
+
+.pilates_inner1
+{
+	background:url(../images/pilates02.png) no-repeat left top;
+	
+}
+
+.pilates_inner1:hover
+{
+	background:url(../images/pilates.png) no-repeat left top;
+	
+}
+
+.pilates_inner2
+{
+	background:url(../images/yoga02.png) no-repeat left top;
+	
+}
+
+.pilates_inner2:hover
+{
+	background:url(../images/yoga.png) no-repeat left top;
+	
+}
+
+.pilates_inner3
+{
+	background:url(../images/boday_toning02.png) no-repeat left top;
+	
+}
+
+.pilates_inner3:hover
+{
+	background:url(../images/boday_toning.png) no-repeat left top;
+	
+}
+
+.pilates_inner4
+{
+	background:url(../images/prenatal02.png) no-repeat left top;
+	
+}
+
+.pilates_inner4:hover
+{
+	background:url(../images/prenatal.png) no-repeat left top;
+	
+}
+
+.pilates_innermenu_last
+{
+	margin-right:0px;
+}
+
+/******* Instructors page *************/
+
+.instructors_all
+{
+	float:left;
+	width:100%;
+	clear:both;
+
+}
+.instructors_all2
+{
+	float:left;
+	width:100%;
+	clear:both;
+	/*overflow:hidden;*/
+}
+
+
+.instructor_title_box
+{
+	float:left;
+	width:100%;
+	margin-top:12px;
+	margin-bottom:20px;
+}
+
+.instructor_title_box h2
+{
+	 border: 1px solid #EBEBE2;
+    clear: both;
+    float: left;
+    font-family: 'myriadwebpro';
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 9px 18px 5px;
+    text-transform: uppercase;
+}
+.horizontalLine
+{
+ background: none repeat scroll 0 0 #EBEBE2;
+    border: medium none;
+    color: #EBEBE2;
+    height: 1px;
+}	
+	
+.instructor_title_box .horizontalLine
+{
+	margin:26px 0;
+}
+
+.pilates_instructorrslider,.workshop_instructorrslider,.testimonial_instructorrslider
+{
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:10px;
+	 font-family: MyriadWebPro;
+	
+}
+
+.pilates_instructorrslider2,.workshop_instructorrslider2
+{
+	float:left;
+	width:100%;
+	clear:both;
+}
+
+
+
+.pilates_instructorrslider3,.workshop_instructorrslider3
+{
+	float:left;
+	width:100%;
+	clear:both;
+}
+
+
+
+.pilates_instructorrslider4,.workshop_instructorrslider4
+{
+	float:left;
+	width:100%;
+	clear:both;
+}
+
+.instructors_all .pilates_instructorrslider .slide{
+margin-right: 39px !important;
+}
+.instructor_detail_page .pilates_instructorrslider .slide{
+margin-right: 0px !important;
+}
+.instructor_detail_page #my-carousel-1{
+	min-height:230px;
+}
+.instructor_detail_page #my-carousel-1 ul{
+	height:230px;
+}
+/********* for retreats page **/
+
+.previewimage
+{
+	background:url(../images/video.png) no-repeat center center;
+	width:61px;
+	height:44px;
+	display:block;
+}
+
+/****** login pagr **/
+.login_message_fail,.login_message_success{
+	margin:0;
+	text-align:center;
+	font-size:14px;
+	padding:0;
+}
+.login_message_success{
+	color:#00bf00;
+}
+.login_message_fail{
+	color:#BF0000;
+}
+.loginpage_background
+{
+	background:url("../images/lilyfit01.jpg") no-repeat center  top ;
+   height:828px;
+	width:100%;
+	background-size:cover !important;
+}
+
+.loginboxwidth
+{
+	/*width:60% !important;*/
+}
+.login_box_outer
+{
+	float:left;
+	/* background:url(../images/shadow_signup.png) no-repeat bottom center; */
+	min-height:551px;
+}
+
+.signup_box_outer
+{
+	float:left;
+	/* background:url(../images/shadow_signup.png) no-repeat bottom center; */
+	/*min-height:551px;*/
+	padding-bottom:45px;
+}
+
+
+.login_shadow
+{
+	 width: 480px;
+	/*background:url("../images/Untitled-3.png") no-repeat  bottom center rgba(0, 0, 0, 0);*/
+}
+.login_box_inner
+{
+	clear: both;
+    float: left;
+	/* background-image: url("../images/bg_box.png"),url("../images/shadow_signup.png");
+	 background-position: left top, center bottom;
+    background-repeat: repeat, no-repeat;
+    background-size: 100% auto, 100% auto; */
+	background: url("../images/bg_box.png") no-repeat;
+	background-size:100% 100%;	
+    height: 100%;
+   /* margin-left: 10%;
+    margin-top: 31%;*/
+    min-height: 330px;
+    width: 480px;
+	/* padding-bottom:50px; */
+	
+}
+
+
+.login_div
+{
+	width:100%;
+	float:left;
+	clear:both;
+	height:480px;
+	/*overflow:hidden;*/
+}
+
+.heading_login
+{
+	font-size:28px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#27ACE2;
+	font-weight:normal;
+	line-height:1;
+}
+
+.heading_sugnup_sub
+{
+	color: #27ACE2;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.login_inner_relative
+{
+   float: left;
+    padding:40px;
+    width:83%;
+}
+
+.login_div p
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.common_textbox
+{
+	border: 1px solid #afdaeb;
+    padding: 12px 10px;
+    width: 95%;
+	color:#949391;
+	
+}
+
+.submit_button
+{
+	 background: url("../images/login.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    height: 40px;
+    width: auto;
+	font-weight:bold;
+	font-family:'Myriadwebpro';
+	background-size:cover;
+	
+}
+
+.password_forgot
+{
+	float:right;
+	line-height:42px;
+}
+
+.button_submit .signup 
+{
+	margin-left:10px;
+}
+.button_submit .signup a
+{
+	text-decoration:none;
+	color:#27ACE2;
+}
+.password_forgot a
+{
+	color:#000 !important;
+}
+.button_submit
+{
+	color: #949391;
+    float: left;
+    font-size: 14px;
+    width: 100%;
+}
+
+.button_submit a
+{
+	color:#949391;
+}
+
+
+
+/*********** about us page **/
+
+.who_we_are ul li
+{
+	background:url(../images/tick.png) no-repeat left top;
+	padding-left:26px;
+	 padding-bottom:17px;
+}
+.who_we_are{
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+.about_page .who_we_are_right{
+	padding-top: 25px;
+}
+.who_we_are_left{
+	width:50%;
+	float:left;
+	overflow:hidden;
+}
+.who_we_are_right p{
+color:#666;
+}
+.who_we_are_right{
+	position:relative;
+	width:46%;
+	margin-left:3%;
+	float:left;
+
+}
+
+.who_we_are_title{
+     color: #323232 !important;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.who_we_are_left p{
+	width:100%;
+	text-align:justify;
+	font-size:15px;
+	margin-bottom:20px;
+	line-height:20px;
+	color:#666;
+	
+}
+.who_we_are_list
+{
+	color:#666;
+	font-size:15px;
+	
+}
+.about_how_it_works{
+float: left;
+    width: 100%;
+}
+.meet_our_team{
+	float:left;
+	width:100%;
+	clear:both;
+}
+
+
+.meet_our_team_title{
+	float:left;
+	width:100%;
+	margin-top:12px;
+	margin-bottom:20px;
+}
+
+.meet_our_team_title h2{
+    border: 1px solid #EBEBE2;
+    clear: both;
+    color: #333333;
+    float: left;
+    font-family: 'Myriadwebpro';
+    font-size: 26px;
+    font-weight: bold;
+    padding: 18px 18px 13px;
+    text-transform: uppercase;
+}
+
+.meet_our_team_title .horizontalLine{
+	margin-top:25px;
+}
+.meet_our_team_slider{
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:20px;
+	overfow:hidden;;
+}
+.text_slide_about a{
+	text-decoration:none;
+}
+.about_continue_button{
+	background:url("../images/login.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+		background-size:100% auto;
+	color: #FFFFFF;
+    font-size: 19px;
+    font-weight: bold;
+    left: 60%;
+    padding: 5px 20px;
+    position: absolute;
+    text-decoration: none;
+    text-shadow: none;
+   bottom: -190px;
+   width: 144px;
+   text-align:center;
+}
+.slides ul li .slide-body .caption.header h2{
+	line-height:1;
+}
+.responsive-slider .slides ul li .slide-body .caption.header{
+	top:10% !important;
+	text-align:left;
+}
+.responsive-slider .slides ul li .slide-body .caption.sub{
+	bottom: 0 !important;
+    height: 95px;
+    overflow: hidden;
+    text-align: left;
+    top: 140% !important;
+}
+.text_slide_about {
+    margin-left: -26px;
+}
+/***** about us page end ***/
+label.error{
+	color:red;
+	font-size:12px;
+}
+.spantextt{
+	display:none;
+}
+.video_pr {
+	background:url(../images/video.png) no-repeat center center;
+	display: inline-block;
+	height: 54px;
+	left: 587px;
+	position: relative;
+	top: -189px;
+	width: 50px;
+	z-index: 100;
+}
+.video_pr a
+{
+	text-decoration:none;
+	display:block;
+	height:50px;
+}
+
+#carousel a
+{
+	cursor:text;
+
+}
+
+
+/*****  workshop page **/
+
+.worshop_inner_content h3
+{
+ clear: both;
+    color: #666666;
+    float: left;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 13px;
+    margin-top: 12px;
+    width: 100%;
+}
+.workshop_detail_lower ul
+{
+	float:left;
+}
+.worshop_inner_content li
+{
+line-height:20px;
+}
+.text_workshops h3 {
+	color:#333333;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.text_workshops h4
+{
+	font-size: 21px;
+    font-weight: normal;
+	color:#666;	
+	margin-bottom:8px;
+}
+
+.workshop_page .carousel ul li{
+	height: 455px !important;	
+}
+.my_history_slider.workshop_page .carousel ul li{
+		height: 435px !important;
+	}
+.workshop_page .text_workshops h3 {
+	text-overflow: ellipsis; /* will make [...] at the end */
+    white-space: nowrap; /* paragraph to one line */
+   overflow:hidden;  /*older browsers */
+   line-height:1;
+}
+.vjs-poster{
+	background-size:cover !important;
+}
+.duration_video 
+{
+	color:#666;
+	font-size:15px;
+	margin-bottom:8px;
+}
+
+.workshop_cost 
+{
+	float:left;
+	width:100%;
+	margin-bottom:15px;
+}
+.cost_left 
+{
+	float:left;
+	width:48%;
+	color:#666666;
+	font-size:15px;
+}
+
+
+.cost_right 
+{
+	float:right;
+	
+	color:#666666;
+	font-size:15px;
+}
+.cost_left span,.cost_right span
+{
+	font-weight:bold;
+}
+
+.iframe_workshops
+{
+	position:relative;
+	 clear: both;
+    float: left;
+    margin-bottom: 25px;
+	width:100%;
+}
+.instructor_details_slides{
+	position:relative;
+}
+
+.instructor_details_slides .play_small_icon_session {
+    left: 30%;
+    position: absolute;
+    top: 24%;
+}
+.video_image_replacement{
+	width:100%;
+}
+
+/****** Signup Page **/
+
+.signuppage_background
+{
+	background:url("../images/lilyfit01.jpg") no-repeat scroll 70% top rgba(0, 0, 0, 0);
+	
+   min-height:856px;
+	width:100%;
+	background-size:cover;
+	
+}
+.signuppaymentpage_background
+{
+	background:url("../images/lilyfit01.jpg") no-repeat scroll 70% top rgba(0, 0, 0, 0);
+	
+   min-height:1100px;
+	width:100%;
+	background-size:cover;
+	
+}
+.checkboxx
+
+{
+	height:46px !important;
+		margin-bottom:-8px !important;
+}
+.signup_shadow
+{
+	 width: 480px;
+	/*background:url("../images/Untitled-3.png") no-repeat  bottom center rgba(0, 0, 0, 0);*/
+}
+.signup_box_inner
+{
+	background: url("../images/bg_box.png") no-repeat;
+	background-size:100% 100%;	
+    height: 100%;
+   /* margin-left: 10%;
+    margin-top: 31%;*/
+	/*top: 29.5px !important;*/
+	padding-bottom:39px;
+    min-height: 600px;
+    width: 480px;
+	clear:both;
+	float:left;
+}
+
+.signup_div
+{
+	width:100%;
+	float:left;
+	clear:both;
+	height:643px;
+	/*overflow:hidden;*/
+}
+.input_different
+{
+	width:100%;
+	
+}
+.common_textbox_small
+{
+	width:45% !important;
+	float:left;
+
+/*margin-bottom: 20px !important;*/
+}
+.common_textbox_small1
+{
+	width:45% !important;
+	float:left;
+	margin-left:7% !important;
+
+	/*margin-bottom: 20px !important;*/
+}
+
+.heading_signup
+{
+    color: #27ACE2;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.text_signup_heading
+{
+	font-size:14px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+#code_coupon,#code_coupon1,.view_button_change{
+	display:none;
+}
+#code_coupon1 a{
+	line-height:40px;
+}
+.signup_inner_relative
+{
+   float: left;
+    padding: 40px;
+	padding-bottom:0px;
+    width:83%;
+}
+
+#signup_form p ,#signup_form1 p,.signup_inner_relative #new_user p
+{
+	  float: left;
+    height:50px;
+    width: 100%;
+	
+}
+#signup_form a,#new_user a,#signup_form1 a
+{
+	color:#27ACE2;
+	text-decoration:none;
+}
+.signup_footer
+{
+	margin-top:-20px;
+}
+.signup_button
+{
+	border-top: 1px solid #FFFFFF;
+    float: right;
+    margin-top: 7px;
+    position: fixed;
+    right: 0px;
+    top: 140px;
+	
+}
+
+
+.header_wrapper_transparentbg
+{
+background-color:transparent;
+}
+
+.checkboxx label.error
+{
+	clear: both;
+    float: left;
+    width: 100%;
+}
+
+
+.signup_inner_relative select{
+width:110%;
+background: transparent;
+background:url(../images/drop-down-icon.png) no-repeat 90% center #fff;
+overflow: hidden;
+}
+.signup_pager{
+float: right;
+    left: 336px;
+    position: absolute;
+    top: 50px;
+	color:#666;
+	font-size:20px;
+	font-family:'Myriadwebpro';
+	font-weight:normal;
+}
+.signup_step1{
+background:url('../images/selected-pager-signup.png') no-repeat top left;
+color:#fff;
+float: right;
+    left: 380px;
+    position: absolute;
+    top: 46px;
+	padding: 6px 7px 0;
+	font-family:'Myriadwebpro';
+	font-size:18px;
+	font-weight:normal;
+	text-decoration:none;
+}
+.signup_payment1{
+	background:url('../images/unselected-pager-signup.png') no-repeat top left;
+	text-decoration:none;
+}
+.signup_step2{
+background:url('../images/unselected-pager-signup.png') no-repeat top left;
+color:#fff;
+float: right;
+    left: 409px;
+    position: absolute;
+    top: 46px;
+	padding: 6px 7px 0;
+	font-family:'Myriadwebpro';
+	font-size:18px;
+	font-weight:normal;
+	text-decoration:none;
+}
+.signup_payment2{
+	background:url('../images/selected-pager-signup.png') no-repeat top left;
+}
+.style_select{
+	float: left;
+    overflow: hidden;
+    width: 100%;
+	height: auto !important;
+}
+.signup_credit_card_validation{
+	color:#27Ace2;
+	font-size:24px;
+	font-family:'Myriadwebpro';
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.signup_credit_card
+{
+	width:52% !important;
+	float:left;
+}
+.signup_paypal_button{
+	float: left;
+    height: 20px !important;
+    margin-bottom: 0;
+    margin-left: 4% !important;
+    margin-top: 10px;
+    width: 44% !important;
+	color:#4c4c4c;
+	font-size:18px;
+	font-weight:bold;
+	font-family:'Myriadwebpro';
+	text-align:left;
+}
+.signup_paypal{
+	background:url(../images/login.png) 100% 100% no-repeat;
+	padding:10px;
+	color:#fff !important;
+	font-size:18px;
+	font-weight:bold;
+	font-family:'Myriadwebpro';
+	text-decoration:none;
+}
+.sign_payment_select{
+	background: url("../images/drop-down-icon.png") no-repeat scroll 84% center #FFFFFF !important;
+    width: 115% !important;
+}
+.form_inside_text{
+margin-bottom:-30px;
+}
+.form_inside_text1{
+margin-bottom:-12px;
+}
+.signup_card_code{
+	text-decoration:underline !important;
+	text-align:left;
+	font-size:14px !important;
+	font-weight:normal !important;
+}
+.signup_dollar{
+	font-size:19px;
+	font-weight:bold;
+}
+.signup_payment_inner{
+	min-height: 880px;
+}
+.signup_show_change{
+	display:none;
+	float:left;
+	width:100%;
+}
+#signup_form p.signup_hidden{
+		height:17px;
+	}
+.signup_show_change_left{
+float:left;
+}
+.signup_show_change_right{
+float:right;
+}
+.signup_division{
+	display:block;
+}
+.signup_payment_division{
+	display:none;
+}
+/*********************************** Retreat_Details ***/
+
+.retreat_details_slider
+{
+	background:url(../images/shaddow_detailed.jpg) no-repeat bottom center;
+	padding-bottom:25px;
+}
+.retreat_details_slider
+{
+	clear:both;
+	float:left;
+	width:100%;
+	margin-top:30px;
+
+}
+.shadow_detailed
+{
+	margin-top:-7px;
+}
+.retreat_details
+{
+	float:left;
+	margin-top:0px;
+	margin-bottom:20px;
+	overflow:hidden;
+	width:100%;
+}
+
+.retreat_details_left
+{
+	width:44%;
+	float:left;
+	border:1px solid #F0F0F0;
+	padding:20px;
+
+}
+.retreat_details_right
+{
+	width:44%;
+	margin-left:4%;
+	float:left;
+	border:1px solid #F0F0F0;
+	padding:20px;
+}
+.overview_retreats
+{
+	font-weight:bold;
+	margin-bottom:7px !important;
+	font-size:24px;
+}
+.retreat_details_left_listmain
+{
+	margin-top:20px;
+	margin-bottom:20px;
+
+}
+.retreat_details_left_list
+{
+	margin-top:2px;
+	font-size:14px;
+	font-family:'MyriadWebPro';
+}
+.overview_retreats_text
+{
+	font-size:18px;
+
+}
+.retreat_details_left p
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#666;
+	text-align:justify;
+}
+
+.where_when
+
+{
+margin-top:10px;
+margin-bottom:10px;
+float:left;
+    width:100%;
+}
+.where_when p
+{
+color:#333;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.retreat_details_down_listmain
+{
+	float:left;
+	width:100%;
+}
+.retreat_details_down_listmain li{
+	border-bottom:1px solid #ddd;
+}
+.overview_retreats_downlist
+{
+	font-weight:bold;
+margin-top: 40px !important;
+}
+.retreat_details_down_list
+{
+	font-size:14px;
+	color:#666;
+	margin-top:10px;
+}
+.price_retreats
+{
+	color:black;
+	font-weight:bold;
+	float:right;
+}
+.retreat_details_booknow
+{
+	float:right;
+	width:100%;
+	margin-top: 20px;
+}
+.retreat_details_booknow_image
+{
+	float:right;
+	margin-top:20px;
+}
+.retreat_detail_list_right
+{
+	margin-top:30px;
+}
+
+/************ instructor **/
+
+.text_instructors h3
+{
+	margin-top:15px;
+	margin-bottom:10px;
+	float:left;
+	clear:both;
+}
+.text_instructors .readmoree
+{
+float:left;
+clear:both;
+margin-top:10px;	
+}
+/*********** instructors************/
+
+/*             instructor_details     */
+
+.instructor_details #my-carousel-1 .text_instructors p
+{
+	/*float:left;*/
+	clear:both;
+	
+}
+.instructor_details
+{
+	margin-top:40px;
+	
+}
+.instructor_details p
+{
+	color:#666;
+}
+.instructor_left
+{
+	background: url("../images/instructors/details/bg.jpg")  no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    clear: both;
+    float: left;
+    padding-bottom: 22px;
+   
+    width: 37%;
+}
+.instructor_left_inner
+{
+	float:left;
+	width:100%;
+
+background:#f0f0f0;
+	
+}
+.instructor_right
+{
+	float:left;
+	width:59%;
+	
+	margin-left:4%;
+}
+.instructor_right .text_instructors h3{
+text-transform: capitalize;
+}
+.instructor_right .inst_slide .slide{
+padding: 0 28px 15px 0px !important;
+}
+.instructor_right .inst_slide .last_slide{
+padding: 0 0 15px 0px !important;
+}
+.instructor_right .mask{
+width:100% !important;
+}
+.instructor_right_lower
+{
+	float:left;
+	width:100%;
+	margin:0 auto;
+	
+}
+.instructor_right_lower h2{
+padding-bottom:15px;
+margin-top:0;
+}
+.instructor_right_lower h3{
+color:#666;
+font-weight:bold;
+font-family:'MyriadWebPro';
+font-size:18px;
+margin-bottom:15px;
+}
+.instructor_right_lower p
+{
+	padding-bottom:5px !important;
+}
+.instructor_right_lower .overview_retreats{
+font-size:26px;
+}
+.instructor_sessions .instructor_right_lower .overview_retreats{
+	margin-top:0;
+}
+.instructor_sessions .instructor_right_lower{
+	padding-top:0;
+}
+.instructor__detail_text
+{
+	margin-top:20px;
+}
+.instructor_left_text1
+{
+	text-align:center;
+	padding-top:28px;
+	padding-bottom:28px;
+	border-bottom:1px solid #999999;
+}
+.instructor_left_text1 .retreats_title_sub{
+ color: #333333;
+    font-family: 'MyriadWebPro';
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.instructor_left_text1 h2
+{
+	font-size:27px;
+	color:#000;
+}
+.instructor_left_text2
+{
+	text-align:center;
+	
+}
+.instructor_left_list
+{
+	 clear: both;
+    float: left;
+    list-style: none outside none;
+   
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+.also_avail
+{
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	float:left;
+	clear:both;
+	margin-top:23px;
+}
+.instructor_left_list li
+{
+	text-align:center;
+	 margin-left: 10px;
+	 margin-right: 10px;
+    padding-left: 10px;
+color: #666666;
+    font-size: 15px;
+	display: inline;
+	background:url('../images/dot.png') no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+.instructor_left_list li a
+{
+	color:#666;
+	text-decoration:none;
+}
+
+.instructor_left_list li a:hover,.instructor_left_list li.instructor_left_list_active_blue a
+{
+	color:#28a5d6;
+}
+.instructor_left_list_active{
+color:#28a5d6 !important;
+}
+.instructor_left_list_last
+{
+	padding-bottom:75px;
+	padding-top:28px
+}
+.instructor_left_image
+{
+	clear: both;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 87%;
+}
+
+.inst_slide .slide{
+background: none;
+    border: none;
+    margin: 0px !important;
+   
+       padding: 0 0 21px 15px !important;
+}
+ .view_more{
+	float:right;
+	padding-top:0px !important;
+ }
+ .text_instructors p
+ {
+ color: #666666;
+    font-size: 15px;
+ }
+ /*             workshop_details     */
+ .workshopdetillike
+ {
+ clear:both;
+ }
+ .workshop_details
+ {
+	float:left;
+	width:100%;
+	margin:0 auto;
+	background: url("../images/workshop_shadow.jpg")  no-repeat scroll center bottom rgba(0, 0, 0, 0);
+	margin-top:30px;
+    padding-bottom: 24px;
+ }
+ 
+ .workshop_details_upper
+ {	
+	float:left;
+	width:100%;
+	margin:0 auto;
+	background:#f0f0f0;
+ }
+  .workshop_details_inner{
+	width:95%;
+	clear:both;
+	padding-top:2%;
+	padding-bottom:2%;
+	margin:0 auto;
+  }
+ .workshop_detail_lower
+ {
+	float:left;
+	width:100%;
+	margin:0 auto;
+	padding-top:20px;
+	
+ }
+ .video_details_workshop
+ {
+	color:#888;
+    float: left;
+    font-size: 16px;
+    margin-top: 11px;
+ }
+ .work_detail_heading
+ {
+ float:left;
+ width:100%;
+ clear:both;
+ margin-bottom:11px;
+ }
+ .video_details_workshop_icon
+ {
+ position: relative;
+ top: -24px;
+ right:-100px;
+ }
+ .details_workshop_title
+ {
+	float:left;
+	
+ }
+.workshop_objective
+{
+	font-size:18px;
+	font-weight:bold;
+}
+.worshop_inner_content {
+   /* border-bottom: 1px solid #999999;*/
+    clear: both;
+    float: left;
+    padding-bottom: 20px;
+	color:#666;
+}
+.wcheading{
+	clear:both;
+	float:left;
+}
+.comment_toggle img{
+	cursor: pointer;
+}
+.comment_toggle{
+	clear: both;
+    float: left;
+    width: 100%;
+}
+.comments_box_full_title{
+	width:96%;
+	float:left;
+	padding:2%;
+}
+.comment_border{
+	border-bottom: 1px solid #D3D4D4;
+    color: #666666;
+    float: left;
+    font-size: 14px;
+    width: 100%;
+}
+.comments_inner_profilebody{
+	width:96%;
+	padding:2%;
+}
+.comments_reply  .comments_inner_profilebody{
+	width:90%;
+	padding-left:8%;
+}
+.comments_body{
+float:left;
+width:100%;
+}
+.comments_outer{
+background:#f0f1f1;
+width:100%;
+display:none;
+float:left;
+font-family:'MyriadWebPro';
+margin-bottom:20px;
+}
+.workshop_comment_inner
+{
+	clear:both;
+float:left;
+width:100%;
+margin:0 auto;
+margin-top:10px;
+/*border-bottom:1px solid #999;*/
+}
+.comment_profile
+{
+	clear:both;
+float:left;
+width:100%;
+margin:0 auto;
+margin-bottom:10px;
+}
+.comment_profile_pic
+{
+float:left;
+width:4%;
+}
+.comment_profile_name
+{
+float:left;
+width:96%;
+color:#666;
+font-size:14px;
+}
+.popup_main_container .comment_profile_name{
+	width:100%;
+}
+.comment_profile_name h4
+{
+font-size:15px;
+color:#27ACE2;
+}
+.workshop_reply
+{
+background: url("../images/login.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+border: medium none;
+color: #FFFFFF;
+cursor: pointer;
+font-size: 13px;
+height: 26px;
+width: auto;
+font-weight: bold;
+margin-bottom: 20px;
+}
+.workshop_comment_inner_even
+{
+width:90%;
+margin-left:10%;
+}
+.comment_margin_even
+{
+margin-left:10%;
+}
+.enter_comment
+{
+  border-bottom: 1px solid #999999;
+    clear: both;
+    float: left;
+    margin: 7px auto 13px;
+    width: 100%;
+}
+.enter_comment_field
+{
+ border: 1px solid #999999;
+    padding: 1%;
+    width: 98%;
+-webkit-box-shadow: inset 0px 5px 5px rgba(0,0,0,.5); 
+-khtml-box-shadow: inset 0px 5px 5px rgba(0,0,0,.5); 
+-moz-box-shadow:inset 0px 5px 5px rgba(0,0,0,.5); 
+-o-box-shadow: inset 0px 5px 5px rgba(0,0,0,.5); ;
+box-shadow: inset 0px 5px 5px rgba(0,0,0,.5); 
+
+}
+.enter_comment_button
+{
+float:right;
+margin-top:20px;
+}
+
+.mouse_over_drop_ul li
+{
+	border-bottom: 1px solid #CCCCCC !important;
+	margin-bottom:10px;
+	width:100%;
+	float:left;
+}
+
+.mouse_over_drop_ul li a
+{
+color: #000000;
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: left;
+
+}
+
+.mouse_over_drop_ul li a:hover
+{
+	color:#000;
+	
+}
+#workshop_detail_video{
+width:100%;
+height:650px;
+}
+/*********** about us page video **/
+
+
+
+#workshop_video
+{
+	width:266px !important;
+	/*height:600px;*/
+	height:188px;
+}
+
+#instructordetail_video
+{
+	width:200px !important;
+	height:150px;
+}
+
+.comment_middle
+{
+	width:96%;
+	margin:0 auto;
+}
+.inner_comform
+{
+	width:96%;
+	margin:0 auto;
+}
+
+/************ sessions page **/
+.sessions_title
+{
+	 clear: both;
+    float: left;
+    font-size: 28px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.instructor_sessions ul{
+ clear: both;
+    float: left;
+}
+.instructor_sessions ul li
+{
+color: #666666;
+    line-height: 35px;
+    width: 100%;
+}
+.instructor_sessions .instructor_right ul li{
+background: url("../images/tick.png") no-repeat scroll left center transparent;
+}
+
+.instructor_sessions .instructor_session_price_list{
+width:30%;
+float:left;
+clear:none;
+font-weight:bold;
+}
+.instructor_sessions .instructor_session_price_list li{
+background:none !important;
+
+}
+.instructor_sessions .instructor_right_lower p{
+float:left;
+clear:both;
+width:100%;
+margin-bottom:30px;
+margin-top:10px;
+}
+.instructor_sessions li span
+{
+	font-weight:bold;
+	display:inline-block;
+	width:40%;
+}
+
+.instructor_sessions ul
+{
+	margin-bottom:18px;
+}
+
+.instructor_sessions .instructor_left_inner ul
+{
+	margin-bottom:0px;
+}
+
+.instructor_sessions .instructor_left_inner li
+{
+	line-height:10px;
+	padding-top:0px;
+}
+
+
+.instructor_sessions .instructor_left_list_last
+{
+	padding-top:10px;
+}
+.session_anchor
+{
+	background:#28A5D6;
+	color:#fff;
+	padding:10px;;
+	text-align:center;
+	text-decoration:none;
+}
+/****** Nutritrions  **/
+.nutritionslidere #nutrition_carosel{
+min-height:450px;
+}
+.nutritionleft{
+	width:68%;
+	float:left;
+}
+.nutritionright{
+	float: right;
+    margin-left: 2%;
+    width: 29%;
+}
+.nutri_video{
+	background: none repeat scroll 0 0 #F0F0F0;
+    padding: 8px;
+}
+.nutrition_page p, .nutrition_page ul li{
+	color:#666666;
+}
+.nutrition_page p{
+	line-height:20px;
+}
+.nutrition_page .text_workshops h4{
+	color: #333333;
+    float: left;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    width: 100%;
+	margin-top:10px;
+}
+/**** Nutrition detail ***/
+.nutrition_detail_slider  #nutrition_carosel{
+min-height:555px;
+}
+.nutrition_details_left{
+	width:37%;
+	float:left;
+	background:url("../images/instructors/details/bg.jpg") no-repeat scroll center bottom ;
+	padding-bottom:22px;
+	margin-top:20px;
+}
+.about_nutrion_person{
+	background: none repeat scroll 0 0 #F0F0F0;
+    padding: 4%;
+    text-align: center;
+    width: 92%;
+	float:left;
+	clear:both;
+}
+.nutrition_details_right p{
+	color:#666;
+}
+.nutrition_details_right{
+	float: right;
+    margin-left: 1%;
+    padding: 2%;
+    width: 58%;
+	padding-right:0%;
+}
+.nutrition_about{
+	font-size:26px;
+	font-weight:bold;
+	text-transform:uppercase;
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:10px;
+	line-height:1;
+}
+.nutrion_title_big{
+	color:#000;
+	font-size:28px;
+	text-transform:uppercase;
+	line-height:1;
+}
+.nutrion_title_small{  	
+	clear: both;
+    color: #333;
+    float: left;
+    font-size: 19px;
+    font-weight: normal;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 100%;
+	line-height:1;
+}
+.nutri_detail_title {
+	clear: both;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 31px;
+    width: 100%;
+}
+.nutrition_detail_slider{
+	margin-top:30px;
+}
+.nutrition_page_detail .nutrition_details_right ul li{
+	 background:url('../images/bullet_circle.jpg') no-repeat left top;
+	 padding-left: 19px;	
+}
+.nutrition_page_detail li.firstbgg div.workshop_insideli{
+	background-color:#f1f5ed !important;
+	border:1px solid #deecd0;
+}
+.nutrition_page_detail li.secondbgg div.workshop_insideli{
+	background-color:#e9f5fd !important;
+	border:1px solid #d3e6f3;
+}
+.nutrition_page_detail li.thirdbgg div.workshop_insideli{
+	background-color:#f4f2e1 !important;
+	border:1px solid #e8e3bb;
+}
+.nutrition_page_detail li.fourthbg div.workshop_insideli{
+	background:none repeat scroll 0 0 #F0F0F0;
+	border:1px solid #DCDCDC;
+}
+.nutrition_page_detail p.ordered_list{
+	 display: list-item;
+    float: left;
+    padding-left: 19px;
+	margin-bottom:15px;
+	margin-top:5px;
+}
+.nutrition_page_detail .ordered_list_cover{
+	float:left;
+	width:100%;
+}
+.nutrition_page_detail li.firstbgg p.ordered_list{
+	background:url("../images/bg1bullet.jpg") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+}
+.nutrition_page_detail li.secondbgg p.ordered_list{
+	background:url("../images/bg2bullet.jpg") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+}
+.nutrition_page_detail li.thirdbgg p.ordered_list{
+	background:url("../images/bg3bullet.jpg")  no-repeat scroll left 4px rgba(0, 0, 0, 0);
+}
+.nutrition_page_detail li.fourthbg p.ordered_list{
+	background:url("../images/bg4bullet.jpg") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+}
+.plan_heading{
+	float:left;
+	clear:both;
+	width:100%;
+	margin-bottom:14px;
+	text-transform:capitalize;
+}
+.price_for_plan{	
+	clear: both;
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    width: 100%;
+}
+.price_for_plan span{
+	font-weight:bold;
+	font-size:14px;
+}
+.nutrition_page_detail li.firstbgg .plan_heading{
+	color:#9c8d5e;
+	text-transform:capitalize;	
+}
+.nutrition_page_detail li.secondbgg .plan_heading{
+	color:#5d91b2;
+	text-transform:capitalize;		
+}
+.nutrition_page_detail li.thirdbgg.plan_heading{
+	color:#df9d29;
+	text-transform:capitalize;		
+}
+.nutrition_page_detail li.fourthbgg .plan_heading{
+	color:#f1f1f1;
+	text-transform:capitalize;		
+}
+.nutrition_page_detail li.firstbgg .ntrition_details a{
+  background:#9c8d5e;	
+}
+.nutrition_page_detail li.secondbgg .ntrition_details a{
+  background:#5d91b2;	
+}
+.nutrition_page_detail li.thirdbgg  .ntrition_details a{
+  background:#df9d29;	
+}
+.nutrition_page_detail li.fourthbgg .ntrition_details a{
+  background:#f1f1f1;	
+}
+.nutri_image_slider_inner{
+	background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.nutri_image_slider_inner img{
+	border: 2px solid #FFFFFF;
+    width: 98%;
+}
+/*****************    testimonial        *****************************************/
+.testimonial_maincontent .inst_slide .slide{
+	padding-left:0!important;
+	padding-right:40px !important;
+	padding-bottom:60px !important;
+}
+.testimonial_maincontent{
+	margin-top:10px;
+}
+.testimonial_inner_content{
+margin-top:0px;
+}
+.testimonial_image{
+padding: 3px 1px 1px 3px;
+width: 34%;
+}
+.testimonial_image img{
+border:4px solid #ececec;
+}
+.testimonial_content_right{
+float: left;
+margin-left: 7%;
+width: 58%;
+}
+.testimonial_content_right .decriptionss{
+font-family: 'MyriadWebPro';
+font-size:16px;
+color:#666;
+text-align:justify;
+font-weight:normal;
+}
+.testimonial_name{
+font-family: 'MyriadWebPro';
+font-size:16px;
+color:#333;
+font-weight:bold;
+}
+.testimonial_place{
+font-size:14px;
+color:#666;
+font-weight:normal;
+}
+.testimonial_upper_comma{
+margin-top: 4px;
+}
+.testimonial_lower_comma{
+float: right;
+margin-top: -30px;
+}
+
+.testimonial_maincontent .inst_slide .slide{
+background: none;
+    border: none;
+}
+
+.testimonial_maincontent .inst_slide{
+height:570px !important;
+}
+.testimonial_maincontent .inst_slide .mask{
+height:570px;
+}
+.testimonial_maincontent #my-carousel-1{
+min-height:570px;
+}
+.testimonial_maincontent .retreats_box{
+width:100%;
+padding-bottom:5.7%;
+}
+/*******************************   privacy policy  *************************/
+.privacy_policy{
+ clear: both;
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+	margin-bottom:50px;
+}
+.privacy_policy p{
+margin-top:10px;
+margin-bottom:30px;
+font-family: 'MyriadWebPro';
+font-size:16px;
+color:#666;
+font-weight:normal;
+}
+.privacy_policy h4,.gift_coupon h3{
+font-family: 'MyriadWebPro';
+font-size:18px;
+padding-top:15px;
+padding-bottom:11px;
+padding-left:14px;
+color:#333;
+font-weight:normal;
+background:url('../images/privacy_policy_heading.png') no-repeat top left;
+background-size:100% 100%;
+}
+.privacy_policy ul{
+margin-bottom:30px;
+color:#666;
+font-size:15px;
+}
+.privacy_policy ul li{
+margin-bottom:15px;
+color: #666666;
+font-family: 'MyriadWebPro';
+}
+/*******************************  faq details  *************************/
+.faq_detail{
+ clear: both;
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+	margin-bottom:50px;
+}
+.faq_detail p{
+margin-bottom:30px;
+font-family: 'MyriadWebPro';
+font-size:16px;
+color:#666;
+font-weight:normal;
+}
+.faq_detail h2.faq_detail_main_heading{
+font-family: 'MyriadWebPro';
+font-size:28px;
+color:#333;
+font-weight:normal;
+padding-bottom:15px;
+}
+.faq_detail h2{
+font-family: 'MyriadWebPro';
+font-size:16px;
+color:#333;
+font-weight:bold;
+padding-bottom:5px;
+}
+.faq_detail_main{
+padding-bottom:20px;
+}
+
+/***************************** FAQ    **************************************************/
+.faq_heading img{
+margin-right:10px;
+}
+.faq_questions{
+margin-top:25px;
+display:none;
+margin-bottom:25px;
+}
+.faq_questions a{
+font-family: 'MyriadWebPro';
+font-size:16px;
+color:#999;
+font-weight:normal;
+text-decoration:none;
+}
+.faq_questions a:hover{
+color:#27ace2;
+text-decoration:none;
+}
+.faq_questions li{
+font-family: 'MyriadWebPro';
+font-size:16px;
+color:#333;
+font-weight:normal;
+background:none !important;
+padding:0;
+margin-bottom:10px;
+
+}
+
+.faq_heading_nonactive{
+font-family: 'MyriadWebPro';
+font-size:18px;
+padding-top:15px;
+padding-bottom:16px;
+padding-left:14px;
+color:#666;
+font-weight:normal;
+cursor: pointer;
+background:url('../images/faq_heading.png') no-repeat top left;
+background-size:100% 100%;
+}
+.faq_dropdown {
+	clear: both;
+}
+.faq_heading_nonactive.faq_heading{
+	background:url('../images/privacy_policy_heading.png') no-repeat top left;
+	background-size:100% 100%;
+}
+.faq_heading_nonactive img{
+margin-right:10px;
+}
+/********************* blog detail ************************/
+.blog_details{
+margin-bottom:30px;
+font-family: 'MyriadWebPro';
+font-size:16px;
+color:#666;
+font-weight:normal;
+}
+.blog_detail_lower_text{
+background:url('../images/faq_detail_lower_text.png') no-repeat left;
+padding-left: 35px;
+}
+.blog_detail_articles{
+width:100%;
+border-top:1px solid #ddd;
+border-bottom:1px solid #ddd;
+padding-top:10px;
+padding-bottom:10px;
+float:left;
+color:#666;
+margin-bottom:20px;
+}
+.blog_detail_articles_left{
+width:48%;
+float:left;
+border-right:1px solid #ddd;
+background: url("../images/blog_detail_left_arrow.png") no-repeat scroll left 2px rgba(0, 0, 0, 0);
+}
+.blog_detail_articles_left_main{
+
+padding-left:25px;
+width:55%;
+}
+.blog_detail_articles_left_main span{
+color:#666;
+font-weight:normal;
+font-size:14px;
+}
+.blog_detail_articles_right{
+float:right;
+width:47%;
+text-align:right;
+}
+.blog_detail_articles_right_main{
+background:url('../images/blog_detail_right_arrow.png') no-repeat right;
+padding-right:25px;
+height:30px;
+}
+.blog_detail_articles_right a{
+float:right;
+text-decoration:none;
+font-size:16px;
+font-weight:bold;
+}
+.blog_detail_articles_right a:hover{
+text-decoration:none;
+}
+.blog_detail_articles_right span{
+float:right;
+color:#666;
+font-weight:normal;
+font-size:14px;
+}
+.blog_detail_articles_left span{
+float:left;
+color:#666;
+font-weight:normal;
+font-size:14px;
+}
+.blog_detail_articles_left a{
+
+text-decoration:none;
+font-size:16px;
+font-weight:bold;
+}
+.blog_detail_articles_left a:hover{
+text-decoration:none;
+}
+
+/***************  blog **********************************/
+.blog_page{
+margin-top:10px;
+}
+.blog_page .next_carosel{
+top:47%;
+}
+.blog_page .prev_carosel{
+top:47%;
+}
+.blog_page .text_workshops{
+padding:1% 0 0 1%;
+width:100%;
+}
+.blog_page .text_workshops h4{
+text-align:center !important;
+font-size:15px;
+padding-left:4%;
+padding-right:4%;
+padding-top:10px;
+padding-bottom:5px;
+}
+.blog_page .workshop_insideli {
+padding-bottom: 38px;
+}
+.blog_page .text_workshops h3{
+text-align:center !important;
+font-size:21px;
+padding-left:5%;
+padding-right:5%;
+line-height:1;
+}
+.blog_page .readmoree{
+float:left;
+margin-left: 35%;
+}
+.blog_page .readmoree a{
+font-size: 12px;
+    font-weight: normal;
+    padding: 7px 6px 5px 7px;
+}
+.blog_page .slide{
+height:524px !important;
+margin: 20px 34px 0 0 !important;
+}
+.blog_page #my-carousel-1{
+min-height:1100px;
+}
+.blog_page .mask{
+height:1200px;
+}
+
+
+	.blog_page .text_workshops h3{
+		 text-overflow: ellipsis; /* will make [...] at the end */
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+	}
+
+		.blog_page .text_workshops h4:nth-of-type(1){
+		 text-overflow: ellipsis; /* will make [...] at the end */
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+	}
+	
+/*************** latest changes *************/
+.fraction-slider .slide img{
+left:0% !important;
+}
+.otherlinks_footer{
+float:left;
+margin-top:30px;
+}
+.otherlinks_footer a{
+color:#666;
+text-decoration:none;
+border-right:1px solid #999;
+padding-right:10px;
+padding-left:10px;
+font-size:14px;
+}
+.otherlinks_footer a:hover{
+color:#27ace2;
+text-decoration:none;
+}
+.active_otherlinks_footer{
+color:#27ace2 !important;
+}
+.last_otherlinks_footer{
+border:none !important;
+}
+
+/*************** latest changes ends *************/
+
+/***************************Forum Page ***********************************/
+.forum_title h3{
+color:#333;
+font-size:15px;
+font-family:'Myriadwebpro';
+font-weight:bold;
+background:url('../images/privacy_policy_heading.png') no-repeat top left;
+background-size:100% 100%;
+padding-top:12px;
+padding-bottom:10px;
+padding-left:14px;
+margin-top:20px;
+}
+.forum_entries_outer_wrapper{
+clear:both;
+float:left;
+width:100%;
+margin-bottom:60px;
+}
+.forum_box{
+border:1px solid #ddd;
+padding:10px;
+padding-top:20px;
+box-shadow: 0 -10px 18px -12px #ddd inset;
+}
+.forum_box p,.forum_box span.forum_entry_black{
+text-align:center;
+font-size:14px;
+color:#666;
+}
+.forum_entry_column1{
+float: left;
+text-align: center;
+width: 7%;
+border-right:none;
+}
+.forum_entry_column2{
+float:left;
+width:48%;
+border-right:none;
+}
+.forum_entry_column2_content{
+text-align: left;
+width: 84%;
+padding-left:10px;
+}
+.forum_entry_column2 h3{
+margin-bottom:5px;
+color:#27ace2;
+font-size:14px;
+font-weight:bold;
+}
+.forum_entry_column2 h3 a{
+color:#27ace2;
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+}
+.forum_entry_column2 p{
+color: #666;
+font-size: 14px;
+font-weight: normal;
+text-align: left;
+}
+.forum_entry_column2_content span{
+color:#27ace2;
+}
+.forum_entry_column3{
+float:left;
+width:6%;
+padding-top:30px;
+height:70px;
+border-right:none;
+}
+.forum_entry_column3 p{
+line-height:2;
+}
+.forum_entry_column6{
+	float:left;
+	width:13.5%;
+	padding-top:30px;
+	height:70px;
+	border-right:none;
+}
+.forum_entry_column6 p{
+	line-height:2;
+}
+.forum_entry_column4{
+float:left;
+width:6%;
+padding-top:30px;
+height:70px;
+border-right:none;
+}
+.forum_entry_column4 p{
+line-height:2;
+}
+.forum_entry_column5{
+float:left;
+width:24%;
+padding-top:30px;
+height:70px;
+}
+.forum_entry_column5 p{
+text-align: left;
+padding-left:10px;
+}
+.forum_entry_column5 span{
+color:#27ace2;
+}
+.forum_entry_black{
+color:#000 !important;
+}
+#new_forum_post p{
+	padding-bottom:10px;
+}
+#new_forum_post label.error{
+	width:100%;
+	float:left;
+}
+#new_forum_post a,.edit_forum_post a{
+	background: url("../images/brown-button.png") no-repeat scroll left top;
+	background-size:cover;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: auto;
+	text-decoration:none;
+	padding: 12px 13px 11px;
+}
+/***************** forum view page ******************************/
+.forum_title span{
+float:right; 
+color:#4e4d4d;
+font-weight:normal;
+padding-right:20px;
+font-family:'Myriadwebpro';
+
+}
+a.forum_edit_post{
+	color:#666;
+	border:1px solid #dcdcdc;
+	padding:5px;
+	text-decoration:none;
+	margin-top:15px;
+	float:left;
+}
+#new_forum_post textarea{
+	width:98%;
+	min-height:120px;
+}
+a.forum_edit_post:hover{
+	color:#000;
+	border:1px solid #000;
+}
+.forum_title span a{
+	text-decoration:none;
+	font-weight:bold;
+}
+.forum_title span a:hover{
+	text-decoration:underline;
+}
+.forum_view_content{
+padding:30px;
+border:1px solid #ddd;
+box-shadow: 0 -10px 18px -12px #ddd inset;
+float:left;
+clear:both;
+width:94.5%;
+margin-bottom:40px;
+padding-bottom:50px;
+font-size:14px;
+
+}
+.forum_view_upper_content{
+float:left;
+clear:both;
+width:100%;
+}
+.forum_view_upper_content img{
+float:left;
+width:6%;
+}
+.forum_view_upper_content p{
+float:left;
+width:60%;
+padding-top:18px;
+color:#666;
+}
+.forum_view_upper_content p{
+text-align: left;
+padding-left:20px;
+}
+.forum_view_upper_content span{
+color:#27ace2;
+}
+.forum_entry_black{
+color:#000 !important;
+}
+.forum_view_like{
+float:right;
+width:11%
+}
+.forum_view_lower_content p{
+color:#666;
+padding-top:10px;
+text-align:left;
+}
+.forum_edit_profile_pic{
+	float:left;
+	width:12%;
+	margin-right:2%;
+}
+.forum_edit_profile_pic img{
+	width:80%;
+	border:2px solid #DDD;
+}
+.forum_edit_details{
+	width:85%;
+	float:right;
+}
+.forum_edit_details h4{
+	color:#27ace2;
+}
+.forum_edit_details p{
+	color:#666;
+}
+.forum_edit_details textarea{
+	border:1px solid #ddd;
+	width:100%;
+	min-height:120px;
+}
+/******************************************* Private and Corporate Session ********************************/
+.private_and_corporate_session{
+float:left;
+margin-top:20px;
+margin-bottom:40px;
+width:100%;
+clear:both;
+font-family:'MyriadWebPro';
+}
+.private_and_corporate_session p{
+color:#666;
+font-size:15px;
+font-weight:normal;
+margin-bottom:20px;
+}
+.private_and_corporate_session ul{
+color:#666;
+font-size:15px;
+margin-top:10px;
+margin-bottom:40px;
+}
+.private_and_corporate_session ul li{
+margin-bottom:15px;
+}
+.private_and_corporate_session_top{
+width:100%;
+float:left;
+clear:both;
+padding-top:20px;
+}
+.private_and_corporate_session_left{
+width:44%;
+float:left;
+}
+.private_and_corporate_session_right{
+width:54%;
+float:left;
+margin-left:2%;
+}
+.private_and_corporate_session_bottom{
+width:100%;
+clear:both;
+float:left;
+padding-top:20px;
+margin-bottom:80px;
+}
+.private_and_corporate_session_slider{
+clear:both;
+float:left;
+width:100%;
+margin-top:30px;
+margin-bottom:50px;
+}
+.private_and_corporate_session_slider h2{
+color:#333;
+font-size:24px;
+font-family:'MyriadWebPro';
+font-weight:normal;
+margin-bottom:20px;
+}
+.private_and_corporate_slider_content{
+width:261px;
+position:relative;
+float:left;
+height:265px;
+background:url('../images/private&corporate_session/Private_and_Corporate_Sessions_bg.jpg') no-repeat top left #f0f0f0;
+padding:25px;
+}
+.private_and_corporate_slider_content h2{
+color:#333;
+font-size:23px;
+font-family:'MyriadWebPro';
+font-weight:bold;
+text-align:center;
+}
+.private_and_corporate_slider_content h3{
+color:#666;
+font-size:15px;
+font-family:'MyriadWebPro';
+font-weight:normal;
+text-align:center;
+margin-top:10px;
+}
+.private_and_corporate_slider_content #instructordetail_video{
+height: 189px !important;
+width: 261px !important;
+}
+.private_and_corporate_session_slider .inst_slide .slide{
+margin-right:134px !important;
+padding:0 !important;
+}
+.play_small_icon_session {
+    left:43%;
+    position: absolute;
+    top: 45%;
+}
+.private_and_corporate_session_slider .vjs-default-skin .vjs-big-play-button{
+left: 3.5em;
+}
+.private_and_corporate_last{
+margin-right:0px;
+}
+/************* forget password *************/
+#forget_form p{
+color:#333;
+margin-bottom:0px;
+}
+/************* My account  and view account ************/
+.myaccount_outer{
+	padding-top:130px;
+	font-family:'Myriadwebpro';
+}
+.myaccount_first_section_left_outer{
+	background: url("../images/myaccount/shadow_myaccount.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background-size:100% auto;
+	background-position:center bottom;
+    float: left;
+    margin-right: 4%;
+    padding: 0 0 17px;
+    width: 42%;
+}
+.myaccount_first_section_left{
+ background: none repeat scroll 0 0 #F0F0F0;
+    float: left;
+    padding: 11px 4.2% 4px;
+    width: 92%;
+}
+.myaccount_first_section_left img{
+	float:left;
+	width:40%;
+	margin-top:25px;
+	margin-bottom:35px;
+	border:2px solid #e3e3e3;
+}
+.myaccount_first_section_left_right{
+	float: left;
+	width: 56%;
+	margin-top: 22px;
+	margin-left: 3%;
+}
+.myaccount_first_section_left p{
+	color: #666666;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: left;
+    
+}
+.internal_heading_myaccount{
+	color:#000;
+	font-weight:bold;
+	font-size:28px;
+	margin-bottom:20px;
+	float:left;
+	width:100%;
+	line-height:1;
+}
+.myaccount_first_section_right{
+	float: left;
+    padding-top: 0px;
+    width: 54%;
+}
+.myaccount_first_section_right p{
+	color:#666;
+	font-size:16px;
+	line-height:1;
+}
+.myaccount_first_section_right h2{
+	color:#333;
+	padding-bottom:10px;
+	line-height:1;
+	font-size:28px;
+	font-weight:normal;
+}
+.myaccount_first_section_right a{
+	color:#27ace2;
+	text-decoration:underline;
+	font-size:16px;
+}
+
+.myaccount_second_section .internal_heading_myaccount{
+	margin-top:50px;
+}
+			/********* form elements of myaccount ********/
+			.myaccount_form_input{
+				padding-top:10px;
+				padding-bottom:10px;
+				border-top:1px solid #dcdcdc;
+				margin-bottom:0;
+				float:left;
+				width:100%;
+			}
+			#cvvcode{
+				width: 39%;
+			}
+			
+			.myaccount_first_section_left  .myaccount_form_input{
+				border:none;
+				height:52px;
+				padding-bottom:0px;
+			}
+			.myaccount_textbox{
+				background: linear-gradient(#F2F2F2, #FFFFFF) repeat scroll 0 0 rgba(0, 0, 0, 0);
+				border: 1px solid #C4C5C6;
+				border-radius: 3px;
+				color: #666666;
+				font-size: 16px;
+				padding: 5px;
+				width: 47%;
+			}
+			.myaccount_form_input label{
+				margin-right:5%;
+				width:25%;
+				float:left;
+				font-size:16px;
+				line-height:1.5;
+				color:#333;
+			}
+			.myaccount_first_section_left .myaccount_form_input label{
+				margin-right:5%;
+				width:38%;
+				float:left;
+				line-height:1.3;
+			}
+			.myaccount_form_input p{
+				float:left;
+				width:55%;
+				color:#666;	
+			}
+			.myaccount_form_input_span{
+				color:#666;
+			}
+			.yes_no_myaccount_form_input{
+				color:#27ace2 !important;
+			}
+			.myaccount_form_input_last{
+				border-bottom:1px solid #dcdcdc;
+			}
+			#datepicker{
+				background: url('../images/myaccount/calender.jpg') no-repeat right,linear-gradient(#F2F2F2, #FFFFFF);
+			}
+			.myaccount_select_cover{
+				float: left;
+				height: auto !important;
+				overflow: hidden;
+				width: 18% !important;
+			}
+			.myaccount_form_input a{
+				float:left;
+				width:20%;
+				margin-left:20px;
+				padding-top:10px;
+			}
+			.myaccount_dropdown{
+				background:url("../images/drop-down-icon_myaccount.png") no-repeat;
+				background:radial-gradient(#F2F2F2, #FFFFFF);
+				background-position:85.2% center;
+				box-shadow: 0 0 4px -1px;
+				width:115%;
+			}
+			.myaccount_text_area{
+				width:90%;
+			}
+			.myaccount_form_input label span{
+				color:#666;
+				font-size:15px;
+			}
+			#file{
+				display:none;
+			}
+			.myaccount_button{
+				float:right;
+				background:url('../images/login.png');
+				border:none;
+				font-family:'Myriadwebpro';
+				cursor: pointer;
+				color:#fff;
+				margin-left:10px;
+				margin-top:30px;
+				margin-bottom:50px;
+				padding-right:8px;
+				padding-left:8px;
+				font-size:19px;
+				padding: 4px;
+				text-decoration:none;
+			}
+			.myaccount_button_upload{
+				margin-left:0;
+				margin-top:0px;
+				margin-bottom:0px;
+			}
+			.cb-enable, .cb-disable { 
+				display: block; 
+				float: left; 
+				background:linear-gradient(#F2F2F2, #FFFFFF) repeat scroll 0 0 rgba(0, 0, 0, 0);
+				line-height: 30px !important;
+				margin: -1px !important;
+				width: 40px !important;
+				box-shadow: 0 0 2px -1px;
+				border: 1px solid #C4C5C6;
+				border-radius: 3px;
+				font-size:12px;
+				font-family: 'MyriadWebPro';
+				font-weight:bold;
+			}
+			.cb-enable span ,.cb-disable span{ 
+				padding: 0 6px; 
+				color:#27ace2 !important;
+				cursor: pointer;
+			}
+			.cb-disable.selected,.cb-enable.selected{
+				background:url('../images/toggle-button.png') no-repeat;
+				background-size:contain;
+			}
+			.cb-disable.selected span,.cb-enable.selected span{
+				color:transparent !important;
+				cursor: default;
+			}
+			.myaccount_edit{
+				float:right !important;
+				padding:11px;
+				width:120px !important;
+				text-align: center;
+				text-decoration: none;
+			}
+			.myaccount_first_section_left_outer  label.error{
+				clear: both;
+				color: #FF0000 !important;
+				float: right;
+				font-size: 12px !important;
+				width: 47% !important;
+			}
+			.myaccount_first_section_left_right .myaccount_select_cover{
+				width:52% !important;
+			}
+			.myaccount_first_section_left_right .myaccount_dropdown{
+				width:114%;
+			}
+			.myaccount_form_input .cvvcode_a{
+				background: linear-gradient(#F2F2F2, #FFFFFF) repeat scroll 0 0 rgba(0, 0, 0, 0);
+				border: 1px solid #C4C5C6;
+				border-radius: 3px;
+				color: #000000;
+				float: none;
+				font-weight: bold;
+				padding: 5px 10px;
+				text-decoration: none;
+			}
+.myaccount_second_section{
+	margin-top:20px;
+	float:left;
+	width:100%;
+}
+		/******************* edit my account *************/
+		.edit_myaccount .myaccount_first_section_left_outer{
+			margin-right: 3%;
+			width: 50%;
+		}
+		.edit_myaccount .myaccount_first_section_right{
+			width:47%;
+		}
+		.edit_myaccount .myaccount_first_section_left .myaccount_form_input label{
+			width:43%;
+			color:#666;
+			text-align:left;
+		}
+		.edit_myaccount .myaccount_first_section_left{
+			padding: 11px 4.2% 50px;
+		}
+		.edit_myaccount .myaccount_first_section_left img{
+			float:left;
+			width:100%;
+			border:2px solid #fff;
+			margin-bottom:0;
+			height:212px;
+		}
+		.edit_myaccount .myaccount_first_section_left_right{
+			width:62%
+		}
+		.myaccount_first_section_left_left{
+			float:left;
+			width:34%;
+			margin-bottom:28px;
+		}
+		.edit_myaccount .myaccount_first_section_left_left{
+			margin-bottom:15px;
+		}
+		.subtext_myaccount{
+			width:50% !important;
+			float:right;
+			font-size:13px !important;
+			font-weight:normal;
+			color:#666;
+		}
+		.internal_heading_myaccount span{
+			font-size:16px;
+			font-weight:normal;
+			color:#333;
+		}
+		#change_my_password_form .myaccount_button{
+			margin-top:15px;
+			margin-bottom:30px;
+			margin-right:10px;
+			padding:5px;
+			font-size:19px;
+			font-family:'Myriadwebpro';
+		}
+		#change_my_password_form .myaccount_form_input{
+			border-top:0;
+
+		}
+		.change_my_password .myaccount_form_input label{
+			width:45%;
+		}
+		.change_my_password{
+			width:60%;
+			float:left;
+			padding:10px;
+		}
+		.change_my_password h2{
+			font-size:24px;
+		}
+		.myaccount_first_section_right a
+		{
+			background: none repeat scroll 0 0 #0099CC;
+			color: #FFFFFF;
+			font-size: 16px;
+			font-weight: lighter;
+			padding: 5px !important;
+			text-align: center;
+			text-decoration: none;
+		}
+		.dropdown_myaccount_new{
+			width:175px !important;
+		}
+		.dropdown_myaccount_new_frequency{
+			margin-left:5%;
+		}
+/********************** for mobile slider **************/
+.slider_mobile_view_more{
+	background: none repeat scroll 0 0 #27ACE2;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-family: 'Myriadwebpro';
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+/******************************** nutrition payment *******************/
+.nutrition_payment_page{
+	float:left;
+	width:100%;
+	padding-bottom:50px;
+	margin-top:20px;
+}
+.nutrition_payment_page p{
+	color:#666;
+	text-align:left;
+}
+.nutrition_payment_page_inner{
+	padding-bottom:30px;
+	float:left;
+	width:100%;
+}
+.nutrition_payment_page_inner ul li{
+	margin-bottom:15px;
+}
+.nutrition_payment_page_tab_upper{
+	background:#e4e6e5;
+	width:100%;
+	float:left;
+	padding-top:10px;
+	padding-bottom:10px;
+	height:50px;
+	position:relative;
+}
+.nutrition_payment_page_tab_lower{
+	background:#f0f1f1;
+	width:96%;
+	float:left;
+	padding-left:4%;
+	padding-bottom:40px;
+	padding-top:20px;
+}
+.nutrition_payment_page_tab1{
+	display:block;
+	float:left;
+	width:100%;
+	clear:both;
+}
+.nutrition_payment_page_tab2{
+	display:none;
+	float:left;
+	width:100%;
+}
+.nutrition_payment_page_tab3{
+	display:none;
+	float:left;
+	width:100%;
+}
+.nutrition_payment_page h2{
+	font-size:24px;
+	color:#000;
+	font-family: 'MyriadWebPro';
+	font-weight:bold;
+	padding-top:20px;
+	padding-bottom:10px;
+	text-transform:uppercase;
+}
+.nutrition_payment_page h3{
+	font-size:20px;
+	color:#27ACE2;
+	font-family: 'MyriadWebPro';
+	font-weight:normal;
+	padding-bottom:20px;
+	text-transform:uppercase;
+}
+.nutrition_sample_day .page_title h3{
+	color:#000;
+	font-size:30px;
+}
+.nutrition_payment_page_tab_lower p{
+	padding-bottom:20px;
+	clear:both;
+	text-align:left;
+}
+.nutrition_payment_page_tab_lower h3{
+	color:#333333;
+	font-size:22px;
+	font-family: 'MyriadWebPro';
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.nutrition_payment_textbox{
+	font-family: 'Myriadwebpro';
+    font-size: 14px;
+    width: 400px;
+}
+.nutrition_payment_select{
+	background: url("../images/drop-down-icon.png") no-repeat scroll 85.8% center #FFFFFF !important;
+    width: 484px !important;
+}
+.nutrition_select_cover{
+	width:440px;
+}
+.nutrition_checkbox{
+	clear:both;
+}
+.nutrition_payment_page_tab_lower label{
+	color:#716967;
+	font-family: 'MyriadWebPro';
+	font-size:16px;
+}
+.nutrition_payment_button{
+	background:url('../images/brown-button.png') no-repeat scroll left top rgba(0, 0, 0, 0);
+	border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 139px;
+	margin-left:10px;
+}
+.nutrition_sample_day{
+	margin-bottom:10px;
+}
+.nutrition_sample_day,.sample_day_table,.sample_table_row{
+	float:left;
+	width:100%;
+}
+.sample_table_heading_odd,.sample_table_column_odd,.sample_table_heading_even,.sample_table_column_even{
+	width:90%;
+	padding:10px 5%;
+	float:left;
+}
+.nutrition_sample_day .sample_day_table .sample_table_row ul li{
+	background:url("../images/bullet_circle.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+	padding-bottom:10px;
+	padding-left:15px;
+}
+.sample_table_column_main{
+	float:left;
+	width:20%;
+}
+.sample_table_heading_odd{
+	background:#dddddd;
+	font-size:18px;
+}
+.sample_table_heading_even{
+	background:#d4d4d4;
+	font-size:18px;
+}
+.sample_table_column_odd{
+	background:#f2f2f2;
+}
+.sample_table_column_even{
+	background:#fafafa;
+}
+.nutrition_paypal{
+	clear:none !important;
+	margin-left: 0 !important;
+    margin-top: 0;
+    padding-top: 0;
+}
+.nutrition_card_code{
+	width:29%;
+	float:left;
+}
+#cardcode{
+	width:95%;
+}
+.form_text_nutrition_payment{
+	width:410px;
+	margin-bottom:-12px;
+	font-size:16px;
+	font-family: 'MyriadWebPro';
+	color:#4c4c4c;
+}
+.nutrition_what_is_code{
+	width:30%;
+	float:left;
+	padding-left: 20px;
+    padding-top: 10px;
+}
+.nutrition_payment_button_tab1{
+	position:absolute;
+	
+}
+.nutrition_payment_button_tab2{
+	position:absolute;
+	left:188px;
+}
+.nutrition_payment_button_tab3{
+	position:absolute;
+	left:379px;
+}
+#nutrition_form label.error,#webinar_form label.error,#retreat_form label.error    {
+	clear: both;
+    color: #FF0000 !important;
+    float: left;
+    font-size: 12px !important;
+    width: 100% !important;
+}
+/************************ my history ***************/
+.my_history{
+	float:left;
+	width:100%;
+	margin-top:20px;
+}
+.my_history_slider h2, .order_history h2{
+	font-size:25px;
+	color:#000;
+	font-family: 'MyriadWebPro';
+	font-weight:bold;
+	padding-top:10px;
+	padding-bottom:20px;
+	text-transform:uppercase;
+}
+.order_history{
+	float: left;
+    margin-top: 40px;
+    width: 100%;
+	margin-bottom:40px;
+	font-family: 'MyriadWebPro';
+}
+.order_history_pending{
+	color:#cc0000;
+}
+.order_history_completed{
+	color:#009933;
+}
+.order_history_table,.order_history_heading,.order_history_row{
+	width:100%;
+	float:left;
+}
+.order_history_heading{
+	border-top:1px solid #dcdcdc;
+	color:#333333;
+	font-size:18px;
+	font-weight:bold;
+}
+.order_history_row{
+	color:#333333;
+	font-size:16px;
+}
+.order_history_row,.order_history_heading{
+	border-bottom:1px solid #dcdcdc;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.order_history_heading_column{
+	float:left;
+	width:24%;
+	margin-left:1%;
+}
+/********************************* top my account menu ***************************/
+.myaccount_menu_top_header, .myaccount_menu_top_header ul {
+    padding:0;
+    margin: 0;
+}
+.myaccount_menu_top_header li {
+    list-style-type: none;
+}
+.myaccount_menu_top_header ul li{
+	border-bottom: 1px solid #CCCCCC;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 93%;
+}
+.myaccount_menu_top_header li ul li a {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #666666;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+}
+.myaccount_menu_top_header li ul li a:hover{
+	color:#2596C4;
+}
+.myaccount_menu_top_header li {
+    position: relative;
+	padding-left:10px;
+	background:none;
+	clear:none;
+	float:left;
+}
+.myaccount_menu_top_header ul {
+    display: none;
+    left: -100px;
+    position: absolute;
+    top: 17px;
+    width: 200px;
+    z-index: 1010 !important;
+}
+.myaccount_menu_top_header li:hover ul {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 1px 1px 15px #CCCCCC;
+    display: block;
+}
+.first_li_welcome{
+	border-right:1px solid #999 !important;
+	padding-right:10px;
+}
+.myaccount_menu_top_header a{
+	cursor:pointer;
+	text-decoration:none;
+	padding-right:15px;
+	background:url('../images/myaccount_drop_down.png') no-repeat right center;
+}
+.myaccount_menu_top_header{
+	float:right;
+	margin-top:20px;
+	font-size:14px;
+	position:absolute;
+	right:3%;
+}
+.myaccount_menu_top_header p{
+	float:left;
+	margin-right:10px;
+	color:#666;
+	margin-bottom:0;
+}
+.myaccount_menu_top_header_white p {
+	color:#fff;
+}
+.myaccount_menu_top_header_white a{
+	color:#fff;
+	background:url('../images/myaccount_drop_down_white.png') no-repeat right center;
+	padding-right:20px;
+}
+.myaccount_menu_top_header_white .first_li_welcome{
+	border-right:1px solid #fff !important;
+}
+/*************************** payment setting and info********************/
+.payment_setting_and_info{
+	border-bottom: 1px solid #DCDCDC;
+    clear: both;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+.payment_setting_and_info p,.my_credit_card_information p{
+	text-align:left;
+}
+.heading_payment_setting_and_info_page,.my_credit_card_information .heading_payment_setting_and_info_page{
+	color: #27ACE2;
+    font-size: 32px;
+    font-weight: normal;
+    padding-bottom: 20px;
+	line-height:1;
+}
+
+.payment_setting_and_info_row{
+	width:100%;
+	float:left;
+	clear:both;
+}
+.my_credit_card_information .myaccount_button{
+	float:left;
+	margin-left:0;
+	margin-right:10px;
+}
+.payment_setting_and_info_column1{
+	color: #333333;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 3%;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 30%;
+}
+.payment_setting_and_info_column2{
+	width:67%;
+	float:left;
+	color:#333333;
+	font-weight:bold;
+	font-size:16px;
+}
+.payment_setting_and_info_column2 a{
+	float:left !important;
+	text-transform:capitalize !important;
+	padding:10px !important;
+	margin-top:-10px;
+}
+.payment_setting_and_info_links{
+	border-bottom: 1px solid #DCDCDC;
+    clear: both;
+    float: left;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.payment_setting_and_info_links a,.pause_and_cancel_page a,.paymentsettingbutton{
+	background:url('../images/brown-button.png');
+	padding:10px;
+	color:#fff;
+	margin-right:20px;
+	text-decoration:none;
+	line-height: 16px;
+	border: 0 none;
+	font-size:15px;
+	cursor:pointer;
+}
+
+.payment_setting_and_info_active_link,.payment_setting_and_info_links a:hover,.pause_and_cancel_page a:hover,.paymentsettingbutton:hover{
+	background: url("../images/login.png") repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+.redeem_a_gift_voucher .paymentsettingbutton,.paymentsettingbuttonblue{
+	margin-left:20px;
+}
+.redeem_a_gift_voucher .paymentsettingbutton,.paymentsettingbuttonblue,.paymentsettingbuttonbrown:hover{
+	background: url("../images/login.png") repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.redeem_a_gift_voucher .paymentsettingbutton:hover,.paymentsettingbuttonblue:hover,.paymentsettingbuttonbrown{
+	background:url('../images/brown-button.png') !important;
+}
+.pause_and_cancel_page{
+	background: none repeat scroll 0 0 #F0F1F1;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.pause_and_cancel_page h2{
+	margin-bottom: 15px;
+}
+.pause_and_cancel_page h3{
+	padding-bottom: 25px !important;
+}
+.which_language{
+	margin-left: 24px;
+}
+.which_language input{
+	margin-left:10px;
+	width:200px;
+}
+.other_cancellation_reason{
+	width:200px;
+	margin-left:46px;
+}
+.pause_or_cancel {
+	border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/******************************** my credit card info **********/
+.my_credit_card_information{
+	float:left;
+	clear:both;
+	width:100%;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.myaccount_form_input  label.error{
+	clear: both;
+	color: #FF0000 !important;
+	font-size: 12px !important;
+	width: 95% !important;
+}
+.my_credit_card_information p{
+	color:#666;
+	font-size:16px;
+	font-family:'Myriadwebpro';
+}
+.my_credit_card_information h2{
+	margin-top:20px;
+	color:#333;
+	font-size:21px;
+	font-family:'Myriadwebpro';
+}
+.my_credit_card_information h3{
+	padding-bottom:5px;
+	color:#333;
+	font-size:16px;
+	font-family:'Myriadwebpro';
+	line-height:1;
+}
+.page_title_bold a{
+	float:right;
+	font-weight:normal;
+	font-size:16px;
+	color:#333;
+	text-transform:capitalize !important;
+	text-align:right;
+	text-decoration:none;
+	margin-top:15px;
+}
+.myaccount_form_input .signup_dollar{
+	float:left;
+}
+.myaccount_form_input .signup_dollar a{
+	float:none;
+}
+.myaccount_form_input .signup_show_change span.signup_show_change_left{
+	line-height: 1.5;
+    width:95%;
+}
+.myaccount_form_input .signup_show_change span.signup_show_change_right{
+	line-height: 1.5;
+    width:95%;
+	float:left;
+}
+.myaccount_form_input .signup_show_change input.signup_show_change_right{
+	float:left;
+}
+/*************************** statement for year ***************/
+.statement_for_year_input a{
+	background: none repeat scroll 0 0 #0099CC;
+	font-size: 16px;
+    font-weight: lighter;
+	padding: 10px !important;
+    text-transform: capitalize !important;
+	color:#fff;
+	text-decoration:none;
+	width:auto;
+}
+.statement_for_year_input label{
+	width: 16%;
+}
+.statement_for_year_input{
+	border:none;
+}
+.statement_for_year_input .myaccount_select_cover a{
+	background: url('../images/brown-button.png');
+	font-size: 16px;
+    font-weight: lighter;
+	padding: 6px 16px !important;
+    text-transform: capitalize !important;
+	color:#fff;
+	text-decoration:none;
+	width:auto;
+	margin-left:0;
+	margin-top:10px;
+}
+.statement_for_year_input label img {
+	padding-top:10px;
+}
+.statement_year_table, .statement_year_heading, .statement_year_row {
+    float: left;
+    width: 100%;
+}
+
+.statement_year_row, .statement_year_heading {
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.statement_year_heading {
+    
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.statement_year_heading_column {
+    float: left;
+    margin-left: 1%;
+    width: 32%;
+}
+.statement_year_row {
+    color: #333333;
+    font-size: 16px;
+}
+.statement_year_table{
+	padding-top:30px;
+	padding-bottom:40px;
+}
+.redeem_a_gift_voucher.myaccount_form_input p{
+	width:25%;
+}
+.redeem_a_gift_voucher .myaccount_textbox{
+	width:100%;
+}
+/********************** rest my acc payment pages ************/
+.please_choose_an_option p{
+	padding-bottom:15px;
+	padding-top:20px;
+	text-align:left;
+}
+.please_choose_an_option .readmoree a{
+	font-size:16px;
+	padding-right:10px !important;
+	padding-left:10px !important;
+	margin-right:25px;
+	text-transform:capitalize;
+}
+.select_pause_duration .myaccount_textbox{
+	width:23%;
+	margin-left:10px;	
+}
+.select_pause_duration .myaccount_button{
+	float:none;
+}
+.select_pause_duration p{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+/*************************** gift coupon ***************/
+.gift_coupon .myaccount_form_input{
+	border:none;
+	border-bottom:1px solid #ddd;
+}
+.gift_coupon .myaccount_form_input input{
+	float:left;
+}
+.gift_coupon .myaccount_form_input p label{
+	width:91%;
+}
+
+.gift_coupon h3 {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+.CVV_pop_up_outer{
+	display:none;
+}
+#CVV_popup{
+	text-align:center;
+}
+#work_shop_detailvideo a img,#work_shop_detailvideo1 a img {
+	width:50%;
+	margin-left:25%;
+}
+.jwlogo,.jwdownloaddisplay{
+	display:none !important;
+	visibility:hidden !important;
+}
+
+#other_exercise{
+	width:165px;
+	margin-top:10px;
+}
+#next_charge_date{
+	cursor:pointer;
+}
+
+.mobile_how_it_works,#mobile_how_it_works1,#mobile_how_it_works2,#mobile_how_it_works3,#mobile_how_it_works4{
+	display:none;
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+}
+.mobile_how_it_works{
+	background: none repeat scroll 0 0 #F0F0F0;
+    padding: 10px;
+    width: 94%;
+}
+.mobile_how_it_works a.about_continue_button{
+	position:relative;
+	left:0;
+	top:0;
+	bottom:0;
+	cursor:pointer;
+	margin-bottom:20px;
+}
+.mobile_how_it_works h2{
+	padding:10px 0px;
+	line-height:1;
+}
+#worshop_gift_type_radio,#worshop_gift_type_heading{
+	display:none;
+	background:none;
+}
+
+#worshop_gift_type_radio > div {
+    float: left;
+    width: 55%;
+}
+
+/****************** contact page ***********************/
+.contact_form_left{
+	width:55%;
+	float:left;
+	margin-right:5%;
+	margin-top:20px;
+}
+.contact_form_left p,.contact_form_right p{
+	color:#666;
+}
+.contact_form_right{
+	width:40%;
+	float:left;
+	margin-top:20px;
+}
+.contact_form_right_inner{
+	width:90%;
+	padding:5%;
+	background:#eee;
+}
+#contact_form label.error,#new_contact_us label.error{
+	float:left;
+	width:100%;
+}
+#contact_form p,#new_contact_us p{
+        margin-bottom:20px;
+}
+.who_we_are_right #work_shop_detailvideo,.who_we_are_right #work_shop_detailvideo1{
+	display:none;
+}
+.mobile_hidden_view{
+	display:none;
+}
+#change_my_password_form label.error{
+	width:45% !important;
+}
+.meet_our_team_slider .carousel .next_carosel{
+	right:-20px !important;
+}
+.meet_our_team_slider .carousel .prev_carosel{
+	left:-20px !important;
+}
+#worshop_gift_type_radio label span {
+    color: #333333;
+    font-size: 15px;   
+}
+.giftAmount_right {
+    float: left;
+    width: 55%;
+}
+.giftAmount_right p {
+    width: 100%;
+}
+.skipbutton{
+	padding:10px;
+}
+.instructor_detail_page .pilates_instructorrslider .carousel .next_carosel,.instructor_detail_page .pilates_instructorrslider .carousel .prev_carosel{
+	top:50px;
+}
+/********************** gift pay *************/
+.gift_pay_page .nutrition_payment_page_tab_upper{
+	height:auto;
+	padding:20px 4%;
+	width:92%;
+	border-bottom:3px solid #27ACE2;
+}
+.gift_pay_page .nutrition_payment_page_tab_upper label{
+	font-weight:bold;
+}
+.gift_pay_page .submit_button{
+	width:auto;
+}
+#new_credit_card{
+	display:none;
+}
+/*************** contact *************/
+.contact_page{
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+}
+.contact_inner{
+	border-bottom:1px solid #dcdcdc;
+	float:left;
+	width:100%;
+}
+.contact_page h2{
+	color: #333;
+    font-family: 'MyriadWebPro';
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.contact_page p{
+	padding-left:30px;
+	line-height:30px;	
+}
+.address_div{
+	background:url('../images/address.png') no-repeat left center ;
+}
+.phone_div{
+	background:url('../images/phone.png') no-repeat left center ;
+	float:left;
+	margin-right:30px;
+}
+.fax_div{
+	background:url('../images/fax.png') no-repeat left center ;
+	float:left;
+}
+.mail_div{
+	background:url('../images/mail.png') no-repeat left center ;
+	float:left;
+	margin-right:30px;
+}
+.contact_inner{
+	border:none;
+}
+.contact_page p{
+	margin-top:0;
+}
+.contact_page_content_left{
+	float:left;
+	/*width:55%;   with map*/
+	width:100%;
+}
+.contact_page_content_right{
+	float:left;
+	width:45%;
+}
+.contact_page_content_right iframe{
+	border:2px solid #27ACE2;
+	height:300px;
+	width:92%;
+}
+.contact_shadow{
+	width:80%;
+}
+.contact_page_content{
+	width:90%;
+	padding:20px;
+}
+.carosel_main_div .carosel_div_class li img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+#carousel img.carousel-center{
+	filter:none;
+	-webkit-filter:grayscale(0);
+}
+.gift_coupon h3{
+	background-size:99% 99%;
+	margin-left:-3px;
+	padding-bottom:11px !important;
+	width:100%;
+}
+#gift_coupon  .myaccount_button{
+	padding:4px 10px;
+}
+
+/********* added by rails ************/
+#new_forum_post .floated-btnlink .submit_button,
+.edit_forum_post .floated-btnlink .submit_button {
+    float: left;
+    font-family: 'MyriadWebPro';
+    font-size: 15px;
+}
+#new_forum_post .floated-btnlink a,
+.edit_forum_post .floated-btnlink a {
+    float: left;
+    height: auto;
+    margin-left: 10px;
+    padding: 10px 13px;
+    font-family: 'MyriadWebPro';
+    font-size: 15px;
+}
+
+
+.testimonial_maincontent .retreats_content_right{
+	min-height:200px;
+}
+.pilates_lii .link_filter{
+	background:none;
+	border:none;
+	padding:0;
+	width:auto;
+	text-transform:none;
+}
+
+.nutrition_new_page .testimonial_maincontent .instructor_details{
+	margin-top:0;
+}
+.buy_button{
+	margin-bottom:20px;
+}
+
+.nutrition_detail_slider h3 {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.nutrition_detail_slider h2{
+	font-weight: normal;
+}
+.nutrition_page.nutrition_page_detail .instructor_title_box{
+	margin-bottom:0;
+}
+
+.button_number {
+  margin: 0 0 0 5px;
+  text-indent: -9999px;
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+  float: left;
+  text-align: center;
+  background: url(../images/buttons.png) no-repeat;
+}
+.dec {
+  background-position: 0 -29px;
+}
+.numbers-row input[type=text],.numbers-row_total input[type=text]{
+  float: left;
+  width: 40px;
+  padding: 3px 0 0 0;
+  text-align: center;
+  height:30px;
+}
+.numbers-row_total input[type=text]{
+	width: 100px;
+}
+.number_rows_label_dollar{
+	float:left;
+	height: 36px;
+    line-height: 36px;
+	width:10px;
+}
+.number_rows_label{
+	float: left;
+    height: 36px;
+    line-height: 36px;
+    width: 190px;
+}
+.numbers-row{
+	float:left;
+	width:100%;
+}
+.fadewrapperinner h3{
+	font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+a.enter_comment_button {
+    height: auto;
+    padding: 6px 15px;
+	text-decoration:none;
+}
+.myaccount_form_input p.deleterow{
+    line-height: 42px;
+    margin-left: 50px;
+    width: 16px;
+	cursor:pointer;
+}
+
+.who_we_are_right.nutritionright .mobile_hidden {
+    width: 100%;
+}
+ .video_pause_description {  
+ float: left; 
+ margin-top: 15px; 
+ width: auto ;
+ }
+ .play_small_icon_session_instructor {
+    left: 30%;
+    position: absolute;
+    top: 24%;
+}
+
+.fadewrapperinner a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.about_page_slider .aboutcarosl {
+	min-height:395px;
+}

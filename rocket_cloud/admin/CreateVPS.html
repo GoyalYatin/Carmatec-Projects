@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="google-site-verification" content=""/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>JC Open Stack </title>
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon" href="media/images/favicon.ico"/>
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="media/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="media/styles/styles_480.css" />
+<link rel="stylesheet"  href="media/styles/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="media/styles/skin.css"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<link href="media/styles/custom.css" rel="stylesheet">
+    <!-- Owl Carousel Assets -->
+<link href="media/styles/owl.carousel.css" rel="stylesheet">
+<link href="media/styles/owl.theme.css" rel="stylesheet">
+<link href="media/styles/owl.transitions.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="media/styles/styles.css"/>
+<!--<link rel="stylesheet" type="text/css" href="media/styles/slider_graph.css"/>-->
+
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="media/styles/ie7.css" />		
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="media/styles/ie8.css" />		
+<![endif]-->
+
+</head>
+
+<body>
+<noscript>
+<style type="text/css">
+	.bodyWrapper{
+		display:none;
+	}
+</style>
+<div class="noscript" style="width:100%; margin:50px auto; padding: 10px 0;text-align:center; font: bold 18px arial; color: #000; background-color:#6699FF"> Your browser's JavaScript seems to be Disabled. Please enable the JavaScript to get all functionalty of the site. </div>
+</noscript>
+<div class="bodyWrapper container">
+  <div class="wrapper-fixed">
+    <div class="row navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+      <div class="col-lg-2 logo"><a href="index.html"> <img alt="logo" src="media/images/logo.png" class="img-responsive"/></a> </div>
+      <div class="col-lg-9 headerarea">
+        <div class="row headercontent">
+          <div class="col-lg-4 heading">
+            <h3 class="h3">Create VPS</h3>
+          </div>
+          <div class="col-lg-8 account-area">
+            <div class="row">
+              <div class="col-lg-2 right profile-picture"> <img src="media/images/user.png" class="img-rounded" alt="user"/> </div>
+              <div class="col-lg-5 header_welcometext right">
+                <h5 class="h5">Welcome, <span class="h5 profilename">John Smith</span></h5>
+              </div>
+              <div class="col-lg-4 heading-button right">
+                <button type="button" class="btn btn-default btn-xs buttomheader buttonbilling">Billing</button>
+                <button type="button" class="btn btn-default btn-xs buttomheader buttonlogout">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--header ends here-->
+    <div class="mainContent">
+      <div class="col-lg-2 menu-static">
+        <div class="row create-row">
+          <button type="button" class="create_vps_button">Create VPS</button>
+        </div>
+        <div class="row create-row">
+          <ul class="menu-list">
+            <li><a href="manage-vps.html">Manage VPS</a></li>
+            <li><a href="#">Backups</a></li>
+            <li><a href="#">SSH Keys</a></li>
+            <li><a href="#">DNS</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>	
+      </div>
+      <div class="col-lg-9 content-area">
+          <div class="vps_bkp_main_wrap CreateVps">
+          	<div class="vps_bkp_snapshots">
+            	<h2>Select Plan</h2>
+                <div class="select_plan_wrap">
+                   <div id="demo">                     
+                          <div class="span12">
+                            <div id="owl-demo" class="owl-carousel">                              
+                              <div> 
+                              <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box" >              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>        
+                                    <div class="vps-box create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>    
+                                    <div class="vps-box  create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div> 
+                              </div>
+                              <div> 
+                              <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box" >              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>        
+                                    <div class="vps-box create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>    
+                                    <div class="vps-box  create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div> 
+                              </div>
+                              <div> 
+                              <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box" >              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>        
+                                    <div class="vps-box create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>    
+                                    <div class="vps-box  create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div> 
+                              </div>
+                              <div> 
+                              <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box" >              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>        
+                                    <div class="vps-box create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>    
+                                    <div class="vps-box  create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div> 
+                              </div>
+                              <div> 
+                              <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box" >              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>        
+                                    <div class="vps-box create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>    
+                                    <div class="vps-box  create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div> 
+                              </div>
+                              <div> 
+                                    <div class="vps-box vps-box-right create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box" >              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>        
+                                    <div class="vps-box create_vps_box">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-left">512 MB</div>
+                                           <div class="plan-item-middle">/</div>
+                                           <div class="plan-item-right">1 CPU</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">20 GB</div>
+                                           <div class="plan-item-middle width20p">SSD</div>
+                                           <div class="plan-item-right width40p">DISK</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-left width40p">1 TB</div>
+                                           <div class="plan-item-right width40p textcenter">TRANSFER</div>
+                                         </div>  
+                                      </div>
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">MONTHLY</div>                   
+                                           <div class="plan-item-right width40p">HOURLY</div>
+                                         </div>  
+                                         <div class="plan-item">
+                                           <div class="plan-item-right textcenter width60p">$5.00</div>                   
+                                           <div class="plan-item-right width40p">$0.007</div>
+                                         </div>                  
+                                      </div>
+                                    </div>                                  
+                              </div> 
+                            </div>                          
+                      </div>
+                    </div> 
+            </div>
+            </div> 
+            <div class="vps_bkp_snapshots">
+            	<h2>Select Region</h2>
+                <div class="select_plan_wrap">
+                 <div id="demo">                             
+                                    <div class="vps-box vps-box-right create_vps_box_region">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <span>Newyork</span>
+                                         </div> 
+                                      </div>                                      
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box_region" >              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <span>Newyork1</span>
+                                         </div>
+                                        </div>                                      
+                                    </div>      
+                                    <div class="vps-box create_vps_box_region">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <span>Newyork2</span>
+                                         </div>
+                                       </div>                         
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box_region">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <span>Newyork3</span>
+                                         </div>  
+                                      </div>                                      
+                                    </div>
+                                    <div class="vps-box vps-box-right create_vps_box_region">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <span>Newyork4</span>
+                                         </div>
+                                      </div>                                      
+                                    </div>      
+                                    <div class="vps-box  create_vps_box_region">              
+                                      <div class="vps-detail-container">
+                                        <div class="plan-item">
+                                           <span>Newyork5</span>
+                                         </div>
+                                      </div>                                      
+                                    </div>
+                  </div>                                                           
+                </div> 
+            </div>
+            </div>          
+            <div class="vps_bkp_snapshots SelectImage">
+            	<h2>Select Image</h2>
+                <div class="select_plan_wrap01">                
+                         <div class="tabbable">
+                                <ul class="nav nav-tabs">
+                                   <li class="active"><a href="#tab1" data-toggle="tab">Linux Distributions</a></li>
+                                   <li><a href="#tab2" data-toggle="tab">Application Installs</a></li>
+                                   <li><a href="#tab3" data-toggle="tab">Snapshots</a></li>
+                                   <li style="border-right:none;"><a href="#tab4" data-toggle="tab">Custom</a></li>
+                                </ul>
+                            <div class="tab-content">
+                               <div class="tab-pane active" id="tab1">
+                               			<div class="select_plan_wrap">
+                                        	<div class="select_plan_slider">
+                                                 <ul id="mycarousel" class="jcarousel-skin-tango">
+                                                        <li class="slideImg_Active ImageHover_Active slide1"><img src="media/images/image1.jpg" alt="" /><input type="hidden" value="1" id="slider_view" /></li>
+                                                        <li class="slideImg_Active ImageHover_Active slide2"><img src="media/images/image1.jpg" alt="" /><input type="hidden" value="2" id="slider_view" /></li>
+                                                        <li><img src="media/images/image1.jpg" alt="" /></li>
+                                                        <li><img src="media/images/image1.jpg" alt="" /></li>
+                                                        <li><img src="media/images/image1.jpg" alt="" /></li>
+                                                        <li><img src="media/images/image1.jpg" alt="" /></li>
+                                                        <li><img src="media/images/image1.jpg" alt="" /></li>
+                                                        <li><img src="media/images/image1.jpg" alt="" /></li>
+                                                        <li><img src="media/images/image1.jpg" alt="" /></li>
+                                                        <li><img src="media/images/image1.jpg" alt="" /></li>
+                                                </ul>
+                                            </div>
+                                            <div class="select_plan_caption">
+                                            	<div class="select_plan_caption_inner">
+                                                	<ul>
+                                                    	<li class="vps01">CentOS 6.5 x64</li>
+                                                        <li class="vps02">CentOS 6.5 x64</li>
+                                                        <li class="vps03">CentOS 6.5 x64</li>
+                                                        <li style="margin-right:0px;" class="vps04">CentOS 6.5 x64</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="select_plan_caption_inner">
+                                                	<ul>
+                                                    	<li class="vps05">CentOS 6.5 x64</li>
+                                                        <li class="vps06">CentOS 6.5 x64</li>
+                                                        <li class="vps07">CentOS 6.5 x64</li>
+                                                        <li style="margin-right:0px; class="vps08"">CentOS 6.5 x64</li>
+                                                    </ul>
+                                                </div>
+                                            </div>	
+                                        </div>
+                               </div>
+                               <div class="tab-pane" id="tab2">                                        <div class="select_plan_wrap">
+                                        	
+                                            <div class="select_plan_caption">
+                                            	<div class="select_plan_caption_inner">
+                                                	<ul>
+                                                    	<li class="vps01">CentOS 6.5 x64</li>
+                                                        <li class="vps02">CentOS 6.5 x64</li>
+                                                        <li class="vps03">CentOS 6.5 x64</li>
+                                                        <li style="margin-right:0px;" class="vps04">CentOS 6.5 x64</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="select_plan_caption_inner">
+                                                	<ul>
+                                                    	<li class="vps05">CentOS 6.5 x64</li>
+                                                        <li class="vps06">CentOS 6.5 x64</li>
+                                                        <li class="vps07">CentOS 6.5 x64</li>
+                                                        <li style="margin-right:0px; class="vps08"">CentOS 6.5 x64</li>
+                                                    </ul>
+                                                </div>
+                                            </div>	
+                                        </div>
+                               </div>
+                               <div class="tab-pane" id="tab3">
+                               			<div class="select_plan_wrap">                                        	
+                                            <div class="select_plan_caption">
+                                            	<div class="select_plan_caption_inner">
+                                                	<ul>
+                                                    	<li class="vps01">CentOS 6.5 x64</li>
+                                                        <li class="vps02">CentOS 6.5 x64</li>
+                                                        <li class="vps03">CentOS 6.5 x64</li>
+                                                        <li style="margin-right:0px;" class="vps04">CentOS 6.5 x64</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="select_plan_caption_inner">
+                                                	<ul>
+                                                    	<li class="vps05">CentOS 6.5 x64</li>
+                                                        <li class="vps06">CentOS 6.5 x64</li>
+                                                        <li class="vps07">CentOS 6.5 x64</li>
+                                                        <li style="margin-right:0px; class="vps08"">CentOS 6.5 x64</li>
+                                                    </ul>
+                                                </div>
+                                            </div>	
+                                        </div>
+                               </div>
+                               <div class="tab-pane" id="tab4">
+                               			<div class="select_plan_wrap">                                        	
+                                            <div class="select_plan_caption">
+                                            	<div class="select_plan_caption_inner">
+                                                	<ul>
+                                                    	<li class="vps01">CentOS 6.5 x64</li>
+                                                        <li class="vps02">CentOS 6.5 x64</li>
+                                                        <li class="vps03">CentOS 6.5 x64</li>
+                                                        <li style="margin-right:0px;" class="vps04">CentOS 6.5 x64</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="select_plan_caption_inner">
+                                                	<ul>
+                                                    	<li class="vps05">CentOS 6.5 x64</li>
+                                                        <li class="vps06">CentOS 6.5 x64</li>
+                                                        <li class="vps07">CentOS 6.5 x64</li>
+                                                        <li style="margin-right:0px; class="vps08"">CentOS 6.5 x64</li>
+                                                    </ul>
+                                                </div>
+                                            </div>	
+                                        </div>
+                               </div>
+                            </div>  
+                        </div>  
+                </div>
+            </div>       
+            <div class="vps_bkp_snapshots vps_settings">
+            	<h2>VPS Settings</h2>
+                <div class="select_plan_wrap">
+                	<div class="select_plan_wrap_inner">
+                        <span class="url_txtbox"><input type="text" class="vps_host" value="Host Name" onblur="if (this.value == '') this.value = 'Host Name';" onfocus="if (this.value == 'Host Name') this.value = '';"></span>
+                        <span class="url_checkBox">
+                            <input id="demo_box_1" class="css-checkbox" type="checkbox" />
+                            <label for="demo_box_1" name="" class="css-label">Enable Backups</label>
+                        </span> 
+                    </div>      
+                </div>
+                <div class="select_plan_create">
+                    	<input type="button" class="couponcode-button vps_craeteBtn" value="Create VPS">
+                    </div>
+            </div>     
+            <div class="vps_bkp_Borderline"></div>      
+          </div>
+      </div>
+    </div>
+    <!--mainContent ends here--> 
+  </div>
+</div>
+<!--bodyWrapper ends here--> 
+
+
+
+
+  
+<script type="text/javascript" src='media/scripts/jquery-1.9.1.min.js'></script> 
+<script type="text/javascript" src='media/scripts/jquery.jcarousel.min.js'></script> 
+<script type="text/javascript" src='media/scripts/jquery-ui.min.js'></script>
+<script type="text/javascript" src='media/scripts/bootstrap.min.js'></script> 
+<script type="text/javascript" src='media/scripts/script.js'></script>
+<script type="text/javascript" src='media/scripts/jquery.validate.js'></script>
+<script type="text/javascript" src='media/scripts/owl.carousel.js'></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#mycarousel').jcarousel();
+	$('#mycarousel2').jcarousel();
+	$('#mycarousel3').jcarousel();
+	$('#mycarousel4').jcarousel();
+});
+
+</script>
+
+<!--<script type="text/javascript">
+$(document).ready(function(){
+	$(".checkbox_custom").dgStyle();
+            });
+</script>-->
+
+  <style>
+   
+    </style>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay :false,
+        stopOnHover : false,
+        navigation:true,
+        paginationSpeed : 5000,
+        goToFirstSpeed : 2000,
+        singleItem : true,
+        autoHeight : true,
+        transitionStyle:"fade"
+      });
+	  
+	  $('.create_vps_box').click(function(){
+		   $('.create_vps_box').removeClass('create_vps_box_clicked');
+		   $(this).addClass('create_vps_box_clicked');
+		  });
+	   $('.create_vps_box_region').click(function(){
+		   $('.create_vps_box_region').removeClass('create_vps_box_clicked');
+		   $(this).addClass('create_vps_box_clicked');
+		  });
+    });
+    </script>
+
+
+</body>
+</html>

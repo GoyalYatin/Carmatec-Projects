@@ -1,0 +1,120 @@
+.testimonial_instructorrslider .mask
+{
+	   margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+   width: 1200px;
+
+	
+}
+
+.testimonial_instructorrslider .carousel .disabled {
+color:gray;
+cursor:default;
+}
+                
+
+.no-js .carousel ul {position:static;}
+
+
+
+.testimonial_instructorrslider .carousel ul li {
+   float: left;
+    height: 282px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 34px;
+    margin-top: 0;
+    text-align: left;
+    width: 580px;
+	padding-left:0px;
+}
+.instructorcarosl .text_instructors .readmoree
+{
+	margin-top:0px;
+}
+
+.testimonial_instructorrslider .carousel ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+
+
+.testimonial_instructorrslider .carousel .prev_carosel
+ {
+	 background: url("../images/arrow-left.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 54px;
+    left: -25px;
+    position: absolute;
+    top: 44%;
+    width: 54px;
+    z-index: 100;
+ }
+ 
+.testimonial_instructorrslider .carousel .next_carosel
+ {
+	background: url("../images/arrow-right.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 54px;
+    position: absolute;
+    right: -25px;
+    top: 44%;
+    width: 54px;
+    z-index: 100;
+ }
+ 
+ .instructorcarosl
+ {
+	 position:relative;
+	 /*overflow:hidden;*/
+ }
+ 
+ .spantextt
+ {
+	 visibility:hidden;
+ }
+ 
+ .lastinstructor
+{
+margin-right:0px !important;
+}
+
+
+.text_instructors h3
+{
+	color:#333;
+	font-size:19px;
+	text-transform:uppercase;
+	font-weight:normal;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+			
+
+.text_instructors .readmoree a {
+    padding: 5px 12px !important;
+}
+.readmoree a {
+    background: none repeat scroll 0 0 #0099CC;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 10px 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	
+}			
+
+
+.prev_carosel, .next_carosel
+{
+	visibility:hidden;
+}
+
+

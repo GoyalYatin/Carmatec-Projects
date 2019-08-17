@@ -1,0 +1,2387 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.faeaturearrow
+	{
+		display:none !important;
+	}
+	
+.featurebanner1,.featurebanner2,.featurebanner3
+{
+	height:214px;
+}
+.headerWrap {    
+    padding: 0 3%;
+    width: 94%;
+}
+
+.DFH_logoContainer img
+{
+
+}
+.contentMainWrap {    
+    padding: 0 3%;
+    width: 94%;
+}
+
+.footerWrap {    
+   padding: 0 3%;
+    width: 94%;
+}
+
+.glacierFest .Glacier_wrapper {
+ padding: 0 3%;
+    width: 94%;
+}
+
+.glacierFest .Glacier_header {
+padding: 0 3%;
+    width: 94%;
+}
+
+.glacierFest .footer_copyrights {
+padding: 0 3%;
+    width: 94%;
+}
+
+.innerpage_wrapp 
+{
+	/*padding: 0 3%;*/
+    width: 100%;
+
+}
+
+
+.mainMenuSearch_header
+{
+
+    width:100%;
+}
+.sliderContainer_shadow  img
+{
+width:100%;
+}
+.bg_imageSlider
+{
+width:100%;
+}
+
+
+.homepage  .imgWrap img
+{
+	width:100%;
+}
+
+
+
+@media (max-width: 1024px) {
+
+.SO_descWrap h3
+
+{
+	padding-right:2px;
+}
+
+.SO_descWrap h3
+{
+background:none;
+}
+
+/* second dropdown **/
+
+.mainMenu_navLI .mainMenu_Product .mainMenu_list_sublist
+{
+min-width:452px;	
+}
+
+
+ 
+.mainMenu_navLI .mainMenu_Research .mainMenu_list_sublist
+{
+	left:-112px;
+}
+.mainMenu_navLI .mainMenu_list_sublist li
+{
+	/*width:45%;*/
+	background:none;
+	padding:0px;
+}
+
+.mainMenu_navLI .mainMenu_list_sublist li.mainMenu_list_sublistLLI.sitoMedica_topLink
+{
+	background:none;
+}
+
+.leadership_Box_leftsession img
+{
+	width:100%;
+}
+.sitoMedica_banner.WhatsNew_Slider
+{
+	height:100%;
+	background-size:100% 100%;
+}
+.Sito_desc
+{
+	width:48%;
+}
+
+.sliderContainer_shadow
+{
+	margin-bottom:0px !important;
+}
+
+.Clinical_Data_Reference
+{
+	width:48.5%;
+	margin-right:1%;
+}
+
+
+.researc_clinical .Clinical_Data_Reference {
+    margin-right: 1%;
+    width: 98%;
+}
+
+.current_clinicalTrails
+{
+	width:48.5%;
+	margin-right:1%;
+}
+.clinical_TxtBox,.clinical_Description
+{
+	width:270px;
+}
+
+.Product_Desp
+{
+	  min-height: 265px;
+}
+
+
+.loginPage_wrapper
+{
+	float:none;
+	width:70%;
+	margin-top:75px;
+	margin:0 auto;
+}
+.loginPage_container,.register_container
+{
+	/*width:86%;*/
+}
+
+
+.loginPage_detailsField input
+{
+	width:96%;
+}
+
+.loginPage_detailsField
+{
+	width:100%;
+}
+
+.icc_heading h2
+{
+	width:100%;
+	
+}
+.icc_dawnload
+{
+	clear:both;
+	width:40%;
+}
+
+.date
+{
+	width:60%;
+}
+
+.warehouse_map
+{
+	width:44%;
+	margin-right:2%;
+	margin-bottom:20px;
+}
+
+.qualityAndEfficacy_UL.dashboardtabs li
+{
+	width:43%;
+}
+
+.inHouseTestingWrapList span.labelValue
+{
+	float:left;
+	width:94%;
+	margin-top:5px;
+}
+
+.inHouseTestingWrapList span.labelName
+{
+	width:50%;
+	padding:5px 0 !important;
+}
+
+.ProductMain_layoutBox
+{
+	width:29.5%;
+}
+
+
+/*** Yatin added **/
+
+.accordian_TRBottomText{
+	margin-top:15px;
+}
+.accordian_rightTechResource{
+    	width: 100%;
+}
+.accordian_leftTechResource {
+    margin-right: 0%;
+margin-bottom:10px;
+    width: 100%;
+}
+.NutritionistPlacement{
+	margin-right: 0;
+    width: 98%;
+}
+.NutritionistPlacement_Right{
+	float:left;
+	margin-top:20px;
+}
+.steps_access h3,.estoreBox2 .steps_access h3,.estoreBox3 .steps_access h3,.estoreBox7 .steps_access h3{
+	width:100%;
+}
+
+.steps_access,.estoreBox5 .steps_access p{
+	margin-top:0;
+}
+.stores_sites .store_leftContainer,.stores_sites .store_rightContainer{
+	width:100%;
+	float:left;
+}
+.found_txt
+{
+	width:46%;
+}
+
+.About_LeftSession
+{
+	width:98%;
+}
+
+	.careermainclasss .Resume_Btn_Event
+{
+	position:absolute;
+	 left: 27%;
+	  margin-left: 0;
+}
+.Submit_Resume_session
+{
+	padding-bottom: 20px;
+}
+
+.pnf_layout
+{
+	margin:70px 0 70px 5% !important;
+	
+}
+
+}
+
+
+@media (max-width: 1022px) {
+.About_ProffesuionalImg
+{
+width:87%;
+}
+.faeaturearrow
+{
+	 top: 118px;
+}
+.featurebanner3 .faeaturearrow {
+    top: 121px;
+}
+.shopOnline_wrapper .descWrap
+{
+	padding-right: 5px;
+    width: 57%;
+}
+
+}
+
+/* for hiding content more than 1005*/
+
+@media (max-width: 1014px) {
+.mainMenu_navLI li a
+{
+background:none;
+}
+.dfh_main_wrapper,.fixed_wrapper_outer
+{
+	
+	overflow:hidden;
+}
+.mainMenu_navLI li a
+{
+	font-size:13px;
+}
+
+.innerpage_Lwrapp
+{
+margin:35px 12px 30px 0;
+}
+
+
+}
+@media (max-width: 995px) {
+
+.faeaturearrow
+{
+	 top: 114px;
+}
+.featurebanner3 .faeaturearrow {
+    top: 117px;
+}
+
+.Clinical_Data_Reference
+{
+	width:48.5%;
+	margin-right:1%;
+}
+.current_clinicalTrails
+{
+	width:48.5%;
+	margin-right:1%;
+}
+
+}
+
+@media (max-width: 975px) {
+
+.faeaturearrow
+{
+	 top: 111px;
+}
+.featurebanner3 .faeaturearrow {
+    top: 114px;
+}
+
+
+.Clinical_Data_Reference
+{
+	width:99%;
+	margin-right:1%;
+}
+.current_clinicalTrails
+{
+	width:99%;
+	margin-right:1%;
+	margin-bottom:25px;
+}
+.Clinical_Data_ReferenceSecond
+{
+	margin-top:0px;
+}
+.MedicalTeam
+{
+	margin-bottom:0px;
+}
+.clinical_TxtBox,.clinical_Description
+{
+	width:270px;
+}
+
+.current_clinicalTrails
+{
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.Resume_Btn_Event.Clinical_Btnevent
+{
+	float:left;
+}
+
+
+.practice_developmentTesting .right_session{
+	width:100%;
+}
+
+.program_list{
+	width:100%;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal{
+	right:5px;
+}
+
+
+}
+
+@media (max-width: 960px) {
+
+.headingslide
+{
+	padding-top:10px;
+}
+.imagewidthh {
+    width: 180px !important;
+}
+	
+	.faeaturearrow
+{
+	 top: 109px;
+}
+.featurebanner3 .faeaturearrow {
+    top: 112px;
+}
+
+.coreHealthPro_link
+{
+	top:5px !important;
+}
+.movedownmobile
+{
+	float:left;
+	clear:both;
+	margin-top:23px;
+}
+
+.eventDetail_share
+{
+	float:left;
+}
+.eventDetail_preRegister
+{
+	margin-bottom:10px;
+}
+
+.qualityAndEfficacy_UL.dashboardtabs li {
+    width: 45%;
+}
+
+
+}
+
+@media (max-width: 945px) {
+.mainMenu_navLI li a
+{
+	font-size:13px;
+}
+
+.subheading_image .headingWrap
+{
+	width:90%;
+}
+
+.page_found_Incont {
+    height: auto;
+    margin: 60px auto auto;
+    width: 60%;
+}
+
+
+
+
+}
+
+@media (max-width: 925px) {
+
+.shopOnline_wrapper .descWrap h2
+{
+	background:none;
+}
+	
+.faeaturearrow
+{
+	 top: 105px;
+}
+.featurebanner3 .faeaturearrow {
+    top: 107px;
+}
+
+	.mainMenu_navLI li,.mainMenu_navLI li:hover
+{
+	padding-left:6px !important;
+	padding-right:6px !important;
+}
+
+.leadership_Box_leftsession img
+{
+	margin-top:10%;
+}
+
+.warehouse_map
+{
+	width:96%;
+}
+
+.techResources_profile{
+	width:100%;
+	margin-right:0;
+	height:auto;
+}
+
+
+}
+@media (max-width: 920px) {
+.eventdetail_HeaderRight
+{
+	width:31%;
+}
+.qualityAndEfficacy_UL.dashboardtabs li {
+    width: 50%;
+}
+
+	
+}
+
+	
+
+@media (max-width: 910px) {
+	
+	.Sitemap_InnerSession
+	{
+		width:100%;
+		margin-right:0px;
+	}
+}
+
+
+
+
+
+@media (max-width:895px) {
+
+
+
+
+.blog_content
+{
+	width:63%;
+	
+}
+
+.rotating_banners
+{
+	width:32%;
+	
+}
+
+
+.event_content
+{
+	width:100%;
+	float:left;
+	
+}
+
+.testimonial_header h2
+{
+	text-indent:0px;
+	text-align:center;
+}
+
+.leftmenu_linksList li span
+{
+	background:none !important;
+}
+
+.descWrap_platform{
+	width:100%;
+}
+.content_session.borderNone.singleContent_session .dashboardtabs{
+	display:none;
+}
+.hiddenshowtab{
+	display:block;
+}
+.content_session.borderNone.singleContent_session .tabs{
+	display:block;
+	margin-bottom:20px;
+}
+
+
+}
+
+@media (max-width: 870px) {
+
+
+.leadership_Box_leftsession img
+{
+	margin-top:15%;
+}
+
+.leftmenu_linksList .selected_submenu span a
+{
+	line-height:20px;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    right: 10px;
+}
+
+
+}
+
+
+@media (max-width: 851px) {
+.print_productDetails
+{
+	margin-top:10px;
+}
+}
+
+@media (max-width: 850px) {
+
+
+
+	.mainMenu_navLI li,.mainMenu_navLI li:hover
+{
+	padding-left:4px !important;
+	padding-right:4px !important;
+}
+
+.subheading_image .headingWrap
+{
+	width:89%;
+}
+
+
+
+}
+
+@media (max-width:841px) {
+
+	.mainMenu_navLI li,.mainMenu_navLI li:hover
+{
+	padding-left:5px !important;
+	padding-right:5px !important;
+}
+.mainMenu_navLI li a,.mainMenu_navLI li a:hover
+{
+	padding-right:1px;
+}
+
+}
+
+@media (max-width: 840px) {
+
+
+.Product_Descriptions
+{
+	margin-left:5%;
+	width:65%;
+}
+.Product_Desp
+{
+margin-right:1%;	
+
+}
+.Product_Desp.BoxRight_None
+{
+	float:right;
+}
+
+
+}
+
+@media (max-width: 830px) {
+
+.careermainclasss .error_conatiner .error
+{
+	clear:both;
+	float:left;
+	width:100%;
+	text-align:center;
+}
+
+.qualityAndEfficacy_UL
+{
+	display:none !important;
+}
+
+.QualityandEfficacyTABS #tab1, .QualityandEfficacyTABS #tab2
+{
+	display:block !important;
+}
+
+.questionTypePara
+{
+	margin-top:0px !important;
+}
+
+}
+
+@media (max-width: 820px) {
+
+.leadership_Box_leftsession img
+{
+	margin-top:25%;
+}
+.contentSession_txtWrap
+{
+	width:100%;
+	clear:both;
+}
+.contentSession_imgWrap
+{
+	float:left;
+	clear:both;
+	margin-top:10px;
+}
+.contentSession_imgWrap
+{
+	border:none;
+}
+
+}
+
+@media (max-width: 810px) {
+
+.subheading_image .headingWrap
+{
+	width:88%;
+}
+
+
+.other_openingsOuter {
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.loginPage_wrapper
+{
+width:94%;	
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal{
+	 right: 15px;
+}
+
+
+
+}
+
+@media (max-width: 797px) {
+.bigtext 
+{
+	top:46px;
+}	
+}
+
+
+
+@media (max-width: 776px) {
+
+.leadership_Box_leftsession img
+{
+	margin-top:35%;
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 775px) {
+
+
+.subheading_image .headingWrap
+{
+	width:87%;
+}
+
+
+.mainMenu_Product .mainMenu_list_sublist li .headingWrapper h2 br
+{
+	display:none;
+}
+
+.like-fb
+{
+	width:100%;
+	text-align:center;
+}
+	
+	.mainMenu_navLI li,.mainMenu_navLI li:hover
+{
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+.mainMenu_navLI li a,.mainMenu_navLI li a:hover
+{
+	padding-right:0px !important;
+}
+
+.mainMenu_navLI li a, .mainMenu_navLI li a:hover,
+
+{
+	padding:0px !important;
+}
+.sitoMedica_topLink .sitoMedica_imgWrap img
+
+{
+	display:none;
+}
+.mainMenuSearch_header
+{
+	display:none;
+}
+
+
+.menu-toggle {
+    background: none repeat scroll 0 0 #003B78;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-weight: bold;
+    height: 30px;
+    line-height: 28px;
+    padding: 5px;
+    text-align: center;
+    width: 98.8%;
+}
+
+
+.mainMenu_navLI li a
+{
+background:none !important;
+}
+.mainMenu_navLI li a,.sitoMedica_topLink a h4
+{
+color:#000000 !important;
+}
+.sitoMedica_topLink a h4
+{
+text-shadow:none;
+}
+
+.sitoMedica_topLink a
+{
+background:none;
+border:none;
+}
+.mainMenu_navLI .mainMenu_list_sublist li.mainMenu_list_sublistLLI.sitoMedica_topLink
+{
+background:none;
+border:none;
+margin-left:-12px !important;
+}
+.mainMenu_navLI li a:hover
+{
+color:#000000 !important;
+}
+
+.mainMenu_navLI .menu_sublistWrap_heading .headingWrapper h2
+{
+color:#B88038;
+text-shadow:none;
+margin-top:10px;
+}	
+
+.mainMenu_navLI li
+{
+	width:100%;
+	
+}
+
+.mainMenu_navLI .menu_sublistWrap_heading .headingWrapper h2:hover
+{
+	color:#000 !important;
+}
+.mainMenu_navLI li a
+{
+	 background: url("../images/login_downarrowH.png") no-repeat scroll right 3px rgba(0, 0, 0, 0);
+    padding-right: 15px;
+	padding-left:10px;
+	font-size:13px !important;
+}
+.mainMenu_navLI li a:hover
+{
+	 background: url("../images/login_downarrowH.png") no-repeat scroll right 3px rgba(0, 0, 0, 0);
+    padding-right: 15px;
+	padding-left:10px;
+	
+}
+.mainMenu_Blog a
+{
+	background: none;
+}
+.mainMenu_Blog a:hover
+{
+		background: none;
+}
+.mainMenu_list_sublist
+{
+	z-index:10000 !important;
+	top:8px !important;
+	position:relative !important;
+	background:none !important;
+	left:0px !important;
+}
+.mainMenu_list_sublist  li
+{
+	width:100%;
+}
+.mainMenu_navLI .mainMenu_list_sublist li
+{
+	padding:0 0 10px !important;
+	
+}
+.mainMenu_navLI .menu_sublistWrapBottom
+{
+	background:url("../images/mainMenu_sepH.jpg") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+}
+.mainMenu_navLI .menu_sublistWrap
+{
+	width:auto;
+}
+
+/** Menu css **/
+
+.mainMenu_navLI li,.mainMenu_navLI li:hover
+{
+	background:none;
+}
+
+.mainMenu_list_sublist
+{
+	display:block !important;
+}
+.mainMenu_navLI .mainMenu_list_sublist
+{
+	background:none !important;
+}
+.imgWrapper,.menu_sublistWrap_desc
+{
+	display:none !important;
+}
+.mainMenu_navLI .mainMenu_list_sublist,.mainMenu_navLI .menu_sublistWrapBottom
+{
+	background:none !important;		
+}
+
+.mainMenu_navLI .menu_sublistWrapBottom
+{
+	background:none !important;
+	border-radius:none !important;
+	border:none !important;
+	margin-top:5px !important;
+}
+.mainMenu_navLI .menu_sublistWrap
+{
+	background:none !important;
+	border-radius:none !important;
+	border:none !important;
+}
+
+.mainMenu_navLI .mainMenu_list_sublist
+{
+	border:none !important;
+}
+
+.mainMenu_navLI li {
+    padding-bottom: 0;
+    padding-left: 10px !important;
+}
+
+.mainMenu_navLI li:hover
+{
+	 padding-left: 10px !important;
+}
+
+.mainMenu_navLI .mainMenu_list_sublist li {
+    padding: 0 0 5px 20px !important;
+}
+
+
+.mainMenu_navLI .menu_sublistWrap {
+    padding-bottom: 5px;
+}
+.mainMenu_navLI .menu_sublistWrap_heading .headingWrapper h2
+{
+	margin-top:0px;
+}
+
+.mainMenu_navLI .menu_sublistWrap_heading .headingWrapper
+{
+	position:static;
+}
+
+
+.mainMenu_navLI .menu_sublistWrap
+{
+	padding-bottom:5px;
+	margin-top:0;
+}
+.mainMenu_About a
+{
+	text-indent:0px;
+}
+
+.mainMenu_navLI li
+{
+	padding-bottom:0px;
+	
+}
+
+.mainMenu_navLI .mainMenu_list_sublist
+{
+padding:0 12px;
+}
+
+.sitoMedica_imgWrap
+{
+display:none;
+}
+
+
+.mainMenu_navLI .mainMenu_list_sublist .sitoMedica_topLink
+{
+	padding-left:0px !important;	
+}
+
+/*** about us  leader page **/
+
+
+.content_subTopSession
+{
+	margin-bottom:10px;
+}
+
+.ScienceTeam_Details
+{
+	 width: 28.3%;
+	  margin-right: 6.8%;
+}
+.ScienceTeam_Box_layout h2
+{
+	font-size:13px;
+}
+
+
+.productDetails_tabs_List
+{
+	display:none;
+}
+.productDetails_tabsWrap .tab_container
+{
+	display:block !important;
+}
+
+.onlymobilee
+{
+	display:block;
+}
+
+.product_tabContent
+{
+	width:96%;
+}
+
+.career_button
+{
+	margin-left:61%;
+}
+
+.eventBrochure_header h3
+{
+	text-indent:1px;
+}
+.coreHealthPro_link
+{
+	float:left !important;
+	margin-top:10px;
+}
+
+.icnmpage .coreHealthPro_link
+{
+	position:static !important;
+	float:left;
+	margin-bottom:10px;
+}
+
+.blog_latestNews
+{
+	margin-top:0px !important;
+}
+
+.ProductMain_layoutBox
+{
+	width:98%;
+	margin-bottom:10px;
+}
+
+.practiregistration #tabs.prtab ul
+{
+display:none !important;	
+}
+
+
+.contact_detailsRight{
+	padding:0;
+	width:100%;
+}
+
+.contact_details {
+    float: left;
+    padding: 0;
+    width: 100%;
+}
+.contact_detailsLeft{
+	border:none;
+	margin-bottom:10px;
+}
+/*.NutritionistPlacement {
+	float: left;
+	margin-right: 3%;
+	width: 48%;
+}*/
+.NutritionistPlacement_content {
+	border: 1px solid #DEDEDE;
+	clear: both;
+	float: left;
+	margin-top: 4px;
+	padding: 10px 3%;
+	width: 94%;
+}
+.content_session .questionTypePara {
+	clear: both;
+	float: left;
+	width: 95%;
+	background: url("../images/bullets_BlueCircle.jpg") no-repeat scroll left 4px transparent;
+	color: #333333;
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding-left: 5%;
+}
+
+.createAccountLink
+{
+	float:left;
+	margin-top:10px;
+	
+}
+
+.UnparalFuncti
+{
+	float:left;
+}
+
+.mainMenu_navLI
+{
+	margin-bottom:10px;
+}
+
+.pnf_layout
+{
+	margin:70px 0 70px 10% !important;
+	width:90%;
+	
+}
+
+}
+
+@media (max-width: 772px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 750px) {
+
+}
+
+
+@media (max-width: 750px) {
+.jcarousel-skin-tango .jcarousel-next-horizontal{
+	right:20px;
+}
+}
+
+@media (max-width: 735px) {
+
+.homepage .imgWrap
+{
+	display:none;
+}
+.homepage  .shopOnline_wrapper .descWrap
+{
+	width:90%;
+	padding:10px;
+
+}
+
+.theme_selection_innerWrap{
+	margin-left:30px;
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 715px) {
+
+
+.subheading_image .headingWrap
+{
+	width:89%;
+}
+
+
+.socialLinks_footer li span a:hover
+{
+padding-top:0px;
+}
+.innerpage_Lwrapp {
+   
+    float: left;
+    height: 100%;
+    padding: 17px;
+    position: absolute;
+    left: -300px;
+    width: 200px;
+	z-index:10000;
+	margin-top:0;
+	height:auto;
+	
+	
+}
+
+.leftContainer_emptySpace
+{
+	display:none;
+}
+
+.footer_ListWrap,.footer_ListWrap.footer_practice,.footer_ListWrap.footer_ResearchQuality,.footer_ListWrap ul,.footer_ListWrap ul li,.footer_ListWrap h3,.footer_ListWrap h3 a,.footer_ListWrap.footer_research,.callNumber,.emailLink ,.footerWrap_bottomLeft,.footerWrap_bottomRight
+{
+	width:99%;
+	text-align:center;
+	/*padding:0 2%;*/
+	
+}
+
+.footerBottomLinks ul li
+{
+	float:none;
+	display:inline;
+}
+.footer_practice,.callNumber
+{
+	margin-bottom:4px;
+}
+
+/*** responsive slider **/
+.headingslide
+{
+padding-top:10px;
+padding-left:0px;
+}
+
+
+.socialLinks_footer ul, .socialLinks_footer ul li {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+
+.socialLinks_footer
+{
+	width:100%;
+}
+.footerBottomLinks
+{
+	width:100%;
+	margin-bottom:10px;
+	
+}
+
+.poweredBy p {
+    color: #464646;
+    display: inline;
+    float: none;
+}
+.poweredBy > a {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.poweredBy {
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+.poweredBy img
+{
+	float:none;
+	position:relative;
+	top:3px;
+}
+.footerBottomLinks ul
+{
+	display:inline-block;
+	width:auto;
+	float:none;
+}
+
+
+.copyrightText
+{
+	float:none;
+	text-align:center;
+}
+.slide a
+{
+font-size: 10px !important;
+  /* margin-top: 5px;*/
+    padding: 1px;
+}
+
+.responisve-container p
+{
+padding:1px;
+}
+
+.fs-pager-wrapper {
+    bottom: 3px;
+    left: 10px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.innerpage_Lwrapp
+{
+/*display:none;*/
+}
+
+.innerpage_Rwrapp
+{
+width:94%;
+padding:0 2%;
+}
+.left-menu-toggle
+{
+display: block;
+margin: 10px auto 0;
+width: 98%;
+}
+
+
+.About_LeftSession
+{
+width:97%;
+}
+.About_LeftSession img
+{
+width:100%;
+}
+
+.footerWrap_bottomRight
+{
+float:left;
+margin-top:10px;
+
+}
+
+.featurebanner1,.featurebanner2,.featurebanner3
+{
+	height: auto;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%;
+}
+.featureleftt {
+    float: left;
+    width: 34%;
+}
+
+.featureright {
+    float: left;
+    width: auto;
+}
+.featureleftt img
+{
+	width:35%;
+}
+.featureright p
+{
+	display:none;
+	
+}
+
+.featureright h3 br
+{
+	display:none;
+}
+
+.footer_ListWrap,.footer_ListWrap.footer_practice,.footer_ListWrap.footer_ResearchQuality
+{
+	width:99%;
+	float:left;
+}
+.imagewidthh
+{
+	width:120px !important;
+}
+
+.featureright h3
+{
+margin-top:38px;	
+}
+
+.footer_library,.footer_ResearchQuality
+{
+	margin-bottom:17px;
+}
+
+.leadership_Box_leftsession img
+{
+	margin-top:0px;
+}
+
+.pageContent,.innerpage_Rwrapp,.leadership_Box_layout
+{
+	padding-bottom:20px;
+}
+
+.ScienceTeam_Details
+{
+	 width: 28.3%;
+	  margin-right: 7%;
+}
+.ScienceTeam_Box_layout h2
+{
+	font-size:14px;
+}
+
+.professionll .blog_latestNews
+{
+	margin-top:0px !important;
+}
+
+.leftmenu_linksList .selected_submenu span a
+{
+	line-height:35px;
+}
+
+.leftmenu_subLinks
+{
+	display:block !important;
+}
+
+.career_button
+{
+	margin-left:0px;
+}
+
+.bloglatestnewspadd .blog_latestNews
+{
+	margin-top:3% !important;
+}
+
+.clinicalroundss #tabs ul 
+{
+	display:none;
+}
+#tabs-3, #tabs-2, #tabs-1
+{
+	display:block !important;
+}
+
+
+.blue_rightfold {
+    bottom: -19px;
+    float: left;
+    position: absolute;
+    right: -19px;
+}
+
+
+.bigtext {
+    top: 29px;
+}
+
+.loginPage_container
+{
+	width:88%;
+	margin-left:0px;
+}
+.register_container
+{
+	width:88%;
+	margin-left:0px;
+}
+
+.contentSession_imgWrap
+{
+	width:100%;
+}
+
+.Newproduct_img
+{
+	clear:both;
+	float:none;
+	text-align:center;
+	width:100%;
+}
+.Newproduct_desc
+{
+	width:98%;
+	float:none;
+	text-align:center;
+	margin-top:0px;
+	padding-left:1%;
+}
+
+#tabs ul
+{
+	display:none;
+}
+
+.eventsListing_rightContent
+{
+	float:left;
+	/*clear:both;*/
+	margin-top:10px;
+}
+.eventsListing_leftContent
+{
+	width:100%;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    right: 10px;
+}
+
+}
+
+@media (max-width: 680px) {
+
+}
+
+@media (max-width: 650px) {
+
+.blog_latestNews
+{
+	padding:2%;
+}
+.blog_latestNews .blog_content
+	{
+		width:100%;
+		margin:0px;
+		margin-bottom:20px;
+	}
+	
+	.blog_latestNews .event_content
+	{
+		width:100%;
+		margin:0px;
+	}
+	
+}
+
+/*** ths is for popup mainly **/
+
+@media (max-width: 639px) {
+#About_RightSession {
+    width: 97%;
+}
+
+	iframe#videoAbout_DFH-frame {
+ 	 float: left;
+    width: 100%;
+	}
+	
+	.leadership_Box_leftsession img
+	{
+		margin-top:29%;
+	}
+
+	.scienceTeam_popup
+	{
+		width:100%;
+	}
+
+	.Download_recordwebinar
+	{
+		font-size:10px;
+	}
+	.Education_webinars .eventsListing_rightContent.download_coloums .Record_Download h3
+	{
+		font-size:10px;
+	}
+	
+	.download_coloums .Record_Download img
+	{
+		display:none;
+	}
+	
+	.Record_Download h3
+	{
+		font-size:10px;
+	}
+	.jcarousel-skin-tango .jcarousel-next-horizontal {
+		right: 15px;
+	}
+}
+
+@media (max-width: 627px) {
+.subheading_image .headingWrap
+{
+	width:88%;
+}
+
+.ScienceTeam_Details
+{
+	width:100%;
+	margin:0px;
+	margin-bottom:10px;
+}
+
+.icc_heading .socialMedia_links.rightFloated
+{
+	clear:both;
+	float:left;
+}
+
+}
+
+@media (max-width: 600px) {
+.featureright h3 {
+    margin-top: 23px;
+}
+
+.homepage .imgWrap
+{
+	display:block;
+}
+.homepage  .shopOnline_wrapper .descWrap
+{
+	width:57%;
+	padding:0px;
+
+}
+.homepage .imgWrap img
+{
+width:auto;
+}
+
+
+/* about design section **/
+.aboutDFH_wrapper
+{
+	width:98%;
+	margin-right:0px;
+}
+.shopOnline_wrapper
+{
+	width:98%;
+	margin-right:0px;
+}
+
+.imgWrap img
+{
+	width:auto;
+}
+
+/** Blog section*/
+
+.blog_content,.event_content,.rotating_banners
+{
+	width:98%;
+	margin:0px;
+	margin-bottom:10px;
+	float:left;
+}
+.rotating_banners .slideshow img,.shadow_banner img
+{
+	width:auto;
+}
+
+.leadership_Box_leftsession
+{
+	width:96%;
+	clear:both;
+}
+.leadership_Box_leftsession img
+{
+	 float: none;
+    margin-top: 0;
+    text-align: center;
+    width: auto;
+}
+.leadership_Box_rightsession
+{
+	width:94%;
+	float:left;
+}
+
+
+.subheading_image .headingWrap {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.subheading_image .img_wrapSmall
+{
+	width:auto;
+}
+
+.left_session
+{
+	width:100%;
+}
+
+.right_session
+{
+	float:left;
+	margin-top:0px;
+	width:100%;
+	margin-bottom:10px;
+}
+
+.productDetails_imgSection
+{
+	width:95%;
+	margin:0px;
+	
+	
+}
+.productDetails_descSection
+{
+	width:100%;
+	float:left;
+	
+	margin:0px;
+	margin-top:20px;
+}
+.productDetail_addToCart a, .productDetail_addToCart span
+{
+	float:left;
+}
+
+.productDetails_tabsWrap .tab_container
+{
+	padding:15px 6px;
+}
+
+.Resume_Fields
+{
+	width:100%;
+	text-align:left;
+	clear:both;
+	margin-bottom:10px;
+}
+
+.Resume_Txtfields
+{
+	width:90%;
+}
+
+.smalluplaod
+{
+	width:70%;
+}
+
+.careermainclasss .error_conatiner .error
+{
+	text-align:left;
+}
+
+.eventdetail_HeaderLeft
+{
+	width:100%;
+}
+.eventdetail_HeaderRight
+{
+	width:100%;
+}
+.event_detaildesc,.event_detaildesc_large .event_detaildescInner
+{
+	margin-bottom: 10px;
+    width: 99%;
+}
+.eventBrochure_content
+{
+	/*width:99.7%;*/
+}
+.createAccountLink
+{
+	float:left;
+}
+
+.eventDetail_preRegister
+{
+	width:100%;
+	margin-bottom:15px;
+}
+.eventBrochure_header h3
+{
+	text-align:center;
+}
+
+.socialMedia_links.rightFloated
+{
+	float:left;
+	margin-top:10px;
+}
+.clinicalRounds_archiveLinks
+{
+	float:left;
+	width:100%;
+	clear:both;
+	margin-top:10px;
+}
+
+.clinicalRounds_archiveLinks .Clinical_RoundsHeaderRight
+{
+	float:left;
+}
+
+.content_session h2
+{
+	text-align:left;
+}
+.Product_categoryList,.Product_Search
+{
+	width:97%;
+}
+.Product_Desp
+{
+	width:100%;
+	margin:0px;
+	margin-top:20px;
+}
+.ProductSearch_category {
+	height:auto;
+}
+
+.Product_Desp
+{
+	height:auto;
+	min-height:inherit;
+}
+
+.Product_Desp.BoxRight_None
+{
+	float:left;
+}
+
+.location
+{
+	width:43%;
+	font-size:12px;
+}
+.location-row-register
+{
+	font-size:11px;
+}
+
+.date
+{
+	width:46%;
+	font-size:12px;
+}
+
+.event_adImage {
+    float: left;
+    position: relative;
+    top: 19px;
+    width: auto;
+}
+
+.left_session  .fontBold
+{
+	margin-top:0px !important;
+}
+
+.LP_imgWrap
+{
+	margin-top:10px;
+	border:none;
+	text-align:center;
+}
+.flowChart_wrap_content,.flowChart_wrap_header
+{
+	
+	width:90%;
+}
+
+.UnparalFuncti{
+	float:left;
+}
+
+.page_found_Incont
+{
+	width:90%;
+	margin-top:10px;
+}
+
+.NutritionistPlacement {
+    margin-right:0%;
+    width: 100%;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    right: 20px;
+}
+
+.content_subBtmSession p, .content_session p, .left_session p
+{
+	/*text-align:left;*/
+}
+
+.careermainclasss .Resume_Btn_Event
+{
+	margin-left:0px;
+}
+
+.content_session .blueColorText
+{
+	text-align:left !important;
+}
+.benefits_Sublist li
+{
+	text-align:left;
+}
+
+.Topic_bold br
+{
+	display:none;
+}
+
+.icc_bio .icc_name
+{
+	
+}
+.icc_bioimage
+{
+	clear:both;
+	width:auto;
+	margin-bottom:10px;
+}
+
+.bio_biocontentup
+{
+	width:98%;
+}
+
+.careermainclasss .Resume_Btn_Event
+{
+	position:static;
+}
+
+.sbToggle
+{
+	 width: 4% !important;
+}
+.sbSelector
+{
+	width:95% !important;
+}
+
+}
+
+@media (max-width: 560px) {
+	
+	.Catlog_ProductsIndivBox
+	{
+		width:100%;
+	}
+	.catlog_content
+	{
+		background-size:auto;center center;
+		background-position:center center;
+		margin-bottom:10px;
+	}
+	.Catlog_BoxShadows
+	{
+		display:none;
+	}
+	.catlog_content h2
+	{
+		text-align:center;
+	}
+	
+	.program_listName
+{
+	clear:both;
+	margin-top:10px;
+	float:left;
+}
+.program_listDate
+{
+	float:left;
+	
+}
+.program_list
+{width:100%;
+}
+
+.benefits_Sublist .benefits_Sublist_innerlist li
+{
+	margin-left:0px;
+	padding-left:0px;
+	background:none;
+}
+
+.theme_selection_innerWrap{
+		margin-left:0;
+		clear:both;
+	}
+.functionality_feature{
+		width:96%;
+		margin-right:0;
+	}
+	.functionality_feature.functionality_featureBottom{
+		margin-bottom:37px;
+	}
+.downloads_patientWorkShop_link{
+		padding-left:0;
+	}
+
+.benefits_SublistLeft{
+		width:100%;
+		margin-right:0;
+	}
+.stores_sites .createAccountLink{
+	width:100%;
+}
+.tabContainer_premier.QualityandEfficacyTABS.privateLabel_optionTabs .dashboardtabs{
+		display:none;
+	}
+	.hiddenshowmobile,.tabs{
+		display:block;
+	}
+	
+	.catlog_content p
+	{
+		display:none;
+	}
+
+	.catlog_content h3
+	{
+		display:none;
+	}
+	
+}
+
+@media (max-width: 530px) {
+	
+	.ScienceTeam_deta
+	{
+		width:100%;
+	}
+	.ScienceTeam_desc
+	{
+		width:100%;
+		float:left;
+	}
+	
+}
+@media (max-width: 500px) {
+.footerWrap_bottomRight
+{
+float:left;
+margin-top:10px;
+margin-left:10px;
+}
+
+.Sito_desc {
+    width: 62%;
+}
+.sliderContainer_shadow
+{
+	height:auto !important;
+}
+
+.smalluplaod
+{
+	width:65%;
+}
+
+.specific_Leftlist{
+	width:96%;
+	margin: 0 0 0 4%;
+}
+.specific_middleline{
+	display:none;
+}
+.specific_indexlist{
+	padding-top:20px;
+}
+
+
+.coreHealth_screenShot{
+	width:100%;
+	margin-right:0;
+	margin-bottom:15px;
+}
+
+.createAccountLink a{
+	font-size:14px;
+}
+
+}
+@media (max-width: 484px) {
+	
+.featureright {
+   width:100%;
+   text-align:center;
+  
+}
+.featureright h3 {
+	  margin-top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.featureleftt {
+  display:none;
+}
+
+
+.homepage  .shopOnline_wrapper .descWrap {
+    padding: 10px;
+    width: 57%;
+}
+.homepage  .imgWrap {
+    display: block;
+}
+
+.Clinical_References_details ul
+{
+	width:91%;
+}
+
+.Clinical_DataHeadings h2,.Clinical_DataHeadings p,.current_clinicalTrails h3,.current_clinicalTrails h4
+{
+	padding-left:2%;
+	  padding-right: 2%
+}
+
+.Medical_MembersDetails h3
+{
+	padding-left:0px !important;
+}
+
+.Clinical_References_details ul, .Clinical_Forms,.Medicalteam_Members
+{
+	margin-left:2%;
+}
+
+.innerLink_span
+{
+	background:none;
+}
+
+.comaprismGraph_wrapper table td,.comaprismGraph_wrapper table th
+{
+	padding:2px;
+	
+}
+.comaprismGraph_wrapper table td,.comaprismGraph_wrapper table th
+{
+	font-size:10px;
+}
+
+.benefits_Sublist.openings_dutiesList {
+    padding-left: 4%;
+    width: 91%;
+}
+
+.clinicalRounds_archiveLinks
+{
+	width:100%;
+	float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.Clinical_RoundsWrapper.Clinical_Rounds_SocialWrapper
+{
+	width:100%;
+	float:left;
+	clear:both;
+	position:static;
+	margin-top:0px;
+}
+
+.ClinicalRounds_Search .socialMedia_CR
+{
+	float:left;
+}
+.Education_webinars .eventsListing_leftContent.date_coloums
+{
+	 height: auto;
+    min-height: inherit;
+    text-align: center;
+    width: 98%;
+}
+.Education_webinars .eventsListing_leftContent span, .Education_webinars .eventsListing_rightContent a
+{
+	text-align: center;
+}
+.Education_webinars .eventsListing_leftContent.practitioner_coloums
+{
+	width:98%;
+	height:auto;
+	min-height:inherit;
+	
+}
+.Education_webinars .eventsListing_rightContent.download_coloums .Record_Download
+{
+	width:100%;
+	 text-align: center;
+}
+.download_coloums .Record_Download img
+{
+	float:none;
+	text-align:center;
+	max-width:auto;
+}
+.Education_webinars .eventsListing_rightContent.download_coloums .Record_Download h3,.Education_webinars .eventsListing_rightContent.download_coloums .Record_Download h3
+{
+	width:98%;
+}
+.download_coloums:hover
+{
+	background:none;
+}
+.Education_webinars .eventsListing_rightContent.download_coloums
+{
+	width:98%;
+	height:auto;
+	min-height:inherit;
+}
+.Education_webinars .eventsListing_leftContent.title_coloums
+{
+	width:98%;
+	height:auto;
+	min-height:inherit;
+}
+
+.Education_webinars .eventsListing_leftContent
+{
+	background:none;
+}
+.Clinical_RoundsWrapper.Clinical_Rounds_SocialWrapper
+{
+	margin-top:10px !important;
+}
+
+.Download_recordwebinar
+	{
+		font-size:13px;
+	}
+	.Education_webinars .eventsListing_rightContent.download_coloums .Record_Download h3
+	{
+		font-size:13px;
+	}
+	
+	.download_coloums .Record_Download img
+	{
+		display:inline
+	}
+	
+.education_webinars .Educationwebinars_newInner .eventsListing_leftContent
+{
+	width:98%;
+	font-size:inherit;
+}
+
+
+.education_webinars .Educationwebinars_newInner .eventsListing_rightContent
+{
+	width:98%;
+	font-size:inherit;
+	float:left;
+}
+
+.education_webinars  #tabs ul
+{
+	display:none;
+}
+.education_webinars .Record_Download h3
+{
+	font-size:13px;
+}
+.Educationwebinars_newInner .eventsListing_rightContent:hover
+{
+	background:none;
+}
+
+.shoppingCart_loginWrapper
+{
+	margin-top:10px;
+}
+.shoppingCart_loginWrapper
+{
+	margin-top:0px;
+}
+.Product_Descriptions
+{
+	width:65%;
+	margin-left:5%;
+}
+
+
+.Page_not_found h2 {
+    color: #CCCCCC;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.pnf_layout
+{
+	margin:70px 0 70px 10%;
+}
+.inHouseTestingWrapList span.labelValue
+{
+	width:92%;
+}
+
+.fs-pager-wrapper
+{
+	/*display:none;*/
+}
+
+
+.imagewidthh
+{
+	width:65px !important;
+}
+
+
+.slide a.fs_obj
+{
+	background:none !important;
+	color:#003B78 !important;
+	 /*left: 6% !important;
+    top: 63% !important;*/
+}
+
+.eventsListing_leftContent
+{
+	padding-bottom:0px !important;
+}
+.Educationwebinars_newInner .eventsListing_rightContent
+{
+	padding:1px 1%;
+}
+
+}

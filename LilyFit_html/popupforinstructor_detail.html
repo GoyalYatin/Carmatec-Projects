@@ -1,0 +1,228 @@
+
+<link rel="stylesheet" type="text/css" href="assets/styles/raty.css"/>
+
+  <script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.raty.js"></script>
+  
+  <script type="text/javascript">
+ $(document).ready(function(){
+	
+	$('#default_raty').raty();
+});
+</script>
+
+<script type="text/javascript">
+    $(function(){ 
+       // var pageID = <?php echo $pageID;  ?>; 
+
+        $('.like-btn').click(function(){
+            $('.dislike-btn').removeClass('dislike-h');    
+            $(this).addClass('like-h');
+            $.ajax({
+                type:"POST",
+                url:"ajax.php",
+                data:'act=like&pageID='+pageID,
+                success: function(){
+                }
+            });
+        });
+        $('.dislike-btn').click(function(){
+            $('.like-btn').removeClass('like-h');
+            $(this).addClass('dislike-h');
+           $.ajax({
+                type:"POST",
+                url:"ajax.php",
+                data:'act=dislike&pageID='+pageID,
+                success: function(){
+                }
+            });
+        });
+        $('.share-btn').click(function(){
+            $('.share-cnt').toggle();
+        });
+    });
+</script>
+
+
+
+
+        		<div class="popup_main_container">
+                            <div class="popup_close_bar">
+                           		<span class="close_class_popup">&nbsp;</span>
+                            </div>
+                            <div class="innercontent_popup">
+                            <div class="iframediv">
+                                      
+              <div id="work_shop_detailvideo" class="work_shop_detailvideo">
+						
+                     </div>      
+                             </div>
+                             
+                             <div class="title_divv" style="float:left;width:100%;margin-top:10px;"> 
+                             	<div style="float:left;" class="rating_div">
+								<h2>    Changing Our World</h2>
+                                    <div id="default_raty" > </div> 
+                                </div>
+                             
+                              	
+                                
+                                <div class="tab-tr"  style="float:right">
+                                 
+                                
+                                    <div class="like-btn">Like</div>
+                                    <div class="dislike-btn "></div>
+                        
+                                </div>                    
+                             </div>
+                            
+                             <div class="duration_details">
+                             	<div class="durationn">
+                             	<span class="leftspann">Durations  </span>
+                                <span class="rightspann">: &nbsp;&nbsp; 2:41 </span>
+                                </div>
+                                
+                                <div class="durationn">
+                             	<span class="leftspann">Instructors  </span>
+                                <span class="rightspann">: &nbsp;&nbsp;Ron Fletcher </span>
+                                </div>
+                             </div>
+							 <div style="float:left;width:55%;" class="comment_toggle leave_commentss">
+									<img src="assets/images/leave_comments.jpg">
+								 </div>
+							 <div class="comments_outer">
+                  <div class="workshop_comment">
+                  	
+					
+					<div class="workshop_comment_inner">
+                    
+                    	<div class="enter_comment">
+                        <div class="inner_comform">
+                        		<form method="post" >
+						<textarea name="comment" rows="5" class="enter_comment_field" ></textarea>
+						<input type="button" name="submit" value="Comment" class="workshop_reply enter_comment_button">
+						</form>
+                        </div>
+						
+						</div>
+                        
+                        <div class="comments_box_full_title">
+                        
+                         <h3 class="who_we_are_title overview_retreats details_workshop_title wcheading">COMMENTS</h3>
+                          
+                        </div>
+                        
+                        
+						</div>
+                        
+                        <div class="comment_border">
+                          <div class="comments_inner_profilebody">
+                          	<div class="comment_profile">
+                        	
+                                              		                        
+							<div class="comment_profile_pic"><img src="assets/images/Workshop-detail_15.jpg"/></div>
+							<div class="comment_profile_name"><h4>Lisa Smith</h4><p>2 days ago</p></div>
+						</div>
+	                        <div class="comments_body">
+							<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							<input type="submit" name="submit" value="Reply" class="workshop_reply">
+						</div>
+                        	
+                          </div>
+                        </div>
+                        
+                        <div class="comment_border comments_reply">
+                          <div class="comments_inner_profilebody">
+                          	<div class="comment_profile">
+                        	
+                                              		                        
+							<div class="comment_profile_pic"><img src="assets/images/Workshop-detail_15.jpg"/></div>
+							<div class="comment_profile_name"><h4>Lisa Smith</h4><p>2 days ago</p></div>
+						</div>
+	                        <div class="comments_body">
+							<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							<input type="submit" name="submit" value="Reply" class="workshop_reply">
+						</div>
+                        	
+                          </div>
+                        </div>
+                        
+                        <div class="comment_border">
+                          <div class="comments_inner_profilebody">
+                          	<div class="comment_profile">
+                        	
+                                              		                        
+							<div class="comment_profile_pic"><img src="assets/images/Workshop-detail_15.jpg"/></div>
+							<div class="comment_profile_name"><h4>Lisa Smith</h4><p>2 days ago</p></div>
+						</div>
+	                        <div class="comments_body">
+							<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							<input type="submit" name="submit" value="Reply" class="workshop_reply">
+						</div>
+                        	
+                          </div>
+                        </div>
+                        
+						
+						
+					</div>
+                </div>
+                            </div>
+							
+                            </div>
+                       		 
+
+ 
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+  <script type="text/javascript" src="jwplayer/jwplayer.js"></script> 
+
+<script type="text/javascript">
+
+	var xyz=(600/1200)*($('.work_shop_detailvideo').width());
+
+    jwplayer("work_shop_detailvideo").setup({
+        file: "assets/videos/small.mp4",
+        image: "assets/images/pilates_pop+image.jpg",
+		height: xyz,
+		width: "100%"
+    });
+	$(document).ready(function(){
+		console.log('asfdasdasdsadhgds');
+		if($('.work_shop_detailvideo').empty()){
+			console.log('hgds');
+			$('.work_shop_detailvideo').width('100%').height(xyz);
+			$('#work_shop_detailvideo').append("<a href='http://get.adobe.com/flashplayer/' target='_blank'><img class='flashplayer_image' src='assets/images/flashplayer.png' width='50%'/></a>");
+		}
+	});
+
+	
+  </script>      
+
+
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	window_height = $(window).height();
+	window_height = window_height -200; 
+	$('.popup_main_container').css("height",window_height);
+	$('.popup_main_container').css("top","100px");
+	
+	
+	var popcontentheight = window_height - 40;
+	$('.innercontent_popup').css("height",popcontentheight);
+	
+	$('.innercontent_popup').mCustomScrollbar({
+	scrollButtons:{
+		enable:true
+	},
+	advanced:{
+        updateOnContentResize: true,
+		updateOnBrowserResize: true
+    }
+});
+$( ".comment_toggle" ).click(function() {
+ 		 $('.comments_outer').slideToggle( "slow");
+});
+})
+</script>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="google-site-verification" content=""/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>JC Open Stack:Login</title>
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon" href="media/images/favicon.ico"/>
+<link rel="stylesheet"  href="media/styles/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="media/styles/styles.css"/>
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="media/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="media/styles/styles_480.css" />
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="media/styles/ie7.css" />		
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="media/styles/ie8.css" />		
+<![endif]-->
+
+</head>
+
+<body class="login-home">
+<noscript>
+<style type="text/css">
+	.bodyWrapper{
+		display:none;
+	}
+</style>
+<div class="noscript" style="width:100%; margin:50px auto; padding: 10px 0;text-align:center; font: bold 18px arial; color: #000; background-color:#6699FF"> Your browser's JavaScript seems to be Disabled. Please enable the JavaScript to get all functionalty of the site. </div>
+</noscript>
+<div class="bodyWrapper">
+   <div class="login wrapper-fixed">
+   <div class="login-left-part">
+      <img src="media/images/logo.png" alt="logo" />
+   </div>
+   <div class="login-left-part-mobile">    
+      <img src="media/images/logo.png" alt="logo" />     
+   </div>
+   <div class="login-right-part">   
+      <div class="col-lg-4 heading">
+      <h3 class="h3 login-heading">Welcome to our site</h3>
+   </div>
+      <form class="form-horizontal" role="form" id="loginform" method="POST">
+  <div class="form-group login-form-group">    
+    <div class="col-sm-7">
+      <input type="email" class="form-control" name="email" placeholder="Email">
+      <span class="image_placement"></span>
+    </div>
+  </div>
+  <div class="form-group login-form-group">    
+    <div class="col-sm-7">
+      <input type="password" class="form-control" name="password" placeholder="Password">
+      <span class="image_placement"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10">
+       <a href="signup.html" >Forgot password?</a> <input type="submit" class="create_vps_button login-button" value="Log In"></input>
+    </div>
+  </div> 
+</form>   
+   </div>
+   </div>
+</div>
+<!--bodyWrapper ends here--> 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='media/scripts/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script> 
+<script type="text/javascript">
+if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
+    document.write(unescape("%3Cscript src='media/scripts/jquery-migrate-1.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+	
+</script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> 
+<script type="text/javascript">!window.jQuery.ui && document.write(unescape('%3Cscript src="media/scripts/jquery-ui.min.js"'))</script> 
+<script type="text/javascript" src='media/scripts/bootstrap.min.js'></script> 
+<script type="text/javascript" src='media/scripts/script.js'></script>
+<script type="text/javascript" src='media/scripts/jquery.validate.js'></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+	  $("#loginform").validate({
+		 ignore: [], 
+		 rules: {           
+			email: {
+				required : true,				
+				email : true
+			},			
+			password:{
+				required : true,				
+				minlength : 5
+			}
+		 },
+		 messages:{			 
+			 email:{
+				required: "Enter the Email-id",
+				email:"Invalid Email-id"	
+		 	 },
+			 password:{
+				required: "Enter the Password",
+				minlength:"Minimum Length in five"	
+		 	 }
+		 },
+		 highlight: function(element, errorClass, validClass) {
+      		$(element).siblings('.image_placement').addClass('error').removeClass('valid');
+			$(element).addClass('error').removeClass('valid');
+		 },
+		 unhighlight: function(element, errorClass, validClass) {
+      		$(element).siblings('.image_placement').addClass('valid').removeClass('error');
+			$(element).addClass('valid').removeClass('error');
+		 }
+		 
+	});	
+  });
+	</script>
+</body>
+</html>

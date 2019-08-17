@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="google-site-verification" content=""/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>DNS Management</title>
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon" href="media/images/favicon.ico"/>
+<link rel="stylesheet"  href="media/styles/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="media/styles/styles.css"/>
+<link type="text/css" rel="stylesheet" href="media/styles/jquery.mmenu.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="media/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="media/styles/styles_480.css" />
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="media/styles/ie7.css" />		
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="media/styles/ie8.css" />		
+<![endif]-->
+
+</head>
+
+<body>
+<noscript>
+<style type="text/css">
+	.bodyWrapper{
+		display:none;
+	}
+</style>
+<div class="noscript" style="width:100%; margin:50px auto; padding: 10px 0;text-align:center; font: bold 18px arial; color: #000; background-color:#6699FF"> Your browser's JavaScript seems to be Disabled. Please enable the JavaScript to get all functionalty of the site. </div>
+</noscript>
+<div class="bodyWrapper">
+  <div class="wrapper-fixed">
+    <div class="row navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+      <div class="col-lg-2 logo"><a href="index.html"> <img alt="logo" src="media/images/logo.png" class="img-responsive"/></a> </div>
+      <div class="col-lg-9 headerarea">
+        <div class="row headercontent">
+          <div class="col-lg-4 heading">
+            <h3 class="h3">DNS Management</h3>
+          </div>
+          <div class="col-lg-8 account-area">
+            <div class="row">
+              <div class="col-lg-2 right profile-picture"> <img src="media/images/user.png" class="img-rounded" alt="user"/> </div>
+              <div class="col-lg-5 header_welcometext right">
+                <h5 class="h5">Welcome, <span class="h5 profilename">John Smith</span></h5>
+              </div>
+              <div class="col-lg-4 heading-button right">
+                <button type="button" class="btn btn-default btn-xs buttomheader buttonbilling">Billing</button>
+                <button type="button" class="btn btn-default btn-xs buttomheader buttonlogout">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--header ends here-->
+    <div class="mainContent">       
+      <div class="col-lg-2 menu-static">
+        <div class="row create-row">
+          <button type="button" class="create_vps_button">Create VPS</button>
+        </div>
+        <div class="row create-row">
+          <ul class="menu-list">
+            <li><a href="#">Manage VPS</a></li>
+            <li><a href="#">Backups</a></li>
+            <li><a href="#">SSH Keys</a></li>
+            <li class="active"><a href="#">DNS</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div> 
+      </div>
+      <div class="col-lg-9 content-area">
+           <!--side menu for mobile--> 
+            <div id="page" class="sidemenu">
+			    <div id="header">
+				   <a href="#menu"></a>
+			    </div>
+			    <div id="menu">
+				   <ul>	
+                    <li><a href="login.html">Create VPS</a></li>				
+					<li><a href="signup.html">Manage VPS</a></li>
+					<li><a href="#">Backups</a></li>
+					<li><a href="#">SSH Keys</a></li>
+					<li><a href="#">DNS</a></li>
+					<li><a href="#">API</a></li>
+					<li><a href="#">Support</a></li>
+                    <li><a href="#">Billing</a></li>
+					<li><a href="#">Logout</a></li>
+				   </ul>
+			    </div>
+		    </div> <!--side menu for mobile-->
+          <div class="row marginzero payment-methods api-keys-container margin-bottom-40">
+          <div class="row marginzero payment-type">
+            <div class="payment-image"><img  src="media/images/api_key.jpg" alt="API Keys"/></div>
+            <h4 class="h4  payment-heading">Domains</h4>
+          </div>  
+                  
+          <div class="row marginzero api-key-row dns_container">
+          	<div class="col-md-12 padding-zero">
+                <div class="padding-left-0 domain-coloumn color-green-bg border domain-plus">
+                  	<div class="bt-field-row">
+                        <div class="plus-box">
+                                <a href="">
+                                	<img src="media/images/plus55.png" alt="Add Domain" />
+                                </a>
+                            </div>
+                    	
+                        <span class="bt-value-wrap margin-top-10">
+                            <!--<label>domainname.com</label>-->
+                            <span class="paragraph-bigger margin-top-10">
+                            	<p class="margin-top-10">ADD DOMAIN</p>
+                            </span>
+                        </span>
+                    </div>
+                </div>  
+                <div class="padding-left-0 domain-coloumn pull-right">
+                  	<div class="bt-field-row">
+                        <span class="bt-value-wrap margin-top-10">
+                            <label>domainname.com</label>
+                        </span>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/cross.png" alt="cross" />
+                        </a>
+                    </div>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/edit-pencil.png" alt="edit-pencil" />
+                        </a>
+                    </div>
+                	</div>
+                </div>
+            </div> 
+            <div class="col-md-12 padding-zero margin-top-10">
+                <div class="padding-left-0 domain-coloumn">
+                  	<div class="bt-field-row">
+                        <span class="bt-value-wrap margin-top-10">
+                            <label>domainname.com</label>
+                        </span>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/cross.png" alt="cross" />
+                        </a>
+                    </div>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/edit-pencil.png" alt="edit-pencil" />
+                        </a>
+                    </div>
+                	</div>
+                </div>  
+                <div class="padding-left-0 domain-coloumn pull-right">
+                  	<div class="bt-field-row">
+                        <span class="bt-value-wrap margin-top-10">
+                            <label>domainname.com</label>
+                        </span>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/cross.png" alt="cross" />
+                        </a>
+                    </div>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/edit-pencil.png" alt="edit-pencil" />
+                        </a>
+                    </div>
+                	</div>
+                </div>
+            </div> 
+            <div class="col-md-12 padding-zero margin-top-10">
+                <div class="padding-left-0 domain-coloumn">
+                  	<div class="bt-field-row">
+                        <span class="bt-value-wrap margin-top-10">
+                            <label>domainname.com</label>
+                        </span>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/cross.png" alt="cross" />
+                        </a>
+                    </div>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/edit-pencil.png" alt="edit-pencil" />
+                        </a>
+                    </div>
+                	</div>
+                </div>  
+                <div class="padding-left-0 domain-coloumn pull-right">
+                  	<div class="bt-field-row">
+                        <span class="bt-value-wrap margin-top-10">
+                            <label>domainname.com</label>
+                        </span>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/cross.png" alt="cross" />
+                        </a>
+                    </div>
+                        <div class="button-box pull-right">
+                        <a href="#">
+                            <img src="media/images/edit-pencil.png" alt="edit-pencil" />
+                        </a>
+                    </div>
+                	</div>
+                </div>
+            </div>   
+          </div>
+          
+          <div class="row marginzero payment-type">
+            <div class="payment-image"><img  src="media/images/ptr-record.jpg" alt="PTR Records"/></div>
+            <h4 class="h4 payment-heading">PTR Records</h4>
+            <p class="para-normal">To update your PTR record please update your VPS hostname through the control panel.</p>
+          </div> 
+          
+          <div class="row marginzero api-key-row dns_container">
+          	<div class="col-md-12 padding-zero">
+            	<div class="table-responsive">
+                    <table class="table table-container">
+                       <thead>
+                            <tr>
+                               
+                                <th>IP Address</th>
+                                <th>PTR Record</th>
+                                <th>View</th>
+                            </tr>
+                       </thead>
+                       <tbody>
+                       		<tr>
+                               <td>145.165.76.48</td>
+                               <td>VPS01</td>
+                               <td class="action-btn">
+                                    <div class="button-box">
+                                        <a href="javascript:void(0)">
+                                            <img src="media/images/view.png" alt="View" />
+                                        </a>
+                                    </div>   
+                               </td>     
+                            </tr>
+                            <tr>
+                               <td>145.165.76.49</td>
+                               <td>VPS02</td>
+                               <td class="action-btn">
+                                    <div class="button-box">
+                                        <a href="javascript:void(0)">
+                                            <img src="media/images/view.png" alt="View" />
+                                        </a>
+                                    </div>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td>145.165.76.50</td>
+                               <td>VPS03</td>
+                               <td class="action-btn">
+                                    <div class="button-box">
+                                        <a href="javascript:void(0)">
+                                            <img src="media/images/view.png" alt="View" />
+                                        </a>
+                                    </div>
+                               </td>
+                            </tr>
+                       </tbody>
+                    </table>
+                 </div>   
+
+            </div> 
+          </div>
+          
+        </div>
+        
+        
+      </div>
+    </div>
+    <!--mainContent ends here--> 
+  </div>
+</div>
+<!--bodyWrapper ends here--> 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='media/scripts/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script> 
+<script type="text/javascript">
+if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
+    document.write(unescape("%3Cscript src='media/scripts/jquery-migrate-1.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+	
+</script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> 
+<script type="text/javascript">!window.jQuery.ui && document.write(unescape('%3Cscript src="media/scripts/jquery-ui.min.js"'))</script> 
+<script type="text/javascript" src='media/scripts/bootstrap.min.js'></script> 
+<script type="text/javascript" src='media/scripts/jquery.mmenu.js'></script>
+<script type="text/javascript" src='media/scripts/script.js'></script>
+<script type="text/javascript">
+$(function() {
+                $('div#menu').mmenu({
+					classes: 'mm-light'
+				});
+});
+</script>
+<script type="text/javascript" src='media/scripts/bootstrap-select.js'></script>
+<script type="text/javascript" src='media/scripts/jquery.validate.js'></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#couponcodeform").validate({
+		 rules: {
+            couponcode: "required"
+		 },
+		  messages:{
+			 firstname:"Enter the Code"
+		  }
+	});	
+});
+	</script>
+</body>
+</html>

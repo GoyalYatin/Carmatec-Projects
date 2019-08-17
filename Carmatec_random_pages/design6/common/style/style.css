@@ -1,0 +1,49 @@
+@font-face {
+font-family: 'Myriad Web Pro';
+src: url('../fonts/MyriadWebPro/myriad-web-pro-webfont.eot');
+src: url('../fonts/MyriadWebPro/myriad-web-pro-webfont?#iefix') format('embedded-opentype'), url('../fonts/MyriadWebPro/myriad-web-pro-webfont.woff') format('woff'), url('../fonts/MyriadWebPro/myriad-web-pro-webfont.ttf') format('truetype'), url('../fonts/MyriadWebPro/myriad-web-pro-webfont.svg#myriad-web-pro-webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Seoge Print Regular';
+src: url('../fonts/Seoge/SEGOEPR_0.TTF');
+font-weight: normal;
+font-style: normal;
+}
+body{margin:0;border:0;}
+.clear{clear:both;}
+.fullContainer{width:100%;}
+.container{width:1200px;margin:auto;}
+.header{height:140px;}
+.logo{width:138px; height:89px;margin-left:100px;margin-top:24px;float:left;}
+.title{width:420px;height:85px;margin-right:100px;margin-top:24px;float:right;padding:25px 10px 0px 10px;color:#4191da;font-family: 'Myriad Web Pro';font-size:55.12px;}
+.title span{color:#a6a6a5;font-size:19.28px;font-family: 'Myriad Web Pro';}
+.mainTop{height:746px;background:url('../images/bg.png');margin-bottom:17px;}
+.mainDesc{height:348px;width:722px;margin-top:373px; margin-left:115px;background:#ffffff;float:left;}
+.descHeader{height:94px;width:100%;margin-top:20px;float:left;}
+.simpleLogo{width:94px;height:94px;margin-left:30px;float:left;background:url('../images/simpleLogo.png');}
+.descTitles{width:380px;height:75px;margin-left:17px;margin-top:10px;color:#0091d6;font-size:21px;float:left;font-family: 'Seoge Print Regular';}
+.subtitle1{display:block;margin-top:-4px;color:#122f49;font-size:14px;font-family: 'Myriad Web Pro';}
+.subtitle2{display:block;color:#a9a9a9;font-size:14px;font-family: 'Myriad Web Pro';}
+.descPara{width:662px;margin-left:30px;margin-top:10px;color:#a3a3a3;font-size:14px;font-family: 'Myriad Web Pro';float:left;}
+.listitem{width:662px;height:150px;margin-left:30px;margin-top:15px;float:left;}
+.row{background:url('../images/listItem.png') 0 0 no-repeat;height:21px; width:600px;color:#979898;font-size:13px;font-family: 'Myriad Web Pro';padding-left:20px;}
+.contactForm{width:220px;height:348px;margin-top:373px;margin-left:32px;float:left;background:#ffffff;}
+.contactFormHeader{height:63px;width:100%;float:left;color:#ffffff;background:#44aee1;}
+.contactFormHeader span{display:block;margin-top:15px;margin-left:10px;font-size:21px;font-family: 'Seoge Print Regular';}
+.formArea{width:180px;height:188px;padding:14px 10px;margin:10px;background:#ebebeb;float:left;border-radius:5px;}
+.formArea label{font-size:10px;position:absolute;margin-left:-180px;width:180px;text-align:right;color:#ff6d72;margin-top:5px;}
+.formArea input[type='text']{border:0;height:25px;width:180px;padding:0 10px;margin-bottom:5px;box-shadow:0px 0px 4px #bcbcbc;font-family: 'Myriad Web Pro';font-size:11px;color:#d7d5d5;border-radius:2px;}
+.darkInputText{color:#7b7c7c !important;}
+.formArea textarea{resize:none;border:0;height:94px;width:180px;padding:10px;box-shadow:0px 0px 4px #bcbcbc;font-family: 'Myriad Web Pro';font-size:11px;color:#d7d5d5;border-radius:2px;}
+.formSubmit{width:95px;height:30px;cursor:pointer;color:#ffffff; text-align:center;line-height:30px;font-family: 'Myriad Web Pro';font-size:14px;border-radius:4px;margin-right:10px;border:1px solid #ffffff;box-shadow:0px 0px 4px #bbbbbb;background:-linear-gradient(top,#4ba9e4,#4191da);background:-webkit-linear-gradient(top,#4ba9e4,#4191da);background:-moz-linear-gradient(top,#4ba9e4,#4191da);background:-o-linear-gradient(top,#4ba9e4,#4191da);background:-ms-linear-gradient(top,#4ba9e4,#4191da);float:right;}
+.mainMiddle{height:140px;}
+.middleTitle{height:34px; width:745px;line-height:34px;padding-left:145px;background:url('../images/titleBg.png') 0 0 no-repeat;color:#309b06;font-size:18px;font-family: 'Myriad Web Pro';}
+.middleList{width:420px;height:80px;float:left;margin-left:125px;color:#979898;font-size:14px;font-family: 'Myriad Web Pro';}
+.middleList li{margin-bottom:10px;}
+.mainBottom{height:30px; line-height:30px;font-size:21px;margin-bottom:45px;font-family: 'Myriad Web Pro';text-align:center;color:#269bcc;}
+.mainBottom span{color:#afafaf;}
+.footer{height:60px;line-height:60px;background:-linear-gradient(top,#4ba9e4,#4191da);background:-webkit-linear-gradient(top,#4ba9e4,#4191da);background:-moz-linear-gradient(top,#4ba9e4,#4191da);background:-o-linear-gradient(top,#4ba9e4,#4191da);background:-ms-linear-gradient(top,#4ba9e4,#4191da);color:#ffffff;font-size:14px;font-family: 'Myriad Web Pro';padding-left:154px;}
+.error{border:1px dashed #ff6d72 !important;}
+.response{width:100%;margin-top:2px;float:left;text-align:center;font-size:12px;color:#0091D6;}

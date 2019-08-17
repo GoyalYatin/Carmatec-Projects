@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+.sbHolder{
+	/*background-color: #F4F3F3;
+	border: solid 1px #BCBCBC;*/
+	background:#f6f6f6;
+	border:1px solid #E1E1E1;
+	border-left:solid #bc2121 2px;
+	width:100%;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+	text-indent:20px;
+	color:#9b9b9b;
+	font-size:12px;
+	
+	height: 35px;
+	position: relative;
+	width: 100%;
+	/*margin-top: 27px;*/
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 36px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 97%;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #8e8e8e;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	/*background: url(../img/select-icons.png) 0 -116px no-repeat;*/
+	 background: url("../images/arrow_dropdown.png") no-repeat scroll 60% center rgba(0, 0, 0, 0);
+    display: block;
+    height: 37px;
+    outline: medium none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+.dealer_form .sbToggle{
+	background: url("../images/dropdown_dealer.png") no-repeat scroll 60% center rgba(0, 0, 0, 0);
+}
+.dealer_form .sbToggle:hover{
+	background: url("../images/dropdown_dealer.png") no-repeat scroll 60% center rgba(0, 0, 0, 0);
+}
+.dealer_form .sbToggleOpen{
+	background: url("../images/dropdown_dealer.png") no-repeat scroll 60% center rgba(0, 0, 0, 0);
+}
+.dealer_form .sbToggleOpen:hover{
+	background: url("../images/dropdown_dealer.png") no-repeat scroll 60% center rgba(0, 0, 0, 0);
+}
+.dealer_form .sbHolder{
+	border:none;
+}
+.sbToggle:hover{
+	background:url(../images/arrow_dropdown.png) no-repeat scroll 60% center rgba(0, 0, 0, 0);
+}
+.sbToggleOpen{
+	background: url(../images/arrow_dropdown.png) no-repeat scroll 60% center rgba(0, 0, 0, 0);
+}
+.sbToggleOpen:hover{
+	background: url(../images/arrow_dropdown.png) no-repeat scroll 60% center rgba(0, 0, 0, 0);
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #F4F3F3;
+	border: solid 1px #BCBCBC;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	border-bottom: dotted 1px #515151;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #79797A;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #BC2121;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}

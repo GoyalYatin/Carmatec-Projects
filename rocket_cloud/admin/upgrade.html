@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="google-site-verification" content=""/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>JC Open Stack:Backups</title>
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon" href="media/images/favicon.ico"/>
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="media/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="media/styles/styles_480.css" />
+<link rel="stylesheet"  href="media/styles/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="media/styles/styles.css"/>
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="media/styles/ie7.css" />		
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="media/styles/ie8.css" />		
+<![endif]-->
+
+</head>
+
+<body>
+<noscript>
+<style type="text/css">
+	.bodyWrapper{
+		display:none;
+	}
+</style>
+<div class="noscript" style="width:100%; margin:50px auto; padding: 10px 0;text-align:center; font: bold 18px arial; color: #000; background-color:#6699FF"> Your browser's JavaScript seems to be Disabled. Please enable the JavaScript to get all functionalty of the site. </div>
+</noscript>
+<div class="bodyWrapper container">
+  <div class="wrapper-fixed">
+    <div class="row navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+      <div class="col-lg-2 logo"><a href="index.html"> <img alt="logo" src="media/images/logo.png" class="img-responsive"/></a> </div>
+      <div class="col-lg-9 headerarea">
+        <div class="row headercontent borderNone">
+          <div class="col-lg-4 heading">
+            <h3 class="h3">Upgrade</h3>
+          </div>
+          <div class="col-lg-8 account-area">
+            <div class="row">
+              <div class="col-lg-2 right profile-picture"> <img src="media/images/user.png" class="img-rounded" alt="user"/> </div>
+              <div class="col-lg-5 header_welcometext right">
+                <h5 class="h5">Welcome, <span class="h5 profilename">John Smith</span></h5>
+              </div>
+              <div class="col-lg-4 heading-button right">
+                <button type="button" class="btn btn-default btn-xs buttomheader buttonbilling">Billing</button>
+                <button type="button" class="btn btn-default btn-xs buttomheader buttonlogout">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--header ends here-->
+    <div class="mainContent">
+      <div class="col-lg-2 menu-static">
+        <div class="row create-row">
+          <button type="button" class="create_vps_button">Create VPS</button>
+        </div>
+        <div class="row create-row">
+          <ul class="menu-list">
+            <li><a href="manage_vps.html">Manage VPS</a></li>
+            <li><a href="#">Backups</a></li>
+            <li><a href="#">SSH Keys</a></li>
+            <li><a href="dns_management.html">DNS</a></li>
+            <li><a href="api_access.html">API</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9 content-area">
+        <div class="row  top-menu-static">
+          <div class="col-lg-1 top-menu-item first"> <a href="console_access.html" class="tab-console"> <span class="menu-img"><img src="media/images/cons.png" /></span> <span class="menu-link">Console</span> </a> </div>
+          <div class="col-lg-1 top-menu-item top-menu-item-active"> <a href="#" class="tab-console"> <span class="menu-img"><img src="media/images/backactive.png" /></span> <span class="menu-link">Backups</span> </a> </div>
+          <div class="col-lg-1 top-menu-item "> <a href="#" class="tab-console"> <span class="menu-img"><img src="media/images/upgr.png" /></span> <span class="menu-link">Upgrade</span> </a> </div>
+          <div class="col-lg-1 top-menu-item"> <a href="vps_settings.html" class="tab-console"> <span class="menu-img"><img src="media/images/sett.png" /></span> <span class="menu-link">Settings</span> </a> </div>
+          <div class="col-lg-1 top-menu-item last "> <a href="#" class="tab-console"> <span class="menu-img"><img src="media/images/netw.png" /></span> <span class="menu-link">Network</span> </a> </div>
+          <div class="col-lg-2 vpsname">
+            <h2 class="h2">VPS Name</h2>
+            <h4 class="h4">107.107.13.139</h4>
+          </div>
+        </div>
+        <div class="col-lg-9 contents-scroll">
+          <div class="col-lg-10 left-content-area">            
+               
+              		
+                  <div class="row left-content border-none">
+                        <div class="console-instruction">
+                            <span>Will allocate the upgraded RAM and Cores for your virtual server without making any disk size changes. 1 Minute downtime.</span>
+                       		<span>After the resize is finished Boot it from the control panel by pressing the power button.</span>
+                       </div>
+                  </div>
+              
+                 <div class="row left-content border-none">
+                 
+                   <div class="backup-settings snapformmargin">
+                          <div class="tabbable">
+                            <ul class="nav nav-tabs">
+                               <li class="active"><a href="#tab1" data-toggle="tab">Upgrade RAM</a></li>
+                               <li><a href="#tab2" data-toggle="tab">Upgrade CPU</a></li>
+                               <li><a href="#tab3" data-toggle="tab">Upgrade Bandwidth</a></li>
+                            </ul>
+                            <div class="tab-content newUpgrade">
+                               <div class="tab-pane active" id="tab1">
+                                 <div class="tab-items">
+                                     512 MB
+                                 </div>
+                                 <div class="tab-items">
+                                    1GB
+                                 </div>
+                                 <div class="tab-items ">
+                                     2 GB
+                                 </div>
+                                 <div class="tab-items ">
+                                      3 GB
+                                 </div>
+                               </div>
+                               
+                               <div class="tab-pane" id="tab2">
+                                <div class="tab-items">
+                                     512 MB
+                                 </div>
+                                 <div class="tab-items">
+                                    1GB
+                                 </div>
+                                 <div class="tab-items">
+                                     2 GB
+                                 </div>
+                                 <div class="tab-items">
+                                      3 GB
+                                 </div>
+                                 
+                            </div>
+                            	<div class="tab-pane" id="tab3">
+                                <div class="tab-items">
+                                    512 MB
+                                 </div>
+                                 <div class="tab-items">
+                                    1 GB
+                                 </div>
+                                 <div class="tab-items">
+                                     2 GB
+                                 </div>
+                                 <div class="tab-items">
+                                      3 GB
+                                 </div>
+                                
+                            </div>
+                          </div>
+                   </div>
+                   </div>
+              </div>
+              <div class="row left-content border-none">
+                  		<div class="UpgradeItem">
+                            <div class="upgrade-items"> 512 MB </div>
+                            <div class="upgrade-items"> 1GB </div>
+                            <div class="upgrade-items"> 2 GB </div>
+                            <div class="upgrade-items"> 3 GB </div>
+                        </div>
+                   </div>
+                   <div class="backup-settings snapformmargin">
+                   <form method="POST" id="restoreform">                   
+                     <div class="setting-button pull-right">
+                        <input type="submit" class="disablebackupbutton pull-right" value="UPGRADE"/>
+                     </div>  
+                   </form>
+               </div>
+              </div>
+          </div>
+          <div class="col-lg-2 right-static-area">
+           <div class="right-config-area">
+             <div class="ram-config">
+               <div class="ram-box"><span>512 MB</span>
+               </div>
+               <div class="ram-box-text"><span>RAM</span></div>
+             </div>
+             <div class="ram-config">
+               <div class="ram-box"><span>20GB</span>
+               </div>
+               <div class="ram-box-text"><span>SSD Disk</span></div>
+             </div>           
+           </div>
+           <div class="right-button-area">
+              <div class="button-area">
+             <button data-toggle="modal" data-target="#myModalpowerbutton" class="powerbutton">               
+                  <img src="media/images/power.png"/>             
+             </button>
+             <div class="ram-box-text"><span>Power</span></div>
+             </div>
+              <div class="button-area">            
+               <button data-toggle="modal" data-target="#myModalrebootbutton" class="powerbutton rebootbutton">               
+                  <img src="media/images/reboot.png"/>             
+             </button>          
+             <div class="ram-box-text"><span>Reboot</span></div>
+             </div>
+              <div class="button-area">            
+              <button data-toggle="modal" data-target="#myModaldestroybutton" class="powerbutton destroybutton">  
+                  <img src="media/images/destroy.png"/>
+               </button>              
+             <div class="ram-box-text"><span>Destroy</span></div>
+             </div>
+           </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--mainContent ends here--> 
+  </div>
+</div>
+<!--bodyWrapper ends here--> 
+<!--popup--> 
+<!--create snap popup---->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Create Snapshot</h4>
+      </div>
+      <div class="modal-body">
+         <div class="model-body-inner">
+                                <select class="selectpicker" name="country" id="country">
+                                  <option value="">Select a Country</option>
+                                  <option value="1">India</option>
+                                  <option value="2">China</option>
+                                  <option value="3">Chily</option>
+                                </select>
+                                <div class="form-elements marginnone">
+                                 	<input type="text" class="form-control credit-card-controls " id="" placeholder="SnapShot Name" name="zipcode">
+                                    <span class="image_placement"></span>
+                               </div> 
+         </div>         
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="disablebackupbutton popupbutton" value="CREATE SNAPSHOT"/>
+      </div>
+    </div>
+  </div>
+</div>
+<!--power popup---->
+<div class="modal fade" id="myModalpowerbutton" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">       
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>   
+         <h4 class="modal-title" id="myModalLabel">This will power off your VPS.</h4>    
+      </div>
+      <div class="modal-body">
+         <div class="model-body-inner-content margintopzero"> 
+           <h4>We recommend powering off your VPS through the command line, as this action is</h4>  
+           <h4>the same as hard resetting the server and may cause data corruption.</h4>                                 
+         </div>    
+         <div class="model-body-inner-content"> 
+           <h4 class="question">Do you wish to proceed?</h4>                             
+         </div>     
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="disablebackupbutton popupbutton" value="POWER OFF"/>
+      </div>
+    </div>
+  </div>
+</div>
+<!--power popup---->
+<!--power reboot---->
+<div class="modal fade" id="myModalrebootbutton" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">       
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>   
+         <h4 class="modal-title" id="myModalLabel">This will reboot your VPS.</h4>    
+      </div>
+      <div class="modal-body">
+         <div class="model-body-inner-content margintopzero"> 
+           <h4>We recommend rebooting your VPS through the command line, as this action is</h4>  
+           <h4>the same as hard resetting the server and may cause data corruption.</h4>                                 
+         </div>    
+         <div class="model-body-inner-content"> 
+           <h4 class="question">Do you wish to proceed?</h4>                             
+         </div>     
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="disablebackupbutton popupbutton" value="REBOOT"/>
+      </div>
+    </div>
+  </div>
+</div>
+<!--power popup---->
+<!--destroy popup---->
+<div class="modal fade" id="myModaldestroybutton" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>       
+      </div>
+      <div class="modal-body">
+         <div class="model-body-inner-content"> 
+           <h4>This is irreversible.</h4>  
+           <h4>We will destroy your droplet and all associated backups.</h4>                                 
+         </div>    
+         <div class="model-body-inner-content"> 
+           <h4 class="question">Do you wish to proceed?</h4>                             
+         </div>     
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="disablebackupbutton popupbutton" value="DESTROY VPS"/>
+      </div>
+    </div>
+  </div>
+</div>
+<!--destroy popup---->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='media/scripts/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script> 
+<script type="text/javascript">
+if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
+    document.write(unescape("%3Cscript src='media/scripts/jquery-migrate-1.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+	
+</script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> 
+<script type="text/javascript">!window.jQuery.ui && document.write(unescape('%3Cscript src="media/scripts/jquery-ui.min.js"'))</script> 
+<script type="text/javascript" src='media/scripts/bootstrap.min.js'></script>
+<script type="text/javascript" src='media/scripts/script.js'></script> 
+<script type="text/javascript" src='media/scripts/jquery.validate.js'></script>
+<script type="text/javascript" src='media/scripts/bootstrap-select.js'></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	  $("#snapshotform").validate({
+		 ignore: [], 
+		 rules: {
+            snapshotname: "required"
+		 },
+		 messages:{
+			 snapshotname:"Enter Snapshot Name"
+		 },
+		  highlight: function(element, errorClass, validClass) {
+      		$(element).siblings('.image_placement').addClass('error').removeClass('valid');
+			$(element).addClass('error').removeClass('valid');
+		 },
+		 unhighlight: function(element, errorClass, validClass) {
+      		$(element).siblings('.image_placement').addClass('valid').removeClass('error');
+			$(element).addClass('valid').removeClass('error');
+		 }
+	  });
+	  $('.tab-items').click(function(){
+		  $(this).parents().find('.tab-items').removeClass('tab-items-active');
+		  $(this).toggleClass('tab-items-active');
+		  });	
+  });
+  </script>
+</body>
+</html>

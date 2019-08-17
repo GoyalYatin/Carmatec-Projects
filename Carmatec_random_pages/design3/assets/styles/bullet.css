@@ -1,0 +1,17 @@
+
+  ol.bjqs-markers li a{
+   padding:5px 10px;
+  padding:5px 13px;
+    background:#000;
+    color:#fff;
+	font-size:0pt;
+
+  background:url(http://i.imgur.com/qQAFZsV.png) no-repeat; /* Gray bullet for inactive markers */
+  }
+  
+  ol.bjqs-markers li.active-marker a,
+  ol.bjqs-markers li a:hover{
+    background: #999;
+  background:url(http://i.imgur.com/cVn9qIv.png) no-repeat; /* Blue bullet for Active marker and hovering */
+  }
+  

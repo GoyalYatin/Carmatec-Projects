@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mainMenu_list_sublist li a {
+	cursor:pointer;
+}
+.headerWrap_outer {
+	padding-bottom:10px;
+}
+.blog_content ul li {
+	min-width:300px;
+}
+.readMore_footer {
+	min-width:76px;
+}
+.footer_ListWrap ul li {
+	min-width:201px;
+}
+.socialLinks_footer ul li {
+	min-width:20px;
+}
+.poweredBy * {
+	cursor:pointer;
+}
+.submit_footer input {
+	padding: 1px 2px;
+}
+.shopOnline_wrap_link {
+	cursor:pointer;
+}
+.NSF_rightfold, .blue_rightfold {
+	bottom: -4px;
+}
+.contentMainWrap_innerPage {
+	padding-bottom:30px;
+}
+.testimonial_wrap {
+	width: 100%;
+}
+.testimonial_headerArrow {
+	top: 25px;
+}
+.clientName_wrap {
+	width: 100%;
+}
+.accordian_TRBottomText {
+	width: 100%;
+}
+.noteText {
+	width: 100%;
+}
+.Sitemap_InnerBox .NSF_rightfold.Sitemap_rightfold {
+}
+.Sitemap_bottom_shoparrow {
+	margin-top: 10px;
+}
+.eventBrochure_header h3 {
+	width: 100%;
+}
+.emailpopbutton {
+	float:left;
+}
+.cart_buttons input {
+	padding: 5px 1px;
+}
+.loginPage_detailsField label {
+	width: 250px;
+}
+.Clinical_Rounds_feedsContent .readMore_footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.addToCart {
+	background:url("../images/cart_icon.png") no-repeat 15px center #00599B;
+}
+.addToCart:active {
+	top: 0;
+}
+#facebox {
+	background:#FFFFFF;
+}
+.searchWrapp {
+	float:none;
+}
+.leftmenu_subLinksList.lastUL_borderbg {
+	background:none;
+}
+.Refernce_hoghlights {
+	margin-left:0;
+}
+.Sitemap_InnerBox li {
+	padding-bottom:5px;
+}
+.Sitemap_InnerBox li.sublinks_sitemap li {
+	padding-bottom: 2px;
+}
+.sublinks_sitemap ul {
+	margin-top:-17px;
+}
+.Sitemap_rightfold {
+	bottom: -102px;
+}
+.loginPage_wrapper {
+	padding-bottom:10px;
+}
+.leadership_Box_layout {
+	padding-bottom:21px;
+}
+.Submit_Resume_details {
+	padding-bottom:18px;
+}
+.file_input_div {
+	height:33px;
+}
+.content_session p.PatientCost_value {
+	line-height:28px;
+}
+.eventsListing_webinars.webinars_year {
+	width: 700px;
+}
+.LP_imgWrap {
+	height:200px;
+}
+.howToRegister_submitBtm input {
+	padding: 1px;
+}
+.CEU_Credits {
+	margin: 0;
+	padding: 17px 0 12px;
+}
+.Product_SearchField {
+	width: 168px;
+}
+.Product_Search_Img {
+	float: none;
+}
+.newResearch .newResearch_list li {
+	width: 308px;
+}
+.newResearch .newResearch_list li span.research_heading {
+	width: 308px;
+}
+.newResearch .newResearch_list li span.research_desc {
+	width: 308px;
+}
+.newResearch .newProducts_list .research_readMore {
+	width:100%;
+}
+.pressReleases .newResearch_list li {
+	width: 699px;
+}
+.pressReleases .newResearch_list li span.research_heading {
+	width: 699px;
+}
+.pressReleases .newResearch_list li span.research_desc {
+	width: 699px;
+}
+div.jp-audio .jp-interface {
+	width: 202px;
+}
+.Clinical_Rounds_feedsRss {
+	min-height:310px;
+}
+.clientName_wrap {
+	padding-bottom:8px;
+}
+.pnf_layout {
+	float:none;
+}
+.Page_not_found {
+	float:none;
+}
+.clinicalRounds_flyerLink {
+	left: 0;
+}
+.glacierFest .footer_copyrights {
+	margin-top: 100px;
+}
+.glacierFest .footer_copyrights p {
+	padding-bottom:50px;
+}
+.glacierFest .speaker_info p {
+	line-height:20px;	
+}
+.glacierFest .footer_copyrights {
+	padding-bottom: 20px;
+	padding-top:10px;
+}
+.glacierFest .speaker_info p.speaker_topicPara {
+	font-size: 15px;
+	line-height:16px;
+	padding-bottom:20px;
+}
+.Clinical_RoundsWrapper.Clinical_Rounds_SocialWrapper {
+    position: relative;
+    top: -22px;
+    width: 100%;
+}
+.Clinical_RoundsWrapper.Clinical_Rounds_SocialWrapper .socialMedia_CR {
+	width:100%;
+}
+.registerNow_GF_IE7 {
+	width:150px;
+}
+.registerNow_GF_IE7_new {
+	width: 280px;
+}

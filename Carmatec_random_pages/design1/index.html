@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+<meta name="author" content="Yatin Goyal">
+<meta name="description" content="">
+<meta charset="UTF-8">          
+<title>Carmatec IT Sol Pvt Ltd</title>
+
+<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+<link rel="stylesheet" type="text/css" href="assets/styles/font.css"/>
+<link rel="stylesheet" type="text/css" href="assets/styles/validate.css"/>
+<link type="text/css" rel="stylesheet" href="assets/styles/jquery.capty.css"/>
+<link rel="stylesheet" href="assets/styles/liquid-slider.css">
+
+<script src="assets/scripts/jquery1.js"></script>
+<script src="assets/scripts/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script src="assets/scripts/jquery.validate.js"></script>
+<script src="assets/scripts/scripts.js"></script>
+<script src="assets/scripts/jquery.capty.js"></script>
+<script type="text/javascript">
+		$(function() {
+			$('#image1').capty();
+		});
+		$(function() {
+			$('#image2').capty();
+		});
+		$(function() {
+			$('#image3').capty();
+		});
+</script>
+<script>
+
+$(document).ready(function() {
+	
+	$("#signup").validate({
+		errorPlacement: function(error, element) { },
+		rules: {
+			firstname: {
+				required: true,
+				minlength: 2
+			},
+			lastname: {
+				required: true,
+				minlength: 2
+			},
+			company: {
+				required: true,
+				minlength: 2
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			address: {
+				required:true,
+			}, 
+		}
+				
+	});
+
+	
+});
+
+</script>
+</head>
+<body>
+<div id="container">
+	
+	<!------------------------------------header--------------------------------->
+	
+	
+	<div class="header_wrapper_outer">
+		<div class="header_wrapper_inner wrapper_fixed"> 
+		 <div id="header">
+				<img src="assets/images/logo.png" height="80" width="200" alt="Carmatec" title="Carmatec IT Sol Pvt Ltd" style="margin-top:5px;margin-bottom:5px;"/>
+			</div>
+		</div>
+	</div>
+	<!---------------image changer------------------------------------------->
+	<div id="slider">
+		<img  class="slider_image" src="assets/images/image.jpg" width="100%">
+		<div class="slider_inner wrapper_fixed">
+			<h2 class="slider_text">
+			Buy with confidence
+			</h2>
+			<p class="slider_text1">
+			We have industry leading processes and procedures to ensure nothing but the most reliable product
+			</p>
+			<p class="slider_text2">
+			<u>Find out more about our commitment to our customers.</u>
+			</p>
+		</div>
+	</div>
+	<!----------------------------------heading 1 to 3--------------------------------------->
+	<div id="content1">
+		<div class="content_inner wrapper_fixed">
+			<div id="content1_left">
+				
+				<p id="content1_heading"><span style="color:#237dc2;">Heading1 </span>comes here<hr/></p>
+				<img class="content_image" src="assets/images/pic0.jpg" width="100%" alt="pic0"/>
+				<p id="content1_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				</p>
+				<a href=""><img src="assets/images/readmore.png" width="100px" height="25px"/></a>
+			</div>
+			<div id="content1_center">
+		
+				<p id="content1_heading"><span style="color:#237dc2;">Heading2 </span>comes here
+				<hr/></p>
+				<img class="content_image" src="assets/images/pic1.jpg" width="100%" alt="pic0"/>
+				<p id="content1_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				</p>
+				<a href=""><img src="assets/images/readmore.png" width="100px" height="25px"/></a>
+			</div>
+			<div id="content1_right">
+		
+				<p id="content1_heading"><span style="color:#237dc2;">Heading3 </span>comes here
+				<hr/></p>
+				<img class="content_image" src="assets/images/pic2.jpg" width="100%" alt="pic0"/>
+				<p id="content1_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				</p>
+				<a href=""><img src="assets/images/readmore.png" width="100px" height="25px"/></a>
+			</div>
+		</div>
+	</div>
+	<!------------------------------testimonial------------------------------>
+	<div id="testimonial">
+		<div class="inner_testimionial wrapper_fixed">
+	
+			<center>
+				<h1 id="testimonial_heading">Testimonials</h1>
+				<div class="liquid-slider"  id="main-slider">
+				<div><p id="testimonial_text"><q>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry</q> 
+				</p>
+				<h2 class="customername">Customer Name</h2>
+				</div>
+				<div>
+      
+					  <p id="testimonial_text" ><q>Proin nec turpis eget dolor dictum lacinia. Nullam nunc magna, tincidunt eu porta in, faucibus sed magna. Suspendisse laoreet ornare ullamcorper. Nulla in tortor nibh. Pellentesque sed est vitae odio vestibulum aliquet in nec leo.</q></p>
+					  <h2 class="customername">Customer Name1</h2>
+				</div> 
+				</div>
+			</center>
+		</div>
+	</div>
+	<!-----------------------------------------------features-------------------------------->
+	<div id="features">
+		<br/>
+		<div class="inner_feature wrapper_fixed">
+			<div id="features_content">
+				<h2 id="features_heading"><span style="color:#237dc2;">Features </span>comes here<hr/></h2>
+				<div style="width:46%;float:left;">
+					<p id="features_text">
+						<span style="font-size:16px;"><b>Domains</b></span><br/>
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						<br/><br/>
+					</p>
+					<p id="features_text">
+						<span style="font-size:16px;"><b>Disk Space</b></span><br/>
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						<br/><br/>
+					</p>
+					<p id="features_text">
+						<span style="font-size:16px;"><b>Transfer</b></span><br/>
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						<br/><br/>
+					</tr>
+				</div>
+				<div style="width:46%;margin-left:8%;float:left;">
+				<p id="features_text">
+					<span style="font-size:16px;"><b>Database</b></span><br/>
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					<br/><br/>
+				</p>
+				<p id="features_text">
+					<span style="font-size:16px;"><b>Email</b></span><br/>
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					<br/><br/>
+				</p>
+				<p id="features_text">
+					<span style="font-size:16px;"><b>SubDomains</b></span><br/>
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					<br/><br/>
+				</p>
+				</div>
+			</div>
+			<!------------------------------signup form-----------------------> 
+			<div id="signup_div">
+				<h2 id="features_heading"><span style="color:#237dc2;">SignUp </span>Form<hr/></h2>
+				<br/>
+				<form action="" method="POST" id="signup">
+					<div style="width:100%;">
+						<div style="width:40%;float:left;"><input id="firstname" class="input" type="textfield" name="firstname" placeholder="Firstname.." title="First Name" size="14"/></div>
+						<div style="width:40%;float:left;margin-left:10%;"><input id="lastname" class="input" type="textfield" name="lastname" placeholder="Lastname..." title="Last Name" size="16"/></div>
+					</div>
+					<br/>
+					<div><input id="company" class="input" type="textfield" name="company" placeholder="Company.." title="Company" size="40"/><br/></div>
+					<div><input id="email" class="input" type="textfield" name="email" placeholder="Email.." title="Email" size="40"/><br/></div>
+					<div><input id="address" class="input" type="textfield" name="address" placeholder="Address.." title="Address" size="40"/><br/></div>
+					<div><textarea id="help" class="help" rows="3" cols="32"  name="help" placeholder="How can we help?.." title="Help"></textarea><br/></div>
+					<div><input id="submit" class="submit" type="submit" value="Submit" title="Submit"/></div>
+				</form>
+			</div>
+		</div>	
+	</div>
+	<!--------------------------------highlights------------------------------------->
+	<div id="highlights">
+		<div class="inner_highlight wrapper_fixed">
+				<br/>
+				<div id="highlights_heading">
+					<h2 style="font-size:16pt;font-family:myriadlight;"><span style="color:#237dc2;">Highlights </span>comes here<hr/></h2>
+				</div>
+				<div id="highlights_left">
+					<img id="image1" src="assets/images/high1.jpg" width="100%" alt="Highlight1" style="border:1px solid white;"/>
+					
+					<p id="highlight_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+					</p>
+					
+				</div>
+				<div id="highlights_center">
+					<img id="image2" src="assets/images/high2.jpg" width="100%" alt="Highlight3" style="border:1px solid white;"/>
+					
+					<p id="highlight_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+					</p>
+					
+				</div>
+				<div id="highlights_right">
+					<img id="image3" src="assets/images/high3.jpg" width="100%" alt="Highlight2" style="border:1px solid white;"/>
+					
+					<p id="highlight_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+					</p>
+					
+				</div>
+		</div>
+	</div>
+	<!----------------------------------------footer------------------------------>
+	<div id="footer">
+		<div class="wrapper_fixed">
+		<center>
+			<br/>Copyright 2010 CName  &nbsp;&nbsp; | &nbsp;&nbsp;<a href="">  About Us </a>&nbsp;&nbsp;  | &nbsp;&nbsp;  <a href="">Contact Us </a> &nbsp;&nbsp;|   &nbsp;&nbsp;<a href="">Privacy Policy </a>&nbsp;&nbsp; |  &nbsp;&nbsp; <a href="">Terms of Use</a>  
+		</center>
+		</div>
+	</div>
+</div>
+<script src="assets/scripts/jquery.touchSwipe.min.js"></script>
+  <script src="assets/scripts/jquery.liquid-slider.js"></script>  
+  <script>
+    $('#main-slider').liquidSlider();
+  </script>
+</body>
+</html>

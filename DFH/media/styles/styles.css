@@ -1,0 +1,229 @@
+/**** Added by srividya **/
+
+.page_width {
+	display: none !important;
+	background: none repeat scroll 0 0 #006666;
+	clear: both;
+	color: #FFFFFF;
+	float: left;
+	left: 0;
+	padding: 3px 0;
+	position: fixed;
+	text-align: center;
+	top: 10px;
+	width: 100%;
+	z-index: 10000;
+}
+
+.shadow_banner img
+{
+	width:100%;
+}
+.menu-toggle {
+    display: none;
+    float: right;
+    padding: 16px 10px 11px;
+   margin-top:10px;
+   margin-bottom:10px;
+   clear:both;
+}
+
+
+/*** Home page banner section **/
+
+.featurebannerr
+{
+	border: 1px solid #E1E1E1;
+    float: left;
+    margin-right: 2%;
+    width: 31%;
+	background-color: #fdfdfd;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fdfdfd), to(#edefee));
+	background: -webkit-linear-gradient(top, #fdfdfd, #edefee);
+	background: -moz-linear-gradient(top, #fdfdfd, #edefee);
+	background: -ms-linear-gradient(top, #fdfdfd, #edefee);
+	background: -o-linear-gradient(top, #fdfdfd, #edefee);
+	  
+}
+.featurebannerr:hover
+{
+	background-color: #fefdfb;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefdfb), to(#cce6e5));
+	background: -webkit-linear-gradient(top, #fefdfb, #cce6e5);
+	background: -moz-linear-gradient(top, #fefdfb, #cce6e5);
+	background: -ms-linear-gradient(top, #fefdfb, #cce6e5);
+	background: -o-linear-gradient(top, #fefdfb, #cce6e5);
+}
+
+.featurebanner2:hover
+{
+	background-color: #fefdfb;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefdfb), to(#c7d4dd));
+	background: -webkit-linear-gradient(top, #fefdfb, #c7d4dd);
+	background: -moz-linear-gradient(top, #fefdfb, #c7d4dd);
+	background: -ms-linear-gradient(top, #fefdfb, #c7d4dd);
+	background: -o-linear-gradient(top, #fefdfb, #c7d4dd);
+}
+
+.featurebanner3:hover
+{
+	background-color: #fefdfb;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefdfb), to(#cce6f3));
+	background: -webkit-linear-gradient(top, #fefdfb, #cce6f3);
+	background: -moz-linear-gradient(top, #fefdfb, #cce6f3);
+	background: -ms-linear-gradient(top, #fefdfb, #cce6f3);
+	background: -o-linear-gradient(top, #fefdfb, #cce6f3);
+}
+
+
+.featurebanner1
+{
+	margin-right: 3%;
+    width: 31%;
+}
+
+.featurebannerrlast
+{
+	float: right;
+    margin-right: 0;
+    width: 31.7%;
+}
+
+.featureinner
+{
+	float:left;
+	width:100%;
+	cursor:pointer;
+}
+.featureleftt img
+{
+	width:100%;
+}
+.arrowrightt
+{
+	position:relative;
+}
+.featureleftt
+{
+	float:left;
+	width:41%;
+}
+.featureright
+{
+	float: right;
+    width: 56%;
+	
+}
+
+.featureright h3
+{
+	color: #339999;
+    float: left;
+    font-family: 'Myriad Web Pro','Myriad Pro',arial;
+    font-size: 20px;
+    font-weight: normal;
+	 width:100%;
+    margin-top: 18px;
+   
+}
+
+.featureright p {
+    color: #626262;
+    float: left;
+    font-family: arial;
+    font-size: 12px;
+    margin-top: 5px;
+	width:90%;
+}
+
+.left-menu-toggle span {
+    margin-left: 3px;
+    position: relative;
+    top: -10px;
+}
+
+.left-menu-toggle {
+    display: none;
+}
+
+.featureinner{
+	
+}
+
+.faeaturearrow
+{
+	position:absolute;right:-1px;top:121px;
+}
+
+.featurebanner3 .faeaturearrow
+{
+	top:124px;
+}
+
+.featurebanner2 h3 {
+    color: #003B78;   
+}
+
+
+.featurebanner3 h3 {
+    color: #3399CC;    
+}
+@media (max-width: 1048px) {
+.About_LeftSession {
+width:96%;
+}
+}
+@media (max-width: 1200px) {
+	.dfh_main_wrapper,.fixed_wrapper_outer
+{
+	
+	overflow:hidden;
+}
+}
+
+body #fadelayer {
+    background: none repeat scroll 0 0 #444444;
+    cursor: pointer;
+    display: none;
+    float: left;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.crossicon
+{
+	
+    visibility: hidden;
+    bottom: 27px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    right: -26px;
+
+}
+
+.onlymobilee
+{
+	display:none;
+}
+
+.createAccountLink img
+{
+	display:none;
+}
+
+
+
+
+
+
+
+.active-slide img:first-child {
+    height: 100% !important;
+    width: 100% !important;
+}

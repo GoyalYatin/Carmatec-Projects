@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="LILYFIT" />
+<meta name="description" content="LILYFIT" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>LILYFIT</title>
+<meta name="viewport" content="width=device-width" />
+ 
+
+<link rel="shortcut icon" href="common/images/favicon.ico" />
+
+<link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/animation.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/style_menumouseover.css" type="text/css" />
+<link href="assets/styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles/jquery-ui.css">
+<link rel="stylesheet" href="assets/styles/jquery.selectbox.css" />
+<!-- for raty css -->
+<link rel="stylesheet" type="text/css" href="assets/styles/raty.css"/>
+<!-- for raty css -->
+
+<link rel="stylesheet" media="only screen and (max-width: 1200px)" href="assets/styles/styles_1200.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="assets/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 600px)" href="assets/styles/styles_600.css" />
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)" href="assets/styles/styles_600.css" />
+
+
+</head>
+
+<body >
+
+	<div class="main-wrapper">
+    <div class="width_show"></div>
+    
+    	  
+        <div class="slider-outer-wrap">
+	        <div class="slider-wrapper">
+            <div class="header_wrapper header_wrapper_inside">
+        	<div class="main-wrapper-fixed headerdiv">
+            	 <div class="header-left floatleft showonlyonmob"> 
+                     <a href="index.html">
+                     	<img title="LILYFIT" id="logo" alt="Logo LILYFIT" src="assets/images/lilyfit_logo.png"> 
+                     </a> 
+                 </div> 
+                 <div class="login_signup">	 
+            	<div class="login_button">
+ 		              <span class="login_span"> 
+                      <a  href="login.html" class="login_button_anchor loginsignupclass changelogintext"> 
+                       Log In
+                      </a>
+                      </span>
+                 </div> 
+                 <div class="signup_button" style="display:none;">
+ 		              <span class="signup_span"> 
+                      <a href="signup.html" class="login_button_anchor loginsignupclass"> 
+                      Sign Up
+                      </a></span>
+                 </div>
+                 
+                 <!--<div class="signup_button">
+ 		              <span class="signup_span"> <a href="login.html" class="signup_button_anchor"> <img src="assets/images/login.jpg" alt="login"/></a></span>
+                 </div> -->
+                 
+                   </div>
+				  <div class="floatleftt"> 
+						<ul class="myaccount_menu_top_header">
+              <li class="first_li_welcome">
+                <p>Welcome ! David Brown</p>
+              </li>
+              <li><a href="javascript:void(0)">My account</a>
+
+                <ul>
+                  <li>
+                    <a href="view_my_account.html">My Account</a>
+                  </li>
+                  <li>
+                    <a href="edit_my_account.html">Edit My Account</a>
+                  </li>
+                  <li>
+                    <a href="my_history.html">My History</a>
+                  </li>
+                  <li>
+                    <a href="payment_setting_and_info.html">Payment Settings &amp; Info</a>
+                  </li>
+                  <li>
+                    <a href="login.html">Logout</a>
+                  </li>
+                </ul>
+              </li> 
+            </ul>
+							</li>	
+						</ul>
+						
+                        <div class="menu_top header-left">
+                        	<div class="menutoggle"> MENU </div>
+                            <ul class="menu_ulist">
+                               <li class="menuu1 navi-menu paddinganchor"><a href="aboutus.html"> <span> About </span> </a>                                                               
+                               </li>
+                               <li class="menuu2 navi-menu paddinganchor classesmenu"><a href="javascript:void(0)"> <span>Videos </span> </a>                                
+                               
+                               <div class="header-submenu-wrap">
+                                  <div class="header-submenu-wrapinside">
+                                     <div class="demo">
+                                        <div id="capslide_img_cont1" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_03.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PILATES</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="pilates.html"> Pilates1</a></li>
+                                                    <li> <a href="pilates.html"> Pilates2</a></li>
+                                                    <li> <a href="pilates.html"> Pilates3</a></li>
+                                                    <li> <a href="pilates.html"> Pilates4</a></li>
+                                                    <li> <a href="pilates.html"> Pilates5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demo">
+                                        <div id="capslide_img_cont2" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_05.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>YOGA</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont3" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_07.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                               <h3>BODY TONING  <br/> & DANCE</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont4" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_09.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRENATAL</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont5" class="ic_container">
+                                            <img src="assets/images/menu/classes_dropdown_11.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     
+                                      </div>
+                               </div>
+                               </li>
+                               <li class="menuu3 navi-menu paddinganchor"><a href="instructors.html"> <span> Instructors </span> </a>  </li>
+                               <li class="menuu4 navi-menu paddinganchor"><a href="blog.html"> <span> Blog </span> </a>  </li>
+                               
+                               <li class="navi-menu logomenu "> <a href="index.html"><img alt="Logo" src="assets/images/lilyfit_logo.png" /></a>   </li>
+                               <li class="menuu5 navi-menu paddinganchor">  <a href="webinars.html"><span>Webinars</span> </a>  </li>
+                               <li class="menuu6 navi-menu paddinganchor"> <a href="retreats.html"><span> Retreats  </span> </a></li>
+                              <li class="menuu7 navi-menu paddinganchor "><a href="nutritions.html"> <span> Nutrition </span> </a>  </li>
+                                <li class="shopmenu navi-menu paddinganchor menulast">  <a href="login.html"><span> Log In </span></a> </li>      <div class="class_dropdown_mobile_slider">
+                  <img src="assets/images/close_popup.png" alt="close"/>
+                  <h3>PILATES</h3>
+                  <ul>
+                                        <li> <a href="pilates.html"> Pilates1</a></li>
+                                        <li> <a href="pilates.html"> Pilates2</a></li>
+                                        <li> <a href="pilates.html"> Pilates3</a></li>
+                                        <li> <a href="pilates.html"> Pilates4</a></li>
+                                        <li> <a href="pilates.html"> Pilates5</a></li>
+                                    </ul>
+                  <h3>YOGA</h3>
+                  <ul>
+                                        <li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                        <li> <a href="#"> Yoga2</a></li>
+                                        <li> <a href="#"> Yoga3</a></li>
+                                        <li> <a href="#"> Yoga4</a></li>
+                    <li> <a href="#"> Yoga5</a></li>
+                                    </ul>
+                  <h3>BODY TONING  <br/> & DANCE</h3>
+                                    <ul>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                        <li> <a href="#"> Body1</a></li>
+                                    </ul>
+                  <h3>PRENATAL</h3>
+                  <ul>
+                                        <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                    <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                                        <li> <a href="#"> natal1</a></li>
+                  </ul>
+                  <h3>PRIVATE & CORPORATE SESSIONS</h3>
+                                    <ul>
+                                        <li> <a href="private_and_corporate_sessions.html"> private session</a></li>
+                                        <li> <a href="#"> Yoga2</a></li>
+                                        <li> <a href="#"> Yoga3</a></li>
+                                        <li> <a href="#"> Yoga4</a></li>
+                                        <li> <a href="#"> Yoga5</a></li>
+                                    </ul>
+                 </div>                    
+                            </ul>
+                         </div>   
+                 </div>  
+                 
+            </div>	 
+            	         
+        </div>
+        	
+        	</div>
+        	
+        	</div>
+		
+		<div class="mainContent_wrapper">
+        	<div class="main-wrapper-fixed ">
+            	
+                <div class="breadcrumb_navigation">
+                	<ul class="breadcrums-wrapper-list">
+                    <li class="breadcrums-first">
+                        <a href="index.html">Home</a>
+                    </li>
+                    
+                   
+                     <li>
+                        <span>Gift Coupon</span>
+                    </li>
+
+            		</ul>
+                </div>
+                
+                 <div class="page_title">
+                	<h3>Gift, the Gift of LILYFIT!</h3>
+                    
+                </div>
+				
+                <div class="my_credit_card_information gift_coupon">
+					
+					<p>Your gift recipient will get a pre-paid account for the duration you choose ( or you can choose to give them a workshop ). We can email the certificate to them, or you can print it out.</p>
+					
+					<form id="gift_coupon" name="gift_coupon" method="post" action="">
+						<div class="myaccount_second_section">
+							
+							<div class="myaccount_form_input">
+								<label>Gift Type</label>
+								<p id="gifttype">
+									<input id="gift_type" type="radio" value="1" name="gift_type" checked="true"/>
+									<label>Subscription<span>- A subscription to Pilates Anytime (1 month to a year)</span></label>
+									<input id="gift_type1" type="radio" value="2" name="gift_type"/>
+									<label>Workshop<span>- Unlimited access to one of our online workshops</span></label>
+								</p>
+							</div>
+							<div class="myaccount_form_input myaccount_form_input_last">
+								<label>Currency</label>
+													<p><span class="signup_dollar ">USD $&nbsp;
+													<a href="javascript:void(0)" class="signup_card_code" id="signup_change">Change</a></span>
+													<span class="signup_show_change">
+														<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(36)" value="36" name="currency_id">
+														<span class="signup_show_change_left">Australia Dollar (AUD $18)</span>
+														<input class="signup_show_change_right" id="currency_id" type="radio" onchange="setCurrency(124)" value="124" name="currency_id">
+														<span class="signup_show_change_right">Canada Dollar (CAD $18)</span>
+														<br/>
+														<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(978)" value="978" name="currency_id">
+														<span class="signup_show_change_left">Euro (EUR €14)</span>
+														<input class="signup_show_change_right" id="currency_id" type="radio" onchange="setCurrency(392)" value="392" name="currency_id">
+														<span class="signup_show_change_right">Japan Yen (JPY ¥1800)</span>
+														<br/>
+														<input class="signup_show_change_left" id="currency_id" type="radio" onchange="setCurrency(826)" value="826" name="currency_id">
+														<span class="signup_show_change_left">UK Pound (GBP £12)</span>
+														<input class="signup_show_change_right" id="currency_id" type="radio" checked="checked" onchange="setCurrency(840)" value="840" name="currency_id">
+														<span class="signup_show_change_right">US Dollar (USD $18)</span>
+														
+													</span>
+													</p>
+							</div>
+							<div class="myaccount_form_input" id="subscription_gift_type_radio">
+								<label>Gift Amount</label>
+								<p>
+									<input id="gift_amt" type="radio" value="4" name="gift_amt" checked="true"/>
+									<label>Gift Cert - Year ( <span id="sku4">USD $216</span> )</label>
+									<input id="gift_amt" type="radio" value="5" name="gift_amt"/>
+									<label>Gift Cert - 6 Months (<span id="sku5">USD $108</span>  )</label>
+									<input id="gift_amt" type="radio" value="6" name="gift_amt"/>
+									<label>Gift Cert - 3 months ( <span id="sku6">USD $54</span> )</label>
+									<input id="gift_amt" type="radio" value="34" name="gift_amt"/>
+									<label>Gift Cert - 1Month ( <span id="sku34">USD $18</span>)</label>
+								</p>
+							</div>
+							<h3 id="worshop_gift_type_heading">Please choose which webinar you would like to give as a gift. You can browse webinars <a href="webinars.html" target="_blank">here</a>. The recipient will be able to choose any webinar at the same price when they redeem the gift certificate if they prefer.</h3>
+							<div class="myaccount_form_input" id="worshop_gift_type_radio">
+								<label>Gift Amount</label>
+								<div>
+									<label><span id="ws_price45">USD $45</span>:</label>
+									<p class="subtext_myaccount">
+										<select id="gift_class_id_1" class="myaccount_textbox myaccount_dropdown" name="gift_class_id_1">
+											<option value="0">--Select--</option>
+											<option value="1396">Carola Shares - Jillian Hessel</option>
+										</select>
+									</p>
+									<label><span id="ws_price49">USD $49</span>: </label>
+									<p class="subtext_myaccount">
+										<select id="gift_class_id_2" class="myaccount_textbox myaccount_dropdown" name="gift_class_id_2">
+											<option value="0">--Select--</option>
+											<option value="1283">Biology of Perception - Sharon Kolkka</option>
+											<option value="1388">Bridging Consciousness - Marilyn Schlitz</option>
+											<option value="924">Cadillac Hands On Tutorial - Jennifer Kries</option>
+											<option value="1278">Changing Our World - Brent Anderson</option>
+											<option value="940">Client's 1st Equipment Session - Julian Littleford</option>
+											<option value="1166">Developing Your Eye - Ruth Alpert</option>
+											<option value="1479">Hip and Back Pain - Brent Anderson</option>
+											<option value="1008">Hip Pathologies and Pilates - Brent Anderson</option>
+											<option value="1305">Moving Imagination - Dawnna Wayburne</option>
+											<option value="841">Pelvic Power Workshop - Pat Guyton</option>
+											<option value="975">Reformer Variations - Kathryn Ross-Nash</option>
+											<option value="736">The Client's First Session - Julian Littleford</option>
+										</select>
+									</p>
+									<label><span id="ws_price69">USD $69</span>: </label>
+									<p class="subtext_myaccount">
+										<select id="gift_class_id_3" class="myaccount_textbox myaccount_dropdown" name="gift_class_id_3">
+											<option value="0">--Select--</option>
+											<option value="1052">Achieving The Athletic Edge - Rael Isacowitz</option>
+											<option value="985">Fascial Fitness - Robert Schleip Ph.D.</option>
+											<option value="1320">Maximize Your Studio! - Michele Larsson</option>
+											<option value="1051">Scapular Stabilization - Rael Isacowitz</option>
+											<option value="1506">Workshop with Robert Schleip - Robert Schleip Ph.D.</option>
+										</select>
+									</p>
+									<label><span id="ws_price99">USD $99</span>: </label>
+									<p class="subtext_myaccount">
+										<select id="gift_class_id_4" class="myaccount_textbox myaccount_dropdown" name="gift_class_id_4">
+											<option value="0">--Select--</option>
+											<option value="1087">Adapting Mat Exercises  - Kathy Corey</option>
+											<option value="1011">Arm Chair Workshop - Julian Littleford</option>
+											<option value="645">Back Care Workshop - Brent Anderson</option>
+											<option value="1189">Back Extensions - Niedra Gabriel</option>
+											<option value="1411">Before the Hundred - Cara Reeser</option>
+											<option value="1615">Defy Gravity - Amy Taylor Alpers</option>
+											<option value="1298">Fascia and Movement - Dr. Carol M. Davis</option>
+											<option value="1234">Form and Function - Rael Isacowitz</option>
+											<option value="1050">Full Body Low Chair - Cara Reeser</option>
+											<option value="401">Hip Connections - Madeline Black</option>
+											<option value="577">Inside Bone Health - Rebekah Rotstein</option>
+											<option value="925">Journey to Your Inner Teacher  - Wendy LeBlanc-Arbuckle</option>
+											<option value="548">Mat Work S.O.S - Pat Guyton</option>
+											<option value="1334">Neuroscience and Exercise - Mariska Breland</option>
+											<option value="1263">Pilates ABC's - Michael Fritzke and Ton Voogt</option>
+											<option value="1508">Pilates and Embodiment - Wendy LeBlanc-Arbuckle</option>
+											<option value="820">Pilates For Children - Brett Howard</option>
+											<option value="1091">Pilates For Men - Rael Isacowitz</option>
+											<option value="1261">Pilates for Scoliosis - Madeline Black</option>
+											<option value="1038">Pilates for Teens - Brett Howard</option>
+											<option value="624">Pilates Hands On Workshop - Jennifer Kries</option>
+											<option value="1282">Pilates in 3D - Rael Isacowitz</option>
+											<option value="687">Pilates! More Than Exercise&reg; - Karen Sanzo</option>
+											<option value="794">Pre and Postnatal Pilates - Leah Stewart</option>
+											<option value="1089">Pre-Pilates - Alan Herdman</option>
+											<option value="255">Studio Systems Evolved - Kathy Corey and Michael King</option>
+											<option value="1116">Successful Cueing - Leah Stewart</option>
+											<option value="690">Support The Arms - Madeline Black</option>
+											<option value="1153">The Value of Transitions - Rachel Taylor Segel</option>
+											<option value="1290">Work Smarter Not Harder - Shelly Power</option>
+											<option value="389">Working With Seniors - Lolita San Miguel</option>
+										</select>
+									</p>
+								</div>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Delivery Option</label>
+								<p id="deliveryoption">
+									<input id="delivery" type="radio" value="1" name="delivery" checked="true"/>
+									<label>Email <span>(Pilates Anytime will send email to recipient)</span></label>
+									<input id="delivery1" type="radio" value="2" name="delivery"/>
+									<label>Print <span>(I will print it myself - No email)</span></label>
+								</p>
+							</div>
+							
+							<h3>We'll email you a receipt, and if you choose the print option, the printable gift certificate.</h3>
+							<div class="myaccount_form_input">
+								<label>Your Email</label>
+								<p><input type="text" id="email" class="myaccount_textbox" name="email"/></p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Re-Type Your Email</label>
+								<p><input type="text" id="reemail" class="myaccount_textbox" name="reemail"/></p>
+							</div>
+							<h3>Who is the gift from? It can be "Susan" or "Mom and Dad", etc.</h3>
+							<div class="myaccount_form_input">
+								<label>Gift from Name</label>
+								<p><input type="text" id="namefrom" class="myaccount_textbox" name="namefrom"/></p>
+							</div>
+							<div class="myaccount_form_input">
+								<label>Gift to Name</label>
+								<p><input type="text" id="nameto" class="myaccount_textbox" name="nameto"/></p>
+								<label class="print_option_hide">Gift to Email</label>
+								<p class="print_option_hide"><input type="text" id="emailto" class="myaccount_textbox" name="emailto"/></p>
+								<label class="print_option_hide">Re-Type Gift to Email</label>
+								<p class="print_option_hide"><input type="text" id="reemailto" class="myaccount_textbox" name="reemailto"/></p>
+							</div>
+							<h3 class="print_option_hide">You can write an optional note that will be included in the email we send to recipient.</h3>
+							<div class="myaccount_form_input print_option_hide">
+								<label>Note for Email</label>
+								<p><textarea id="note_email" class="myaccount_textbox myaccount_text_area" name="note_email"></textarea></p>
+							</div>
+							<h3  class="print_option_hide">We can send the gift certificate to the recipient at a later date, if you wish.</h3>
+							<div class="myaccount_form_input print_option_hide">
+								<label>Email Delivery Date</label>
+								<p><input type="text" id="email_date" class="myaccount_textbox" name="email_date"/></p>
+							</div>
+							<input type="submit" class="myaccount_button" value="Continue"/>
+							
+						</div>
+					</form>
+                </div>
+				
+                <div class="retreats_pilates_menu">
+                
+                	<ul class="pilates_innaerpage">
+                    
+                    	<li class="pilates_innermenu">  <a href="pilates.html" class="pilates_inner1 common_inner_pilates"></a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner2 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner3 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu ">  <a href="javascript:void(0)" class="pilates_inner4 common_inner_pilates">&nbsp; </a></li>
+                    
+                    </ul>
+                </div>
+                
+                
+
+  				 </div>
+            
+            </div>	
+       <!--mainContent ends here-->
+        
+        <div class="footer_wrapper">
+        	<div class="main-wrapper-fixed footer_wrap">
+             
+             <div class="footerright">
+             	<div>
+					<span class="otherlinks_footer">
+						<a href="gift_coupon.html">Gift Coupon</a>
+						<a href="faq.html">FAQ</a>
+						<a href="testimonial.html">Testimonial</a>
+						<a href="forum.html" class="footer_prob">Forum</a>
+						<div class="footer_prob_div" style="height: 10px;"></div>
+						<a href="privacy_policy.html">Privacy Policy</a>
+						<a  href="terms_condition.html">Terms & Conditions</a>
+						<a  href="contact.html" class="last_otherlinks_footer">Contact Us</a>
+					</span>
+                  <div class="footer_social_links">
+                  <div class="footer_social_links">
+					  <span class="faceb footersoci"><a title="facebook" href="#"> f</a></span>
+					  <span class="twittr footersoci"><a href="#" title="twitter"> t</a></span>
+					  <span class="googleplus footersoci"><a href="#" title="googleplus"> g</a></span>
+				  </div>
+				  </div>
+                </div>
+             </div>
+             
+             <div class="footerleft">
+             	<div class="copyrights">&copy; Copyright 2013, LILYFIT , All Rights Reserved. </div>
+                <div class="poweredby"> <a target="_blank" href="http://colorcuboid.com/">Powered by <img src="assets/images/colorcuboid_logo.png" alt="Slider image">&nbsp;ColorCuboid Designs</a> </div>
+             </div>
+            
+            </div>
+        </div><!--footer ends here-->
+        
+         <div class="full_cover" style="display:none;"></div>        
+    </div>	<!--bodyWrapper ends here-->
+    
+	
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+
+<script type="text/javascript" src='assets/scripts/jquery.capSlide.js'></script>	
+<script type="text/javascript" src='assets/scripts/menucaption_call.js'></script>	
+<script src="assets/scripts/jquery-ui.js"></script>
+<script type="text/javascript" src='assets/scripts/jquery.validate.js'></script>
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.raty.js"></script>
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+ <script type="text/javascript" src='assets/scripts/script.js'></script>  
+ <script src="assets/scripts/jquery.selectbox-0.2.js"></script>
+ <script>
+$('body').on('click', '#signup_change', function(){
+		$('.signup_dollar').css("display","none");
+		$('.signup_show_change').css("display","block");
+		$('.signup_hidden').css("margin-bottom","30px");
+	});
+$(document).on('change','#deliveryoption',function(){
+		if(document.getElementById("delivery1").checked==true){
+			$('.print_option_hide').css('display','none');
+		}
+		else if(document.getElementById("delivery").checked==true){
+			$('.print_option_hide').css('display','block');
+		}
+});
+$(document).on('change','#gifttype',function(){
+		if(document.getElementById("gift_type").checked==true){
+			$('#subscription_gift_type_radio').css('display','block');
+			$('#worshop_gift_type_radio').css('display','none');
+			$('#worshop_gift_type_heading').css('display','none');
+		}
+		else if(document.getElementById("gift_type1").checked==true){
+			$('#subscription_gift_type_radio').css('display','none');
+			$('#worshop_gift_type_radio').css('display','block');
+			$('#worshop_gift_type_heading').css('display','block');
+		}
+});
+
+$(document).on('change','#gift_class_id_1',function(){
+	$('#gift_class_id_2').find("option").attr("selected",false);
+	$('#gift_class_id_2').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_2').next().find('.sbSelector').text('--Select--');
+	$('#gift_class_id_3').find("option").attr("selected",false);
+	$('#gift_class_id_3').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_3').next().find('.sbSelector').text('--Select--');
+	$('#gift_class_id_4').find("option").attr("selected",false);
+	$('#gift_class_id_4').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_4').next().find('.sbSelector').text('--Select--');
+});
+$(document).on('change','#gift_class_id_2',function(){
+	$('#gift_class_id_1').find("option").attr("selected",false);
+	$('#gift_class_id_1').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_1').next().find('.sbSelector').text('--Select--');
+	$('#gift_class_id_3').find("option").attr("selected",false);
+	$('#gift_class_id_3').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_3').next().find('.sbSelector').text('--Select--');
+	$('#gift_class_id_4').find("option").attr("selected",false);
+	$('#gift_class_id_4').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_4').next().find('.sbSelector').text('--Select--');
+});
+$(document).on('change','#gift_class_id_3',function(){
+	$('#gift_class_id_2').find("option").attr("selected",false);
+	$('#gift_class_id_2').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_2').next().find('.sbSelector').text('--Select--');
+	$('#gift_class_id_1').find("option").attr("selected",false);
+	$('#gift_class_id_1').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_1').next().find('.sbSelector').text('--Select--');
+	$('#gift_class_id_4').find("option").attr("selected",false);
+	$('#gift_class_id_4').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_4').next().find('.sbSelector').text('--Select--');
+});
+$(document).on('change','#gift_class_id_4',function(){
+	$('#gift_class_id_2').find("option").attr("selected",false);
+	$('#gift_class_id_2').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_2').next().find('.sbSelector').text('--Select--');
+	$('#gift_class_id_3').find("option").attr("selected",false);
+	$('#gift_class_id_3').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_3').next().find('.sbSelector').text('--Select--');
+	$('#gift_class_id_1').find("option").attr("selected",false);
+	$('#gift_class_id_1').find("option[value='0']").attr('selected','selected');
+	$('#gift_class_id_1').next().find('.sbSelector').text('--Select--');
+});
+$(document).ready(function(){
+	$(".myaccount_dropdown").selectbox();
+});
+</script>
+
+<script>
+  
+
+	
+	
+	
+$(".menuu1").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu2").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu3").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu4").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu5").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu6").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu7").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".shopmenu").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+$(".login_signup").css("animation","fx_caption_right "+ 2000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+ $("#gift_coupon").validate({
+		
+		
+    	rules:{
+			
+     	 email: 
+			  {             
+			  required: true,	
+				email: true		 	  
+			  },
+		reemail:
+			  {
+			   required: true,	
+				email: true	,
+				equalTo: "#email"
+			  },
+		namefrom:{
+			required: true
+		},
+		nameto:{
+			required: true
+		},
+		emailto:{
+			required: true,	
+				email: true		
+		},
+		reemailto:{
+			required: true,	
+				email: true	,
+				equalTo: "#emailto"
+		},
+		
+	
+	 
+	},
+
+    messages: {
+		email: 
+			  {             
+			  required:"Please enter email",			
+			  },
+		reemail: 
+			  {             
+			  required:"Please enter correct email",
+			
+			  },
+		namefrom:{
+			required: "Please enter your name",
+		},	  
+		nameto:{
+			required: "Please enter recepient name",
+		},	  
+		emailto: 
+			  {             
+			  required:"Please enter email",			
+			  },
+		reemailto: 
+			  {             
+			  required:"Please enter correct email",
+			
+			  },
+		
+	
+	     
+    }
+  });	
+ 
+function setCurrency(currency_code) {
+	// Change amount in displayed text to monthly subscription for selected currency
+		switch (String(currency_code)) {
+			
+
+			case "36":
+				
+				var rb_text4 = document.getElementById('sku4');
+				rb_text4.innerHTML =  'AUD &#x0024;216';
+				
+				var rb_text5 = document.getElementById('sku5');
+				rb_text5.innerHTML =  'AUD &#x0024;108';
+				
+				var rb_text6 = document.getElementById('sku6');
+				rb_text6.innerHTML =  'AUD &#x0024;54';
+				
+				var rb_text34 = document.getElementById('sku34');
+				rb_text34.innerHTML =  'AUD &#x0024;18';
+				
+				break;
+			
+
+			case "124":
+				
+				var rb_text4 = document.getElementById('sku4');
+				rb_text4.innerHTML =  'CAD &#x0024;216';
+				
+				var rb_text5 = document.getElementById('sku5');
+				rb_text5.innerHTML =  'CAD &#x0024;108';
+				
+				var rb_text6 = document.getElementById('sku6');
+				rb_text6.innerHTML =  'CAD &#x0024;54';
+				
+				var rb_text34 = document.getElementById('sku34');
+				rb_text34.innerHTML =  'CAD &#x0024;18';
+				
+				break;
+			
+
+			case "978":
+				
+				var rb_text4 = document.getElementById('sku4');
+				rb_text4.innerHTML =  'EUR &#x20AC;168';
+				
+				var rb_text5 = document.getElementById('sku5');
+				rb_text5.innerHTML =  'EUR &#x20AC;84';
+				
+				var rb_text6 = document.getElementById('sku6');
+				rb_text6.innerHTML =  'EUR &#x20AC;42';
+				
+				var rb_text34 = document.getElementById('sku34');
+				rb_text34.innerHTML =  'EUR &#x20AC;14';
+				
+				break;
+			
+
+			case "826":
+				
+				var rb_text4 = document.getElementById('sku4');
+				rb_text4.innerHTML =  'GBP &#x00A3;144';
+				
+				var rb_text5 = document.getElementById('sku5');
+				rb_text5.innerHTML =  'GBP &#x00A3;72';
+				
+				var rb_text6 = document.getElementById('sku6');
+				rb_text6.innerHTML =  'GBP &#x00A3;36';
+				
+				var rb_text34 = document.getElementById('sku34');
+				rb_text34.innerHTML =  'GBP &#x00A3;12';
+				
+				break;
+			
+
+			case "392":
+				
+				var rb_text4 = document.getElementById('sku4');
+				rb_text4.innerHTML =  'JPY &#x00A5;21600';
+				
+				var rb_text5 = document.getElementById('sku5');
+				rb_text5.innerHTML =  'JPY &#x00A5;10800';
+				
+				var rb_text6 = document.getElementById('sku6');
+				rb_text6.innerHTML =  'JPY &#x00A5;5400';
+				
+				var rb_text34 = document.getElementById('sku34');
+				rb_text34.innerHTML =  'JPY &#x00A5;1800';
+				
+				break;
+			
+
+			case "840":
+				
+				var rb_text4 = document.getElementById('sku4');
+				rb_text4.innerHTML =  'USD &#x0024;216';
+				
+				var rb_text5 = document.getElementById('sku5');
+				rb_text5.innerHTML =  'USD &#x0024;108';
+				
+				var rb_text6 = document.getElementById('sku6');
+				rb_text6.innerHTML =  'USD &#x0024;54';
+				
+				var rb_text34 = document.getElementById('sku34');
+				rb_text34.innerHTML =  'USD &#x0024;18';
+				
+				break;
+			
+			default:alert(typeof(currency_code));
+		}	
+		setCurrencyWorkshops(currency_code);
+	}
+ function setCurrencyWorkshops(currency_code) {
+			// Change amount in displayed text to workshop for selected currency
+				switch (String(currency_code)) {
+					
+					case "36":
+						
+							var this_span = document.getElementById('ws_price45');
+							this_span.innerHTML =  'AUD &#x0024;45';
+						
+							var this_span = document.getElementById('ws_price49');
+							this_span.innerHTML =  'AUD &#x0024;49';
+						
+							var this_span = document.getElementById('ws_price69');
+							this_span.innerHTML =  'AUD &#x0024;69';
+						
+							var this_span = document.getElementById('ws_price99');
+							this_span.innerHTML =  'AUD &#x0024;99';
+						
+						break;
+					
+					case "124":
+						
+							var this_span = document.getElementById('ws_price45');
+							this_span.innerHTML =  'CAD &#x0024;45';
+						
+							var this_span = document.getElementById('ws_price49');
+							this_span.innerHTML =  'CAD &#x0024;49';
+						
+							var this_span = document.getElementById('ws_price69');
+							this_span.innerHTML =  'CAD &#x0024;69';
+						
+							var this_span = document.getElementById('ws_price99');
+							this_span.innerHTML =  'CAD &#x0024;99';
+						
+						break;
+					
+					case "978":
+						
+							var this_span = document.getElementById('ws_price45');
+							this_span.innerHTML =  'EUR &#x20AC;35';
+						
+							var this_span = document.getElementById('ws_price49');
+							this_span.innerHTML =  'EUR &#x20AC;38';
+						
+							var this_span = document.getElementById('ws_price69');
+							this_span.innerHTML =  'EUR &#x20AC;53';
+						
+							var this_span = document.getElementById('ws_price99');
+							this_span.innerHTML =  'EUR &#x20AC;76';
+						
+						break;
+					
+					case "826":
+						
+							var this_span = document.getElementById('ws_price45');
+							this_span.innerHTML =  'GBP &#x00A3;30';
+						
+							var this_span = document.getElementById('ws_price49');
+							this_span.innerHTML =  'GBP &#x00A3;33';
+						
+							var this_span = document.getElementById('ws_price69');
+							this_span.innerHTML =  'GBP &#x00A3;46';
+						
+							var this_span = document.getElementById('ws_price99');
+							this_span.innerHTML =  'GBP &#x00A3;66';
+						
+						break;
+					
+					case "392":
+						
+							var this_span = document.getElementById('ws_price45');
+							this_span.innerHTML =  'JPY &#x00A5;4500';
+						
+							var this_span = document.getElementById('ws_price49');
+							this_span.innerHTML =  'JPY &#x00A5;4900';
+						
+							var this_span = document.getElementById('ws_price69');
+							this_span.innerHTML =  'JPY &#x00A5;6900';
+						
+							var this_span = document.getElementById('ws_price99');
+							this_span.innerHTML =  'JPY &#x00A5;9900';
+						
+						break;
+					
+					case "840":
+						
+							var this_span = document.getElementById('ws_price45');
+							this_span.innerHTML =  'USD &#x0024;45';
+						
+							var this_span = document.getElementById('ws_price49');
+							this_span.innerHTML =  'USD &#x0024;49';
+						
+							var this_span = document.getElementById('ws_price69');
+							this_span.innerHTML =  'USD &#x0024;69';
+						
+							var this_span = document.getElementById('ws_price99');
+							this_span.innerHTML =  'USD &#x0024;99';
+						
+						break;
+					
+					default:alert(typeof(currency_code));
+				}			
+			}
+ 
+ 
+</script>
+
+	</body>
+</html>
+
